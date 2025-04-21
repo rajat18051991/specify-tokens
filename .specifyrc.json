@@ -5,34 +5,41 @@
   "version": "2",
   "rules": [
     {
-      "name": "Design Tokens",
+      "name": "SDTF",
       "parsers": [
         {
-          "name": "to-kotlin",
+          "name": "to-sdtf",
           "output": {
             "type": "file",
-            "filePath": "output/android/DesignTokens.kt"
-          }
-        },
-        {
-          "name": "to-swift",
-          "output": {
-            "type": "file",
-            "filePath": "output/ios/DesignTokens.swift"
-          }
-        },
-        {
-          "name": "to-typescript",
-          "output": {
-            "type": "file",
-            "filePath": "output/react/designTokens.ts"
+            "filePath": "output/tokens.json"
           }
         },
         {
           "name": "to-css-custom-properties",
           "output": {
             "type": "file",
-            "filePath": "output/tokens.css"
+            "filePath": "output/css/tokens.css"
+          }
+        },
+        {
+          "name": "to-kotlin",
+          "output": {
+            "type": "file",
+            "filePath": "output/android/Colors.kt"
+          }
+        },
+        {
+          "name": "to-swift",
+          "output": {
+            "type": "file",
+            "filePath": "output/ios/Colors.swift"
+          }
+        },
+        {
+          "name": "to-typescript",
+          "output": {
+            "type": "file",
+            "filePath": "output/react/tokens.ts"
           }
         }
       ]
