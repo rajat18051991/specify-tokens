@@ -138,27 +138,6 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.text.positive.high',
   'feedback.feedback.color.text.premium',
   'theme.theme.color.text.premium.high',
-  'feedback.feedback.button.color.text.alert.on-primary',
-  'theme.theme.color.text.alert.low',
-  'theme.theme.color.text.alert.low-alt',
-  'feedback.feedback.button.color.text.alert.on-secondary',
-  'feedback.feedback.button.color.text.info.on-primary',
-  'theme.theme.color.text.info.low',
-  'feedback.feedback.button.color.text.info.on-secondary',
-  'feedback.feedback.button.color.text.negative.on-primary',
-  'theme.theme.color.text.negative.low',
-  'theme.theme.color.text.negative.medium',
-  'feedback.feedback.button.color.text.negative.on-secondary',
-  'feedback.feedback.button.color.text.neutral.on-primary',
-  'feedback.feedback.button.color.text.neutral.on-secondary',
-  'feedback.feedback.button.color.text.positive.on-primary',
-  'theme.theme.color.text.positive.low',
-  'theme.theme.color.text.positive.medium',
-  'feedback.feedback.button.color.text.positive.on-secondary',
-  'feedback.feedback.button.color.text.premium.on-primary',
-  'theme.theme.color.text.premium.low',
-  'theme.theme.color.text.premium.medium',
-  'feedback.feedback.button.color.text.premium.on-secondary',
   'feedback.feedback.button.color.background.alert',
   'theme.theme.color.background.alert.high',
   'theme.theme.color.background.agnostic.black',
@@ -185,12 +164,27 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.border.positive.high',
   'feedback.feedback.button.color.border.premium',
   'theme.theme.color.border.premium.high',
-  'theme.theme.color.text.agnostic.white',
-  'theme.theme.color.text.alert.medium',
-  'theme.theme.color.text.brand.primary',
-  'theme.theme.color.text.brand.secondary',
-  'theme.theme.color.text.discount.on-high',
-  'theme.theme.color.text.discount.on-low',
+  'feedback.feedback.button.color.text.alert.on-secondary',
+  'feedback.feedback.button.color.text.alert.on-primary',
+  'theme.theme.color.text.alert.low',
+  'theme.theme.color.text.alert.low-alt',
+  'feedback.feedback.button.color.text.info.on-primary',
+  'theme.theme.color.text.info.low',
+  'feedback.feedback.button.color.text.info.on-secondary',
+  'feedback.feedback.button.color.text.negative.on-primary',
+  'theme.theme.color.text.negative.low',
+  'theme.theme.color.text.negative.medium',
+  'feedback.feedback.button.color.text.negative.on-secondary',
+  'feedback.feedback.button.color.text.neutral.on-primary',
+  'feedback.feedback.button.color.text.neutral.on-secondary',
+  'feedback.feedback.button.color.text.positive.on-primary',
+  'theme.theme.color.text.positive.low',
+  'theme.theme.color.text.positive.medium',
+  'feedback.feedback.button.color.text.positive.on-secondary',
+  'feedback.feedback.button.color.text.premium.on-primary',
+  'theme.theme.color.text.premium.low',
+  'theme.theme.color.text.premium.medium',
+  'feedback.feedback.button.color.text.premium.on-secondary',
   'theme.theme.color.background.agnostic.white',
   'theme.theme.color.background.discount.high',
   'theme.theme.color.background.discount.low',
@@ -229,7 +223,13 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.icon.premium.low',
   'theme.theme.color.icon.premium.medium',
   'theme.theme.color.icon.rating.filled',
-  'theme.theme.color.icon.rating.unfilled'
+  'theme.theme.color.icon.rating.unfilled',
+  'theme.theme.color.text.agnostic.white',
+  'theme.theme.color.text.alert.medium',
+  'theme.theme.color.text.brand.primary',
+  'theme.theme.color.text.brand.secondary',
+  'theme.theme.color.text.discount.on-high',
+  'theme.theme.color.text.discount.on-low'
 ]);
 /**
 * @typedef {typeof dimensionPaths} DimensionPaths - All the valid paths for the tokens of type dimension.
@@ -289,20 +289,6 @@ export const dimensionPaths = /** @type {const} */ ([
   'theme.theme.font.weight.high',
   'theme.theme.font.weight.medium',
   'theme.theme.font.weight.regular',
-  'theme.theme.size.border.radius.pill',
-  'numbers.scale.1600',
-  'theme.theme.size.border.radius.xl',
-  'numbers.scale.300',
-  'theme.theme.size.border.radius.xs',
-  'numbers.scale.50',
-  'theme.theme.size.border.radius.xxl',
-  'numbers.scale.400',
-  'theme.theme.space.margin.screen.default',
-  'density.space.md.1',
-  'density.space.sm.5',
-  'theme.theme.space.margin.screen.optical',
-  'density.space.sm.3',
-  'numbers.scale.25',
   'theme.theme.space.lg.1',
   'density.space.lg.1',
   'numbers.scale.700',
@@ -321,8 +307,11 @@ export const dimensionPaths = /** @type {const} */ ([
   'density.space.lg.5',
   'numbers.scale.1200',
   'theme.theme.space.md.1',
+  'density.space.md.1',
+  'numbers.scale.300',
   'theme.theme.space.md.2',
   'density.space.md.2',
+  'numbers.scale.400',
   'theme.theme.space.md.3',
   'density.space.md.3',
   'numbers.scale.500',
@@ -332,12 +321,23 @@ export const dimensionPaths = /** @type {const} */ ([
   'density.space.md.5',
   'theme.theme.space.sm.1',
   'density.space.sm.1',
+  'numbers.scale.25',
   'theme.theme.space.sm.2',
   'density.space.sm.2',
+  'numbers.scale.50',
   'theme.theme.space.sm.3',
+  'density.space.sm.3',
   'theme.theme.space.sm.4',
   'density.space.sm.4',
   'theme.theme.space.sm.5',
+  'density.space.sm.5',
+  'theme.theme.space.margin.screen.default',
+  'theme.theme.space.margin.screen.optical',
+  'theme.theme.size.border.radius.pill',
+  'numbers.scale.1600',
+  'theme.theme.size.border.radius.xl',
+  'theme.theme.size.border.radius.xs',
+  'theme.theme.size.border.radius.xxl',
   'numbers.scale.1400'
 ]);
 /**
@@ -431,15 +431,6 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.text.negative.high',
   'theme.theme.color.text.positive.high',
   'theme.theme.color.text.premium.high',
-  'theme.theme.color.text.alert.low',
-  'theme.theme.color.text.alert.low-alt',
-  'theme.theme.color.text.info.low',
-  'theme.theme.color.text.negative.low',
-  'theme.theme.color.text.negative.medium',
-  'theme.theme.color.text.positive.low',
-  'theme.theme.color.text.positive.medium',
-  'theme.theme.color.text.premium.low',
-  'theme.theme.color.text.premium.medium',
   'theme.theme.color.background.alert.high',
   'theme.theme.color.background.agnostic.black',
   'theme.theme.color.background.info.high',
@@ -454,6 +445,15 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.border.negative.high',
   'theme.theme.color.border.positive.high',
   'theme.theme.color.border.premium.high',
+  'theme.theme.color.text.alert.low',
+  'theme.theme.color.text.alert.low-alt',
+  'theme.theme.color.text.info.low',
+  'theme.theme.color.text.negative.low',
+  'theme.theme.color.text.negative.medium',
+  'theme.theme.color.text.positive.low',
+  'theme.theme.color.text.positive.medium',
+  'theme.theme.color.text.premium.low',
+  'theme.theme.color.text.premium.medium',
   'theme.theme.font.letter-spacing.h1',
   'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.h2',
@@ -496,12 +496,23 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.font.weight.high',
   'theme.theme.font.weight.medium',
   'theme.theme.font.weight.regular',
-  'theme.theme.color.text.agnostic.white',
-  'theme.theme.color.text.alert.medium',
-  'theme.theme.color.text.brand.primary',
-  'theme.theme.color.text.brand.secondary',
-  'theme.theme.color.text.discount.on-high',
-  'theme.theme.color.text.discount.on-low',
+  'theme.theme.space.lg.1',
+  'theme.theme.space.lg.2',
+  'theme.theme.space.lg.3',
+  'theme.theme.space.lg.4',
+  'theme.theme.space.lg.5',
+  'theme.theme.space.md.1',
+  'theme.theme.space.md.2',
+  'theme.theme.space.md.3',
+  'theme.theme.space.md.4',
+  'theme.theme.space.md.5',
+  'theme.theme.space.sm.1',
+  'theme.theme.space.sm.2',
+  'theme.theme.space.sm.3',
+  'theme.theme.space.sm.4',
+  'theme.theme.space.sm.5',
+  'theme.theme.space.margin.screen.default',
+  'theme.theme.space.margin.screen.optical',
   'theme.theme.color.background.agnostic.white',
   'theme.theme.color.background.discount.high',
   'theme.theme.color.background.discount.low',
@@ -541,27 +552,16 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.icon.premium.medium',
   'theme.theme.color.icon.rating.filled',
   'theme.theme.color.icon.rating.unfilled',
+  'theme.theme.color.text.agnostic.white',
+  'theme.theme.color.text.alert.medium',
+  'theme.theme.color.text.brand.primary',
+  'theme.theme.color.text.brand.secondary',
+  'theme.theme.color.text.discount.on-high',
+  'theme.theme.color.text.discount.on-low',
   'theme.theme.size.border.radius.pill',
   'theme.theme.size.border.radius.xl',
   'theme.theme.size.border.radius.xs',
-  'theme.theme.size.border.radius.xxl',
-  'theme.theme.space.margin.screen.default',
-  'theme.theme.space.margin.screen.optical',
-  'theme.theme.space.lg.1',
-  'theme.theme.space.lg.2',
-  'theme.theme.space.lg.3',
-  'theme.theme.space.lg.4',
-  'theme.theme.space.lg.5',
-  'theme.theme.space.md.1',
-  'theme.theme.space.md.2',
-  'theme.theme.space.md.3',
-  'theme.theme.space.md.4',
-  'theme.theme.space.md.5',
-  'theme.theme.space.sm.1',
-  'theme.theme.space.sm.2',
-  'theme.theme.space.sm.3',
-  'theme.theme.space.sm.4',
-  'theme.theme.space.sm.5'
+  'theme.theme.size.border.radius.xxl'
 ]);
 /**
 * @typedef {typeof coloursPaths} ColoursPaths - All the valid paths for the collection colours.
@@ -598,13 +598,13 @@ export const coloursPaths = /** @type {const} */ ([
 export const numbersPaths = /** @type {const} */ ([
   'numbers.scale.0',    'numbers.scale.200',
   'numbers.scale.150',  'numbers.scale.100',
-  'numbers.scale.1600', 'numbers.scale.300',
-  'numbers.scale.50',   'numbers.scale.400',
-  'numbers.scale.25',   'numbers.scale.700',
-  'numbers.scale.600',  'numbers.scale.800',
-  'numbers.scale.900',  'numbers.scale.1000',
-  'numbers.scale.1100', 'numbers.scale.1200',
-  'numbers.scale.500',  'numbers.scale.1400'
+  'numbers.scale.700',  'numbers.scale.600',
+  'numbers.scale.800',  'numbers.scale.900',
+  'numbers.scale.1000', 'numbers.scale.1100',
+  'numbers.scale.1200', 'numbers.scale.300',
+  'numbers.scale.400',  'numbers.scale.500',
+  'numbers.scale.25',   'numbers.scale.50',
+  'numbers.scale.1600', 'numbers.scale.1400'
 ]);
 /**
 * @typedef {typeof feedbackPaths} FeedbackPaths - All the valid paths for the collection feedback.
@@ -630,18 +630,6 @@ export const feedbackPaths = /** @type {const} */ ([
   'feedback.feedback.color.text.neutral',
   'feedback.feedback.color.text.positive',
   'feedback.feedback.color.text.premium',
-  'feedback.feedback.button.color.text.alert.on-primary',
-  'feedback.feedback.button.color.text.alert.on-secondary',
-  'feedback.feedback.button.color.text.info.on-primary',
-  'feedback.feedback.button.color.text.info.on-secondary',
-  'feedback.feedback.button.color.text.negative.on-primary',
-  'feedback.feedback.button.color.text.negative.on-secondary',
-  'feedback.feedback.button.color.text.neutral.on-primary',
-  'feedback.feedback.button.color.text.neutral.on-secondary',
-  'feedback.feedback.button.color.text.positive.on-primary',
-  'feedback.feedback.button.color.text.positive.on-secondary',
-  'feedback.feedback.button.color.text.premium.on-primary',
-  'feedback.feedback.button.color.text.premium.on-secondary',
   'feedback.feedback.button.color.background.alert',
   'feedback.feedback.button.color.background.info',
   'feedback.feedback.button.color.background.negative',
@@ -653,28 +641,40 @@ export const feedbackPaths = /** @type {const} */ ([
   'feedback.feedback.button.color.border.negative',
   'feedback.feedback.button.color.border.neutral',
   'feedback.feedback.button.color.border.positive',
-  'feedback.feedback.button.color.border.premium'
+  'feedback.feedback.button.color.border.premium',
+  'feedback.feedback.button.color.text.alert.on-secondary',
+  'feedback.feedback.button.color.text.alert.on-primary',
+  'feedback.feedback.button.color.text.info.on-primary',
+  'feedback.feedback.button.color.text.info.on-secondary',
+  'feedback.feedback.button.color.text.negative.on-primary',
+  'feedback.feedback.button.color.text.negative.on-secondary',
+  'feedback.feedback.button.color.text.neutral.on-primary',
+  'feedback.feedback.button.color.text.neutral.on-secondary',
+  'feedback.feedback.button.color.text.positive.on-primary',
+  'feedback.feedback.button.color.text.positive.on-secondary',
+  'feedback.feedback.button.color.text.premium.on-primary',
+  'feedback.feedback.button.color.text.premium.on-secondary'
 ]);
 /**
 * @typedef {typeof densityPaths} DensityPaths - All the valid paths for the collection density.
 * To use this type you can do: `@type {import('path/to/myTokensFile').DensityPaths}`
 */
 export const densityPaths = /** @type {const} */ ([
-  'density.space.md.1',
-  'density.space.sm.5',
-  'density.space.sm.3',
   'density.space.lg.1',
   'density.space.lg.2',
   'density.space.lg.3',
   'density.space.lg.4',
   'density.space.lg.5',
+  'density.space.md.1',
   'density.space.md.2',
   'density.space.md.3',
   'density.space.md.4',
   'density.space.md.5',
   'density.space.sm.1',
   'density.space.sm.2',
-  'density.space.sm.4'
+  'density.space.sm.3',
+  'density.space.sm.4',
+  'density.space.sm.5'
 ]);
 /**
 * @typedef {ColorPaths | DimensionPaths | ActionPaths | ThemePaths | ColoursPaths | NumbersPaths | FeedbackPaths | DensityPaths} AllPath - All possible paths
@@ -1184,63 +1184,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(107, 68, 165)',
     Traum: 'rgb(107, 68, 165)'
   },
-  'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
-  'theme.theme.color.text.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.color.text.alert.low-alt': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
-  'theme.theme.color.text.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'feedback.feedback.button.color.text.info.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'feedback.feedback.button.color.text.negative.on-primary': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
-  'theme.theme.color.text.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.text.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'feedback.feedback.button.color.text.negative.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'feedback.feedback.button.color.text.neutral.on-primary': { high: 'rgb(255, 255, 255)', low: 'rgb(255, 255, 255)' },
-  'feedback.feedback.button.color.text.neutral.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.button.color.text.positive.on-primary': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
-  'theme.theme.color.text.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.text.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'feedback.feedback.button.color.text.positive.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'feedback.feedback.button.color.text.premium.on-primary': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
-  'theme.theme.color.text.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.text.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
   'feedback.feedback.button.color.background.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
   'theme.theme.color.background.alert.high': {
     Danland: 'rgb(214, 174, 86)',
@@ -1323,36 +1266,63 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(107, 68, 165)',
     Traum: 'rgb(107, 68, 165)'
   },
-  'theme.theme.color.text.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
+  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
+  'theme.theme.color.text.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
   },
-  'theme.theme.color.text.alert.medium': {
-    Danland: 'rgb(192, 156, 77)',
-    Prism: 'rgb(148, 110, 63)',
-    Traum: 'rgb(148, 110, 63)'
+  'theme.theme.color.text.alert.low-alt': {
+    Danland: 'rgb(241, 170, 16)',
+    Prism: 'rgb(205, 179, 154)',
+    Traum: 'rgb(205, 179, 154)'
   },
-  'theme.theme.color.text.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(253, 196, 0)'
+  'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
+  'theme.theme.color.text.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
   },
-  'theme.theme.color.text.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
+  'feedback.feedback.button.color.text.info.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'feedback.feedback.button.color.text.negative.on-primary': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
+  'theme.theme.color.text.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
   },
-  'theme.theme.color.text.discount.on-high': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
+  'theme.theme.color.text.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
   },
-  'theme.theme.color.text.discount.on-low': {
-    Danland: 'rgb(254, 169, 95)',
+  'feedback.feedback.button.color.text.negative.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'feedback.feedback.button.color.text.neutral.on-primary': { high: 'rgb(255, 255, 255)', low: 'rgb(255, 255, 255)' },
+  'feedback.feedback.button.color.text.neutral.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.button.color.text.positive.on-primary': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
+  'theme.theme.color.text.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.color.text.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
     Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
+    Traum: 'rgb(79, 118, 108)'
   },
+  'feedback.feedback.button.color.text.positive.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'feedback.feedback.button.color.text.premium.on-primary': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
+  'theme.theme.color.text.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.color.text.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
+  },
+  'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
   'theme.theme.color.background.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
     Prism: 'rgb(255, 255, 255)',
@@ -1548,6 +1518,36 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(211, 211, 211)',
     Traum: 'rgb(211, 211, 211)'
   },
+  'theme.theme.color.text.agnostic.white': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.color.text.alert.medium': {
+    Danland: 'rgb(192, 156, 77)',
+    Prism: 'rgb(148, 110, 63)',
+    Traum: 'rgb(148, 110, 63)'
+  },
+  'theme.theme.color.text.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.theme.color.text.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.color.text.discount.on-high': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.color.text.discount.on-low': {
+    Danland: 'rgb(254, 169, 95)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(176, 96, 0)'
+  },
   'action.button.size.border.weight': { disabled: '1px', hover: '2px', normal: '1px' },
   'action.button.size.border.radius.L': { disabled: '24px', hover: '16px', normal: '0px' },
   'theme.theme.size.border.radius.lg': { Danland: '24px', Prism: '0px', Traum: '16px' },
@@ -1621,20 +1621,6 @@ export const tokens = /** @type {const} */ ({
   'theme.theme.font.weight.high': { Danland: '700px', Prism: '600px', Traum: '400px' },
   'theme.theme.font.weight.medium': { Danland: '500px', Prism: '500px', Traum: '600px' },
   'theme.theme.font.weight.regular': { Danland: '400px', Prism: '400px', Traum: '400px' },
-  'theme.theme.size.border.radius.pill': { Danland: '144px', Prism: '128px', Traum: '128px' },
-  'numbers.scale.1600': { desktop: '144px', mobile: '128px' },
-  'theme.theme.size.border.radius.xl': { Danland: '32px', Prism: '0px', Traum: '24px' },
-  'numbers.scale.300': { desktop: '32px', mobile: '24px' },
-  'theme.theme.size.border.radius.xs': { Danland: '4px', Prism: '0px', Traum: '4px' },
-  'numbers.scale.50': { desktop: '4px', mobile: '4px' },
-  'theme.theme.size.border.radius.xxl': { Danland: '40px', Prism: '0px', Traum: '32px' },
-  'numbers.scale.400': { desktop: '40px', mobile: '32px' },
-  'theme.theme.space.margin.screen.default': { Danland: '16px', Prism: '24px', Traum: '8px' },
-  'density.space.md.1': { comfortable: '24px', dense: '24px', tight: '8px' },
-  'density.space.sm.5': { comfortable: '16px', dense: '16px', tight: '8px' },
-  'theme.theme.space.margin.screen.optical': { Danland: '4px', Prism: '16px', Traum: '2px' },
-  'density.space.sm.3': { comfortable: '8px', dense: '4px', tight: '2px' },
-  'numbers.scale.25': { desktop: '2px', mobile: '2px' },
   'theme.theme.space.lg.1': { Danland: '64px', Prism: '64px', Traum: '48px' },
   'density.space.lg.1': { comfortable: '64px', dense: '64px', tight: '48px' },
   'numbers.scale.700': { desktop: '64px', mobile: '56px' },
@@ -1653,8 +1639,11 @@ export const tokens = /** @type {const} */ ({
   'density.space.lg.5': { comfortable: '96px', dense: '96px', tight: '80px' },
   'numbers.scale.1200': { desktop: '112px', mobile: '96px' },
   'theme.theme.space.md.1': { Danland: '24px', Prism: '24px', Traum: '8px' },
+  'density.space.md.1': { comfortable: '24px', dense: '24px', tight: '8px' },
+  'numbers.scale.300': { desktop: '32px', mobile: '24px' },
   'theme.theme.space.md.2': { Danland: '32px', Prism: '32px', Traum: '16px' },
   'density.space.md.2': { comfortable: '32px', dense: '32px', tight: '16px' },
+  'numbers.scale.400': { desktop: '40px', mobile: '32px' },
   'theme.theme.space.md.3': { Danland: '40px', Prism: '40px', Traum: '24px' },
   'density.space.md.3': { comfortable: '40px', dense: '40px', tight: '24px' },
   'numbers.scale.500': { desktop: '48px', mobile: '40px' },
@@ -1664,12 +1653,23 @@ export const tokens = /** @type {const} */ ({
   'density.space.md.5': { comfortable: '56px', dense: '56px', tight: '40px' },
   'theme.theme.space.sm.1': { Danland: '0px', Prism: '2px', Traum: '0px' },
   'density.space.sm.1': { comfortable: '2px', dense: '0px', tight: '0px' },
+  'numbers.scale.25': { desktop: '2px', mobile: '2px' },
   'theme.theme.space.sm.2': { Danland: '2px', Prism: '4px', Traum: '0px' },
   'density.space.sm.2': { comfortable: '4px', dense: '2px', tight: '0px' },
+  'numbers.scale.50': { desktop: '4px', mobile: '4px' },
   'theme.theme.space.sm.3': { Danland: '4px', Prism: '8px', Traum: '2px' },
+  'density.space.sm.3': { comfortable: '8px', dense: '4px', tight: '2px' },
   'theme.theme.space.sm.4': { Danland: '8px', Prism: '12px', Traum: '4px' },
   'density.space.sm.4': { comfortable: '12px', dense: '8px', tight: '4px' },
   'theme.theme.space.sm.5': { Danland: '16px', Prism: '16px', Traum: '8px' },
+  'density.space.sm.5': { comfortable: '16px', dense: '16px', tight: '8px' },
+  'theme.theme.space.margin.screen.default': { Danland: '16px', Prism: '24px', Traum: '8px' },
+  'theme.theme.space.margin.screen.optical': { Danland: '4px', Prism: '16px', Traum: '2px' },
+  'theme.theme.size.border.radius.pill': { Danland: '144px', Prism: '128px', Traum: '128px' },
+  'numbers.scale.1600': { desktop: '144px', mobile: '128px' },
+  'theme.theme.size.border.radius.xl': { Danland: '32px', Prism: '0px', Traum: '24px' },
+  'theme.theme.size.border.radius.xs': { Danland: '4px', Prism: '0px', Traum: '4px' },
+  'theme.theme.size.border.radius.xxl': { Danland: '40px', Prism: '0px', Traum: '32px' },
   'numbers.scale.1400': { desktop: '128px', mobile: '112px' }
 });
 

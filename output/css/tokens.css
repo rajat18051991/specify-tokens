@@ -185,15 +185,6 @@
   --theme-color-text-negative-high: var(--crimson-7);
   --theme-color-text-positive-high: var(--emerald-7);
   --theme-color-text-premium-high: var(--lavender-7);
-  --theme-color-text-alert-low: var(--amber-1);
-  --theme-color-text-alert-low-alt: var(--amber-2);
-  --theme-color-text-info-low: var(--sky-1);
-  --theme-color-text-negative-low: var(--crimson-1);
-  --theme-color-text-negative-medium: var(--crimson-5);
-  --theme-color-text-positive-low: var(--emerald-1);
-  --theme-color-text-positive-medium: var(--emerald-5);
-  --theme-color-text-premium-low: var(--lavender-1);
-  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-color-background-alert-high: var(--amber-7);
   --theme-color-background-agnostic-black: var(--agnostic-black);
   --theme-color-background-info-high: var(--sky-7);
@@ -208,6 +199,15 @@
   --theme-color-border-negative-high: var(--crimson-7);
   --theme-color-border-positive-high: var(--emerald-7);
   --theme-color-border-premium-high: var(--lavender-7);
+  --theme-color-text-alert-low: var(--amber-1);
+  --theme-color-text-alert-low-alt: var(--amber-2);
+  --theme-color-text-info-low: var(--sky-1);
+  --theme-color-text-negative-low: var(--crimson-1);
+  --theme-color-text-negative-medium: var(--crimson-5);
+  --theme-color-text-positive-low: var(--emerald-1);
+  --theme-color-text-positive-medium: var(--emerald-5);
+  --theme-color-text-premium-low: var(--lavender-1);
+  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-font-letter-spacing-h1: 0px;
   --theme-font-letter-spacing-button: 0.4000000059604645px;
   --theme-font-letter-spacing-h2: 0px;
@@ -250,12 +250,23 @@
   --theme-font-weight-high: 600px;
   --theme-font-weight-medium: 500px;
   --theme-font-weight-regular: 400px;
-  --theme-color-text-agnostic-white: var(--agnostic-white);
-  --theme-color-text-alert-medium: var(--amber-5);
-  --theme-color-text-brand-primary: var(--violet-7);
-  --theme-color-text-brand-secondary: var(--asphalt-18);
-  --theme-color-text-discount-on-high: var(--asphalt-invert);
-  --theme-color-text-discount-on-low: var(--emerald-5);
+  --theme-space-lg-1: var(--space-lg-1);
+  --theme-space-lg-2: var(--space-lg-2);
+  --theme-space-lg-3: var(--space-lg-3);
+  --theme-space-lg-4: var(--space-lg-4);
+  --theme-space-lg-5: var(--space-lg-5);
+  --theme-space-md-1: var(--space-md-1);
+  --theme-space-md-2: var(--space-md-2);
+  --theme-space-md-3: var(--space-md-3);
+  --theme-space-md-4: var(--space-md-4);
+  --theme-space-md-5: var(--space-md-5);
+  --theme-space-sm-1: var(--space-sm-1);
+  --theme-space-sm-2: var(--space-sm-2);
+  --theme-space-sm-3: var(--space-sm-3);
+  --theme-space-sm-4: var(--space-sm-4);
+  --theme-space-sm-5: var(--space-sm-5);
+  --theme-space-margin-screen-default: var(--space-md-1);
+  --theme-space-margin-screen-optical: var(--space-sm-5);
   --theme-color-background-agnostic-white: var(--agnostic-white);
   --theme-color-background-discount-high: var(--emerald-5);
   --theme-color-background-discount-low: var(--emerald-1);
@@ -295,27 +306,16 @@
   --theme-color-icon-premium-medium: var(--lavender-5);
   --theme-color-icon-rating-filled: var(--theme-color-icon-brand-secondary);
   --theme-color-icon-rating-unfilled: var(--asphalt-2);
+  --theme-color-text-agnostic-white: var(--agnostic-white);
+  --theme-color-text-alert-medium: var(--amber-5);
+  --theme-color-text-brand-primary: var(--violet-7);
+  --theme-color-text-brand-secondary: var(--asphalt-18);
+  --theme-color-text-discount-on-high: var(--asphalt-invert);
+  --theme-color-text-discount-on-low: var(--emerald-5);
   --theme-size-border-radius-pill: var(--scale-1600);
   --theme-size-border-radius-xl: var(--scale-0);
   --theme-size-border-radius-xs: var(--scale-0);
   --theme-size-border-radius-xxl: var(--scale-0);
-  --theme-space-margin-screen-default: var(--space-md-1);
-  --theme-space-margin-screen-optical: var(--space-sm-5);
-  --theme-space-lg-1: var(--space-lg-1);
-  --theme-space-lg-2: var(--space-lg-2);
-  --theme-space-lg-3: var(--space-lg-3);
-  --theme-space-lg-4: var(--space-lg-4);
-  --theme-space-lg-5: var(--space-lg-5);
-  --theme-space-md-1: var(--space-md-1);
-  --theme-space-md-2: var(--space-md-2);
-  --theme-space-md-3: var(--space-md-3);
-  --theme-space-md-4: var(--space-md-4);
-  --theme-space-md-5: var(--space-md-5);
-  --theme-space-sm-1: var(--space-sm-1);
-  --theme-space-sm-2: var(--space-sm-2);
-  --theme-space-sm-3: var(--space-sm-3);
-  --theme-space-sm-4: var(--space-sm-4);
-  --theme-space-sm-5: var(--space-sm-5);
 }
 :root[data-theme="Traum"] {
   --theme-color-background-neutral-low: var(--asphalt-1);
@@ -371,15 +371,6 @@
   --theme-color-text-negative-high: var(--crimson-7);
   --theme-color-text-positive-high: var(--emerald-7);
   --theme-color-text-premium-high: var(--lavender-7);
-  --theme-color-text-alert-low: var(--amber-1);
-  --theme-color-text-alert-low-alt: var(--amber-2);
-  --theme-color-text-info-low: var(--aegean-1);
-  --theme-color-text-negative-low: var(--crimson-1);
-  --theme-color-text-negative-medium: var(--crimson-5);
-  --theme-color-text-positive-low: var(--emerald-1);
-  --theme-color-text-positive-medium: var(--emerald-5);
-  --theme-color-text-premium-low: var(--lavender-1);
-  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-color-background-alert-high: var(--amber-7);
   --theme-color-background-agnostic-black: var(--agnostic-black);
   --theme-color-background-info-high: var(--aegean-7);
@@ -394,6 +385,15 @@
   --theme-color-border-negative-high: var(--crimson-7);
   --theme-color-border-positive-high: var(--emerald-7);
   --theme-color-border-premium-high: var(--lavender-7);
+  --theme-color-text-alert-low: var(--amber-1);
+  --theme-color-text-alert-low-alt: var(--amber-2);
+  --theme-color-text-info-low: var(--aegean-1);
+  --theme-color-text-negative-low: var(--crimson-1);
+  --theme-color-text-negative-medium: var(--crimson-5);
+  --theme-color-text-positive-low: var(--emerald-1);
+  --theme-color-text-positive-medium: var(--emerald-5);
+  --theme-color-text-premium-low: var(--lavender-1);
+  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-font-letter-spacing-h1: -1.5px;
   --theme-font-letter-spacing-button: 0px;
   --theme-font-letter-spacing-h2: -1px;
@@ -436,12 +436,23 @@
   --theme-font-weight-high: 400px;
   --theme-font-weight-medium: 600px;
   --theme-font-weight-regular: 400px;
-  --theme-color-text-agnostic-white: var(--agnostic-white);
-  --theme-color-text-alert-medium: var(--amber-5);
-  --theme-color-text-brand-primary: var(--gold-1);
-  --theme-color-text-brand-secondary: var(--asphalt-18);
-  --theme-color-text-discount-on-high: var(--asphalt-invert);
-  --theme-color-text-discount-on-low: var(--rust-5);
+  --theme-space-lg-1: var(--space-lg-1);
+  --theme-space-lg-2: var(--space-lg-2);
+  --theme-space-lg-3: var(--space-lg-3);
+  --theme-space-lg-4: var(--space-lg-4);
+  --theme-space-lg-5: var(--space-lg-5);
+  --theme-space-md-1: var(--space-md-1);
+  --theme-space-md-2: var(--space-md-2);
+  --theme-space-md-3: var(--space-md-3);
+  --theme-space-md-4: var(--space-md-4);
+  --theme-space-md-5: var(--space-md-5);
+  --theme-space-sm-1: var(--space-sm-1);
+  --theme-space-sm-2: var(--space-sm-2);
+  --theme-space-sm-3: var(--space-sm-3);
+  --theme-space-sm-4: var(--space-sm-4);
+  --theme-space-sm-5: var(--space-sm-5);
+  --theme-space-margin-screen-default: var(--space-sm-5);
+  --theme-space-margin-screen-optical: var(--space-sm-3);
   --theme-color-background-agnostic-white: var(--agnostic-white);
   --theme-color-background-discount-high: var(--rust-5);
   --theme-color-background-discount-low: var(--rust-1);
@@ -481,27 +492,16 @@
   --theme-color-icon-premium-medium: var(--lavender-5);
   --theme-color-icon-rating-filled: var(--aegean-7);
   --theme-color-icon-rating-unfilled: var(--asphalt-2);
+  --theme-color-text-agnostic-white: var(--agnostic-white);
+  --theme-color-text-alert-medium: var(--amber-5);
+  --theme-color-text-brand-primary: var(--gold-1);
+  --theme-color-text-brand-secondary: var(--asphalt-18);
+  --theme-color-text-discount-on-high: var(--asphalt-invert);
+  --theme-color-text-discount-on-low: var(--rust-5);
   --theme-size-border-radius-pill: var(--scale-1600);
   --theme-size-border-radius-xl: var(--scale-300);
   --theme-size-border-radius-xs: var(--scale-50);
   --theme-size-border-radius-xxl: var(--scale-400);
-  --theme-space-margin-screen-default: var(--space-sm-5);
-  --theme-space-margin-screen-optical: var(--space-sm-3);
-  --theme-space-lg-1: var(--space-lg-1);
-  --theme-space-lg-2: var(--space-lg-2);
-  --theme-space-lg-3: var(--space-lg-3);
-  --theme-space-lg-4: var(--space-lg-4);
-  --theme-space-lg-5: var(--space-lg-5);
-  --theme-space-md-1: var(--space-md-1);
-  --theme-space-md-2: var(--space-md-2);
-  --theme-space-md-3: var(--space-md-3);
-  --theme-space-md-4: var(--space-md-4);
-  --theme-space-md-5: var(--space-md-5);
-  --theme-space-sm-1: var(--space-sm-1);
-  --theme-space-sm-2: var(--space-sm-2);
-  --theme-space-sm-3: var(--space-sm-3);
-  --theme-space-sm-4: var(--space-sm-4);
-  --theme-space-sm-5: var(--space-sm-5);
 }
 :root[data-theme="Danland"] {
   --theme-color-background-neutral-low: var(--asphalt-1);
@@ -557,15 +557,6 @@
   --theme-color-text-negative-high: var(--crimson-7);
   --theme-color-text-positive-high: var(--emerald-7);
   --theme-color-text-premium-high: var(--lavender-7);
-  --theme-color-text-alert-low: var(--amber-1);
-  --theme-color-text-alert-low-alt: var(--amber-2);
-  --theme-color-text-info-low: var(--aegean-1);
-  --theme-color-text-negative-low: var(--crimson-1);
-  --theme-color-text-negative-medium: var(--crimson-5);
-  --theme-color-text-positive-low: var(--emerald-1);
-  --theme-color-text-positive-medium: var(--emerald-5);
-  --theme-color-text-premium-low: var(--lavender-1);
-  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-color-background-alert-high: var(--amber-7);
   --theme-color-background-agnostic-black: var(--agnostic-black);
   --theme-color-background-info-high: var(--aegean-7);
@@ -580,6 +571,15 @@
   --theme-color-border-negative-high: var(--crimson-7);
   --theme-color-border-positive-high: var(--emerald-7);
   --theme-color-border-premium-high: var(--lavender-7);
+  --theme-color-text-alert-low: var(--amber-1);
+  --theme-color-text-alert-low-alt: var(--amber-2);
+  --theme-color-text-info-low: var(--aegean-1);
+  --theme-color-text-negative-low: var(--crimson-1);
+  --theme-color-text-negative-medium: var(--crimson-5);
+  --theme-color-text-positive-low: var(--emerald-1);
+  --theme-color-text-positive-medium: var(--emerald-5);
+  --theme-color-text-premium-low: var(--lavender-1);
+  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-font-letter-spacing-h1: -1.5px;
   --theme-font-letter-spacing-button: 0px;
   --theme-font-letter-spacing-h2: -1px;
@@ -622,12 +622,23 @@
   --theme-font-weight-high: 700px;
   --theme-font-weight-medium: 500px;
   --theme-font-weight-regular: 400px;
-  --theme-color-text-agnostic-white: var(--agnostic-white);
-  --theme-color-text-alert-medium: var(--amber-5);
-  --theme-color-text-brand-primary: var(--aegean-7);
-  --theme-color-text-brand-secondary: var(--asphalt-18);
-  --theme-color-text-discount-on-high: var(--asphalt-invert);
-  --theme-color-text-discount-on-low: var(--rust-5);
+  --theme-space-lg-1: var(--space-lg-1);
+  --theme-space-lg-2: var(--space-lg-2);
+  --theme-space-lg-3: var(--space-lg-3);
+  --theme-space-lg-4: var(--space-lg-4);
+  --theme-space-lg-5: var(--space-lg-5);
+  --theme-space-md-1: var(--space-md-1);
+  --theme-space-md-2: var(--space-md-2);
+  --theme-space-md-3: var(--space-md-3);
+  --theme-space-md-4: var(--space-md-4);
+  --theme-space-md-5: var(--space-md-5);
+  --theme-space-sm-1: var(--space-sm-1);
+  --theme-space-sm-2: var(--space-sm-2);
+  --theme-space-sm-3: var(--space-sm-3);
+  --theme-space-sm-4: var(--space-sm-4);
+  --theme-space-sm-5: var(--space-sm-5);
+  --theme-space-margin-screen-default: var(--space-sm-5);
+  --theme-space-margin-screen-optical: var(--space-sm-3);
   --theme-color-background-agnostic-white: var(--agnostic-white);
   --theme-color-background-discount-high: var(--rust-5);
   --theme-color-background-discount-low: var(--rust-1);
@@ -667,27 +678,16 @@
   --theme-color-icon-premium-medium: var(--lavender-5);
   --theme-color-icon-rating-filled: var(--aegean-7);
   --theme-color-icon-rating-unfilled: var(--asphalt-2);
+  --theme-color-text-agnostic-white: var(--agnostic-white);
+  --theme-color-text-alert-medium: var(--amber-5);
+  --theme-color-text-brand-primary: var(--aegean-7);
+  --theme-color-text-brand-secondary: var(--asphalt-18);
+  --theme-color-text-discount-on-high: var(--asphalt-invert);
+  --theme-color-text-discount-on-low: var(--rust-5);
   --theme-size-border-radius-pill: var(--scale-1600);
   --theme-size-border-radius-xl: var(--scale-300);
   --theme-size-border-radius-xs: var(--scale-50);
   --theme-size-border-radius-xxl: var(--scale-400);
-  --theme-space-margin-screen-default: var(--space-sm-5);
-  --theme-space-margin-screen-optical: var(--space-sm-3);
-  --theme-space-lg-1: var(--space-lg-1);
-  --theme-space-lg-2: var(--space-lg-2);
-  --theme-space-lg-3: var(--space-lg-3);
-  --theme-space-lg-4: var(--space-lg-4);
-  --theme-space-lg-5: var(--space-lg-5);
-  --theme-space-md-1: var(--space-md-1);
-  --theme-space-md-2: var(--space-md-2);
-  --theme-space-md-3: var(--space-md-3);
-  --theme-space-md-4: var(--space-md-4);
-  --theme-space-md-5: var(--space-md-5);
-  --theme-space-sm-1: var(--space-sm-1);
-  --theme-space-sm-2: var(--space-sm-2);
-  --theme-space-sm-3: var(--space-sm-3);
-  --theme-space-sm-4: var(--space-sm-4);
-  --theme-space-sm-5: var(--space-sm-5);
 }
 :root[data-colours="dark"] {
   --asphalt-1: rgb(51, 51, 51);
@@ -784,11 +784,6 @@
   --scale-200: 16px;
   --scale-150: 12px;
   --scale-100: 8px;
-  --scale-1600: 128px;
-  --scale-300: 24px;
-  --scale-50: 4px;
-  --scale-400: 32px;
-  --scale-25: 2px;
   --scale-700: 56px;
   --scale-600: 48px;
   --scale-800: 64px;
@@ -796,7 +791,12 @@
   --scale-1000: 80px;
   --scale-1100: 88px;
   --scale-1200: 96px;
+  --scale-300: 24px;
+  --scale-400: 32px;
   --scale-500: 40px;
+  --scale-25: 2px;
+  --scale-50: 4px;
+  --scale-1600: 128px;
   --scale-1400: 112px;
 }
 :root[data-numbers="desktop"] {
@@ -804,11 +804,6 @@
   --scale-200: 24px;
   --scale-150: 16px;
   --scale-100: 8px;
-  --scale-1600: 144px;
-  --scale-300: 32px;
-  --scale-50: 4px;
-  --scale-400: 40px;
-  --scale-25: 2px;
   --scale-700: 64px;
   --scale-600: 56px;
   --scale-800: 72px;
@@ -816,7 +811,12 @@
   --scale-1000: 88px;
   --scale-1100: 96px;
   --scale-1200: 112px;
+  --scale-300: 32px;
+  --scale-400: 40px;
   --scale-500: 48px;
+  --scale-25: 2px;
+  --scale-50: 4px;
+  --scale-1600: 144px;
   --scale-1400: 128px;
 }
 :root[data-feedback="low"] {
@@ -849,42 +849,6 @@
   --feedback-color-text-neutral: var(--theme-color-text-neutral-high);
   --feedback-color-text-positive: var(--theme-color-text-positive-high);
   --feedback-color-text-premium: var(--theme-color-text-premium-high);
-  --feedback-button-color-text-alert-on-primary: var(
-    --theme-color-text-alert-low
-  );
-  --feedback-button-color-text-alert-on-secondary: var(
-    --theme-color-text-alert-high
-  );
-  --feedback-button-color-text-info-on-primary: var(
-    --theme-color-text-info-low
-  );
-  --feedback-button-color-text-info-on-secondary: var(
-    --theme-color-text-info-high
-  );
-  --feedback-button-color-text-negative-on-primary: var(
-    --theme-color-text-negative-low
-  );
-  --feedback-button-color-text-negative-on-secondary: var(
-    --theme-color-text-negative-high
-  );
-  --feedback-button-color-text-neutral-on-primary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-neutral-on-secondary: var(
-    --theme-color-text-neutral-high
-  );
-  --feedback-button-color-text-positive-on-primary: var(
-    --theme-color-text-positive-low
-  );
-  --feedback-button-color-text-positive-on-secondary: var(
-    --theme-color-text-positive-high
-  );
-  --feedback-button-color-text-premium-on-primary: var(
-    --theme-color-text-premium-low
-  );
-  --feedback-button-color-text-premium-on-secondary: var(
-    --theme-color-text-premium-high
-  );
   --feedback-button-color-background-alert: var(
     --theme-color-background-alert-high
   );
@@ -917,6 +881,42 @@
   --feedback-button-color-border-premium: var(
     --theme-color-border-premium-high
   );
+  --feedback-button-color-text-alert-on-secondary: var(
+    --theme-color-text-alert-high
+  );
+  --feedback-button-color-text-alert-on-primary: var(
+    --theme-color-text-alert-low
+  );
+  --feedback-button-color-text-info-on-primary: var(
+    --theme-color-text-info-low
+  );
+  --feedback-button-color-text-info-on-secondary: var(
+    --theme-color-text-info-high
+  );
+  --feedback-button-color-text-negative-on-primary: var(
+    --theme-color-text-negative-low
+  );
+  --feedback-button-color-text-negative-on-secondary: var(
+    --theme-color-text-negative-high
+  );
+  --feedback-button-color-text-neutral-on-primary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-neutral-on-secondary: var(
+    --theme-color-text-neutral-high
+  );
+  --feedback-button-color-text-positive-on-primary: var(
+    --theme-color-text-positive-low
+  );
+  --feedback-button-color-text-positive-on-secondary: var(
+    --theme-color-text-positive-high
+  );
+  --feedback-button-color-text-premium-on-primary: var(
+    --theme-color-text-premium-low
+  );
+  --feedback-button-color-text-premium-on-secondary: var(
+    --theme-color-text-premium-high
+  );
 }
 :root[data-feedback="high"] {
   --feedback-color-background-alert: var(--theme-color-background-alert-medium);
@@ -948,42 +948,6 @@
   --feedback-color-text-neutral: var(--theme-color-text-neutral-invert);
   --feedback-color-text-positive: var(--theme-color-text-neutral-invert);
   --feedback-color-text-premium: var(--theme-color-text-neutral-invert);
-  --feedback-button-color-text-alert-on-primary: var(
-    --theme-color-text-alert-low-alt
-  );
-  --feedback-button-color-text-alert-on-secondary: var(
-    --theme-color-text-agnostic-black
-  );
-  --feedback-button-color-text-info-on-primary: var(
-    --theme-color-text-info-medium
-  );
-  --feedback-button-color-text-info-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-negative-on-primary: var(
-    --theme-color-text-negative-medium
-  );
-  --feedback-button-color-text-negative-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-neutral-on-primary: var(
-    --theme-color-text-neutral-high
-  );
-  --feedback-button-color-text-neutral-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-positive-on-primary: var(
-    --theme-color-text-positive-medium
-  );
-  --feedback-button-color-text-positive-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-premium-on-primary: var(
-    --theme-color-text-premium-medium
-  );
-  --feedback-button-color-text-premium-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
   --feedback-button-color-background-alert: var(
     --theme-color-background-agnostic-black
   );
@@ -1018,55 +982,91 @@
   --feedback-button-color-border-premium: var(
     --theme-color-border-neutral-invert
   );
+  --feedback-button-color-text-alert-on-secondary: var(
+    --theme-color-text-agnostic-black
+  );
+  --feedback-button-color-text-alert-on-primary: var(
+    --theme-color-text-alert-low-alt
+  );
+  --feedback-button-color-text-info-on-primary: var(
+    --theme-color-text-info-medium
+  );
+  --feedback-button-color-text-info-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-negative-on-primary: var(
+    --theme-color-text-negative-medium
+  );
+  --feedback-button-color-text-negative-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-neutral-on-primary: var(
+    --theme-color-text-neutral-high
+  );
+  --feedback-button-color-text-neutral-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-positive-on-primary: var(
+    --theme-color-text-positive-medium
+  );
+  --feedback-button-color-text-positive-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-premium-on-primary: var(
+    --theme-color-text-premium-medium
+  );
+  --feedback-button-color-text-premium-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
 }
 :root[data-density="dense"] {
-  --space-md-1: var(--scale-200);
-  --space-sm-5: var(--scale-150);
-  --space-sm-3: var(--scale-50);
   --space-lg-1: var(--scale-700);
   --space-lg-2: var(--scale-800);
   --space-lg-3: var(--scale-900);
   --space-lg-4: var(--scale-1000);
   --space-lg-5: var(--scale-1100);
+  --space-md-1: var(--scale-200);
   --space-md-2: var(--scale-300);
   --space-md-3: var(--scale-400);
   --space-md-4: var(--scale-500);
   --space-md-5: var(--scale-600);
   --space-sm-1: var(--scale-0);
   --space-sm-2: var(--scale-25);
+  --space-sm-3: var(--scale-50);
   --space-sm-4: var(--scale-100);
+  --space-sm-5: var(--scale-150);
 }
 :root[data-density="tight"] {
-  --space-md-1: var(--scale-100);
-  --space-sm-5: var(--scale-100);
-  --space-sm-3: var(--scale-25);
   --space-lg-1: var(--scale-600);
   --space-lg-2: var(--scale-700);
   --space-lg-3: var(--scale-800);
   --space-lg-4: var(--scale-900);
   --space-lg-5: var(--scale-1000);
+  --space-md-1: var(--scale-100);
   --space-md-2: var(--scale-200);
   --space-md-3: var(--scale-300);
   --space-md-4: var(--scale-400);
   --space-md-5: var(--scale-500);
   --space-sm-1: var(--scale-0);
   --space-sm-2: var(--scale-0);
+  --space-sm-3: var(--scale-25);
   --space-sm-4: var(--scale-50);
+  --space-sm-5: var(--scale-100);
 }
 :root[data-density="comfortable"] {
-  --space-md-1: var(--scale-300);
-  --space-sm-5: var(--scale-200);
-  --space-sm-3: var(--scale-100);
   --space-lg-1: var(--scale-800);
   --space-lg-2: var(--scale-900);
   --space-lg-3: var(--scale-1000);
   --space-lg-4: var(--scale-1100);
   --space-lg-5: var(--scale-1200);
+  --space-md-1: var(--scale-300);
   --space-md-2: var(--scale-400);
   --space-md-3: var(--scale-500);
   --space-md-4: var(--scale-600);
   --space-md-5: var(--scale-700);
   --space-sm-1: var(--scale-25);
   --space-sm-2: var(--scale-50);
+  --space-sm-3: var(--scale-100);
   --space-sm-4: var(--scale-150);
+  --space-sm-5: var(--scale-200);
 }
