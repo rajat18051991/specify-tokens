@@ -1,0 +1,24 @@
+{
+  "name": "specify-tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pull": "node pull-tokens.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajat18051991/specify-tokens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajat18051991/specify-tokens/issues"
+  },
+  "homepage": "https://github.com/rajat18051991/specify-tokens#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
