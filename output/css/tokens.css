@@ -702,12 +702,17 @@
   --asphalt-3: rgb(82, 82, 82);
   --sky-5: rgb(89, 155, 222);
   --aegean-5: rgb(89, 155, 222);
-  --asphalt-7: rgb(179, 179, 179);
   --aegean-1: rgb(45, 50, 56);
-  --amber-1: rgb(51, 48, 41);
-  --amber-2: rgb(241, 170, 16);
-  --amber-5: rgb(192, 156, 77);
-  --amber-7: rgb(214, 174, 86);
+  --asphalt-7: rgb(179, 179, 179);
+  --berry-5: rgb(232, 23, 58);
+  --crimson-1: rgb(51, 41, 43);
+  --crimson-5: rgb(192, 142, 151);
+  --crimson-7: rgb(213, 164, 172);
+  --emerald-1: rgb(34, 40, 39);
+  --emerald-5: rgb(113, 160, 148);
+  --emerald-7: rgb(114, 194, 172);
+  --firebrick-5: rgb(204, 51, 51);
+  --gold-1: rgb(255, 209, 0);
   --lavender-1: rgb(49, 45, 56);
   --lavender-5: rgb(175, 125, 255);
   --lavender-7: rgb(200, 163, 255);
@@ -724,15 +729,10 @@
   --teal-7: rgb(0, 199, 199);
   --violet-1: rgb(49, 45, 56);
   --violet-5: rgb(175, 125, 255);
-  --berry-5: rgb(232, 23, 58);
-  --crimson-1: rgb(51, 41, 43);
-  --crimson-5: rgb(192, 142, 151);
-  --crimson-7: rgb(213, 164, 172);
-  --emerald-1: rgb(34, 40, 39);
-  --emerald-5: rgb(113, 160, 148);
-  --emerald-7: rgb(114, 194, 172);
-  --firebrick-5: rgb(204, 51, 51);
-  --gold-1: rgb(255, 209, 0);
+  --amber-1: rgb(51, 48, 41);
+  --amber-2: rgb(241, 170, 16);
+  --amber-5: rgb(192, 156, 77);
+  --amber-7: rgb(214, 174, 86);
 }
 :root[data-colours="light"] {
   --asphalt-1: rgb(245, 245, 245);
@@ -747,12 +747,17 @@
   --asphalt-3: rgb(181, 181, 181);
   --sky-5: rgb(84, 114, 138);
   --aegean-5: rgb(11, 117, 176);
-  --asphalt-7: rgb(77, 77, 77);
   --aegean-1: rgb(238, 248, 254);
-  --amber-1: rgb(251, 249, 247);
-  --amber-2: rgb(205, 179, 154);
-  --amber-5: rgb(148, 110, 63);
-  --amber-7: rgb(118, 87, 51);
+  --asphalt-7: rgb(77, 77, 77);
+  --berry-5: rgb(203, 16, 47);
+  --crimson-1: rgb(251, 246, 247);
+  --crimson-5: rgb(160, 90, 102);
+  --crimson-7: rgb(141, 65, 78);
+  --emerald-1: rgb(244, 250, 249);
+  --emerald-5: rgb(79, 118, 108);
+  --emerald-7: rgb(59, 96, 86);
+  --firebrick-5: rgb(204, 51, 51);
+  --gold-1: rgb(253, 196, 0);
   --lavender-1: rgb(249, 245, 255);
   --lavender-5: rgb(128, 85, 195);
   --lavender-7: rgb(107, 68, 165);
@@ -769,15 +774,10 @@
   --teal-7: rgb(0, 99, 99);
   --violet-1: rgb(251, 249, 253);
   --violet-5: rgb(142, 103, 48);
-  --berry-5: rgb(203, 16, 47);
-  --crimson-1: rgb(251, 246, 247);
-  --crimson-5: rgb(160, 90, 102);
-  --crimson-7: rgb(141, 65, 78);
-  --emerald-1: rgb(244, 250, 249);
-  --emerald-5: rgb(79, 118, 108);
-  --emerald-7: rgb(59, 96, 86);
-  --firebrick-5: rgb(204, 51, 51);
-  --gold-1: rgb(253, 196, 0);
+  --amber-1: rgb(251, 249, 247);
+  --amber-2: rgb(205, 179, 154);
+  --amber-5: rgb(148, 110, 63);
+  --amber-7: rgb(118, 87, 51);
 }
 :root[data-numbers="mobile"] {
   --scale-0: 0px;

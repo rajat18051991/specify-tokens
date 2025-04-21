@@ -25,14 +25,14 @@
           "name": "to-kotlin",
           "output": {
             "type": "file",
-            "filePath": "output/android/Colors.kt"
+            "filePath": "output/android/tokens.kt"
           }
         },
         {
           "name": "to-swift",
           "output": {
             "type": "file",
-            "filePath": "output/ios/Colors.swift"
+            "filePath": "output/ios/tokens.swift"
           }
         },
         {
