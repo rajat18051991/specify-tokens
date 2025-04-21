@@ -3,53 +3,33 @@
 * To use this type you can do: `@type {import('path/to/myTokensFile').ColorPaths}`
 */
 export const colorPaths = /** @type {const} */ ([
-  'action.button.color.background.neutral',
-  'theme.theme.color.background.neutral.low',
-  'theme.theme.color.background.neutral.invert',
-  'colours.asphalt.1',
-  'colours.asphalt.invert',
-  'action.button.color.background.on-primary',
-  'theme.theme.color.background.brand.on-primary',
-  'theme.theme.color.background.neutral.low-alt',
-  'colours.agnostic.white',
-  'colours.asphalt.2',
-  'action.button.color.background.on-secondary',
-  'theme.theme.color.background.brand.on-secondary',
-  'action.button.color.background.primary',
-  'theme.theme.color.background.brand.primary',
-  'colours.violet.7',
-  'colours.aegean.7',
-  'action.button.color.background.secondary',
-  'theme.theme.color.background.brand.secondary',
+  'action.button.color.icon.with-hyperlink',
+  'theme.theme.color.icon.info.medium',
+  'theme.theme.color.icon.neutral.low',
+  'colours.sky.5',
+  'colours.aegean.5',
+  'colours.asphalt.3',
+  'action.button.color.icon.with-underlined',
+  'theme.theme.color.icon.neutral.high',
   'colours.asphalt.18',
-  'action.button.color.background.tertiary',
-  'action.button.color.border.tertiary',
-  'theme.theme.color.border.neutral.high',
-  'theme.theme.color.border.neutral.low',
   'action.button.color.icon.invert-on-primary',
   'theme.theme.color.text.brand.on-primary',
   'theme.theme.color.icon.brand.invert-on-primary',
   'theme.theme.color.text.neutral.medium',
+  'colours.asphalt.invert',
   'colours.agnostic.black',
   'colours.asphalt.5',
   'action.button.color.icon.invert-on-secondary',
   'theme.theme.color.text.brand.on-secondary',
   'theme.theme.color.icon.brand.invert-on-secondary',
   'action.button.color.icon.on-neutral',
-  'theme.theme.color.icon.neutral.high',
-  'theme.theme.color.icon.neutral.low',
-  'colours.asphalt.3',
   'action.button.color.icon.on-primary',
   'theme.theme.color.icon.brand.on-primary',
   'theme.theme.color.icon.neutral.medium',
+  'colours.agnostic.white',
   'action.button.color.icon.on-secondary',
   'theme.theme.color.icon.brand.on-secondary',
   'action.button.color.icon.on-tertiary',
-  'action.button.color.icon.with-hyperlink',
-  'theme.theme.color.icon.info.medium',
-  'colours.sky.5',
-  'colours.aegean.5',
-  'action.button.color.icon.with-underlined',
   'action.button.color.text.hyperlink',
   'theme.theme.color.text.info.medium',
   'theme.theme.color.text.neutral.low',
@@ -63,12 +43,41 @@ export const colorPaths = /** @type {const} */ ([
   'action.button.color.text.on-secondary',
   'action.button.color.text.on-tertiary',
   'action.button.color.text.underlined',
-  'colours.asphalt.7',
+  'action.button.color.background.neutral',
+  'theme.theme.color.background.neutral.low',
+  'theme.theme.color.background.neutral.invert',
+  'colours.asphalt.1',
+  'action.button.color.background.on-primary',
+  'theme.theme.color.background.brand.on-primary',
+  'theme.theme.color.background.neutral.low-alt',
+  'colours.asphalt.2',
+  'action.button.color.background.on-secondary',
+  'theme.theme.color.background.brand.on-secondary',
+  'action.button.color.background.primary',
+  'theme.theme.color.background.brand.primary',
+  'colours.violet.7',
+  'colours.aegean.7',
+  'action.button.color.background.secondary',
+  'theme.theme.color.background.brand.secondary',
+  'action.button.color.background.tertiary',
+  'action.button.color.border.tertiary',
+  'theme.theme.color.border.neutral.high',
+  'theme.theme.color.border.neutral.low',
   'colours.aegean.1',
   'colours.amber.1',
   'colours.amber.2',
   'colours.amber.5',
   'colours.amber.7',
+  'colours.asphalt.7',
+  'colours.berry.5',
+  'colours.crimson.1',
+  'colours.crimson.5',
+  'colours.crimson.7',
+  'colours.emerald.1',
+  'colours.emerald.5',
+  'colours.emerald.7',
+  'colours.firebrick.5',
+  'colours.gold.1',
   'colours.lavender.1',
   'colours.lavender.5',
   'colours.lavender.7',
@@ -80,20 +89,11 @@ export const colorPaths = /** @type {const} */ ([
   'colours.screen.2',
   'colours.sky.1',
   'colours.sky.7',
+  'colours.violet.1',
+  'colours.violet.5',
   'colours.teal.1',
   'colours.teal.5',
   'colours.teal.7',
-  'colours.violet.1',
-  'colours.violet.5',
-  'colours.berry.5',
-  'colours.crimson.1',
-  'colours.crimson.5',
-  'colours.crimson.7',
-  'colours.emerald.1',
-  'colours.emerald.5',
-  'colours.emerald.7',
-  'colours.firebrick.5',
-  'colours.gold.1',
   'feedback.feedback.color.background.alert',
   'theme.theme.color.background.alert.low',
   'theme.theme.color.background.alert.medium',
@@ -103,15 +103,15 @@ export const colorPaths = /** @type {const} */ ([
   'feedback.feedback.color.background.negative',
   'theme.theme.color.background.negative.low',
   'theme.theme.color.background.negative.medium',
+  'feedback.feedback.color.background.neutral.invert',
+  'theme.theme.color.background.neutral.high',
+  'feedback.feedback.color.background.neutral.regular',
   'feedback.feedback.color.background.positive',
   'theme.theme.color.background.positive.low',
   'theme.theme.color.background.positive.medium',
   'feedback.feedback.color.background.premium',
   'theme.theme.color.background.premium.low',
   'theme.theme.color.background.premium.medium',
-  'feedback.feedback.color.background.neutral.invert',
-  'theme.theme.color.background.neutral.high',
-  'feedback.feedback.color.background.neutral.regular',
   'feedback.feedback.color.icon.alert',
   'theme.theme.color.icon.alert.high',
   'theme.theme.color.icon.agnostic.black',
@@ -164,10 +164,10 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.border.positive.high',
   'feedback.feedback.button.color.border.premium',
   'theme.theme.color.border.premium.high',
+  'feedback.feedback.button.color.text.alert.on-secondary',
   'feedback.feedback.button.color.text.alert.on-primary',
   'theme.theme.color.text.alert.low',
   'theme.theme.color.text.alert.low-alt',
-  'feedback.feedback.button.color.text.alert.on-secondary',
   'feedback.feedback.button.color.text.info.on-primary',
   'theme.theme.color.text.info.low',
   'feedback.feedback.button.color.text.info.on-secondary',
@@ -185,13 +185,20 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.text.premium.low',
   'theme.theme.color.text.premium.medium',
   'feedback.feedback.button.color.text.premium.on-secondary',
+  'theme.theme.color.background.neutral.medium',
+  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.background.agnostic.white',
   'theme.theme.color.background.discount.high',
   'theme.theme.color.background.discount.low',
-  'theme.theme.color.background.neutral.medium',
-  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.background.screen.alt',
   'theme.theme.color.background.screen.default',
+  'theme.theme.color.border.negative.medium',
+  'theme.theme.color.border.negative.low',
+  'theme.theme.color.border.neutral.medium',
+  'theme.theme.color.border.positive.low',
+  'theme.theme.color.border.positive.medium',
+  'theme.theme.color.border.premium.low',
+  'theme.theme.color.border.premium.medium',
   'theme.theme.color.border.agnostic.white',
   'theme.theme.color.border.alert.low',
   'theme.theme.color.border.alert.medium',
@@ -199,23 +206,10 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.border.brand.secondary',
   'theme.theme.color.border.info.low',
   'theme.theme.color.border.info.medium',
-  'theme.theme.color.border.negative.low',
-  'theme.theme.color.border.negative.medium',
-  'theme.theme.color.border.neutral.medium',
-  'theme.theme.color.border.positive.low',
-  'theme.theme.color.border.positive.medium',
-  'theme.theme.color.border.premium.low',
-  'theme.theme.color.border.premium.medium',
   'theme.theme.color.icon.agnostic.white',
   'theme.theme.color.icon.alert.low',
   'theme.theme.color.icon.alert.low-alt',
   'theme.theme.color.icon.alert.medium',
-  'theme.theme.color.icon.brand.primary',
-  'theme.theme.color.icon.brand.secondary',
-  'theme.theme.color.icon.discount.high',
-  'theme.theme.color.icon.discount.low',
-  'theme.theme.color.icon.discount.medium',
-  'theme.theme.color.icon.info.low',
   'theme.theme.color.icon.negative.low',
   'theme.theme.color.icon.negative.medium',
   'theme.theme.color.icon.positive.low',
@@ -223,7 +217,13 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.icon.premium.low',
   'theme.theme.color.icon.premium.medium',
   'theme.theme.color.icon.rating.filled',
+  'theme.theme.color.icon.brand.secondary',
   'theme.theme.color.icon.rating.unfilled',
+  'theme.theme.color.icon.brand.primary',
+  'theme.theme.color.icon.discount.high',
+  'theme.theme.color.icon.discount.low',
+  'theme.theme.color.icon.discount.medium',
+  'theme.theme.color.icon.info.low',
   'theme.theme.color.text.agnostic.white',
   'theme.theme.color.text.alert.medium',
   'theme.theme.color.text.brand.primary',
@@ -247,8 +247,6 @@ export const dimensionPaths = /** @type {const} */ ([
   'action.button.size.border.radius.S',
   'theme.theme.size.border.radius.sm',
   'numbers.scale.100',
-  'theme.theme.font.letter-spacing.h1',
-  'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.h2',
   'theme.theme.font.letter-spacing.h3',
   'theme.theme.font.letter-spacing.h4',
@@ -258,6 +256,8 @@ export const dimensionPaths = /** @type {const} */ ([
   'theme.theme.font.letter-spacing.overline',
   'theme.theme.font.letter-spacing.caption.high',
   'theme.theme.font.letter-spacing.caption.regular',
+  'theme.theme.font.letter-spacing.h1',
+  'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.subtitle 1.high',
   'theme.theme.font.letter-spacing.subtitle 1.regular',
   'theme.theme.font.letter-spacing.subtitle 2.high',
@@ -338,29 +338,21 @@ export const dimensionPaths = /** @type {const} */ ([
   'theme.theme.size.border.radius.xl',
   'theme.theme.size.border.radius.xs',
   'theme.theme.size.border.radius.xxl',
-  'numbers.scale.1400',
-  'numbers.contact number'
+  'numbers.scale.1400'
 ]);
 /**
 * @typedef {typeof actionPaths} ActionPaths - All the valid paths for the collection action.
 * To use this type you can do: `@type {import('path/to/myTokensFile').ActionPaths}`
 */
 export const actionPaths = /** @type {const} */ ([
-  'action.button.color.background.neutral',
-  'action.button.color.background.on-primary',
-  'action.button.color.background.on-secondary',
-  'action.button.color.background.primary',
-  'action.button.color.background.secondary',
-  'action.button.color.background.tertiary',
-  'action.button.color.border.tertiary',
+  'action.button.color.icon.with-hyperlink',
+  'action.button.color.icon.with-underlined',
   'action.button.color.icon.invert-on-primary',
   'action.button.color.icon.invert-on-secondary',
   'action.button.color.icon.on-neutral',
   'action.button.color.icon.on-primary',
   'action.button.color.icon.on-secondary',
   'action.button.color.icon.on-tertiary',
-  'action.button.color.icon.with-hyperlink',
-  'action.button.color.icon.with-underlined',
   'action.button.color.text.hyperlink',
   'action.button.color.text.invert-on-primary',
   'action.button.color.text.invert-on-secondary',
@@ -369,6 +361,13 @@ export const actionPaths = /** @type {const} */ ([
   'action.button.color.text.on-secondary',
   'action.button.color.text.on-tertiary',
   'action.button.color.text.underlined',
+  'action.button.color.background.neutral',
+  'action.button.color.background.on-primary',
+  'action.button.color.background.on-secondary',
+  'action.button.color.background.primary',
+  'action.button.color.background.secondary',
+  'action.button.color.background.tertiary',
+  'action.button.color.border.tertiary',
   'action.button.size.border.weight',
   'action.button.size.border.radius.L',
   'action.button.size.border.radius.M',
@@ -379,6 +378,22 @@ export const actionPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').ThemePaths}`
 */
 export const themePaths = /** @type {const} */ ([
+  'theme.theme.color.icon.info.medium',
+  'theme.theme.color.icon.neutral.low',
+  'theme.theme.color.icon.neutral.high',
+  'theme.theme.color.text.brand.on-primary',
+  'theme.theme.color.icon.brand.invert-on-primary',
+  'theme.theme.color.text.neutral.medium',
+  'theme.theme.color.text.brand.on-secondary',
+  'theme.theme.color.icon.brand.invert-on-secondary',
+  'theme.theme.color.icon.brand.on-primary',
+  'theme.theme.color.icon.neutral.medium',
+  'theme.theme.color.icon.brand.on-secondary',
+  'theme.theme.color.text.info.medium',
+  'theme.theme.color.text.neutral.low',
+  'theme.theme.color.text.brand.invert-on-primary',
+  'theme.theme.color.text.brand.invert-on-secondary',
+  'theme.theme.color.text.neutral.high',
   'theme.theme.color.background.neutral.low',
   'theme.theme.color.background.neutral.invert',
   'theme.theme.color.background.brand.on-primary',
@@ -388,22 +403,6 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.background.brand.secondary',
   'theme.theme.color.border.neutral.high',
   'theme.theme.color.border.neutral.low',
-  'theme.theme.color.text.brand.on-primary',
-  'theme.theme.color.icon.brand.invert-on-primary',
-  'theme.theme.color.text.neutral.medium',
-  'theme.theme.color.text.brand.on-secondary',
-  'theme.theme.color.icon.brand.invert-on-secondary',
-  'theme.theme.color.icon.neutral.high',
-  'theme.theme.color.icon.neutral.low',
-  'theme.theme.color.icon.brand.on-primary',
-  'theme.theme.color.icon.neutral.medium',
-  'theme.theme.color.icon.brand.on-secondary',
-  'theme.theme.color.icon.info.medium',
-  'theme.theme.color.text.info.medium',
-  'theme.theme.color.text.neutral.low',
-  'theme.theme.color.text.brand.invert-on-primary',
-  'theme.theme.color.text.brand.invert-on-secondary',
-  'theme.theme.color.text.neutral.high',
   'theme.theme.size.border.radius.lg',
   'theme.theme.size.border.radius.md',
   'theme.theme.size.border.radius.sm',
@@ -413,11 +412,11 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.background.info.medium',
   'theme.theme.color.background.negative.low',
   'theme.theme.color.background.negative.medium',
+  'theme.theme.color.background.neutral.high',
   'theme.theme.color.background.positive.low',
   'theme.theme.color.background.positive.medium',
   'theme.theme.color.background.premium.low',
   'theme.theme.color.background.premium.medium',
-  'theme.theme.color.background.neutral.high',
   'theme.theme.color.icon.alert.high',
   'theme.theme.color.icon.agnostic.black',
   'theme.theme.color.icon.info.high',
@@ -455,8 +454,6 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.text.positive.medium',
   'theme.theme.color.text.premium.low',
   'theme.theme.color.text.premium.medium',
-  'theme.theme.font.letter-spacing.h1',
-  'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.h2',
   'theme.theme.font.letter-spacing.h3',
   'theme.theme.font.letter-spacing.h4',
@@ -466,6 +463,8 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.font.letter-spacing.overline',
   'theme.theme.font.letter-spacing.caption.high',
   'theme.theme.font.letter-spacing.caption.regular',
+  'theme.theme.font.letter-spacing.h1',
+  'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.subtitle 1.high',
   'theme.theme.font.letter-spacing.subtitle 1.regular',
   'theme.theme.font.letter-spacing.subtitle 2.high',
@@ -497,13 +496,20 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.font.weight.high',
   'theme.theme.font.weight.medium',
   'theme.theme.font.weight.regular',
+  'theme.theme.color.background.neutral.medium',
+  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.background.agnostic.white',
   'theme.theme.color.background.discount.high',
   'theme.theme.color.background.discount.low',
-  'theme.theme.color.background.neutral.medium',
-  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.background.screen.alt',
   'theme.theme.color.background.screen.default',
+  'theme.theme.color.border.negative.medium',
+  'theme.theme.color.border.negative.low',
+  'theme.theme.color.border.neutral.medium',
+  'theme.theme.color.border.positive.low',
+  'theme.theme.color.border.positive.medium',
+  'theme.theme.color.border.premium.low',
+  'theme.theme.color.border.premium.medium',
   'theme.theme.color.border.agnostic.white',
   'theme.theme.color.border.alert.low',
   'theme.theme.color.border.alert.medium',
@@ -511,23 +517,10 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.border.brand.secondary',
   'theme.theme.color.border.info.low',
   'theme.theme.color.border.info.medium',
-  'theme.theme.color.border.negative.low',
-  'theme.theme.color.border.negative.medium',
-  'theme.theme.color.border.neutral.medium',
-  'theme.theme.color.border.positive.low',
-  'theme.theme.color.border.positive.medium',
-  'theme.theme.color.border.premium.low',
-  'theme.theme.color.border.premium.medium',
   'theme.theme.color.icon.agnostic.white',
   'theme.theme.color.icon.alert.low',
   'theme.theme.color.icon.alert.low-alt',
   'theme.theme.color.icon.alert.medium',
-  'theme.theme.color.icon.brand.primary',
-  'theme.theme.color.icon.brand.secondary',
-  'theme.theme.color.icon.discount.high',
-  'theme.theme.color.icon.discount.low',
-  'theme.theme.color.icon.discount.medium',
-  'theme.theme.color.icon.info.low',
   'theme.theme.color.icon.negative.low',
   'theme.theme.color.icon.negative.medium',
   'theme.theme.color.icon.positive.low',
@@ -535,7 +528,13 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.icon.premium.low',
   'theme.theme.color.icon.premium.medium',
   'theme.theme.color.icon.rating.filled',
+  'theme.theme.color.icon.brand.secondary',
   'theme.theme.color.icon.rating.unfilled',
+  'theme.theme.color.icon.brand.primary',
+  'theme.theme.color.icon.discount.high',
+  'theme.theme.color.icon.discount.low',
+  'theme.theme.color.icon.discount.medium',
+  'theme.theme.color.icon.info.low',
   'theme.theme.color.text.agnostic.white',
   'theme.theme.color.text.alert.medium',
   'theme.theme.color.text.brand.primary',
@@ -569,44 +568,43 @@ export const themePaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').ColoursPaths}`
 */
 export const coloursPaths = /** @type {const} */ ([
-  'colours.asphalt.1',      'colours.asphalt.invert',
-  'colours.agnostic.white', 'colours.asphalt.2',
-  'colours.violet.7',       'colours.aegean.7',
-  'colours.asphalt.18',     'colours.agnostic.black',
-  'colours.asphalt.5',      'colours.asphalt.3',
   'colours.sky.5',          'colours.aegean.5',
-  'colours.asphalt.7',      'colours.aegean.1',
-  'colours.amber.1',        'colours.amber.2',
-  'colours.amber.5',        'colours.amber.7',
-  'colours.lavender.1',     'colours.lavender.5',
-  'colours.lavender.7',     'colours.lime.2',
-  'colours.rust.1',         'colours.rust.5',
-  'colours.rust.7',         'colours.screen.1',
-  'colours.screen.2',       'colours.sky.1',
-  'colours.sky.7',          'colours.teal.1',
-  'colours.teal.5',         'colours.teal.7',
-  'colours.violet.1',       'colours.violet.5',
+  'colours.asphalt.3',      'colours.asphalt.18',
+  'colours.asphalt.invert', 'colours.agnostic.black',
+  'colours.asphalt.5',      'colours.agnostic.white',
+  'colours.asphalt.1',      'colours.asphalt.2',
+  'colours.violet.7',       'colours.aegean.7',
+  'colours.aegean.1',       'colours.amber.1',
+  'colours.amber.2',        'colours.amber.5',
+  'colours.amber.7',        'colours.asphalt.7',
   'colours.berry.5',        'colours.crimson.1',
   'colours.crimson.5',      'colours.crimson.7',
   'colours.emerald.1',      'colours.emerald.5',
   'colours.emerald.7',      'colours.firebrick.5',
-  'colours.gold.1'
+  'colours.gold.1',         'colours.lavender.1',
+  'colours.lavender.5',     'colours.lavender.7',
+  'colours.lime.2',         'colours.rust.1',
+  'colours.rust.5',         'colours.rust.7',
+  'colours.screen.1',       'colours.screen.2',
+  'colours.sky.1',          'colours.sky.7',
+  'colours.violet.1',       'colours.violet.5',
+  'colours.teal.1',         'colours.teal.5',
+  'colours.teal.7'
 ]);
 /**
 * @typedef {typeof numbersPaths} NumbersPaths - All the valid paths for the collection numbers.
 * To use this type you can do: `@type {import('path/to/myTokensFile').NumbersPaths}`
 */
 export const numbersPaths = /** @type {const} */ ([
-  'numbers.scale.0',        'numbers.scale.200',
-  'numbers.scale.150',      'numbers.scale.100',
-  'numbers.scale.700',      'numbers.scale.600',
-  'numbers.scale.800',      'numbers.scale.900',
-  'numbers.scale.1000',     'numbers.scale.1100',
-  'numbers.scale.1200',     'numbers.scale.300',
-  'numbers.scale.400',      'numbers.scale.500',
-  'numbers.scale.25',       'numbers.scale.50',
-  'numbers.scale.1600',     'numbers.scale.1400',
-  'numbers.contact number'
+  'numbers.scale.0',    'numbers.scale.200',
+  'numbers.scale.150',  'numbers.scale.100',
+  'numbers.scale.700',  'numbers.scale.600',
+  'numbers.scale.800',  'numbers.scale.900',
+  'numbers.scale.1000', 'numbers.scale.1100',
+  'numbers.scale.1200', 'numbers.scale.300',
+  'numbers.scale.400',  'numbers.scale.500',
+  'numbers.scale.25',   'numbers.scale.50',
+  'numbers.scale.1600', 'numbers.scale.1400'
 ]);
 /**
 * @typedef {typeof feedbackPaths} FeedbackPaths - All the valid paths for the collection feedback.
@@ -616,10 +614,10 @@ export const feedbackPaths = /** @type {const} */ ([
   'feedback.feedback.color.background.alert',
   'feedback.feedback.color.background.info',
   'feedback.feedback.color.background.negative',
-  'feedback.feedback.color.background.positive',
-  'feedback.feedback.color.background.premium',
   'feedback.feedback.color.background.neutral.invert',
   'feedback.feedback.color.background.neutral.regular',
+  'feedback.feedback.color.background.positive',
+  'feedback.feedback.color.background.premium',
   'feedback.feedback.color.icon.alert',
   'feedback.feedback.color.icon.info',
   'feedback.feedback.color.icon.negative',
@@ -644,8 +642,8 @@ export const feedbackPaths = /** @type {const} */ ([
   'feedback.feedback.button.color.border.neutral',
   'feedback.feedback.button.color.border.positive',
   'feedback.feedback.button.color.border.premium',
-  'feedback.feedback.button.color.text.alert.on-primary',
   'feedback.feedback.button.color.text.alert.on-secondary',
+  'feedback.feedback.button.color.text.alert.on-primary',
   'feedback.feedback.button.color.text.info.on-primary',
   'feedback.feedback.button.color.text.info.on-secondary',
   'feedback.feedback.button.color.text.negative.on-primary',
@@ -759,93 +757,35 @@ export const densityModes = /** @type {const} */ ([ 'comfortable', 'dense', 'tig
 * Use `getTokenByMode` to retrieve one.
 */
 export const tokens = /** @type {const} */ ({
-  'action.button.color.background.neutral': {
-    disabled: 'rgb(51, 51, 51)',
-    hover: 'rgb(245, 245, 245)',
-    normal: 'rgb(255, 255, 255)'
+  'action.button.color.icon.with-hyperlink': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(11, 117, 176)',
+    normal: 'rgb(84, 114, 138)'
   },
-  'theme.theme.color.background.neutral.low': {
-    Danland: 'rgb(51, 51, 51)',
-    Prism: 'rgb(245, 245, 245)',
-    Traum: 'rgb(245, 245, 245)'
+  'theme.theme.color.icon.info.medium': {
+    Danland: 'rgb(89, 155, 222)',
+    Prism: 'rgb(84, 114, 138)',
+    Traum: 'rgb(11, 117, 176)'
   },
-  'theme.theme.color.background.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
+  'theme.theme.color.icon.neutral.low': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
   },
-  'colours.asphalt.1': { dark: 'rgb(51, 51, 51)', light: 'rgb(245, 245, 245)' },
-  'colours.asphalt.invert': { dark: 'rgb(40, 40, 40)', light: 'rgb(255, 255, 255)' },
-  'action.button.color.background.on-primary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.brand.on-primary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.neutral.low-alt': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
-  'colours.agnostic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
-  'colours.asphalt.2': { dark: 'rgb(69, 69, 69)', light: 'rgb(211, 211, 211)' },
-  'action.button.color.background.on-secondary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.brand.on-secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.background.primary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(4, 92, 141)',
-    normal: 'rgb(142, 103, 48)'
-  },
-  'theme.theme.color.background.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'colours.violet.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(142, 103, 48)' },
-  'colours.aegean.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(4, 92, 141)' },
-  'action.button.color.background.secondary': {
-    disabled: 'rgb(69, 69, 69)',
+  'colours.sky.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(84, 114, 138)' },
+  'colours.aegean.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(11, 117, 176)' },
+  'colours.asphalt.3': { dark: 'rgb(82, 82, 82)', light: 'rgb(181, 181, 181)' },
+  'action.button.color.icon.with-underlined': {
+    disabled: 'rgb(82, 82, 82)',
     hover: 'rgb(40, 40, 40)',
     normal: 'rgb(40, 40, 40)'
   },
-  'theme.theme.color.background.brand.secondary': {
+  'theme.theme.color.icon.neutral.high': {
     Danland: 'rgb(255, 255, 255)',
     Prism: 'rgb(40, 40, 40)',
     Traum: 'rgb(40, 40, 40)'
   },
   'colours.asphalt.18': { dark: 'rgb(255, 255, 255)', light: 'rgb(40, 40, 40)' },
-  'action.button.color.background.tertiary': {
-    disabled: 'rgb(51, 51, 51)',
-    hover: 'rgb(245, 245, 245)',
-    normal: 'rgb(245, 245, 245)'
-  },
-  'action.button.color.border.tertiary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.border.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.border.neutral.low': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
   'action.button.color.icon.invert-on-primary': {
     disabled: 'rgb(140, 140, 140)',
     hover: 'rgb(33, 33, 33)',
@@ -866,6 +806,7 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(111, 111, 111)',
     Traum: 'rgb(111, 111, 111)'
   },
+  'colours.asphalt.invert': { dark: 'rgb(40, 40, 40)', light: 'rgb(255, 255, 255)' },
   'colours.agnostic.black': { dark: 'rgb(33, 33, 33)', light: 'rgb(33, 33, 33)' },
   'colours.asphalt.5': { dark: 'rgb(140, 140, 140)', light: 'rgb(111, 111, 111)' },
   'action.button.color.icon.invert-on-secondary': {
@@ -888,17 +829,6 @@ export const tokens = /** @type {const} */ ({
     hover: 'rgb(40, 40, 40)',
     normal: 'rgb(40, 40, 40)'
   },
-  'theme.theme.color.icon.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.icon.neutral.low': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'colours.asphalt.3': { dark: 'rgb(82, 82, 82)', light: 'rgb(181, 181, 181)' },
   'action.button.color.icon.on-primary': {
     disabled: 'rgb(140, 140, 140)',
     hover: 'rgb(255, 255, 255)',
@@ -914,6 +844,7 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(111, 111, 111)',
     Traum: 'rgb(111, 111, 111)'
   },
+  'colours.agnostic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
   'action.button.color.icon.on-secondary': {
     disabled: 'rgb(140, 140, 140)',
     hover: 'rgb(255, 255, 255)',
@@ -925,23 +856,6 @@ export const tokens = /** @type {const} */ ({
     Traum: 'rgb(255, 255, 255)'
   },
   'action.button.color.icon.on-tertiary': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.icon.with-hyperlink': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(11, 117, 176)',
-    normal: 'rgb(84, 114, 138)'
-  },
-  'theme.theme.color.icon.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'colours.sky.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(84, 114, 138)' },
-  'colours.aegean.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(11, 117, 176)' },
-  'action.button.color.icon.with-underlined': {
     disabled: 'rgb(82, 82, 82)',
     hover: 'rgb(40, 40, 40)',
     normal: 'rgb(40, 40, 40)'
@@ -1011,12 +925,105 @@ export const tokens = /** @type {const} */ ({
     hover: 'rgb(40, 40, 40)',
     normal: 'rgb(40, 40, 40)'
   },
-  'colours.asphalt.7': { dark: 'rgb(179, 179, 179)', light: 'rgb(77, 77, 77)' },
+  'action.button.color.background.neutral': {
+    disabled: 'rgb(51, 51, 51)',
+    hover: 'rgb(245, 245, 245)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.color.background.neutral.low': {
+    Danland: 'rgb(51, 51, 51)',
+    Prism: 'rgb(245, 245, 245)',
+    Traum: 'rgb(245, 245, 245)'
+  },
+  'theme.theme.color.background.neutral.invert': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'colours.asphalt.1': { dark: 'rgb(51, 51, 51)', light: 'rgb(245, 245, 245)' },
+  'action.button.color.background.on-primary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.color.background.brand.on-primary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.color.background.neutral.low-alt': {
+    Danland: 'rgb(69, 69, 69)',
+    Prism: 'rgb(211, 211, 211)',
+    Traum: 'rgb(211, 211, 211)'
+  },
+  'colours.asphalt.2': { dark: 'rgb(69, 69, 69)', light: 'rgb(211, 211, 211)' },
+  'action.button.color.background.on-secondary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.color.background.brand.on-secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'action.button.color.background.primary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(4, 92, 141)',
+    normal: 'rgb(142, 103, 48)'
+  },
+  'theme.theme.color.background.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'colours.violet.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(142, 103, 48)' },
+  'colours.aegean.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(4, 92, 141)' },
+  'action.button.color.background.secondary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.color.background.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'action.button.color.background.tertiary': {
+    disabled: 'rgb(51, 51, 51)',
+    hover: 'rgb(245, 245, 245)',
+    normal: 'rgb(245, 245, 245)'
+  },
+  'action.button.color.border.tertiary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.color.border.neutral.high': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.color.border.neutral.low': {
+    Danland: 'rgb(69, 69, 69)',
+    Prism: 'rgb(211, 211, 211)',
+    Traum: 'rgb(211, 211, 211)'
+  },
   'colours.aegean.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(238, 248, 254)' },
   'colours.amber.1': { dark: 'rgb(51, 48, 41)', light: 'rgb(251, 249, 247)' },
   'colours.amber.2': { dark: 'rgb(241, 170, 16)', light: 'rgb(205, 179, 154)' },
   'colours.amber.5': { dark: 'rgb(192, 156, 77)', light: 'rgb(148, 110, 63)' },
   'colours.amber.7': { dark: 'rgb(214, 174, 86)', light: 'rgb(118, 87, 51)' },
+  'colours.asphalt.7': { dark: 'rgb(179, 179, 179)', light: 'rgb(77, 77, 77)' },
+  'colours.berry.5': { dark: 'rgb(232, 23, 58)', light: 'rgb(203, 16, 47)' },
+  'colours.crimson.1': { dark: 'rgb(51, 41, 43)', light: 'rgb(251, 246, 247)' },
+  'colours.crimson.5': { dark: 'rgb(192, 142, 151)', light: 'rgb(160, 90, 102)' },
+  'colours.crimson.7': { dark: 'rgb(213, 164, 172)', light: 'rgb(141, 65, 78)' },
+  'colours.emerald.1': { dark: 'rgb(34, 40, 39)', light: 'rgb(244, 250, 249)' },
+  'colours.emerald.5': { dark: 'rgb(113, 160, 148)', light: 'rgb(79, 118, 108)' },
+  'colours.emerald.7': { dark: 'rgb(114, 194, 172)', light: 'rgb(59, 96, 86)' },
+  'colours.firebrick.5': { dark: 'rgb(204, 51, 51)', light: 'rgb(204, 51, 51)' },
+  'colours.gold.1': { dark: 'rgb(255, 209, 0)', light: 'rgb(253, 196, 0)' },
   'colours.lavender.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(249, 245, 255)' },
   'colours.lavender.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(128, 85, 195)' },
   'colours.lavender.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(107, 68, 165)' },
@@ -1028,20 +1035,11 @@ export const tokens = /** @type {const} */ ({
   'colours.screen.2': { dark: 'rgb(29, 29, 29)', light: 'rgb(245, 245, 245)' },
   'colours.sky.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(242, 246, 250)' },
   'colours.sky.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(60, 92, 119)' },
+  'colours.violet.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(251, 249, 253)' },
+  'colours.violet.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(142, 103, 48)' },
   'colours.teal.1': { dark: 'rgb(1, 50, 50)', light: 'rgb(225, 255, 255)' },
   'colours.teal.5': { dark: 'rgb(0, 169, 169)', light: 'rgb(0, 123, 123)' },
   'colours.teal.7': { dark: 'rgb(0, 199, 199)', light: 'rgb(0, 99, 99)' },
-  'colours.violet.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(251, 249, 253)' },
-  'colours.violet.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(142, 103, 48)' },
-  'colours.berry.5': { dark: 'rgb(232, 23, 58)', light: 'rgb(203, 16, 47)' },
-  'colours.crimson.1': { dark: 'rgb(51, 41, 43)', light: 'rgb(251, 246, 247)' },
-  'colours.crimson.5': { dark: 'rgb(192, 142, 151)', light: 'rgb(160, 90, 102)' },
-  'colours.crimson.7': { dark: 'rgb(213, 164, 172)', light: 'rgb(141, 65, 78)' },
-  'colours.emerald.1': { dark: 'rgb(34, 40, 39)', light: 'rgb(244, 250, 249)' },
-  'colours.emerald.5': { dark: 'rgb(113, 160, 148)', light: 'rgb(79, 118, 108)' },
-  'colours.emerald.7': { dark: 'rgb(114, 194, 172)', light: 'rgb(59, 96, 86)' },
-  'colours.firebrick.5': { dark: 'rgb(204, 51, 51)', light: 'rgb(204, 51, 51)' },
-  'colours.gold.1': { dark: 'rgb(255, 209, 0)', light: 'rgb(253, 196, 0)' },
   'feedback.feedback.color.background.alert': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
   'theme.theme.color.background.alert.low': {
     Danland: 'rgb(51, 48, 41)',
@@ -1075,6 +1073,13 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(160, 90, 102)',
     Traum: 'rgb(160, 90, 102)'
   },
+  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
+  'theme.theme.color.background.neutral.high': {
+    Danland: 'rgb(179, 179, 179)',
+    Prism: 'rgb(77, 77, 77)',
+    Traum: 'rgb(77, 77, 77)'
+  },
+  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
   'feedback.feedback.color.background.positive': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
   'theme.theme.color.background.positive.low': {
     Danland: 'rgb(34, 40, 39)',
@@ -1097,13 +1102,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(128, 85, 195)',
     Traum: 'rgb(128, 85, 195)'
   },
-  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
-  'theme.theme.color.background.neutral.high': {
-    Danland: 'rgb(179, 179, 179)',
-    Prism: 'rgb(77, 77, 77)',
-    Traum: 'rgb(77, 77, 77)'
-  },
-  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
   'feedback.feedback.color.icon.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
   'theme.theme.color.icon.alert.high': {
     Danland: 'rgb(214, 174, 86)',
@@ -1268,6 +1266,7 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(107, 68, 165)',
     Traum: 'rgb(107, 68, 165)'
   },
+  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
   'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
   'theme.theme.color.text.alert.low': {
     Danland: 'rgb(51, 48, 41)',
@@ -1279,7 +1278,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(205, 179, 154)',
     Traum: 'rgb(205, 179, 154)'
   },
-  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
   'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
   'theme.theme.color.text.info.low': {
     Danland: 'rgb(45, 50, 56)',
@@ -1325,6 +1323,16 @@ export const tokens = /** @type {const} */ ({
     Traum: 'rgb(128, 85, 195)'
   },
   'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.color.background.neutral.medium': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
+  },
+  'theme.theme.color.background.neutral.medium-alt': {
+    Danland: 'rgb(140, 140, 140)',
+    Prism: 'rgb(111, 111, 111)',
+    Traum: 'rgb(111, 111, 111)'
+  },
   'theme.theme.color.background.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
     Prism: 'rgb(255, 255, 255)',
@@ -1340,16 +1348,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(244, 250, 249)',
     Traum: 'rgb(255, 247, 236)'
   },
-  'theme.theme.color.background.neutral.medium': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'theme.theme.color.background.neutral.medium-alt': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
   'theme.theme.color.background.screen.alt': {
     Danland: 'rgb(29, 29, 29)',
     Prism: 'rgb(245, 245, 245)',
@@ -1359,6 +1357,41 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(29, 29, 29)',
     Prism: 'rgb(255, 255, 255)',
     Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.color.border.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'theme.theme.color.border.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
+  },
+  'theme.theme.color.border.neutral.medium': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
+  },
+  'theme.theme.color.border.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.color.border.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'theme.theme.color.border.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.color.border.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
   },
   'theme.theme.color.border.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
@@ -1395,41 +1428,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(84, 114, 138)',
     Traum: 'rgb(11, 117, 176)'
   },
-  'theme.theme.color.border.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.border.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'theme.theme.color.border.neutral.medium': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'theme.theme.color.border.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.border.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'theme.theme.color.border.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.border.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
   'theme.theme.color.icon.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
     Prism: 'rgb(255, 255, 255)',
@@ -1449,36 +1447,6 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(192, 156, 77)',
     Prism: 'rgb(148, 110, 63)',
     Traum: 'rgb(148, 110, 63)'
-  },
-  'theme.theme.color.icon.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(253, 196, 0)'
-  },
-  'theme.theme.color.icon.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.icon.discount.high': {
-    Danland: 'rgb(255, 221, 189)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(134, 73, 0)'
-  },
-  'theme.theme.color.icon.discount.low': {
-    Danland: 'rgb(31, 21, 13)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(255, 247, 236)'
-  },
-  'theme.theme.color.icon.discount.medium': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
-  'theme.theme.color.icon.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
   },
   'theme.theme.color.icon.negative.low': {
     Danland: 'rgb(51, 41, 43)',
@@ -1515,10 +1483,40 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(40, 40, 40)',
     Traum: 'rgb(4, 92, 141)'
   },
+  'theme.theme.color.icon.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
   'theme.theme.color.icon.rating.unfilled': {
     Danland: 'rgb(69, 69, 69)',
     Prism: 'rgb(211, 211, 211)',
     Traum: 'rgb(211, 211, 211)'
+  },
+  'theme.theme.color.icon.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.theme.color.icon.discount.high': {
+    Danland: 'rgb(255, 221, 189)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(134, 73, 0)'
+  },
+  'theme.theme.color.icon.discount.low': {
+    Danland: 'rgb(31, 21, 13)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(255, 247, 236)'
+  },
+  'theme.theme.color.icon.discount.medium': {
+    Danland: 'rgb(254, 169, 95)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(176, 96, 0)'
+  },
+  'theme.theme.color.icon.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
   },
   'theme.theme.color.text.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
@@ -1561,8 +1559,6 @@ export const tokens = /** @type {const} */ ({
   'action.button.size.border.radius.S': { disabled: '8px', hover: '8px', normal: '0px' },
   'theme.theme.size.border.radius.sm': { Danland: '8px', Prism: '0px', Traum: '8px' },
   'numbers.scale.100': { desktop: '8px', mobile: '8px' },
-  'theme.theme.font.letter-spacing.h1': { Danland: '-1.5px', Prism: '0px', Traum: '-1.5px' },
-  'theme.theme.font.letter-spacing.button': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
   'theme.theme.font.letter-spacing.h2': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
   'theme.theme.font.letter-spacing.h3': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
   'theme.theme.font.letter-spacing.h4': {
@@ -1584,6 +1580,8 @@ export const tokens = /** @type {const} */ ({
   },
   'theme.theme.font.letter-spacing.caption.high': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
   'theme.theme.font.letter-spacing.caption.regular': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
+  'theme.theme.font.letter-spacing.h1': { Danland: '-1.5px', Prism: '0px', Traum: '-1.5px' },
+  'theme.theme.font.letter-spacing.button': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
   'theme.theme.font.letter-spacing.subtitle 1.high': {
     Danland: '-0.30000001192092896px',
     Prism: '0.30000001192092896px',
@@ -1672,8 +1670,7 @@ export const tokens = /** @type {const} */ ({
   'theme.theme.size.border.radius.xl': { Danland: '32px', Prism: '0px', Traum: '24px' },
   'theme.theme.size.border.radius.xs': { Danland: '4px', Prism: '0px', Traum: '4px' },
   'theme.theme.size.border.radius.xxl': { Danland: '40px', Prism: '0px', Traum: '32px' },
-  'numbers.scale.1400': { desktop: '128px', mobile: '112px' },
-  'numbers.contact number': { desktop: '9779209216px', mobile: '9779209216px' }
+  'numbers.scale.1400': { desktop: '128px', mobile: '112px' }
 });
 
 /**
