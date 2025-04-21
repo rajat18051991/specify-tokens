@@ -12,6 +12,18 @@
           "output": {
             "type": "file",
             "filePath": "output/tokens.json"
+             {
+      "name": "CSS / Colors",
+      "parsers": [
+        {
+          "name": "filter",
+          "options": {
+            "query": {
+              "where": {
+                "collection": "^Colors$",
+                "select": {
+                  "children": true
+                }
           }
         }
       ]
