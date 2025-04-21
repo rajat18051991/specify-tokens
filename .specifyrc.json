@@ -5,13 +5,27 @@
   "version": "2",
   "rules": [
     {
-      "name": "SDTF",
+      "name": "Design Tokens",
       "parsers": [
         {
-          "name": "to-sdtf",
+          "name": "to-kotlin",
           "output": {
             "type": "file",
-            "filePath": "output/tokens.json"
+            "filePath": "output/android/DesignTokens.kt"
+          }
+        },
+        {
+          "name": "to-swift",
+          "output": {
+            "type": "file",
+            "filePath": "output/ios/DesignTokens.swift"
+          }
+        },
+        {
+          "name": "to-typescript",
+          "output": {
+            "type": "file",
+            "filePath": "output/react/designTokens.ts"
           }
         },
         {
