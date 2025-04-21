@@ -185,6 +185,15 @@
   --theme-color-text-negative-high: var(--crimson-7);
   --theme-color-text-positive-high: var(--emerald-7);
   --theme-color-text-premium-high: var(--lavender-7);
+  --theme-color-text-alert-low: var(--amber-1);
+  --theme-color-text-alert-low-alt: var(--amber-2);
+  --theme-color-text-info-low: var(--sky-1);
+  --theme-color-text-negative-low: var(--crimson-1);
+  --theme-color-text-negative-medium: var(--crimson-5);
+  --theme-color-text-positive-low: var(--emerald-1);
+  --theme-color-text-positive-medium: var(--emerald-5);
+  --theme-color-text-premium-low: var(--lavender-1);
+  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-color-background-alert-high: var(--amber-7);
   --theme-color-background-agnostic-black: var(--agnostic-black);
   --theme-color-background-info-high: var(--sky-7);
@@ -199,15 +208,6 @@
   --theme-color-border-negative-high: var(--crimson-7);
   --theme-color-border-positive-high: var(--emerald-7);
   --theme-color-border-premium-high: var(--lavender-7);
-  --theme-color-text-alert-low: var(--amber-1);
-  --theme-color-text-alert-low-alt: var(--amber-2);
-  --theme-color-text-info-low: var(--sky-1);
-  --theme-color-text-negative-low: var(--crimson-1);
-  --theme-color-text-negative-medium: var(--crimson-5);
-  --theme-color-text-positive-low: var(--emerald-1);
-  --theme-color-text-positive-medium: var(--emerald-5);
-  --theme-color-text-premium-low: var(--lavender-1);
-  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-font-letter-spacing-h1: 0px;
   --theme-font-letter-spacing-button: 0.4000000059604645px;
   --theme-font-letter-spacing-h2: 0px;
@@ -217,8 +217,8 @@
   --theme-font-letter-spacing-h6: 0.20000000298023224px;
   --theme-font-letter-spacing-micro: 0.4000000059604645px;
   --theme-font-letter-spacing-overline: 1px;
-  --theme-font-letter-spacing-caption-high: 0.4000000059604645px;
   --theme-font-letter-spacing-caption-regular: 0.4000000059604645px;
+  --theme-font-letter-spacing-caption-high: 0.4000000059604645px;
   --theme-font-letter-spacing-subtitle-1-high: 0.30000001192092896px;
   --theme-font-letter-spacing-subtitle-1-regular: 0.30000001192092896px;
   --theme-font-letter-spacing-subtitle-2-high: 0.30000001192092896px;
@@ -250,6 +250,10 @@
   --theme-font-weight-high: 600px;
   --theme-font-weight-medium: 500px;
   --theme-font-weight-regular: 400px;
+  --theme-size-border-radius-pill: var(--scale-1600);
+  --theme-size-border-radius-xl: var(--scale-0);
+  --theme-size-border-radius-xs: var(--scale-0);
+  --theme-size-border-radius-xxl: var(--scale-0);
   --theme-space-lg-1: var(--space-lg-1);
   --theme-space-lg-2: var(--space-lg-2);
   --theme-space-lg-3: var(--space-lg-3);
@@ -312,10 +316,6 @@
   --theme-color-text-brand-secondary: var(--asphalt-18);
   --theme-color-text-discount-on-high: var(--asphalt-invert);
   --theme-color-text-discount-on-low: var(--emerald-5);
-  --theme-size-border-radius-pill: var(--scale-1600);
-  --theme-size-border-radius-xl: var(--scale-0);
-  --theme-size-border-radius-xs: var(--scale-0);
-  --theme-size-border-radius-xxl: var(--scale-0);
 }
 :root[data-theme="Traum"] {
   --theme-color-background-neutral-low: var(--asphalt-1);
@@ -371,6 +371,15 @@
   --theme-color-text-negative-high: var(--crimson-7);
   --theme-color-text-positive-high: var(--emerald-7);
   --theme-color-text-premium-high: var(--lavender-7);
+  --theme-color-text-alert-low: var(--amber-1);
+  --theme-color-text-alert-low-alt: var(--amber-2);
+  --theme-color-text-info-low: var(--aegean-1);
+  --theme-color-text-negative-low: var(--crimson-1);
+  --theme-color-text-negative-medium: var(--crimson-5);
+  --theme-color-text-positive-low: var(--emerald-1);
+  --theme-color-text-positive-medium: var(--emerald-5);
+  --theme-color-text-premium-low: var(--lavender-1);
+  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-color-background-alert-high: var(--amber-7);
   --theme-color-background-agnostic-black: var(--agnostic-black);
   --theme-color-background-info-high: var(--aegean-7);
@@ -385,15 +394,6 @@
   --theme-color-border-negative-high: var(--crimson-7);
   --theme-color-border-positive-high: var(--emerald-7);
   --theme-color-border-premium-high: var(--lavender-7);
-  --theme-color-text-alert-low: var(--amber-1);
-  --theme-color-text-alert-low-alt: var(--amber-2);
-  --theme-color-text-info-low: var(--aegean-1);
-  --theme-color-text-negative-low: var(--crimson-1);
-  --theme-color-text-negative-medium: var(--crimson-5);
-  --theme-color-text-positive-low: var(--emerald-1);
-  --theme-color-text-positive-medium: var(--emerald-5);
-  --theme-color-text-premium-low: var(--lavender-1);
-  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-font-letter-spacing-h1: -1.5px;
   --theme-font-letter-spacing-button: 0px;
   --theme-font-letter-spacing-h2: -1px;
@@ -403,8 +403,8 @@
   --theme-font-letter-spacing-h6: -0.3499999940395355px;
   --theme-font-letter-spacing-micro: 0px;
   --theme-font-letter-spacing-overline: 0.4000000059604645px;
-  --theme-font-letter-spacing-caption-high: 0px;
   --theme-font-letter-spacing-caption-regular: 0px;
+  --theme-font-letter-spacing-caption-high: 0px;
   --theme-font-letter-spacing-subtitle-1-high: -0.30000001192092896px;
   --theme-font-letter-spacing-subtitle-1-regular: 0px;
   --theme-font-letter-spacing-subtitle-2-high: -0.10000000149011612px;
@@ -436,6 +436,10 @@
   --theme-font-weight-high: 400px;
   --theme-font-weight-medium: 600px;
   --theme-font-weight-regular: 400px;
+  --theme-size-border-radius-pill: var(--scale-1600);
+  --theme-size-border-radius-xl: var(--scale-300);
+  --theme-size-border-radius-xs: var(--scale-50);
+  --theme-size-border-radius-xxl: var(--scale-400);
   --theme-space-lg-1: var(--space-lg-1);
   --theme-space-lg-2: var(--space-lg-2);
   --theme-space-lg-3: var(--space-lg-3);
@@ -498,10 +502,6 @@
   --theme-color-text-brand-secondary: var(--asphalt-18);
   --theme-color-text-discount-on-high: var(--asphalt-invert);
   --theme-color-text-discount-on-low: var(--rust-5);
-  --theme-size-border-radius-pill: var(--scale-1600);
-  --theme-size-border-radius-xl: var(--scale-300);
-  --theme-size-border-radius-xs: var(--scale-50);
-  --theme-size-border-radius-xxl: var(--scale-400);
 }
 :root[data-theme="Danland"] {
   --theme-color-background-neutral-low: var(--asphalt-1);
@@ -557,6 +557,15 @@
   --theme-color-text-negative-high: var(--crimson-7);
   --theme-color-text-positive-high: var(--emerald-7);
   --theme-color-text-premium-high: var(--lavender-7);
+  --theme-color-text-alert-low: var(--amber-1);
+  --theme-color-text-alert-low-alt: var(--amber-2);
+  --theme-color-text-info-low: var(--aegean-1);
+  --theme-color-text-negative-low: var(--crimson-1);
+  --theme-color-text-negative-medium: var(--crimson-5);
+  --theme-color-text-positive-low: var(--emerald-1);
+  --theme-color-text-positive-medium: var(--emerald-5);
+  --theme-color-text-premium-low: var(--lavender-1);
+  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-color-background-alert-high: var(--amber-7);
   --theme-color-background-agnostic-black: var(--agnostic-black);
   --theme-color-background-info-high: var(--aegean-7);
@@ -571,15 +580,6 @@
   --theme-color-border-negative-high: var(--crimson-7);
   --theme-color-border-positive-high: var(--emerald-7);
   --theme-color-border-premium-high: var(--lavender-7);
-  --theme-color-text-alert-low: var(--amber-1);
-  --theme-color-text-alert-low-alt: var(--amber-2);
-  --theme-color-text-info-low: var(--aegean-1);
-  --theme-color-text-negative-low: var(--crimson-1);
-  --theme-color-text-negative-medium: var(--crimson-5);
-  --theme-color-text-positive-low: var(--emerald-1);
-  --theme-color-text-positive-medium: var(--emerald-5);
-  --theme-color-text-premium-low: var(--lavender-1);
-  --theme-color-text-premium-medium: var(--lavender-5);
   --theme-font-letter-spacing-h1: -1.5px;
   --theme-font-letter-spacing-button: 0px;
   --theme-font-letter-spacing-h2: -1px;
@@ -589,8 +589,8 @@
   --theme-font-letter-spacing-h6: -0.3499999940395355px;
   --theme-font-letter-spacing-micro: 0px;
   --theme-font-letter-spacing-overline: 0.4000000059604645px;
-  --theme-font-letter-spacing-caption-high: 0px;
   --theme-font-letter-spacing-caption-regular: 0px;
+  --theme-font-letter-spacing-caption-high: 0px;
   --theme-font-letter-spacing-subtitle-1-high: -0.30000001192092896px;
   --theme-font-letter-spacing-subtitle-1-regular: 0px;
   --theme-font-letter-spacing-subtitle-2-high: -0.10000000149011612px;
@@ -622,6 +622,10 @@
   --theme-font-weight-high: 700px;
   --theme-font-weight-medium: 500px;
   --theme-font-weight-regular: 400px;
+  --theme-size-border-radius-pill: var(--scale-1600);
+  --theme-size-border-radius-xl: var(--scale-300);
+  --theme-size-border-radius-xs: var(--scale-50);
+  --theme-size-border-radius-xxl: var(--scale-400);
   --theme-space-lg-1: var(--space-lg-1);
   --theme-space-lg-2: var(--space-lg-2);
   --theme-space-lg-3: var(--space-lg-3);
@@ -684,10 +688,6 @@
   --theme-color-text-brand-secondary: var(--asphalt-18);
   --theme-color-text-discount-on-high: var(--asphalt-invert);
   --theme-color-text-discount-on-low: var(--rust-5);
-  --theme-size-border-radius-pill: var(--scale-1600);
-  --theme-size-border-radius-xl: var(--scale-300);
-  --theme-size-border-radius-xs: var(--scale-50);
-  --theme-size-border-radius-xxl: var(--scale-400);
 }
 :root[data-colours="dark"] {
   --asphalt-1: rgb(51, 51, 51);
@@ -702,12 +702,17 @@
   --asphalt-3: rgb(82, 82, 82);
   --sky-5: rgb(89, 155, 222);
   --aegean-5: rgb(89, 155, 222);
-  --asphalt-7: rgb(179, 179, 179);
   --aegean-1: rgb(45, 50, 56);
-  --amber-1: rgb(51, 48, 41);
-  --amber-2: rgb(241, 170, 16);
-  --amber-5: rgb(192, 156, 77);
-  --amber-7: rgb(214, 174, 86);
+  --asphalt-7: rgb(179, 179, 179);
+  --berry-5: rgb(232, 23, 58);
+  --crimson-1: rgb(51, 41, 43);
+  --crimson-5: rgb(192, 142, 151);
+  --crimson-7: rgb(213, 164, 172);
+  --emerald-1: rgb(34, 40, 39);
+  --emerald-5: rgb(113, 160, 148);
+  --emerald-7: rgb(114, 194, 172);
+  --firebrick-5: rgb(204, 51, 51);
+  --gold-1: rgb(255, 209, 0);
   --lavender-1: rgb(49, 45, 56);
   --lavender-5: rgb(175, 125, 255);
   --lavender-7: rgb(200, 163, 255);
@@ -724,15 +729,10 @@
   --teal-7: rgb(0, 199, 199);
   --violet-1: rgb(49, 45, 56);
   --violet-5: rgb(175, 125, 255);
-  --berry-5: rgb(232, 23, 58);
-  --crimson-1: rgb(51, 41, 43);
-  --crimson-5: rgb(192, 142, 151);
-  --crimson-7: rgb(213, 164, 172);
-  --emerald-1: rgb(34, 40, 39);
-  --emerald-5: rgb(113, 160, 148);
-  --emerald-7: rgb(114, 194, 172);
-  --firebrick-5: rgb(204, 51, 51);
-  --gold-1: rgb(255, 209, 0);
+  --amber-1: rgb(51, 48, 41);
+  --amber-2: rgb(241, 170, 16);
+  --amber-5: rgb(192, 156, 77);
+  --amber-7: rgb(214, 174, 86);
 }
 :root[data-colours="light"] {
   --asphalt-1: rgb(245, 245, 245);
@@ -747,12 +747,17 @@
   --asphalt-3: rgb(181, 181, 181);
   --sky-5: rgb(84, 114, 138);
   --aegean-5: rgb(11, 117, 176);
-  --asphalt-7: rgb(77, 77, 77);
   --aegean-1: rgb(238, 248, 254);
-  --amber-1: rgb(251, 249, 247);
-  --amber-2: rgb(205, 179, 154);
-  --amber-5: rgb(148, 110, 63);
-  --amber-7: rgb(118, 87, 51);
+  --asphalt-7: rgb(77, 77, 77);
+  --berry-5: rgb(203, 16, 47);
+  --crimson-1: rgb(251, 246, 247);
+  --crimson-5: rgb(160, 90, 102);
+  --crimson-7: rgb(141, 65, 78);
+  --emerald-1: rgb(244, 250, 249);
+  --emerald-5: rgb(79, 118, 108);
+  --emerald-7: rgb(59, 96, 86);
+  --firebrick-5: rgb(204, 51, 51);
+  --gold-1: rgb(253, 196, 0);
   --lavender-1: rgb(249, 245, 255);
   --lavender-5: rgb(128, 85, 195);
   --lavender-7: rgb(107, 68, 165);
@@ -769,21 +774,20 @@
   --teal-7: rgb(0, 99, 99);
   --violet-1: rgb(251, 249, 253);
   --violet-5: rgb(142, 103, 48);
-  --berry-5: rgb(203, 16, 47);
-  --crimson-1: rgb(251, 246, 247);
-  --crimson-5: rgb(160, 90, 102);
-  --crimson-7: rgb(141, 65, 78);
-  --emerald-1: rgb(244, 250, 249);
-  --emerald-5: rgb(79, 118, 108);
-  --emerald-7: rgb(59, 96, 86);
-  --firebrick-5: rgb(204, 51, 51);
-  --gold-1: rgb(253, 196, 0);
+  --amber-1: rgb(251, 249, 247);
+  --amber-2: rgb(205, 179, 154);
+  --amber-5: rgb(148, 110, 63);
+  --amber-7: rgb(118, 87, 51);
 }
 :root[data-numbers="mobile"] {
   --scale-0: 0px;
   --scale-200: 16px;
   --scale-150: 12px;
   --scale-100: 8px;
+  --scale-1600: 128px;
+  --scale-300: 24px;
+  --scale-50: 4px;
+  --scale-400: 32px;
   --scale-700: 56px;
   --scale-600: 48px;
   --scale-800: 64px;
@@ -791,12 +795,8 @@
   --scale-1000: 80px;
   --scale-1100: 88px;
   --scale-1200: 96px;
-  --scale-300: 24px;
-  --scale-400: 32px;
   --scale-500: 40px;
   --scale-25: 2px;
-  --scale-50: 4px;
-  --scale-1600: 128px;
   --scale-1400: 112px;
 }
 :root[data-numbers="desktop"] {
@@ -804,6 +804,10 @@
   --scale-200: 24px;
   --scale-150: 16px;
   --scale-100: 8px;
+  --scale-1600: 144px;
+  --scale-300: 32px;
+  --scale-50: 4px;
+  --scale-400: 40px;
   --scale-700: 64px;
   --scale-600: 56px;
   --scale-800: 72px;
@@ -811,12 +815,8 @@
   --scale-1000: 88px;
   --scale-1100: 96px;
   --scale-1200: 112px;
-  --scale-300: 32px;
-  --scale-400: 40px;
   --scale-500: 48px;
   --scale-25: 2px;
-  --scale-50: 4px;
-  --scale-1600: 144px;
   --scale-1400: 128px;
 }
 :root[data-feedback="low"] {
@@ -849,6 +849,42 @@
   --feedback-color-text-neutral: var(--theme-color-text-neutral-high);
   --feedback-color-text-positive: var(--theme-color-text-positive-high);
   --feedback-color-text-premium: var(--theme-color-text-premium-high);
+  --feedback-button-color-text-alert-on-primary: var(
+    --theme-color-text-alert-low
+  );
+  --feedback-button-color-text-alert-on-secondary: var(
+    --theme-color-text-alert-high
+  );
+  --feedback-button-color-text-info-on-primary: var(
+    --theme-color-text-info-low
+  );
+  --feedback-button-color-text-info-on-secondary: var(
+    --theme-color-text-info-high
+  );
+  --feedback-button-color-text-negative-on-primary: var(
+    --theme-color-text-negative-low
+  );
+  --feedback-button-color-text-negative-on-secondary: var(
+    --theme-color-text-negative-high
+  );
+  --feedback-button-color-text-neutral-on-primary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-neutral-on-secondary: var(
+    --theme-color-text-neutral-high
+  );
+  --feedback-button-color-text-positive-on-primary: var(
+    --theme-color-text-positive-low
+  );
+  --feedback-button-color-text-positive-on-secondary: var(
+    --theme-color-text-positive-high
+  );
+  --feedback-button-color-text-premium-on-primary: var(
+    --theme-color-text-premium-low
+  );
+  --feedback-button-color-text-premium-on-secondary: var(
+    --theme-color-text-premium-high
+  );
   --feedback-button-color-background-alert: var(
     --theme-color-background-alert-high
   );
@@ -881,42 +917,6 @@
   --feedback-button-color-border-premium: var(
     --theme-color-border-premium-high
   );
-  --feedback-button-color-text-alert-on-secondary: var(
-    --theme-color-text-alert-high
-  );
-  --feedback-button-color-text-alert-on-primary: var(
-    --theme-color-text-alert-low
-  );
-  --feedback-button-color-text-info-on-primary: var(
-    --theme-color-text-info-low
-  );
-  --feedback-button-color-text-info-on-secondary: var(
-    --theme-color-text-info-high
-  );
-  --feedback-button-color-text-negative-on-primary: var(
-    --theme-color-text-negative-low
-  );
-  --feedback-button-color-text-negative-on-secondary: var(
-    --theme-color-text-negative-high
-  );
-  --feedback-button-color-text-neutral-on-primary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-neutral-on-secondary: var(
-    --theme-color-text-neutral-high
-  );
-  --feedback-button-color-text-positive-on-primary: var(
-    --theme-color-text-positive-low
-  );
-  --feedback-button-color-text-positive-on-secondary: var(
-    --theme-color-text-positive-high
-  );
-  --feedback-button-color-text-premium-on-primary: var(
-    --theme-color-text-premium-low
-  );
-  --feedback-button-color-text-premium-on-secondary: var(
-    --theme-color-text-premium-high
-  );
 }
 :root[data-feedback="high"] {
   --feedback-color-background-alert: var(--theme-color-background-alert-medium);
@@ -948,6 +948,42 @@
   --feedback-color-text-neutral: var(--theme-color-text-neutral-invert);
   --feedback-color-text-positive: var(--theme-color-text-neutral-invert);
   --feedback-color-text-premium: var(--theme-color-text-neutral-invert);
+  --feedback-button-color-text-alert-on-primary: var(
+    --theme-color-text-alert-low-alt
+  );
+  --feedback-button-color-text-alert-on-secondary: var(
+    --theme-color-text-agnostic-black
+  );
+  --feedback-button-color-text-info-on-primary: var(
+    --theme-color-text-info-medium
+  );
+  --feedback-button-color-text-info-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-negative-on-primary: var(
+    --theme-color-text-negative-medium
+  );
+  --feedback-button-color-text-negative-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-neutral-on-primary: var(
+    --theme-color-text-neutral-high
+  );
+  --feedback-button-color-text-neutral-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-positive-on-primary: var(
+    --theme-color-text-positive-medium
+  );
+  --feedback-button-color-text-positive-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
+  --feedback-button-color-text-premium-on-primary: var(
+    --theme-color-text-premium-medium
+  );
+  --feedback-button-color-text-premium-on-secondary: var(
+    --theme-color-text-neutral-invert
+  );
   --feedback-button-color-background-alert: var(
     --theme-color-background-agnostic-black
   );
@@ -981,42 +1017,6 @@
   );
   --feedback-button-color-border-premium: var(
     --theme-color-border-neutral-invert
-  );
-  --feedback-button-color-text-alert-on-secondary: var(
-    --theme-color-text-agnostic-black
-  );
-  --feedback-button-color-text-alert-on-primary: var(
-    --theme-color-text-alert-low-alt
-  );
-  --feedback-button-color-text-info-on-primary: var(
-    --theme-color-text-info-medium
-  );
-  --feedback-button-color-text-info-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-negative-on-primary: var(
-    --theme-color-text-negative-medium
-  );
-  --feedback-button-color-text-negative-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-neutral-on-primary: var(
-    --theme-color-text-neutral-high
-  );
-  --feedback-button-color-text-neutral-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-positive-on-primary: var(
-    --theme-color-text-positive-medium
-  );
-  --feedback-button-color-text-positive-on-secondary: var(
-    --theme-color-text-neutral-invert
-  );
-  --feedback-button-color-text-premium-on-primary: var(
-    --theme-color-text-premium-medium
-  );
-  --feedback-button-color-text-premium-on-secondary: var(
-    --theme-color-text-neutral-invert
   );
 }
 :root[data-density="dense"] {
