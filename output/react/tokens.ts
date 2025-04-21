@@ -338,7 +338,8 @@ export const dimensionPaths = /** @type {const} */ ([
   'density.space.sm.5',
   'theme.theme.space.margin.screen.default',
   'theme.theme.space.margin.screen.optical',
-  'numbers.scale.1400'
+  'numbers.scale.1400',
+  'numbers.contact number'
 ]);
 /**
 * @typedef {typeof actionPaths} ActionPaths - All the valid paths for the collection action.
@@ -596,15 +597,16 @@ export const coloursPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').NumbersPaths}`
 */
 export const numbersPaths = /** @type {const} */ ([
-  'numbers.scale.0',    'numbers.scale.200',
-  'numbers.scale.150',  'numbers.scale.100',
-  'numbers.scale.1600', 'numbers.scale.300',
-  'numbers.scale.50',   'numbers.scale.400',
-  'numbers.scale.700',  'numbers.scale.600',
-  'numbers.scale.800',  'numbers.scale.900',
-  'numbers.scale.1000', 'numbers.scale.1100',
-  'numbers.scale.1200', 'numbers.scale.500',
-  'numbers.scale.25',   'numbers.scale.1400'
+  'numbers.scale.0',        'numbers.scale.200',
+  'numbers.scale.150',      'numbers.scale.100',
+  'numbers.scale.1600',     'numbers.scale.300',
+  'numbers.scale.50',       'numbers.scale.400',
+  'numbers.scale.700',      'numbers.scale.600',
+  'numbers.scale.800',      'numbers.scale.900',
+  'numbers.scale.1000',     'numbers.scale.1100',
+  'numbers.scale.1200',     'numbers.scale.500',
+  'numbers.scale.25',       'numbers.scale.1400',
+  'numbers.contact number'
 ]);
 /**
 * @typedef {typeof feedbackPaths} FeedbackPaths - All the valid paths for the collection feedback.
@@ -704,11 +706,11 @@ export const colorModes = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').DimensionModes}`
 */
 export const dimensionModes = /** @type {const} */ ([
-  'disabled', 'hover',
-  'normal',   'Danland',
-  'Prism',    'Traum',
-  'desktop',  'mobile',
-  'dense',    'relaxed',
+  'disabled',    'hover',
+  'normal',      'Danland',
+  'Prism',       'Traum',
+  'desktop',     'mobile',
+  'comfortable', 'dense',
   'tight'
 ]);
 
@@ -746,7 +748,7 @@ export const feedbackModes = /** @type {const} */ ([ 'low', 'high' ]);
 * @typedef {typeof densityModes[number]} DensityModes - All the valid modes of density.
 * To use this type you can do: `@type {import('path/to/myTokensFile').DensityModes}`
 */
-export const densityModes = /** @type {const} */ ([ 'relaxed', 'dense', 'tight' ]);
+export const densityModes = /** @type {const} */ ([ 'comfortable', 'dense', 'tight' ]);
 
 /**
 * @typedef {ColorModes | DimensionModes | ActionModes | ThemeModes | ColoursModes | NumbersModes | FeedbackModes | DensityModes} AllMode - All the available modes
@@ -1630,47 +1632,48 @@ export const tokens = /** @type {const} */ ({
   'theme.theme.size.border.radius.xxl': { Danland: '40px', Prism: '0px', Traum: '32px' },
   'numbers.scale.400': { desktop: '40px', mobile: '32px' },
   'theme.theme.space.lg.1': { Danland: '64px', Prism: '64px', Traum: '48px' },
-  'density.space.lg.1': { dense: '64px', relaxed: '64px', tight: '48px' },
+  'density.space.lg.1': { comfortable: '64px', dense: '64px', tight: '48px' },
   'numbers.scale.700': { desktop: '64px', mobile: '56px' },
   'numbers.scale.600': { desktop: '56px', mobile: '48px' },
   'numbers.scale.800': { desktop: '72px', mobile: '64px' },
   'theme.theme.space.lg.2': { Danland: '72px', Prism: '72px', Traum: '56px' },
-  'density.space.lg.2': { dense: '72px', relaxed: '72px', tight: '56px' },
+  'density.space.lg.2': { comfortable: '72px', dense: '72px', tight: '56px' },
   'numbers.scale.900': { desktop: '80px', mobile: '72px' },
   'theme.theme.space.lg.3': { Danland: '80px', Prism: '80px', Traum: '64px' },
-  'density.space.lg.3': { dense: '80px', relaxed: '80px', tight: '64px' },
+  'density.space.lg.3': { comfortable: '80px', dense: '80px', tight: '64px' },
   'numbers.scale.1000': { desktop: '88px', mobile: '80px' },
   'theme.theme.space.lg.4': { Danland: '88px', Prism: '88px', Traum: '72px' },
-  'density.space.lg.4': { dense: '88px', relaxed: '88px', tight: '72px' },
+  'density.space.lg.4': { comfortable: '88px', dense: '88px', tight: '72px' },
   'numbers.scale.1100': { desktop: '96px', mobile: '88px' },
   'theme.theme.space.lg.5': { Danland: '96px', Prism: '96px', Traum: '80px' },
-  'density.space.lg.5': { dense: '96px', relaxed: '96px', tight: '80px' },
+  'density.space.lg.5': { comfortable: '96px', dense: '96px', tight: '80px' },
   'numbers.scale.1200': { desktop: '112px', mobile: '96px' },
   'theme.theme.space.md.1': { Danland: '24px', Prism: '24px', Traum: '8px' },
-  'density.space.md.1': { dense: '24px', relaxed: '24px', tight: '8px' },
+  'density.space.md.1': { comfortable: '24px', dense: '24px', tight: '8px' },
   'theme.theme.space.md.2': { Danland: '32px', Prism: '32px', Traum: '16px' },
-  'density.space.md.2': { dense: '32px', relaxed: '32px', tight: '16px' },
+  'density.space.md.2': { comfortable: '32px', dense: '32px', tight: '16px' },
   'theme.theme.space.md.3': { Danland: '40px', Prism: '40px', Traum: '24px' },
-  'density.space.md.3': { dense: '40px', relaxed: '40px', tight: '24px' },
+  'density.space.md.3': { comfortable: '40px', dense: '40px', tight: '24px' },
   'numbers.scale.500': { desktop: '48px', mobile: '40px' },
   'theme.theme.space.md.4': { Danland: '48px', Prism: '48px', Traum: '32px' },
-  'density.space.md.4': { dense: '48px', relaxed: '48px', tight: '32px' },
+  'density.space.md.4': { comfortable: '48px', dense: '48px', tight: '32px' },
   'theme.theme.space.md.5': { Danland: '56px', Prism: '56px', Traum: '40px' },
-  'density.space.md.5': { dense: '56px', relaxed: '56px', tight: '40px' },
+  'density.space.md.5': { comfortable: '56px', dense: '56px', tight: '40px' },
   'theme.theme.space.sm.1': { Danland: '0px', Prism: '2px', Traum: '0px' },
-  'density.space.sm.1': { dense: '0px', relaxed: '2px', tight: '0px' },
+  'density.space.sm.1': { comfortable: '2px', dense: '0px', tight: '0px' },
   'numbers.scale.25': { desktop: '2px', mobile: '2px' },
   'theme.theme.space.sm.2': { Danland: '2px', Prism: '4px', Traum: '0px' },
-  'density.space.sm.2': { dense: '2px', relaxed: '4px', tight: '0px' },
+  'density.space.sm.2': { comfortable: '4px', dense: '2px', tight: '0px' },
   'theme.theme.space.sm.3': { Danland: '4px', Prism: '8px', Traum: '2px' },
-  'density.space.sm.3': { dense: '4px', relaxed: '8px', tight: '2px' },
+  'density.space.sm.3': { comfortable: '8px', dense: '4px', tight: '2px' },
   'theme.theme.space.sm.4': { Danland: '8px', Prism: '12px', Traum: '4px' },
-  'density.space.sm.4': { dense: '8px', relaxed: '12px', tight: '4px' },
+  'density.space.sm.4': { comfortable: '12px', dense: '8px', tight: '4px' },
   'theme.theme.space.sm.5': { Danland: '16px', Prism: '16px', Traum: '8px' },
-  'density.space.sm.5': { dense: '16px', relaxed: '16px', tight: '8px' },
+  'density.space.sm.5': { comfortable: '16px', dense: '16px', tight: '8px' },
   'theme.theme.space.margin.screen.default': { Danland: '16px', Prism: '24px', Traum: '8px' },
   'theme.theme.space.margin.screen.optical': { Danland: '4px', Prism: '16px', Traum: '2px' },
-  'numbers.scale.1400': { desktop: '128px', mobile: '112px' }
+  'numbers.scale.1400': { desktop: '128px', mobile: '112px' },
+  'numbers.contact number': { desktop: '9779209216px', mobile: '9779209216px' }
 });
 
 /**

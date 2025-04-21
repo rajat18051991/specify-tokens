@@ -798,6 +798,7 @@
   --scale-500: 40px;
   --scale-25: 2px;
   --scale-1400: 112px;
+  --contact-number: 9779209216px;
 }
 :root[data-numbers="desktop"] {
   --scale-0: 0px;
@@ -818,6 +819,7 @@
   --scale-500: 48px;
   --scale-25: 2px;
   --scale-1400: 128px;
+  --contact-number: 9779209216px;
 }
 :root[data-feedback="low"] {
   --feedback-color-background-alert: var(--theme-color-background-alert-low);
@@ -1053,7 +1055,7 @@
   --space-sm-4: var(--scale-50);
   --space-sm-5: var(--scale-100);
 }
-:root[data-density="relaxed"] {
+:root[data-density="comfortable"] {
   --space-lg-1: var(--scale-800);
   --space-lg-2: var(--scale-900);
   --space-lg-3: var(--scale-1000);
