@@ -13,6 +13,13 @@
             "type": "file",
             "filePath": "output/tokens.json"
           }
+        },
+        {
+          "name": "to-css-custom-properties",
+          "output": {
+            "type": "file",
+            "filePath": "output/tokens.css"
+          }
         }
       ]
     }
