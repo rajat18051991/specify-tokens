@@ -172,14 +172,6 @@ class DesignTokens {
     static let actionButtonColorTextUnderlinedNormal = Color(red: 0.15686, green: 0.15686, blue: 0.15686, opacity: 1)
     static let coloursAegean1Dark = Color(red: 0.17647, green: 0.19608, blue: 0.21961, opacity: 1)
     static let coloursAegean1Light = Color(red: 0.93333, green: 0.97255, blue: 0.99608, opacity: 1)
-    static let coloursAmber1Dark = Color(red: 0.20000, green: 0.18824, blue: 0.16078, opacity: 1)
-    static let coloursAmber1Light = Color(red: 0.98431, green: 0.97647, blue: 0.96863, opacity: 1)
-    static let coloursAmber2Dark = Color(red: 0.94510, green: 0.66667, blue: 0.06275, opacity: 1)
-    static let coloursAmber2Light = Color(red: 0.80392, green: 0.70196, blue: 0.60392, opacity: 1)
-    static let coloursAmber5Dark = Color(red: 0.75294, green: 0.61176, blue: 0.30196, opacity: 1)
-    static let coloursAmber5Light = Color(red: 0.58039, green: 0.43137, blue: 0.24706, opacity: 1)
-    static let coloursAmber7Dark = Color(red: 0.83922, green: 0.68235, blue: 0.33725, opacity: 1)
-    static let coloursAmber7Light = Color(red: 0.46275, green: 0.34118, blue: 0.20000, opacity: 1)
     static let coloursAsphalt7Dark = Color(red: 0.70196, green: 0.70196, blue: 0.70196, opacity: 1)
     static let coloursAsphalt7Light = Color(red: 0.30196, green: 0.30196, blue: 0.30196, opacity: 1)
     static let coloursBerry5Dark = Color(red: 0.90980, green: 0.09020, blue: 0.22745, opacity: 1)
@@ -232,6 +224,14 @@ class DesignTokens {
     static let coloursViolet1Light = Color(red: 0.98431, green: 0.97647, blue: 0.99216, opacity: 1)
     static let coloursViolet5Dark = Color(red: 0.68627, green: 0.49020, blue: 1.0, opacity: 1)
     static let coloursViolet5Light = Color(red: 0.55686, green: 0.40392, blue: 0.18824, opacity: 1)
+    static let coloursAmber1Dark = Color(red: 0.20000, green: 0.18824, blue: 0.16078, opacity: 1)
+    static let coloursAmber1Light = Color(red: 0.98431, green: 0.97647, blue: 0.96863, opacity: 1)
+    static let coloursAmber2Dark = Color(red: 0.94510, green: 0.66667, blue: 0.06275, opacity: 1)
+    static let coloursAmber2Light = Color(red: 0.80392, green: 0.70196, blue: 0.60392, opacity: 1)
+    static let coloursAmber5Dark = Color(red: 0.75294, green: 0.61176, blue: 0.30196, opacity: 1)
+    static let coloursAmber5Light = Color(red: 0.58039, green: 0.43137, blue: 0.24706, opacity: 1)
+    static let coloursAmber7Dark = Color(red: 0.83922, green: 0.68235, blue: 0.33725, opacity: 1)
+    static let coloursAmber7Light = Color(red: 0.46275, green: 0.34118, blue: 0.20000, opacity: 1)
     static let feedbackFeedbackButtonColorTextAlertOn_primaryHigh = Color(red: 0.94510, green: 0.66667, blue: 0.06275, opacity: 1)
     static let feedbackFeedbackButtonColorTextAlertOn_primaryLow = Color(red: 0.98431, green: 0.97647, blue: 0.96863, opacity: 1)
     static let themeThemeColorTextAlertLowDanland = Color(red: 0.20000, green: 0.18824, blue: 0.16078, opacity: 1)
@@ -410,13 +410,13 @@ class DesignTokens {
     static let themeThemeColorBackgroundPremiumMediumDanland = Color(red: 0.68627, green: 0.49020, blue: 1.0, opacity: 1)
     static let themeThemeColorBackgroundPremiumMediumPrism = Color(red: 0.50196, green: 0.33333, blue: 0.76471, opacity: 1)
     static let themeThemeColorBackgroundPremiumMediumTraum = Color(red: 0.50196, green: 0.33333, blue: 0.76471, opacity: 1)
-    static let feedbackFeedbackColorBackgroundNeutralInvertHigh = Color(red: 0.70196, green: 0.70196, blue: 0.70196, opacity: 1)
-    static let feedbackFeedbackColorBackgroundNeutralInvertLow = Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 1)
+    static let feedbackFeedbackColorBackgroundNeutralRegularHigh = Color(red: 0.70196, green: 0.70196, blue: 0.70196, opacity: 1)
+    static let feedbackFeedbackColorBackgroundNeutralRegularLow = Color(red: 0.96078, green: 0.96078, blue: 0.96078, opacity: 1)
     static let themeThemeColorBackgroundNeutralHighDanland = Color(red: 0.70196, green: 0.70196, blue: 0.70196, opacity: 1)
     static let themeThemeColorBackgroundNeutralHighPrism = Color(red: 0.30196, green: 0.30196, blue: 0.30196, opacity: 1)
     static let themeThemeColorBackgroundNeutralHighTraum = Color(red: 0.30196, green: 0.30196, blue: 0.30196, opacity: 1)
-    static let feedbackFeedbackColorBackgroundNeutralRegularHigh = Color(red: 0.70196, green: 0.70196, blue: 0.70196, opacity: 1)
-    static let feedbackFeedbackColorBackgroundNeutralRegularLow = Color(red: 0.96078, green: 0.96078, blue: 0.96078, opacity: 1)
+    static let feedbackFeedbackColorBackgroundNeutralInvertHigh = Color(red: 0.70196, green: 0.70196, blue: 0.70196, opacity: 1)
+    static let feedbackFeedbackColorBackgroundNeutralInvertLow = Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 1)
     static let feedbackFeedbackColorIconAlertHigh = Color(red: 0.12941, green: 0.12941, blue: 0.12941, opacity: 1)
     static let feedbackFeedbackColorIconAlertLow = Color(red: 0.46275, green: 0.34118, blue: 0.20000, opacity: 1)
     static let themeThemeColorIconAlertHighDanland = Color(red: 0.83922, green: 0.68235, blue: 0.33725, opacity: 1)
@@ -609,8 +609,8 @@ class DesignTokens {
     static let themeThemeSizeBorderRadiusLgDanland = 24
     static let themeThemeSizeBorderRadiusLgPrism = 0
     static let themeThemeSizeBorderRadiusLgTraum = 16
-    static let numbersScale0Desktop = 0
-    static let numbersScale0Mobile = 0
+    static let numbersScaleZeroDesktop = 0
+    static let numbersScaleZeroMobile = 0
     static let numbersScale200Desktop = 24
     static let numbersScale200Mobile = 16
     static let actionButtonSizeBorderRadiusMDisabled = 16
@@ -891,6 +891,8 @@ class DesignTokens {
     static let themeThemeSpaceMarginScreenOpticalTraum = 2
     static let numbersScale1400Desktop = 128
     static let numbersScale1400Mobile = 112
+    static let numbersScaleNumberDesktop = 0
+    static let numbersScaleNumberMobile = 97792
   }
 
 

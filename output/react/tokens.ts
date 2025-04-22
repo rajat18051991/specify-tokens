@@ -64,10 +64,6 @@ export const colorPaths = /** @type {const} */ ([
   'action.button.color.text.on-tertiary',
   'action.button.color.text.underlined',
   'colours.aegean.1',
-  'colours.amber.1',
-  'colours.amber.2',
-  'colours.amber.5',
-  'colours.amber.7',
   'colours.asphalt.7',
   'colours.berry.5',
   'colours.crimson.1',
@@ -94,6 +90,10 @@ export const colorPaths = /** @type {const} */ ([
   'colours.teal.7',
   'colours.violet.1',
   'colours.violet.5',
+  'colours.amber.1',
+  'colours.amber.2',
+  'colours.amber.5',
+  'colours.amber.7',
   'feedback.feedback.button.color.text.alert.on-primary',
   'theme.theme.color.text.alert.low',
   'theme.theme.color.text.alert.low-alt',
@@ -163,9 +163,9 @@ export const colorPaths = /** @type {const} */ ([
   'feedback.feedback.color.background.premium',
   'theme.theme.color.background.premium.low',
   'theme.theme.color.background.premium.medium',
-  'feedback.feedback.color.background.neutral.invert',
-  'theme.theme.color.background.neutral.high',
   'feedback.feedback.color.background.neutral.regular',
+  'theme.theme.color.background.neutral.high',
+  'feedback.feedback.color.background.neutral.invert',
   'feedback.feedback.color.icon.alert',
   'theme.theme.color.icon.alert.high',
   'theme.theme.color.icon.agnostic.black',
@@ -239,7 +239,7 @@ export const dimensionPaths = /** @type {const} */ ([
   'action.button.size.border.weight',
   'action.button.size.border.radius.L',
   'theme.theme.size.border.radius.lg',
-  'numbers.scale.0',
+  'numbers.scale.zero',
   'numbers.scale.200',
   'action.button.size.border.radius.M',
   'theme.theme.size.border.radius.md',
@@ -338,7 +338,8 @@ export const dimensionPaths = /** @type {const} */ ([
   'density.space.sm.5',
   'theme.theme.space.margin.screen.default',
   'theme.theme.space.margin.screen.optical',
-  'numbers.scale.1400'
+  'numbers.scale.1400',
+  'numbers.scale.Number'
 ]);
 /**
 * @typedef {typeof actionPaths} ActionPaths - All the valid paths for the collection action.
@@ -574,9 +575,7 @@ export const coloursPaths = /** @type {const} */ ([
   'colours.asphalt.18',     'colours.agnostic.black',
   'colours.asphalt.5',      'colours.asphalt.3',
   'colours.sky.5',          'colours.aegean.5',
-  'colours.aegean.1',       'colours.amber.1',
-  'colours.amber.2',        'colours.amber.5',
-  'colours.amber.7',        'colours.asphalt.7',
+  'colours.aegean.1',       'colours.asphalt.7',
   'colours.berry.5',        'colours.crimson.1',
   'colours.crimson.5',      'colours.crimson.7',
   'colours.emerald.1',      'colours.emerald.5',
@@ -589,22 +588,25 @@ export const coloursPaths = /** @type {const} */ ([
   'colours.sky.1',          'colours.sky.7',
   'colours.teal.1',         'colours.teal.5',
   'colours.teal.7',         'colours.violet.1',
-  'colours.violet.5'
+  'colours.violet.5',       'colours.amber.1',
+  'colours.amber.2',        'colours.amber.5',
+  'colours.amber.7'
 ]);
 /**
 * @typedef {typeof numbersPaths} NumbersPaths - All the valid paths for the collection numbers.
 * To use this type you can do: `@type {import('path/to/myTokensFile').NumbersPaths}`
 */
 export const numbersPaths = /** @type {const} */ ([
-  'numbers.scale.0',    'numbers.scale.200',
-  'numbers.scale.150',  'numbers.scale.100',
-  'numbers.scale.1600', 'numbers.scale.300',
-  'numbers.scale.50',   'numbers.scale.400',
-  'numbers.scale.700',  'numbers.scale.600',
-  'numbers.scale.800',  'numbers.scale.900',
-  'numbers.scale.1000', 'numbers.scale.1100',
-  'numbers.scale.1200', 'numbers.scale.500',
-  'numbers.scale.25',   'numbers.scale.1400'
+  'numbers.scale.zero',   'numbers.scale.200',
+  'numbers.scale.150',    'numbers.scale.100',
+  'numbers.scale.1600',   'numbers.scale.300',
+  'numbers.scale.50',     'numbers.scale.400',
+  'numbers.scale.700',    'numbers.scale.600',
+  'numbers.scale.800',    'numbers.scale.900',
+  'numbers.scale.1000',   'numbers.scale.1100',
+  'numbers.scale.1200',   'numbers.scale.500',
+  'numbers.scale.25',     'numbers.scale.1400',
+  'numbers.scale.Number'
 ]);
 /**
 * @typedef {typeof feedbackPaths} FeedbackPaths - All the valid paths for the collection feedback.
@@ -640,8 +642,8 @@ export const feedbackPaths = /** @type {const} */ ([
   'feedback.feedback.color.background.negative',
   'feedback.feedback.color.background.positive',
   'feedback.feedback.color.background.premium',
-  'feedback.feedback.color.background.neutral.invert',
   'feedback.feedback.color.background.neutral.regular',
+  'feedback.feedback.color.background.neutral.invert',
   'feedback.feedback.color.icon.alert',
   'feedback.feedback.color.icon.info',
   'feedback.feedback.color.icon.negative',
@@ -1010,10 +1012,6 @@ export const tokens = /** @type {const} */ ({
     normal: 'rgb(40, 40, 40)'
   },
   'colours.aegean.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(238, 248, 254)' },
-  'colours.amber.1': { dark: 'rgb(51, 48, 41)', light: 'rgb(251, 249, 247)' },
-  'colours.amber.2': { dark: 'rgb(241, 170, 16)', light: 'rgb(205, 179, 154)' },
-  'colours.amber.5': { dark: 'rgb(192, 156, 77)', light: 'rgb(148, 110, 63)' },
-  'colours.amber.7': { dark: 'rgb(214, 174, 86)', light: 'rgb(118, 87, 51)' },
   'colours.asphalt.7': { dark: 'rgb(179, 179, 179)', light: 'rgb(77, 77, 77)' },
   'colours.berry.5': { dark: 'rgb(232, 23, 58)', light: 'rgb(203, 16, 47)' },
   'colours.crimson.1': { dark: 'rgb(51, 41, 43)', light: 'rgb(251, 246, 247)' },
@@ -1040,6 +1038,10 @@ export const tokens = /** @type {const} */ ({
   'colours.teal.7': { dark: 'rgb(0, 199, 199)', light: 'rgb(0, 99, 99)' },
   'colours.violet.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(251, 249, 253)' },
   'colours.violet.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(142, 103, 48)' },
+  'colours.amber.1': { dark: 'rgb(51, 48, 41)', light: 'rgb(251, 249, 247)' },
+  'colours.amber.2': { dark: 'rgb(241, 170, 16)', light: 'rgb(205, 179, 154)' },
+  'colours.amber.5': { dark: 'rgb(192, 156, 77)', light: 'rgb(148, 110, 63)' },
+  'colours.amber.7': { dark: 'rgb(214, 174, 86)', light: 'rgb(118, 87, 51)' },
   'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
   'theme.theme.color.text.alert.low': {
     Danland: 'rgb(51, 48, 41)',
@@ -1269,13 +1271,13 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(128, 85, 195)',
     Traum: 'rgb(128, 85, 195)'
   },
-  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
+  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
   'theme.theme.color.background.neutral.high': {
     Danland: 'rgb(179, 179, 179)',
     Prism: 'rgb(77, 77, 77)',
     Traum: 'rgb(77, 77, 77)'
   },
-  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
+  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
   'feedback.feedback.color.icon.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
   'theme.theme.color.icon.alert.high': {
     Danland: 'rgb(214, 174, 86)',
@@ -1551,7 +1553,7 @@ export const tokens = /** @type {const} */ ({
   'action.button.size.border.weight': { disabled: '1px', hover: '2px', normal: '1px' },
   'action.button.size.border.radius.L': { disabled: '24px', hover: '16px', normal: '0px' },
   'theme.theme.size.border.radius.lg': { Danland: '24px', Prism: '0px', Traum: '16px' },
-  'numbers.scale.0': { desktop: '0px', mobile: '0px' },
+  'numbers.scale.zero': { desktop: '0px', mobile: '0px' },
   'numbers.scale.200': { desktop: '24px', mobile: '16px' },
   'action.button.size.border.radius.M': { disabled: '16px', hover: '12px', normal: '0px' },
   'theme.theme.size.border.radius.md': { Danland: '16px', Prism: '0px', Traum: '12px' },
@@ -1670,7 +1672,8 @@ export const tokens = /** @type {const} */ ({
   'density.space.sm.5': { comfortable: '16px', dense: '16px', tight: '8px' },
   'theme.theme.space.margin.screen.default': { Danland: '16px', Prism: '24px', Traum: '8px' },
   'theme.theme.space.margin.screen.optical': { Danland: '4px', Prism: '16px', Traum: '2px' },
-  'numbers.scale.1400': { desktop: '128px', mobile: '112px' }
+  'numbers.scale.1400': { desktop: '128px', mobile: '112px' },
+  'numbers.scale.Number': { desktop: '0px', mobile: '97792px' }
 });
 
 /**
