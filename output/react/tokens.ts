@@ -1,237 +1,4 @@
 /**
-* @typedef {typeof colorPaths} ColorPaths - All the valid paths for the tokens of type color.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ColorPaths}`
-*/
-export const colorPaths = /** @type {const} */ ([
-  'action.button.color.background.neutral',
-  'theme.theme.color.background.neutral.low',
-  'theme.theme.color.background.neutral.invert',
-  'colours.asphalt.1',
-  'colours.asphalt.invert',
-  'action.button.color.background.on-primary',
-  'theme.theme.color.background.brand.on-primary',
-  'theme.theme.color.background.neutral.low-alt',
-  'colours.agnostic.white',
-  'colours.asphalt.2',
-  'action.button.color.background.on-secondary',
-  'theme.theme.color.background.brand.on-secondary',
-  'action.button.color.background.primary',
-  'theme.theme.color.background.brand.primary',
-  'colours.violet.7',
-  'colours.aegean.7',
-  'action.button.color.background.secondary',
-  'theme.theme.color.background.brand.secondary',
-  'colours.asphalt.18',
-  'action.button.color.background.tertiary',
-  'action.button.color.border.tertiary',
-  'theme.theme.color.border.neutral.high',
-  'theme.theme.color.border.neutral.low',
-  'action.button.color.icon.invert-on-primary',
-  'theme.theme.color.text.brand.on-primary',
-  'theme.theme.color.icon.brand.invert-on-primary',
-  'theme.theme.color.text.neutral.medium',
-  'colours.agnostic.black',
-  'colours.asphalt.5',
-  'action.button.color.icon.invert-on-secondary',
-  'theme.theme.color.text.brand.on-secondary',
-  'theme.theme.color.icon.brand.invert-on-secondary',
-  'action.button.color.icon.on-neutral',
-  'theme.theme.color.icon.neutral.high',
-  'theme.theme.color.icon.neutral.low',
-  'colours.asphalt.3',
-  'action.button.color.icon.on-primary',
-  'theme.theme.color.icon.brand.on-primary',
-  'theme.theme.color.icon.neutral.medium',
-  'action.button.color.icon.on-secondary',
-  'theme.theme.color.icon.brand.on-secondary',
-  'action.button.color.icon.on-tertiary',
-  'action.button.color.icon.with-hyperlink',
-  'theme.theme.color.icon.info.medium',
-  'colours.sky.5',
-  'colours.aegean.5',
-  'action.button.color.icon.with-underlined',
-  'action.button.color.text.hyperlink',
-  'theme.theme.color.text.info.medium',
-  'theme.theme.color.text.neutral.low',
-  'action.button.color.text.invert-on-primary',
-  'theme.theme.color.text.brand.invert-on-primary',
-  'action.button.color.text.invert-on-secondary',
-  'theme.theme.color.text.brand.invert-on-secondary',
-  'action.button.color.text.on-neutral',
-  'theme.theme.color.text.neutral.high',
-  'action.button.color.text.on-primary',
-  'action.button.color.text.on-secondary',
-  'action.button.color.text.on-tertiary',
-  'action.button.color.text.underlined',
-  'colours.aegean.1',
-  'colours.amber.1',
-  'colours.amber.2',
-  'colours.amber.5',
-  'colours.amber.7',
-  'colours.asphalt.7',
-  'colours.berry.5',
-  'colours.crimson.1',
-  'colours.crimson.5',
-  'colours.crimson.7',
-  'colours.emerald.1',
-  'colours.emerald.5',
-  'colours.emerald.7',
-  'colours.firebrick.5',
-  'colours.gold.1',
-  'colours.lavender.1',
-  'colours.lavender.5',
-  'colours.lavender.7',
-  'colours.lime.2',
-  'colours.rust.1',
-  'colours.rust.5',
-  'colours.rust.7',
-  'colours.screen.1',
-  'colours.screen.2',
-  'colours.sky.1',
-  'colours.sky.7',
-  'colours.teal.1',
-  'colours.teal.5',
-  'colours.teal.7',
-  'colours.violet.1',
-  'colours.violet.5',
-  'feedback.feedback.color.background.alert',
-  'theme.theme.color.background.alert.low',
-  'theme.theme.color.background.alert.medium',
-  'feedback.feedback.color.background.info',
-  'theme.theme.color.background.info.low',
-  'theme.theme.color.background.info.medium',
-  'feedback.feedback.color.background.negative',
-  'theme.theme.color.background.negative.low',
-  'theme.theme.color.background.negative.medium',
-  'feedback.feedback.color.background.positive',
-  'theme.theme.color.background.positive.low',
-  'theme.theme.color.background.positive.medium',
-  'feedback.feedback.color.background.premium',
-  'theme.theme.color.background.premium.low',
-  'theme.theme.color.background.premium.medium',
-  'feedback.feedback.color.background.neutral.invert',
-  'theme.theme.color.background.neutral.high',
-  'feedback.feedback.color.background.neutral.regular',
-  'feedback.feedback.color.icon.alert',
-  'theme.theme.color.icon.alert.high',
-  'theme.theme.color.icon.agnostic.black',
-  'feedback.feedback.color.icon.info',
-  'theme.theme.color.icon.info.high',
-  'theme.theme.color.icon.neutral.invert',
-  'feedback.feedback.color.icon.negative',
-  'theme.theme.color.icon.negative.high',
-  'feedback.feedback.color.icon.neutral',
-  'feedback.feedback.color.icon.positive',
-  'theme.theme.color.icon.positive.high',
-  'feedback.feedback.color.icon.premium',
-  'theme.theme.color.icon.premium.high',
-  'feedback.feedback.color.text.alert',
-  'theme.theme.color.text.alert.high',
-  'theme.theme.color.text.agnostic.black',
-  'feedback.feedback.color.text.info',
-  'theme.theme.color.text.info.high',
-  'theme.theme.color.text.neutral.invert',
-  'feedback.feedback.color.text.negative',
-  'theme.theme.color.text.negative.high',
-  'feedback.feedback.color.text.neutral',
-  'feedback.feedback.color.text.positive',
-  'theme.theme.color.text.positive.high',
-  'feedback.feedback.color.text.premium',
-  'theme.theme.color.text.premium.high',
-  'feedback.feedback.button.color.background.alert',
-  'theme.theme.color.background.alert.high',
-  'theme.theme.color.background.agnostic.black',
-  'feedback.feedback.button.color.background.info',
-  'theme.theme.color.background.info.high',
-  'feedback.feedback.button.color.background.negative',
-  'theme.theme.color.background.negative.high',
-  'feedback.feedback.button.color.background.neutral',
-  'theme.theme.color.background.neutral.high-alt',
-  'feedback.feedback.button.color.background.positive',
-  'theme.theme.color.background.positive.high',
-  'feedback.feedback.button.color.background.premium',
-  'theme.theme.color.background.premium.high',
-  'feedback.feedback.button.color.border.alert',
-  'theme.theme.color.border.alert.high',
-  'theme.theme.color.border.agnostic.black',
-  'feedback.feedback.button.color.border.info',
-  'theme.theme.color.border.info.high',
-  'theme.theme.color.border.neutral.invert',
-  'feedback.feedback.button.color.border.negative',
-  'theme.theme.color.border.negative.high',
-  'feedback.feedback.button.color.border.neutral',
-  'feedback.feedback.button.color.border.positive',
-  'theme.theme.color.border.positive.high',
-  'feedback.feedback.button.color.border.premium',
-  'theme.theme.color.border.premium.high',
-  'feedback.feedback.button.color.text.alert.on-primary',
-  'theme.theme.color.text.alert.low',
-  'theme.theme.color.text.alert.low-alt',
-  'feedback.feedback.button.color.text.alert.on-secondary',
-  'feedback.feedback.button.color.text.info.on-primary',
-  'theme.theme.color.text.info.low',
-  'feedback.feedback.button.color.text.info.on-secondary',
-  'feedback.feedback.button.color.text.negative.on-primary',
-  'theme.theme.color.text.negative.low',
-  'theme.theme.color.text.negative.medium',
-  'feedback.feedback.button.color.text.negative.on-secondary',
-  'feedback.feedback.button.color.text.neutral.on-primary',
-  'feedback.feedback.button.color.text.neutral.on-secondary',
-  'feedback.feedback.button.color.text.positive.on-primary',
-  'theme.theme.color.text.positive.low',
-  'theme.theme.color.text.positive.medium',
-  'feedback.feedback.button.color.text.positive.on-secondary',
-  'feedback.feedback.button.color.text.premium.on-primary',
-  'theme.theme.color.text.premium.low',
-  'theme.theme.color.text.premium.medium',
-  'feedback.feedback.button.color.text.premium.on-secondary',
-  'theme.theme.color.background.agnostic.white',
-  'theme.theme.color.background.discount.high',
-  'theme.theme.color.background.discount.low',
-  'theme.theme.color.background.neutral.medium',
-  'theme.theme.color.background.neutral.medium-alt',
-  'theme.theme.color.background.screen.alt',
-  'theme.theme.color.background.screen.default',
-  'theme.theme.color.border.agnostic.white',
-  'theme.theme.color.border.alert.low',
-  'theme.theme.color.border.alert.medium',
-  'theme.theme.color.border.brand.primary',
-  'theme.theme.color.border.brand.secondary',
-  'theme.theme.color.border.info.low',
-  'theme.theme.color.border.info.medium',
-  'theme.theme.color.border.negative.low',
-  'theme.theme.color.border.negative.medium',
-  'theme.theme.color.border.neutral.medium',
-  'theme.theme.color.border.positive.low',
-  'theme.theme.color.border.positive.medium',
-  'theme.theme.color.border.premium.low',
-  'theme.theme.color.border.premium.medium',
-  'theme.theme.color.icon.agnostic.white',
-  'theme.theme.color.icon.alert.low',
-  'theme.theme.color.icon.alert.low-alt',
-  'theme.theme.color.icon.alert.medium',
-  'theme.theme.color.icon.brand.primary',
-  'theme.theme.color.icon.brand.secondary',
-  'theme.theme.color.icon.discount.high',
-  'theme.theme.color.icon.discount.low',
-  'theme.theme.color.icon.discount.medium',
-  'theme.theme.color.icon.info.low',
-  'theme.theme.color.icon.negative.low',
-  'theme.theme.color.icon.negative.medium',
-  'theme.theme.color.icon.positive.low',
-  'theme.theme.color.icon.positive.medium',
-  'theme.theme.color.icon.premium.low',
-  'theme.theme.color.icon.premium.medium',
-  'theme.theme.color.icon.rating.filled',
-  'theme.theme.color.icon.rating.unfilled',
-  'theme.theme.color.text.agnostic.white',
-  'theme.theme.color.text.alert.medium',
-  'theme.theme.color.text.brand.primary',
-  'theme.theme.color.text.brand.secondary',
-  'theme.theme.color.text.discount.on-high',
-  'theme.theme.color.text.discount.on-low'
-]);
-/**
 * @typedef {typeof dimensionPaths} DimensionPaths - All the valid paths for the tokens of type dimension.
 * To use this type you can do: `@type {import('path/to/myTokensFile').DimensionPaths}`
 */
@@ -336,15 +103,253 @@ export const dimensionPaths = /** @type {const} */ ([
   'density.space.sm.4',
   'theme.theme.space.sm.5',
   'density.space.sm.5',
-  'theme.theme.space.margin.screen.default',
-  'theme.theme.space.margin.screen.optical',
+  'theme.theme.screen.space.default',
+  'theme.theme.screen.space.optical',
   'numbers.scale.1400'
+]);
+/**
+* @typedef {typeof colorPaths} ColorPaths - All the valid paths for the tokens of type color.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ColorPaths}`
+*/
+export const colorPaths = /** @type {const} */ ([
+  'action.button.color.background.neutral',
+  'theme.theme.colour.background.neutral.low',
+  'theme.theme.colour.background.neutral.invert',
+  'colours.asphalt.1',
+  'colours.asphalt.invert',
+  'action.button.color.background.on-primary',
+  'theme.theme.colour.background.brand.on-primary',
+  'theme.theme.colour.background.neutral.low-alt',
+  'colours.agnostic.white',
+  'colours.asphalt.2',
+  'action.button.color.background.on-secondary',
+  'theme.theme.colour.background.brand.on-secondary',
+  'action.button.color.background.primary',
+  'theme.theme.colour.background.brand.primary',
+  'colours.violet.7',
+  'colours.aegean.7',
+  'action.button.color.background.secondary',
+  'theme.theme.colour.background.brand.secondary',
+  'colours.asphalt.18',
+  'action.button.color.background.tertiary',
+  'action.button.color.border.tertiary',
+  'theme.theme.colour.border.neutral.high',
+  'theme.theme.colour.border.neutral.low',
+  'action.button.color.icon.invert-on-primary',
+  'theme.theme.colour.text.brand.on-primary',
+  'theme.theme.colour.icon.brand.invert-on-primary',
+  'theme.theme.colour.text.neutral.medium',
+  'colours.agnostic.black',
+  'colours.asphalt.5',
+  'action.button.color.icon.invert-on-secondary',
+  'theme.theme.colour.text.brand.on-secondary',
+  'theme.theme.colour.icon.brand.invert-on-secondary',
+  'action.button.color.icon.on-neutral',
+  'theme.theme.colour.icon.neutral.high',
+  'theme.theme.colour.icon.neutral.low',
+  'colours.asphalt.3',
+  'action.button.color.icon.on-primary',
+  'theme.theme.colour.icon.brand.on-primary',
+  'theme.theme.colour.icon.neutral.medium',
+  'action.button.color.icon.on-secondary',
+  'theme.theme.colour.icon.brand.on-secondary',
+  'action.button.color.icon.on-tertiary',
+  'action.button.color.icon.with-hyperlink',
+  'theme.theme.colour.icon.info.medium',
+  'colours.sky.5',
+  'colours.aegean.5',
+  'action.button.color.icon.with-underlined',
+  'action.button.color.text.hyperlink',
+  'theme.theme.colour.text.info.medium',
+  'theme.theme.colour.text.neutral.low',
+  'action.button.color.text.invert-on-primary',
+  'theme.theme.colour.text.brand.invert-on-primary',
+  'action.button.color.text.invert-on-secondary',
+  'theme.theme.colour.text.brand.invert-on-secondary',
+  'action.button.color.text.on-neutral',
+  'theme.theme.colour.text.neutral.high',
+  'action.button.color.text.on-primary',
+  'action.button.color.text.on-secondary',
+  'action.button.color.text.on-tertiary',
+  'action.button.color.text.underlined',
+  'colours.asphalt.7',
+  'colours.aegean.1',
+  'colours.amber.1',
+  'colours.amber.2',
+  'colours.amber.5',
+  'colours.amber.7',
+  'colours.lavender.1',
+  'colours.lavender.5',
+  'colours.lavender.7',
+  'colours.lime.2',
+  'colours.rust.1',
+  'colours.rust.5',
+  'colours.rust.7',
+  'colours.screen.1',
+  'colours.screen.2',
+  'colours.sky.1',
+  'colours.sky.7',
+  'colours.teal.1',
+  'colours.teal.5',
+  'colours.teal.7',
+  'colours.violet.1',
+  'colours.violet.5',
+  'colours.berry.5',
+  'colours.crimson.1',
+  'colours.crimson.5',
+  'colours.crimson.7',
+  'colours.emerald.1',
+  'colours.emerald.5',
+  'colours.emerald.7',
+  'colours.firebrick.5',
+  'colours.gold.1',
+  'feedback.feedback.button.color.text.alert.on-primary',
+  'theme.theme.colour.text.alert.low',
+  'theme.theme.colour.text.alert.low-alt',
+  'feedback.feedback.button.color.text.alert.on-secondary',
+  'theme.theme.colour.text.alert.high',
+  'theme.theme.colour.text.agnostic.black',
+  'feedback.feedback.button.color.text.info.on-primary',
+  'theme.theme.colour.text.info.low',
+  'feedback.feedback.button.color.text.info.on-secondary',
+  'theme.theme.colour.text.info.high',
+  'theme.theme.colour.text.neutral.invert',
+  'feedback.feedback.button.color.text.negative.on-primary',
+  'theme.theme.colour.text.negative.low',
+  'theme.theme.colour.text.negative.medium',
+  'feedback.feedback.button.color.text.negative.on-secondary',
+  'theme.theme.colour.text.negative.high',
+  'feedback.feedback.button.color.text.neutral.on-primary',
+  'feedback.feedback.button.color.text.neutral.on-secondary',
+  'feedback.feedback.button.color.text.positive.on-primary',
+  'theme.theme.colour.text.positive.low',
+  'theme.theme.colour.text.positive.medium',
+  'feedback.feedback.button.color.text.positive.on-secondary',
+  'theme.theme.colour.text.positive.high',
+  'feedback.feedback.button.color.text.premium.on-primary',
+  'theme.theme.colour.text.premium.low',
+  'theme.theme.colour.text.premium.medium',
+  'feedback.feedback.button.color.text.premium.on-secondary',
+  'theme.theme.colour.text.premium.high',
+  'feedback.feedback.button.color.background.alert',
+  'theme.theme.colour.background.alert.high',
+  'theme.theme.colour.background.agnostic.black',
+  'feedback.feedback.button.color.background.info',
+  'theme.theme.colour.background.info.high',
+  'feedback.feedback.button.color.background.negative',
+  'theme.theme.colour.background.negative.high',
+  'feedback.feedback.button.color.background.neutral',
+  'theme.theme.colour.background.neutral.high-alt',
+  'feedback.feedback.button.color.background.positive',
+  'theme.theme.colour.background.positive.high',
+  'feedback.feedback.button.color.background.premium',
+  'theme.theme.colour.background.premium.high',
+  'feedback.feedback.button.color.border.alert',
+  'theme.theme.colour.border.alert.high',
+  'theme.theme.colour.border.agnostic.black',
+  'feedback.feedback.button.color.border.info',
+  'theme.theme.colour.border.info.high',
+  'theme.theme.colour.border.neutral.invert',
+  'feedback.feedback.button.color.border.negative',
+  'theme.theme.colour.border.negative.high',
+  'feedback.feedback.button.color.border.neutral',
+  'feedback.feedback.button.color.border.positive',
+  'theme.theme.colour.border.positive.high',
+  'feedback.feedback.button.color.border.premium',
+  'theme.theme.colour.border.premium.high',
+  'feedback.feedback.color.background.alert',
+  'theme.theme.colour.background.alert.low',
+  'theme.theme.colour.background.alert.medium',
+  'feedback.feedback.color.background.info',
+  'theme.theme.colour.background.info.low',
+  'theme.theme.colour.background.info.medium',
+  'feedback.feedback.color.background.negative',
+  'theme.theme.colour.background.negative.low',
+  'theme.theme.colour.background.negative.medium',
+  'feedback.feedback.color.background.positive',
+  'theme.theme.colour.background.positive.low',
+  'theme.theme.colour.background.positive.medium',
+  'feedback.feedback.color.background.neutral.invert',
+  'theme.theme.colour.background.neutral.high',
+  'feedback.feedback.color.background.neutral.regular',
+  'feedback.feedback.color.background.premium',
+  'theme.theme.colour.background.premium.low',
+  'theme.theme.colour.background.premium.medium',
+  'feedback.feedback.color.icon.alert',
+  'theme.theme.colour.icon.alert.high',
+  'theme.theme.colour.icon.agnostic.black',
+  'feedback.feedback.color.icon.info',
+  'theme.theme.colour.icon.info.high',
+  'theme.theme.colour.icon.neutral.invert',
+  'feedback.feedback.color.icon.negative',
+  'theme.theme.colour.icon.negative.high',
+  'feedback.feedback.color.icon.neutral',
+  'feedback.feedback.color.icon.positive',
+  'theme.theme.colour.icon.positive.high',
+  'feedback.feedback.color.icon.premium',
+  'theme.theme.colour.icon.premium.high',
+  'feedback.feedback.color.text.alert',
+  'feedback.feedback.color.text.info',
+  'feedback.feedback.color.text.negative',
+  'feedback.feedback.color.text.neutral',
+  'feedback.feedback.color.text.positive',
+  'feedback.feedback.color.text.premium',
+  'theme.theme.rang',
+  'theme.theme.colour.background.agnostic.white',
+  'theme.theme.colour.background.discount.high',
+  'theme.theme.colour.background.discount.low',
+  'theme.theme.colour.background.neutral.medium',
+  'theme.theme.colour.background.neutral.medium-alt',
+  'theme.theme.colour.background.screen.alt',
+  'theme.theme.colour.background.screen.default',
+  'theme.theme.colour.border.agnostic.white',
+  'theme.theme.colour.border.alert.low',
+  'theme.theme.colour.border.alert.medium',
+  'theme.theme.colour.border.brand.primary',
+  'theme.theme.colour.border.brand.secondary',
+  'theme.theme.colour.border.info.low',
+  'theme.theme.colour.border.info.medium',
+  'theme.theme.colour.border.negative.low',
+  'theme.theme.colour.border.negative.medium',
+  'theme.theme.colour.border.neutral.medium',
+  'theme.theme.colour.border.positive.low',
+  'theme.theme.colour.border.positive.medium',
+  'theme.theme.colour.border.premium.low',
+  'theme.theme.colour.border.premium.medium',
+  'theme.theme.colour.icon.agnostic.white',
+  'theme.theme.colour.icon.alert.low',
+  'theme.theme.colour.icon.alert.low-alt',
+  'theme.theme.colour.icon.alert.medium',
+  'theme.theme.colour.icon.brand.primary',
+  'theme.theme.colour.icon.brand.secondary',
+  'theme.theme.colour.icon.discount.high',
+  'theme.theme.colour.icon.discount.low',
+  'theme.theme.colour.icon.discount.medium',
+  'theme.theme.colour.icon.info.low',
+  'theme.theme.colour.icon.negative.low',
+  'theme.theme.colour.icon.negative.medium',
+  'theme.theme.colour.icon.positive.low',
+  'theme.theme.colour.icon.positive.medium',
+  'theme.theme.colour.icon.premium.low',
+  'theme.theme.colour.icon.premium.medium',
+  'theme.theme.colour.icon.rating.filled',
+  'theme.theme.colour.icon.rating.unfilled',
+  'theme.theme.colour.text.agnostic.white',
+  'theme.theme.colour.text.alert.medium',
+  'theme.theme.colour.text.brand.primary',
+  'theme.theme.colour.text.brand.secondary',
+  'theme.theme.colour.text.discount.on-high',
+  'theme.theme.colour.text.discount.on-low'
 ]);
 /**
 * @typedef {typeof actionPaths} ActionPaths - All the valid paths for the collection action.
 * To use this type you can do: `@type {import('path/to/myTokensFile').ActionPaths}`
 */
 export const actionPaths = /** @type {const} */ ([
+  'action.button.size.border.weight',
+  'action.button.size.border.radius.L',
+  'action.button.size.border.radius.M',
+  'action.button.size.border.radius.S',
   'action.button.color.background.neutral',
   'action.button.color.background.on-primary',
   'action.button.color.background.on-secondary',
@@ -367,93 +372,89 @@ export const actionPaths = /** @type {const} */ ([
   'action.button.color.text.on-primary',
   'action.button.color.text.on-secondary',
   'action.button.color.text.on-tertiary',
-  'action.button.color.text.underlined',
-  'action.button.size.border.weight',
-  'action.button.size.border.radius.L',
-  'action.button.size.border.radius.M',
-  'action.button.size.border.radius.S'
+  'action.button.color.text.underlined'
 ]);
 /**
 * @typedef {typeof themePaths} ThemePaths - All the valid paths for the collection theme.
 * To use this type you can do: `@type {import('path/to/myTokensFile').ThemePaths}`
 */
 export const themePaths = /** @type {const} */ ([
-  'theme.theme.color.background.neutral.low',
-  'theme.theme.color.background.neutral.invert',
-  'theme.theme.color.background.brand.on-primary',
-  'theme.theme.color.background.neutral.low-alt',
-  'theme.theme.color.background.brand.on-secondary',
-  'theme.theme.color.background.brand.primary',
-  'theme.theme.color.background.brand.secondary',
-  'theme.theme.color.border.neutral.high',
-  'theme.theme.color.border.neutral.low',
-  'theme.theme.color.text.brand.on-primary',
-  'theme.theme.color.icon.brand.invert-on-primary',
-  'theme.theme.color.text.neutral.medium',
-  'theme.theme.color.text.brand.on-secondary',
-  'theme.theme.color.icon.brand.invert-on-secondary',
-  'theme.theme.color.icon.neutral.high',
-  'theme.theme.color.icon.neutral.low',
-  'theme.theme.color.icon.brand.on-primary',
-  'theme.theme.color.icon.neutral.medium',
-  'theme.theme.color.icon.brand.on-secondary',
-  'theme.theme.color.icon.info.medium',
-  'theme.theme.color.text.info.medium',
-  'theme.theme.color.text.neutral.low',
-  'theme.theme.color.text.brand.invert-on-primary',
-  'theme.theme.color.text.brand.invert-on-secondary',
-  'theme.theme.color.text.neutral.high',
   'theme.theme.size.border.radius.lg',
   'theme.theme.size.border.radius.md',
   'theme.theme.size.border.radius.sm',
-  'theme.theme.color.background.alert.low',
-  'theme.theme.color.background.alert.medium',
-  'theme.theme.color.background.info.low',
-  'theme.theme.color.background.info.medium',
-  'theme.theme.color.background.negative.low',
-  'theme.theme.color.background.negative.medium',
-  'theme.theme.color.background.positive.low',
-  'theme.theme.color.background.positive.medium',
-  'theme.theme.color.background.premium.low',
-  'theme.theme.color.background.premium.medium',
-  'theme.theme.color.background.neutral.high',
-  'theme.theme.color.icon.alert.high',
-  'theme.theme.color.icon.agnostic.black',
-  'theme.theme.color.icon.info.high',
-  'theme.theme.color.icon.neutral.invert',
-  'theme.theme.color.icon.negative.high',
-  'theme.theme.color.icon.positive.high',
-  'theme.theme.color.icon.premium.high',
-  'theme.theme.color.text.alert.high',
-  'theme.theme.color.text.agnostic.black',
-  'theme.theme.color.text.info.high',
-  'theme.theme.color.text.neutral.invert',
-  'theme.theme.color.text.negative.high',
-  'theme.theme.color.text.positive.high',
-  'theme.theme.color.text.premium.high',
-  'theme.theme.color.background.alert.high',
-  'theme.theme.color.background.agnostic.black',
-  'theme.theme.color.background.info.high',
-  'theme.theme.color.background.negative.high',
-  'theme.theme.color.background.neutral.high-alt',
-  'theme.theme.color.background.positive.high',
-  'theme.theme.color.background.premium.high',
-  'theme.theme.color.border.alert.high',
-  'theme.theme.color.border.agnostic.black',
-  'theme.theme.color.border.info.high',
-  'theme.theme.color.border.neutral.invert',
-  'theme.theme.color.border.negative.high',
-  'theme.theme.color.border.positive.high',
-  'theme.theme.color.border.premium.high',
-  'theme.theme.color.text.alert.low',
-  'theme.theme.color.text.alert.low-alt',
-  'theme.theme.color.text.info.low',
-  'theme.theme.color.text.negative.low',
-  'theme.theme.color.text.negative.medium',
-  'theme.theme.color.text.positive.low',
-  'theme.theme.color.text.positive.medium',
-  'theme.theme.color.text.premium.low',
-  'theme.theme.color.text.premium.medium',
+  'theme.theme.colour.background.neutral.low',
+  'theme.theme.colour.background.neutral.invert',
+  'theme.theme.colour.background.brand.on-primary',
+  'theme.theme.colour.background.neutral.low-alt',
+  'theme.theme.colour.background.brand.on-secondary',
+  'theme.theme.colour.background.brand.primary',
+  'theme.theme.colour.background.brand.secondary',
+  'theme.theme.colour.border.neutral.high',
+  'theme.theme.colour.border.neutral.low',
+  'theme.theme.colour.text.brand.on-primary',
+  'theme.theme.colour.icon.brand.invert-on-primary',
+  'theme.theme.colour.text.neutral.medium',
+  'theme.theme.colour.text.brand.on-secondary',
+  'theme.theme.colour.icon.brand.invert-on-secondary',
+  'theme.theme.colour.icon.neutral.high',
+  'theme.theme.colour.icon.neutral.low',
+  'theme.theme.colour.icon.brand.on-primary',
+  'theme.theme.colour.icon.neutral.medium',
+  'theme.theme.colour.icon.brand.on-secondary',
+  'theme.theme.colour.icon.info.medium',
+  'theme.theme.colour.text.info.medium',
+  'theme.theme.colour.text.neutral.low',
+  'theme.theme.colour.text.brand.invert-on-primary',
+  'theme.theme.colour.text.brand.invert-on-secondary',
+  'theme.theme.colour.text.neutral.high',
+  'theme.theme.colour.text.alert.low',
+  'theme.theme.colour.text.alert.low-alt',
+  'theme.theme.colour.text.alert.high',
+  'theme.theme.colour.text.agnostic.black',
+  'theme.theme.colour.text.info.low',
+  'theme.theme.colour.text.info.high',
+  'theme.theme.colour.text.neutral.invert',
+  'theme.theme.colour.text.negative.low',
+  'theme.theme.colour.text.negative.medium',
+  'theme.theme.colour.text.negative.high',
+  'theme.theme.colour.text.positive.low',
+  'theme.theme.colour.text.positive.medium',
+  'theme.theme.colour.text.positive.high',
+  'theme.theme.colour.text.premium.low',
+  'theme.theme.colour.text.premium.medium',
+  'theme.theme.colour.text.premium.high',
+  'theme.theme.colour.background.alert.high',
+  'theme.theme.colour.background.agnostic.black',
+  'theme.theme.colour.background.info.high',
+  'theme.theme.colour.background.negative.high',
+  'theme.theme.colour.background.neutral.high-alt',
+  'theme.theme.colour.background.positive.high',
+  'theme.theme.colour.background.premium.high',
+  'theme.theme.colour.border.alert.high',
+  'theme.theme.colour.border.agnostic.black',
+  'theme.theme.colour.border.info.high',
+  'theme.theme.colour.border.neutral.invert',
+  'theme.theme.colour.border.negative.high',
+  'theme.theme.colour.border.positive.high',
+  'theme.theme.colour.border.premium.high',
+  'theme.theme.colour.background.alert.low',
+  'theme.theme.colour.background.alert.medium',
+  'theme.theme.colour.background.info.low',
+  'theme.theme.colour.background.info.medium',
+  'theme.theme.colour.background.negative.low',
+  'theme.theme.colour.background.negative.medium',
+  'theme.theme.colour.background.positive.low',
+  'theme.theme.colour.background.positive.medium',
+  'theme.theme.colour.background.neutral.high',
+  'theme.theme.colour.background.premium.low',
+  'theme.theme.colour.background.premium.medium',
+  'theme.theme.colour.icon.alert.high',
+  'theme.theme.colour.icon.agnostic.black',
+  'theme.theme.colour.icon.info.high',
+  'theme.theme.colour.icon.neutral.invert',
+  'theme.theme.colour.icon.negative.high',
+  'theme.theme.colour.icon.positive.high',
+  'theme.theme.colour.icon.premium.high',
   'theme.theme.font.letter-spacing.h1',
   'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.h2',
@@ -496,51 +497,6 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.font.weight.high',
   'theme.theme.font.weight.medium',
   'theme.theme.font.weight.regular',
-  'theme.theme.color.background.agnostic.white',
-  'theme.theme.color.background.discount.high',
-  'theme.theme.color.background.discount.low',
-  'theme.theme.color.background.neutral.medium',
-  'theme.theme.color.background.neutral.medium-alt',
-  'theme.theme.color.background.screen.alt',
-  'theme.theme.color.background.screen.default',
-  'theme.theme.color.border.agnostic.white',
-  'theme.theme.color.border.alert.low',
-  'theme.theme.color.border.alert.medium',
-  'theme.theme.color.border.brand.primary',
-  'theme.theme.color.border.brand.secondary',
-  'theme.theme.color.border.info.low',
-  'theme.theme.color.border.info.medium',
-  'theme.theme.color.border.negative.low',
-  'theme.theme.color.border.negative.medium',
-  'theme.theme.color.border.neutral.medium',
-  'theme.theme.color.border.positive.low',
-  'theme.theme.color.border.positive.medium',
-  'theme.theme.color.border.premium.low',
-  'theme.theme.color.border.premium.medium',
-  'theme.theme.color.icon.agnostic.white',
-  'theme.theme.color.icon.alert.low',
-  'theme.theme.color.icon.alert.low-alt',
-  'theme.theme.color.icon.alert.medium',
-  'theme.theme.color.icon.brand.primary',
-  'theme.theme.color.icon.brand.secondary',
-  'theme.theme.color.icon.discount.high',
-  'theme.theme.color.icon.discount.low',
-  'theme.theme.color.icon.discount.medium',
-  'theme.theme.color.icon.info.low',
-  'theme.theme.color.icon.negative.low',
-  'theme.theme.color.icon.negative.medium',
-  'theme.theme.color.icon.positive.low',
-  'theme.theme.color.icon.positive.medium',
-  'theme.theme.color.icon.premium.low',
-  'theme.theme.color.icon.premium.medium',
-  'theme.theme.color.icon.rating.filled',
-  'theme.theme.color.icon.rating.unfilled',
-  'theme.theme.color.text.agnostic.white',
-  'theme.theme.color.text.alert.medium',
-  'theme.theme.color.text.brand.primary',
-  'theme.theme.color.text.brand.secondary',
-  'theme.theme.color.text.discount.on-high',
-  'theme.theme.color.text.discount.on-low',
   'theme.theme.size.border.radius.pill',
   'theme.theme.size.border.radius.xl',
   'theme.theme.size.border.radius.xs',
@@ -560,36 +516,54 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.space.sm.3',
   'theme.theme.space.sm.4',
   'theme.theme.space.sm.5',
-  'theme.theme.space.margin.screen.default',
-  'theme.theme.space.margin.screen.optical'
-]);
-/**
-* @typedef {typeof coloursPaths} ColoursPaths - All the valid paths for the collection colours.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ColoursPaths}`
-*/
-export const coloursPaths = /** @type {const} */ ([
-  'colours.asphalt.1',      'colours.asphalt.invert',
-  'colours.agnostic.white', 'colours.asphalt.2',
-  'colours.violet.7',       'colours.aegean.7',
-  'colours.asphalt.18',     'colours.agnostic.black',
-  'colours.asphalt.5',      'colours.asphalt.3',
-  'colours.sky.5',          'colours.aegean.5',
-  'colours.aegean.1',       'colours.amber.1',
-  'colours.amber.2',        'colours.amber.5',
-  'colours.amber.7',        'colours.asphalt.7',
-  'colours.berry.5',        'colours.crimson.1',
-  'colours.crimson.5',      'colours.crimson.7',
-  'colours.emerald.1',      'colours.emerald.5',
-  'colours.emerald.7',      'colours.firebrick.5',
-  'colours.gold.1',         'colours.lavender.1',
-  'colours.lavender.5',     'colours.lavender.7',
-  'colours.lime.2',         'colours.rust.1',
-  'colours.rust.5',         'colours.rust.7',
-  'colours.screen.1',       'colours.screen.2',
-  'colours.sky.1',          'colours.sky.7',
-  'colours.teal.1',         'colours.teal.5',
-  'colours.teal.7',         'colours.violet.1',
-  'colours.violet.5'
+  'theme.theme.rang',
+  'theme.theme.screen.space.default',
+  'theme.theme.screen.space.optical',
+  'theme.theme.colour.background.agnostic.white',
+  'theme.theme.colour.background.discount.high',
+  'theme.theme.colour.background.discount.low',
+  'theme.theme.colour.background.neutral.medium',
+  'theme.theme.colour.background.neutral.medium-alt',
+  'theme.theme.colour.background.screen.alt',
+  'theme.theme.colour.background.screen.default',
+  'theme.theme.colour.border.agnostic.white',
+  'theme.theme.colour.border.alert.low',
+  'theme.theme.colour.border.alert.medium',
+  'theme.theme.colour.border.brand.primary',
+  'theme.theme.colour.border.brand.secondary',
+  'theme.theme.colour.border.info.low',
+  'theme.theme.colour.border.info.medium',
+  'theme.theme.colour.border.negative.low',
+  'theme.theme.colour.border.negative.medium',
+  'theme.theme.colour.border.neutral.medium',
+  'theme.theme.colour.border.positive.low',
+  'theme.theme.colour.border.positive.medium',
+  'theme.theme.colour.border.premium.low',
+  'theme.theme.colour.border.premium.medium',
+  'theme.theme.colour.icon.agnostic.white',
+  'theme.theme.colour.icon.alert.low',
+  'theme.theme.colour.icon.alert.low-alt',
+  'theme.theme.colour.icon.alert.medium',
+  'theme.theme.colour.icon.brand.primary',
+  'theme.theme.colour.icon.brand.secondary',
+  'theme.theme.colour.icon.discount.high',
+  'theme.theme.colour.icon.discount.low',
+  'theme.theme.colour.icon.discount.medium',
+  'theme.theme.colour.icon.info.low',
+  'theme.theme.colour.icon.negative.low',
+  'theme.theme.colour.icon.negative.medium',
+  'theme.theme.colour.icon.positive.low',
+  'theme.theme.colour.icon.positive.medium',
+  'theme.theme.colour.icon.premium.low',
+  'theme.theme.colour.icon.premium.medium',
+  'theme.theme.colour.icon.rating.filled',
+  'theme.theme.colour.icon.rating.unfilled',
+  'theme.theme.colour.text.agnostic.white',
+  'theme.theme.colour.text.alert.medium',
+  'theme.theme.colour.text.brand.primary',
+  'theme.theme.colour.text.brand.secondary',
+  'theme.theme.colour.text.discount.on-high',
+  'theme.theme.colour.text.discount.on-low'
 ]);
 /**
 * @typedef {typeof numbersPaths} NumbersPaths - All the valid paths for the collection numbers.
@@ -607,29 +581,50 @@ export const numbersPaths = /** @type {const} */ ([
   'numbers.scale.25',   'numbers.scale.1400'
 ]);
 /**
+* @typedef {typeof coloursPaths} ColoursPaths - All the valid paths for the collection colours.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ColoursPaths}`
+*/
+export const coloursPaths = /** @type {const} */ ([
+  'colours.asphalt.1',      'colours.asphalt.invert',
+  'colours.agnostic.white', 'colours.asphalt.2',
+  'colours.violet.7',       'colours.aegean.7',
+  'colours.asphalt.18',     'colours.agnostic.black',
+  'colours.asphalt.5',      'colours.asphalt.3',
+  'colours.sky.5',          'colours.aegean.5',
+  'colours.asphalt.7',      'colours.aegean.1',
+  'colours.amber.1',        'colours.amber.2',
+  'colours.amber.5',        'colours.amber.7',
+  'colours.lavender.1',     'colours.lavender.5',
+  'colours.lavender.7',     'colours.lime.2',
+  'colours.rust.1',         'colours.rust.5',
+  'colours.rust.7',         'colours.screen.1',
+  'colours.screen.2',       'colours.sky.1',
+  'colours.sky.7',          'colours.teal.1',
+  'colours.teal.5',         'colours.teal.7',
+  'colours.violet.1',       'colours.violet.5',
+  'colours.berry.5',        'colours.crimson.1',
+  'colours.crimson.5',      'colours.crimson.7',
+  'colours.emerald.1',      'colours.emerald.5',
+  'colours.emerald.7',      'colours.firebrick.5',
+  'colours.gold.1'
+]);
+/**
 * @typedef {typeof feedbackPaths} FeedbackPaths - All the valid paths for the collection feedback.
 * To use this type you can do: `@type {import('path/to/myTokensFile').FeedbackPaths}`
 */
 export const feedbackPaths = /** @type {const} */ ([
-  'feedback.feedback.color.background.alert',
-  'feedback.feedback.color.background.info',
-  'feedback.feedback.color.background.negative',
-  'feedback.feedback.color.background.positive',
-  'feedback.feedback.color.background.premium',
-  'feedback.feedback.color.background.neutral.invert',
-  'feedback.feedback.color.background.neutral.regular',
-  'feedback.feedback.color.icon.alert',
-  'feedback.feedback.color.icon.info',
-  'feedback.feedback.color.icon.negative',
-  'feedback.feedback.color.icon.neutral',
-  'feedback.feedback.color.icon.positive',
-  'feedback.feedback.color.icon.premium',
-  'feedback.feedback.color.text.alert',
-  'feedback.feedback.color.text.info',
-  'feedback.feedback.color.text.negative',
-  'feedback.feedback.color.text.neutral',
-  'feedback.feedback.color.text.positive',
-  'feedback.feedback.color.text.premium',
+  'feedback.feedback.button.color.text.alert.on-primary',
+  'feedback.feedback.button.color.text.alert.on-secondary',
+  'feedback.feedback.button.color.text.info.on-primary',
+  'feedback.feedback.button.color.text.info.on-secondary',
+  'feedback.feedback.button.color.text.negative.on-primary',
+  'feedback.feedback.button.color.text.negative.on-secondary',
+  'feedback.feedback.button.color.text.neutral.on-primary',
+  'feedback.feedback.button.color.text.neutral.on-secondary',
+  'feedback.feedback.button.color.text.positive.on-primary',
+  'feedback.feedback.button.color.text.positive.on-secondary',
+  'feedback.feedback.button.color.text.premium.on-primary',
+  'feedback.feedback.button.color.text.premium.on-secondary',
   'feedback.feedback.button.color.background.alert',
   'feedback.feedback.button.color.background.info',
   'feedback.feedback.button.color.background.negative',
@@ -642,18 +637,25 @@ export const feedbackPaths = /** @type {const} */ ([
   'feedback.feedback.button.color.border.neutral',
   'feedback.feedback.button.color.border.positive',
   'feedback.feedback.button.color.border.premium',
-  'feedback.feedback.button.color.text.alert.on-primary',
-  'feedback.feedback.button.color.text.alert.on-secondary',
-  'feedback.feedback.button.color.text.info.on-primary',
-  'feedback.feedback.button.color.text.info.on-secondary',
-  'feedback.feedback.button.color.text.negative.on-primary',
-  'feedback.feedback.button.color.text.negative.on-secondary',
-  'feedback.feedback.button.color.text.neutral.on-primary',
-  'feedback.feedback.button.color.text.neutral.on-secondary',
-  'feedback.feedback.button.color.text.positive.on-primary',
-  'feedback.feedback.button.color.text.positive.on-secondary',
-  'feedback.feedback.button.color.text.premium.on-primary',
-  'feedback.feedback.button.color.text.premium.on-secondary'
+  'feedback.feedback.color.background.alert',
+  'feedback.feedback.color.background.info',
+  'feedback.feedback.color.background.negative',
+  'feedback.feedback.color.background.positive',
+  'feedback.feedback.color.background.neutral.invert',
+  'feedback.feedback.color.background.neutral.regular',
+  'feedback.feedback.color.background.premium',
+  'feedback.feedback.color.icon.alert',
+  'feedback.feedback.color.icon.info',
+  'feedback.feedback.color.icon.negative',
+  'feedback.feedback.color.icon.neutral',
+  'feedback.feedback.color.icon.positive',
+  'feedback.feedback.color.icon.premium',
+  'feedback.feedback.color.text.alert',
+  'feedback.feedback.color.text.info',
+  'feedback.feedback.color.text.negative',
+  'feedback.feedback.color.text.neutral',
+  'feedback.feedback.color.text.positive',
+  'feedback.feedback.color.text.premium'
 ]);
 /**
 * @typedef {typeof densityPaths} DensityPaths - All the valid paths for the collection density.
@@ -677,27 +679,15 @@ export const densityPaths = /** @type {const} */ ([
   'density.space.sm.5'
 ]);
 /**
-* @typedef {ColorPaths | DimensionPaths | ActionPaths | ThemePaths | ColoursPaths | NumbersPaths | FeedbackPaths | DensityPaths} AllPath - All possible paths
+* @typedef {DimensionPaths | ColorPaths | ActionPaths | ThemePaths | NumbersPaths | ColoursPaths | FeedbackPaths | DensityPaths} AllPath - All possible paths
 */
 /**
 * @typedef {typeof pathsByType} PathsByType - All the paths for a given token type. Needed for `getTokensByType`
 */
 const pathsByType = /** @type {const} */ ({
-  color: colorPaths,
   dimension: dimensionPaths,
+  color: colorPaths,
 });
-
-/**
-* @typedef {typeof colorModes[number]} ColorModes - All the valid modes of color.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ColorModes}`
-*/
-export const colorModes = /** @type {const} */ ([
-  'disabled', 'hover',
-  'normal',   'Danland',
-  'Prism',    'Traum',
-  'dark',     'light',
-  'high',     'low'
-]);
 
 /**
 * @typedef {typeof dimensionModes[number]} DimensionModes - All the valid modes of dimension.
@@ -713,6 +703,18 @@ export const dimensionModes = /** @type {const} */ ([
 ]);
 
 /**
+* @typedef {typeof colorModes[number]} ColorModes - All the valid modes of color.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ColorModes}`
+*/
+export const colorModes = /** @type {const} */ ([
+  'disabled', 'hover',
+  'normal',   'Danland',
+  'Prism',    'Traum',
+  'dark',     'light',
+  'high',     'low'
+]);
+
+/**
 * @typedef {typeof actionModes[number]} ActionModes - All the valid modes of action.
 * To use this type you can do: `@type {import('path/to/myTokensFile').ActionModes}`
 */
@@ -725,16 +727,16 @@ export const actionModes = /** @type {const} */ ([ 'normal', 'disabled', 'hover'
 export const themeModes = /** @type {const} */ ([ 'Prism', 'Danland', 'Traum' ]);
 
 /**
-* @typedef {typeof coloursModes[number]} ColoursModes - All the valid modes of colours.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ColoursModes}`
-*/
-export const coloursModes = /** @type {const} */ ([ 'light', 'dark' ]);
-
-/**
 * @typedef {typeof numbersModes[number]} NumbersModes - All the valid modes of numbers.
 * To use this type you can do: `@type {import('path/to/myTokensFile').NumbersModes}`
 */
 export const numbersModes = /** @type {const} */ ([ 'mobile', 'desktop' ]);
+
+/**
+* @typedef {typeof coloursModes[number]} ColoursModes - All the valid modes of colours.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ColoursModes}`
+*/
+export const coloursModes = /** @type {const} */ ([ 'light', 'dark' ]);
 
 /**
 * @typedef {typeof feedbackModes[number]} FeedbackModes - All the valid modes of feedback.
@@ -749,7 +751,7 @@ export const feedbackModes = /** @type {const} */ ([ 'low', 'high' ]);
 export const densityModes = /** @type {const} */ ([ 'comfortable', 'dense', 'tight' ]);
 
 /**
-* @typedef {ColorModes | DimensionModes | ActionModes | ThemeModes | ColoursModes | NumbersModes | FeedbackModes | DensityModes} AllMode - All the available modes
+* @typedef {DimensionModes | ColorModes | ActionModes | ThemeModes | NumbersModes | ColoursModes | FeedbackModes | DensityModes} AllMode - All the available modes
 */
 
 /**
@@ -757,797 +759,6 @@ export const densityModes = /** @type {const} */ ([ 'comfortable', 'dense', 'tig
 * Use `getTokenByMode` to retrieve one.
 */
 export const tokens = /** @type {const} */ ({
-  'action.button.color.background.neutral': {
-    disabled: 'rgb(51, 51, 51)',
-    hover: 'rgb(245, 245, 245)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.neutral.low': {
-    Danland: 'rgb(51, 51, 51)',
-    Prism: 'rgb(245, 245, 245)',
-    Traum: 'rgb(245, 245, 245)'
-  },
-  'theme.theme.color.background.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'colours.asphalt.1': { dark: 'rgb(51, 51, 51)', light: 'rgb(245, 245, 245)' },
-  'colours.asphalt.invert': { dark: 'rgb(40, 40, 40)', light: 'rgb(255, 255, 255)' },
-  'action.button.color.background.on-primary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.brand.on-primary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.neutral.low-alt': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
-  'colours.agnostic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
-  'colours.asphalt.2': { dark: 'rgb(69, 69, 69)', light: 'rgb(211, 211, 211)' },
-  'action.button.color.background.on-secondary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.brand.on-secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.background.primary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(4, 92, 141)',
-    normal: 'rgb(142, 103, 48)'
-  },
-  'theme.theme.color.background.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'colours.violet.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(142, 103, 48)' },
-  'colours.aegean.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(4, 92, 141)' },
-  'action.button.color.background.secondary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.background.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'colours.asphalt.18': { dark: 'rgb(255, 255, 255)', light: 'rgb(40, 40, 40)' },
-  'action.button.color.background.tertiary': {
-    disabled: 'rgb(51, 51, 51)',
-    hover: 'rgb(245, 245, 245)',
-    normal: 'rgb(245, 245, 245)'
-  },
-  'action.button.color.border.tertiary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.border.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.border.neutral.low': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
-  'action.button.color.icon.invert-on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(33, 33, 33)'
-  },
-  'theme.theme.color.text.brand.on-primary': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'theme.theme.color.icon.brand.invert-on-primary': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'theme.theme.color.text.neutral.medium': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
-  'colours.agnostic.black': { dark: 'rgb(33, 33, 33)', light: 'rgb(33, 33, 33)' },
-  'colours.asphalt.5': { dark: 'rgb(140, 140, 140)', light: 'rgb(111, 111, 111)' },
-  'action.button.color.icon.invert-on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.text.brand.on-secondary': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.icon.brand.invert-on-secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.icon.on-neutral': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.icon.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.icon.neutral.low': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'colours.asphalt.3': { dark: 'rgb(82, 82, 82)', light: 'rgb(181, 181, 181)' },
-  'action.button.color.icon.on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.icon.brand.on-primary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.icon.neutral.medium': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
-  'action.button.color.icon.on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.icon.brand.on-secondary': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.icon.on-tertiary': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.icon.with-hyperlink': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(11, 117, 176)',
-    normal: 'rgb(84, 114, 138)'
-  },
-  'theme.theme.color.icon.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'colours.sky.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(84, 114, 138)' },
-  'colours.aegean.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(11, 117, 176)' },
-  'action.button.color.icon.with-underlined': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.text.hyperlink': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(11, 117, 176)',
-    normal: 'rgb(84, 114, 138)'
-  },
-  'theme.theme.color.text.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'theme.theme.color.text.neutral.low': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'action.button.color.text.invert-on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.text.brand.invert-on-primary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.text.invert-on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.text.brand.invert-on-secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.text.on-neutral': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.text.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.text.on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.text.on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.text.on-tertiary': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.text.underlined': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'colours.aegean.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(238, 248, 254)' },
-  'colours.amber.1': { dark: 'rgb(51, 48, 41)', light: 'rgb(251, 249, 247)' },
-  'colours.amber.2': { dark: 'rgb(241, 170, 16)', light: 'rgb(205, 179, 154)' },
-  'colours.amber.5': { dark: 'rgb(192, 156, 77)', light: 'rgb(148, 110, 63)' },
-  'colours.amber.7': { dark: 'rgb(214, 174, 86)', light: 'rgb(118, 87, 51)' },
-  'colours.asphalt.7': { dark: 'rgb(179, 179, 179)', light: 'rgb(77, 77, 77)' },
-  'colours.berry.5': { dark: 'rgb(232, 23, 58)', light: 'rgb(203, 16, 47)' },
-  'colours.crimson.1': { dark: 'rgb(51, 41, 43)', light: 'rgb(251, 246, 247)' },
-  'colours.crimson.5': { dark: 'rgb(192, 142, 151)', light: 'rgb(160, 90, 102)' },
-  'colours.crimson.7': { dark: 'rgb(213, 164, 172)', light: 'rgb(141, 65, 78)' },
-  'colours.emerald.1': { dark: 'rgb(34, 40, 39)', light: 'rgb(244, 250, 249)' },
-  'colours.emerald.5': { dark: 'rgb(113, 160, 148)', light: 'rgb(79, 118, 108)' },
-  'colours.emerald.7': { dark: 'rgb(114, 194, 172)', light: 'rgb(59, 96, 86)' },
-  'colours.firebrick.5': { dark: 'rgb(204, 51, 51)', light: 'rgb(204, 51, 51)' },
-  'colours.gold.1': { dark: 'rgb(255, 209, 0)', light: 'rgb(253, 196, 0)' },
-  'colours.lavender.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(249, 245, 255)' },
-  'colours.lavender.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(128, 85, 195)' },
-  'colours.lavender.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(107, 68, 165)' },
-  'colours.lime.2': { dark: 'rgb(23, 210, 134)', light: 'rgb(23, 210, 134)' },
-  'colours.rust.1': { dark: 'rgb(31, 21, 13)', light: 'rgb(255, 247, 236)' },
-  'colours.rust.5': { dark: 'rgb(254, 169, 95)', light: 'rgb(176, 96, 0)' },
-  'colours.rust.7': { dark: 'rgb(255, 221, 189)', light: 'rgb(134, 73, 0)' },
-  'colours.screen.1': { dark: 'rgb(29, 29, 29)', light: 'rgb(255, 255, 255)' },
-  'colours.screen.2': { dark: 'rgb(29, 29, 29)', light: 'rgb(245, 245, 245)' },
-  'colours.sky.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(242, 246, 250)' },
-  'colours.sky.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(60, 92, 119)' },
-  'colours.teal.1': { dark: 'rgb(1, 50, 50)', light: 'rgb(225, 255, 255)' },
-  'colours.teal.5': { dark: 'rgb(0, 169, 169)', light: 'rgb(0, 123, 123)' },
-  'colours.teal.7': { dark: 'rgb(0, 199, 199)', light: 'rgb(0, 99, 99)' },
-  'colours.violet.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(251, 249, 253)' },
-  'colours.violet.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(142, 103, 48)' },
-  'feedback.feedback.color.background.alert': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
-  'theme.theme.color.background.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.color.background.alert.medium': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'feedback.feedback.color.background.info': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
-  'theme.theme.color.background.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'theme.theme.color.background.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'feedback.feedback.color.background.negative': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
-  'theme.theme.color.background.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.background.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'feedback.feedback.color.background.positive': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
-  'theme.theme.color.background.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.background.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'feedback.feedback.color.background.premium': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
-  'theme.theme.color.background.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.background.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
-  'theme.theme.color.background.neutral.high': {
-    Danland: 'rgb(179, 179, 179)',
-    Prism: 'rgb(77, 77, 77)',
-    Traum: 'rgb(77, 77, 77)'
-  },
-  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
-  'feedback.feedback.color.icon.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.color.icon.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.color.icon.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.color.icon.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.color.icon.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.color.icon.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.color.icon.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.color.icon.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.color.icon.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.color.icon.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.color.icon.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.color.icon.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.icon.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.color.text.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.color.text.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.color.text.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.color.text.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.color.text.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.color.text.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.color.text.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.color.text.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.color.text.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.color.text.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.color.text.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.color.text.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.text.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.button.color.background.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.color.background.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.color.background.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.button.color.background.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.color.background.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'feedback.feedback.button.color.background.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.color.background.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.button.color.background.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'theme.theme.color.background.neutral.high-alt': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'feedback.feedback.button.color.background.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.color.background.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.button.color.background.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.background.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.button.color.border.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.color.border.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.color.border.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.button.color.border.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.color.border.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.color.border.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.button.color.border.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.color.border.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.button.color.border.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.button.color.border.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.color.border.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.button.color.border.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.border.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
-  'theme.theme.color.text.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.color.text.alert.low-alt': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
-  'theme.theme.color.text.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'feedback.feedback.button.color.text.info.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'feedback.feedback.button.color.text.negative.on-primary': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
-  'theme.theme.color.text.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.text.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'feedback.feedback.button.color.text.negative.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'feedback.feedback.button.color.text.neutral.on-primary': { high: 'rgb(255, 255, 255)', low: 'rgb(255, 255, 255)' },
-  'feedback.feedback.button.color.text.neutral.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.button.color.text.positive.on-primary': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
-  'theme.theme.color.text.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.text.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'feedback.feedback.button.color.text.positive.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'feedback.feedback.button.color.text.premium.on-primary': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
-  'theme.theme.color.text.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.text.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.background.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.background.discount.high': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
-  'theme.theme.color.background.discount.low': {
-    Danland: 'rgb(31, 21, 13)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(255, 247, 236)'
-  },
-  'theme.theme.color.background.neutral.medium': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'theme.theme.color.background.neutral.medium-alt': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
-  'theme.theme.color.background.screen.alt': {
-    Danland: 'rgb(29, 29, 29)',
-    Prism: 'rgb(245, 245, 245)',
-    Traum: 'rgb(245, 245, 245)'
-  },
-  'theme.theme.color.background.screen.default': {
-    Danland: 'rgb(29, 29, 29)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.border.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.border.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.color.border.alert.medium': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'theme.theme.color.border.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.color.border.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.border.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'theme.theme.color.border.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'theme.theme.color.border.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.border.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'theme.theme.color.border.neutral.medium': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'theme.theme.color.border.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.border.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'theme.theme.color.border.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.border.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'theme.theme.color.icon.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.icon.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.color.icon.alert.low-alt': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'theme.theme.color.icon.alert.medium': {
-    Danland: 'rgb(192, 156, 77)',
-    Prism: 'rgb(148, 110, 63)',
-    Traum: 'rgb(148, 110, 63)'
-  },
-  'theme.theme.color.icon.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(253, 196, 0)'
-  },
-  'theme.theme.color.icon.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.icon.discount.high': {
-    Danland: 'rgb(255, 221, 189)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(134, 73, 0)'
-  },
-  'theme.theme.color.icon.discount.low': {
-    Danland: 'rgb(31, 21, 13)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(255, 247, 236)'
-  },
-  'theme.theme.color.icon.discount.medium': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
-  'theme.theme.color.icon.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'theme.theme.color.icon.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.icon.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'theme.theme.color.icon.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.icon.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'theme.theme.color.icon.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.icon.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'theme.theme.color.icon.rating.filled': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.color.icon.rating.unfilled': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
-  'theme.theme.color.text.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.text.alert.medium': {
-    Danland: 'rgb(192, 156, 77)',
-    Prism: 'rgb(148, 110, 63)',
-    Traum: 'rgb(148, 110, 63)'
-  },
-  'theme.theme.color.text.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(253, 196, 0)'
-  },
-  'theme.theme.color.text.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.color.text.discount.on-high': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.color.text.discount.on-low': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
   'action.button.size.border.weight': { disabled: '1px', hover: '2px', normal: '1px' },
   'action.button.size.border.radius.L': { disabled: '24px', hover: '16px', normal: '0px' },
   'theme.theme.size.border.radius.lg': { Danland: '24px', Prism: '0px', Traum: '16px' },
@@ -1668,9 +879,805 @@ export const tokens = /** @type {const} */ ({
   'density.space.sm.4': { comfortable: '12px', dense: '8px', tight: '4px' },
   'theme.theme.space.sm.5': { Danland: '16px', Prism: '16px', Traum: '8px' },
   'density.space.sm.5': { comfortable: '16px', dense: '16px', tight: '8px' },
-  'theme.theme.space.margin.screen.default': { Danland: '16px', Prism: '24px', Traum: '8px' },
-  'theme.theme.space.margin.screen.optical': { Danland: '4px', Prism: '16px', Traum: '2px' },
-  'numbers.scale.1400': { desktop: '128px', mobile: '112px' }
+  'theme.theme.screen.space.default': { Danland: '16px', Prism: '24px', Traum: '8px' },
+  'theme.theme.screen.space.optical': { Danland: '4px', Prism: '16px', Traum: '2px' },
+  'numbers.scale.1400': { desktop: '128px', mobile: '112px' },
+  'action.button.color.background.neutral': {
+    disabled: 'rgb(51, 51, 51)',
+    hover: 'rgb(245, 245, 245)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.background.neutral.low': {
+    Danland: 'rgb(51, 51, 51)',
+    Prism: 'rgb(245, 245, 245)',
+    Traum: 'rgb(245, 245, 245)'
+  },
+  'theme.theme.colour.background.neutral.invert': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'colours.asphalt.1': { dark: 'rgb(51, 51, 51)', light: 'rgb(245, 245, 245)' },
+  'colours.asphalt.invert': { dark: 'rgb(40, 40, 40)', light: 'rgb(255, 255, 255)' },
+  'action.button.color.background.on-primary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.background.brand.on-primary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.background.neutral.low-alt': {
+    Danland: 'rgb(69, 69, 69)',
+    Prism: 'rgb(211, 211, 211)',
+    Traum: 'rgb(211, 211, 211)'
+  },
+  'colours.agnostic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
+  'colours.asphalt.2': { dark: 'rgb(69, 69, 69)', light: 'rgb(211, 211, 211)' },
+  'action.button.color.background.on-secondary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.background.brand.on-secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'action.button.color.background.primary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(4, 92, 141)',
+    normal: 'rgb(142, 103, 48)'
+  },
+  'theme.theme.colour.background.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'colours.violet.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(142, 103, 48)' },
+  'colours.aegean.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(4, 92, 141)' },
+  'action.button.color.background.secondary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.background.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'colours.asphalt.18': { dark: 'rgb(255, 255, 255)', light: 'rgb(40, 40, 40)' },
+  'action.button.color.background.tertiary': {
+    disabled: 'rgb(51, 51, 51)',
+    hover: 'rgb(245, 245, 245)',
+    normal: 'rgb(245, 245, 245)'
+  },
+  'action.button.color.border.tertiary': {
+    disabled: 'rgb(69, 69, 69)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.border.neutral.high': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.border.neutral.low': {
+    Danland: 'rgb(69, 69, 69)',
+    Prism: 'rgb(211, 211, 211)',
+    Traum: 'rgb(211, 211, 211)'
+  },
+  'action.button.color.icon.invert-on-primary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(33, 33, 33)',
+    normal: 'rgb(33, 33, 33)'
+  },
+  'theme.theme.colour.text.brand.on-primary': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'theme.theme.colour.icon.brand.invert-on-primary': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'theme.theme.colour.text.neutral.medium': {
+    Danland: 'rgb(140, 140, 140)',
+    Prism: 'rgb(111, 111, 111)',
+    Traum: 'rgb(111, 111, 111)'
+  },
+  'colours.agnostic.black': { dark: 'rgb(33, 33, 33)', light: 'rgb(33, 33, 33)' },
+  'colours.asphalt.5': { dark: 'rgb(140, 140, 140)', light: 'rgb(111, 111, 111)' },
+  'action.button.color.icon.invert-on-secondary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.text.brand.on-secondary': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.icon.brand.invert-on-secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'action.button.color.icon.on-neutral': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.icon.neutral.high': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.icon.neutral.low': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
+  },
+  'colours.asphalt.3': { dark: 'rgb(82, 82, 82)', light: 'rgb(181, 181, 181)' },
+  'action.button.color.icon.on-primary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.icon.brand.on-primary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.icon.neutral.medium': {
+    Danland: 'rgb(140, 140, 140)',
+    Prism: 'rgb(111, 111, 111)',
+    Traum: 'rgb(111, 111, 111)'
+  },
+  'action.button.color.icon.on-secondary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.icon.brand.on-secondary': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'action.button.color.icon.on-tertiary': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'action.button.color.icon.with-hyperlink': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(11, 117, 176)',
+    normal: 'rgb(84, 114, 138)'
+  },
+  'theme.theme.colour.icon.info.medium': {
+    Danland: 'rgb(89, 155, 222)',
+    Prism: 'rgb(84, 114, 138)',
+    Traum: 'rgb(11, 117, 176)'
+  },
+  'colours.sky.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(84, 114, 138)' },
+  'colours.aegean.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(11, 117, 176)' },
+  'action.button.color.icon.with-underlined': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'action.button.color.text.hyperlink': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(11, 117, 176)',
+    normal: 'rgb(84, 114, 138)'
+  },
+  'theme.theme.colour.text.info.medium': {
+    Danland: 'rgb(89, 155, 222)',
+    Prism: 'rgb(84, 114, 138)',
+    Traum: 'rgb(11, 117, 176)'
+  },
+  'theme.theme.colour.text.neutral.low': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
+  },
+  'action.button.color.text.invert-on-primary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(33, 33, 33)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.text.brand.invert-on-primary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'action.button.color.text.invert-on-secondary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(255, 255, 255)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.text.brand.invert-on-secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'action.button.color.text.on-neutral': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.text.neutral.high': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'action.button.color.text.on-primary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(33, 33, 33)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'action.button.color.text.on-secondary': {
+    disabled: 'rgb(140, 140, 140)',
+    hover: 'rgb(33, 33, 33)',
+    normal: 'rgb(255, 255, 255)'
+  },
+  'action.button.color.text.on-tertiary': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'action.button.color.text.underlined': {
+    disabled: 'rgb(82, 82, 82)',
+    hover: 'rgb(40, 40, 40)',
+    normal: 'rgb(40, 40, 40)'
+  },
+  'colours.asphalt.7': { dark: 'rgb(179, 179, 179)', light: 'rgb(77, 77, 77)' },
+  'colours.aegean.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(238, 248, 254)' },
+  'colours.amber.1': { dark: 'rgb(51, 48, 41)', light: 'rgb(251, 249, 247)' },
+  'colours.amber.2': { dark: 'rgb(241, 170, 16)', light: 'rgb(205, 179, 154)' },
+  'colours.amber.5': { dark: 'rgb(192, 156, 77)', light: 'rgb(148, 110, 63)' },
+  'colours.amber.7': { dark: 'rgb(214, 174, 86)', light: 'rgb(118, 87, 51)' },
+  'colours.lavender.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(249, 245, 255)' },
+  'colours.lavender.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(128, 85, 195)' },
+  'colours.lavender.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(107, 68, 165)' },
+  'colours.lime.2': { dark: 'rgb(23, 210, 134)', light: 'rgb(23, 210, 134)' },
+  'colours.rust.1': { dark: 'rgb(31, 21, 13)', light: 'rgb(255, 247, 236)' },
+  'colours.rust.5': { dark: 'rgb(254, 169, 95)', light: 'rgb(176, 96, 0)' },
+  'colours.rust.7': { dark: 'rgb(255, 221, 189)', light: 'rgb(134, 73, 0)' },
+  'colours.screen.1': { dark: 'rgb(29, 29, 29)', light: 'rgb(255, 255, 255)' },
+  'colours.screen.2': { dark: 'rgb(29, 29, 29)', light: 'rgb(245, 245, 245)' },
+  'colours.sky.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(242, 246, 250)' },
+  'colours.sky.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(60, 92, 119)' },
+  'colours.teal.1': { dark: 'rgb(1, 50, 50)', light: 'rgb(225, 255, 255)' },
+  'colours.teal.5': { dark: 'rgb(0, 169, 169)', light: 'rgb(0, 123, 123)' },
+  'colours.teal.7': { dark: 'rgb(0, 199, 199)', light: 'rgb(0, 99, 99)' },
+  'colours.violet.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(251, 249, 253)' },
+  'colours.violet.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(142, 103, 48)' },
+  'colours.berry.5': { dark: 'rgb(232, 23, 58)', light: 'rgb(203, 16, 47)' },
+  'colours.crimson.1': { dark: 'rgb(51, 41, 43)', light: 'rgb(251, 246, 247)' },
+  'colours.crimson.5': { dark: 'rgb(192, 142, 151)', light: 'rgb(160, 90, 102)' },
+  'colours.crimson.7': { dark: 'rgb(213, 164, 172)', light: 'rgb(141, 65, 78)' },
+  'colours.emerald.1': { dark: 'rgb(34, 40, 39)', light: 'rgb(244, 250, 249)' },
+  'colours.emerald.5': { dark: 'rgb(113, 160, 148)', light: 'rgb(79, 118, 108)' },
+  'colours.emerald.7': { dark: 'rgb(114, 194, 172)', light: 'rgb(59, 96, 86)' },
+  'colours.firebrick.5': { dark: 'rgb(204, 51, 51)', light: 'rgb(204, 51, 51)' },
+  'colours.gold.1': { dark: 'rgb(255, 209, 0)', light: 'rgb(253, 196, 0)' },
+  'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
+  'theme.theme.colour.text.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
+  },
+  'theme.theme.colour.text.alert.low-alt': {
+    Danland: 'rgb(241, 170, 16)',
+    Prism: 'rgb(205, 179, 154)',
+    Traum: 'rgb(205, 179, 154)'
+  },
+  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'theme.theme.colour.text.alert.high': {
+    Danland: 'rgb(214, 174, 86)',
+    Prism: 'rgb(118, 87, 51)',
+    Traum: 'rgb(118, 87, 51)'
+  },
+  'theme.theme.colour.text.agnostic.black': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
+  'theme.theme.colour.text.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
+  },
+  'feedback.feedback.button.color.text.info.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'theme.theme.colour.text.info.high': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(60, 92, 119)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'theme.theme.colour.text.neutral.invert': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'feedback.feedback.button.color.text.negative.on-primary': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
+  'theme.theme.colour.text.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
+  },
+  'theme.theme.colour.text.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'feedback.feedback.button.color.text.negative.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'theme.theme.colour.text.negative.high': {
+    Danland: 'rgb(213, 164, 172)',
+    Prism: 'rgb(141, 65, 78)',
+    Traum: 'rgb(141, 65, 78)'
+  },
+  'feedback.feedback.button.color.text.neutral.on-primary': { high: 'rgb(255, 255, 255)', low: 'rgb(255, 255, 255)' },
+  'feedback.feedback.button.color.text.neutral.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.button.color.text.positive.on-primary': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
+  'theme.theme.colour.text.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.colour.text.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'feedback.feedback.button.color.text.positive.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'theme.theme.colour.text.positive.high': {
+    Danland: 'rgb(114, 194, 172)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(59, 96, 86)'
+  },
+  'feedback.feedback.button.color.text.premium.on-primary': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
+  'theme.theme.colour.text.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.colour.text.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
+  },
+  'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.colour.text.premium.high': {
+    Danland: 'rgb(200, 163, 255)',
+    Prism: 'rgb(107, 68, 165)',
+    Traum: 'rgb(107, 68, 165)'
+  },
+  'feedback.feedback.button.color.background.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'theme.theme.colour.background.alert.high': {
+    Danland: 'rgb(214, 174, 86)',
+    Prism: 'rgb(118, 87, 51)',
+    Traum: 'rgb(118, 87, 51)'
+  },
+  'theme.theme.colour.background.agnostic.black': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'feedback.feedback.button.color.background.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'theme.theme.colour.background.info.high': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(60, 92, 119)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'feedback.feedback.button.color.background.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'theme.theme.colour.background.negative.high': {
+    Danland: 'rgb(213, 164, 172)',
+    Prism: 'rgb(141, 65, 78)',
+    Traum: 'rgb(141, 65, 78)'
+  },
+  'feedback.feedback.button.color.background.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'theme.theme.colour.background.neutral.high-alt': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'feedback.feedback.button.color.background.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'theme.theme.colour.background.positive.high': {
+    Danland: 'rgb(114, 194, 172)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(59, 96, 86)'
+  },
+  'feedback.feedback.button.color.background.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.colour.background.premium.high': {
+    Danland: 'rgb(200, 163, 255)',
+    Prism: 'rgb(107, 68, 165)',
+    Traum: 'rgb(107, 68, 165)'
+  },
+  'feedback.feedback.button.color.border.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'theme.theme.colour.border.alert.high': {
+    Danland: 'rgb(214, 174, 86)',
+    Prism: 'rgb(118, 87, 51)',
+    Traum: 'rgb(118, 87, 51)'
+  },
+  'theme.theme.colour.border.agnostic.black': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'feedback.feedback.button.color.border.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'theme.theme.colour.border.info.high': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(60, 92, 119)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'theme.theme.colour.border.neutral.invert': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'feedback.feedback.button.color.border.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'theme.theme.colour.border.negative.high': {
+    Danland: 'rgb(213, 164, 172)',
+    Prism: 'rgb(141, 65, 78)',
+    Traum: 'rgb(141, 65, 78)'
+  },
+  'feedback.feedback.button.color.border.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.button.color.border.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'theme.theme.colour.border.positive.high': {
+    Danland: 'rgb(114, 194, 172)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(59, 96, 86)'
+  },
+  'feedback.feedback.button.color.border.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.colour.border.premium.high': {
+    Danland: 'rgb(200, 163, 255)',
+    Prism: 'rgb(107, 68, 165)',
+    Traum: 'rgb(107, 68, 165)'
+  },
+  'feedback.feedback.color.background.alert': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
+  'theme.theme.colour.background.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
+  },
+  'theme.theme.colour.background.alert.medium': {
+    Danland: 'rgb(241, 170, 16)',
+    Prism: 'rgb(205, 179, 154)',
+    Traum: 'rgb(205, 179, 154)'
+  },
+  'feedback.feedback.color.background.info': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
+  'theme.theme.colour.background.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
+  },
+  'theme.theme.colour.background.info.medium': {
+    Danland: 'rgb(89, 155, 222)',
+    Prism: 'rgb(84, 114, 138)',
+    Traum: 'rgb(11, 117, 176)'
+  },
+  'feedback.feedback.color.background.negative': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
+  'theme.theme.colour.background.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
+  },
+  'theme.theme.colour.background.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'feedback.feedback.color.background.positive': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
+  'theme.theme.colour.background.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.colour.background.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
+  'theme.theme.colour.background.neutral.high': {
+    Danland: 'rgb(179, 179, 179)',
+    Prism: 'rgb(77, 77, 77)',
+    Traum: 'rgb(77, 77, 77)'
+  },
+  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
+  'feedback.feedback.color.background.premium': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
+  'theme.theme.colour.background.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.colour.background.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
+  },
+  'feedback.feedback.color.icon.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'theme.theme.colour.icon.alert.high': {
+    Danland: 'rgb(214, 174, 86)',
+    Prism: 'rgb(118, 87, 51)',
+    Traum: 'rgb(118, 87, 51)'
+  },
+  'theme.theme.colour.icon.agnostic.black': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'feedback.feedback.color.icon.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'theme.theme.colour.icon.info.high': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(60, 92, 119)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'theme.theme.colour.icon.neutral.invert': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'feedback.feedback.color.icon.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'theme.theme.colour.icon.negative.high': {
+    Danland: 'rgb(213, 164, 172)',
+    Prism: 'rgb(141, 65, 78)',
+    Traum: 'rgb(141, 65, 78)'
+  },
+  'feedback.feedback.color.icon.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.color.icon.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'theme.theme.colour.icon.positive.high': {
+    Danland: 'rgb(114, 194, 172)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(59, 96, 86)'
+  },
+  'feedback.feedback.color.icon.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.colour.icon.premium.high': {
+    Danland: 'rgb(200, 163, 255)',
+    Prism: 'rgb(107, 68, 165)',
+    Traum: 'rgb(107, 68, 165)'
+  },
+  'feedback.feedback.color.text.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'feedback.feedback.color.text.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'feedback.feedback.color.text.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'feedback.feedback.color.text.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.color.text.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'feedback.feedback.color.text.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.rang': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.background.agnostic.white': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.background.discount.high': {
+    Danland: 'rgb(254, 169, 95)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(176, 96, 0)'
+  },
+  'theme.theme.colour.background.discount.low': {
+    Danland: 'rgb(31, 21, 13)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(255, 247, 236)'
+  },
+  'theme.theme.colour.background.neutral.medium': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
+  },
+  'theme.theme.colour.background.neutral.medium-alt': {
+    Danland: 'rgb(140, 140, 140)',
+    Prism: 'rgb(111, 111, 111)',
+    Traum: 'rgb(111, 111, 111)'
+  },
+  'theme.theme.colour.background.screen.alt': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(245, 245, 245)',
+    Traum: 'rgb(245, 245, 245)'
+  },
+  'theme.theme.colour.background.screen.default': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.border.agnostic.white': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.border.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
+  },
+  'theme.theme.colour.border.alert.medium': {
+    Danland: 'rgb(241, 170, 16)',
+    Prism: 'rgb(205, 179, 154)',
+    Traum: 'rgb(205, 179, 154)'
+  },
+  'theme.theme.colour.border.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'theme.theme.colour.border.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.border.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
+  },
+  'theme.theme.colour.border.info.medium': {
+    Danland: 'rgb(89, 155, 222)',
+    Prism: 'rgb(84, 114, 138)',
+    Traum: 'rgb(11, 117, 176)'
+  },
+  'theme.theme.colour.border.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
+  },
+  'theme.theme.colour.border.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'theme.theme.colour.border.neutral.medium': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
+  },
+  'theme.theme.colour.border.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.colour.border.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'theme.theme.colour.border.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.colour.border.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
+  },
+  'theme.theme.colour.icon.agnostic.white': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.icon.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
+  },
+  'theme.theme.colour.icon.alert.low-alt': {
+    Danland: 'rgb(241, 170, 16)',
+    Prism: 'rgb(205, 179, 154)',
+    Traum: 'rgb(205, 179, 154)'
+  },
+  'theme.theme.colour.icon.alert.medium': {
+    Danland: 'rgb(192, 156, 77)',
+    Prism: 'rgb(148, 110, 63)',
+    Traum: 'rgb(148, 110, 63)'
+  },
+  'theme.theme.colour.icon.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.theme.colour.icon.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.icon.discount.high': {
+    Danland: 'rgb(255, 221, 189)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(134, 73, 0)'
+  },
+  'theme.theme.colour.icon.discount.low': {
+    Danland: 'rgb(31, 21, 13)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(255, 247, 236)'
+  },
+  'theme.theme.colour.icon.discount.medium': {
+    Danland: 'rgb(254, 169, 95)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(176, 96, 0)'
+  },
+  'theme.theme.colour.icon.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
+  },
+  'theme.theme.colour.icon.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
+  },
+  'theme.theme.colour.icon.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'theme.theme.colour.icon.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.colour.icon.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'theme.theme.colour.icon.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.colour.icon.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
+  },
+  'theme.theme.colour.icon.rating.filled': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'theme.theme.colour.icon.rating.unfilled': {
+    Danland: 'rgb(69, 69, 69)',
+    Prism: 'rgb(211, 211, 211)',
+    Traum: 'rgb(211, 211, 211)'
+  },
+  'theme.theme.colour.text.agnostic.white': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.text.alert.medium': {
+    Danland: 'rgb(192, 156, 77)',
+    Prism: 'rgb(148, 110, 63)',
+    Traum: 'rgb(148, 110, 63)'
+  },
+  'theme.theme.colour.text.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.theme.colour.text.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.colour.text.discount.on-high': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.theme.colour.text.discount.on-low': {
+    Danland: 'rgb(254, 169, 95)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(176, 96, 0)'
+  }
 });
 
 /**
