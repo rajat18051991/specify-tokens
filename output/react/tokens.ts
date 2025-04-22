@@ -94,6 +94,71 @@ export const colorPaths = /** @type {const} */ ([
   'colours.teal.1',
   'colours.teal.5',
   'colours.teal.7',
+  'feedback.feedback.color.background.positive',
+  'theme.theme.color.background.positive.low',
+  'theme.theme.color.background.positive.medium',
+  'feedback.feedback.color.background.premium',
+  'theme.theme.color.background.premium.low',
+  'theme.theme.color.background.premium.medium',
+  'feedback.feedback.color.background.neutral.regular',
+  'theme.theme.color.background.neutral.high',
+  'feedback.feedback.color.background.neutral.invert',
+  'feedback.feedback.color.background.alert',
+  'theme.theme.color.background.alert.low',
+  'theme.theme.color.background.alert.medium',
+  'feedback.feedback.color.background.info',
+  'theme.theme.color.background.info.low',
+  'theme.theme.color.background.info.medium',
+  'feedback.feedback.color.background.negative',
+  'theme.theme.color.background.negative.low',
+  'theme.theme.color.background.negative.medium',
+  'feedback.feedback.color.icon.alert',
+  'theme.theme.color.icon.alert.high',
+  'theme.theme.color.icon.agnostic.black',
+  'feedback.feedback.color.icon.info',
+  'theme.theme.color.icon.info.high',
+  'theme.theme.color.icon.neutral.invert',
+  'feedback.feedback.color.icon.negative',
+  'theme.theme.color.icon.negative.high',
+  'feedback.feedback.color.icon.neutral',
+  'feedback.feedback.color.icon.positive',
+  'theme.theme.color.icon.positive.high',
+  'feedback.feedback.color.icon.premium',
+  'theme.theme.color.icon.premium.high',
+  'feedback.feedback.color.text.alert',
+  'theme.theme.color.text.alert.high',
+  'theme.theme.color.text.agnostic.black',
+  'feedback.feedback.color.text.info',
+  'theme.theme.color.text.info.high',
+  'theme.theme.color.text.neutral.invert',
+  'feedback.feedback.color.text.negative',
+  'theme.theme.color.text.negative.high',
+  'feedback.feedback.color.text.neutral',
+  'feedback.feedback.color.text.positive',
+  'theme.theme.color.text.positive.high',
+  'feedback.feedback.color.text.premium',
+  'theme.theme.color.text.premium.high',
+  'feedback.feedback.button.color.text.alert.on-secondary',
+  'feedback.feedback.button.color.text.alert.on-primary',
+  'theme.theme.color.text.alert.low',
+  'theme.theme.color.text.alert.low-alt',
+  'feedback.feedback.button.color.text.info.on-primary',
+  'theme.theme.color.text.info.low',
+  'feedback.feedback.button.color.text.info.on-secondary',
+  'feedback.feedback.button.color.text.negative.on-primary',
+  'theme.theme.color.text.negative.low',
+  'theme.theme.color.text.negative.medium',
+  'feedback.feedback.button.color.text.negative.on-secondary',
+  'feedback.feedback.button.color.text.neutral.on-primary',
+  'feedback.feedback.button.color.text.neutral.on-secondary',
+  'feedback.feedback.button.color.text.positive.on-primary',
+  'theme.theme.color.text.positive.low',
+  'theme.theme.color.text.positive.medium',
+  'feedback.feedback.button.color.text.positive.on-secondary',
+  'feedback.feedback.button.color.text.premium.on-primary',
+  'theme.theme.color.text.premium.low',
+  'theme.theme.color.text.premium.medium',
+  'feedback.feedback.button.color.text.premium.on-secondary',
   'feedback.feedback.button.color.background.alert',
   'theme.theme.color.background.alert.high',
   'theme.theme.color.background.agnostic.black',
@@ -120,85 +185,13 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.border.positive.high',
   'feedback.feedback.button.color.border.premium',
   'theme.theme.color.border.premium.high',
-  'feedback.feedback.button.color.text.alert.on-secondary',
-  'theme.theme.color.text.alert.high',
-  'theme.theme.color.text.agnostic.black',
-  'feedback.feedback.button.color.text.alert.on-primary',
-  'theme.theme.color.text.alert.low',
-  'theme.theme.color.text.alert.low-alt',
-  'feedback.feedback.button.color.text.info.on-primary',
-  'theme.theme.color.text.info.low',
-  'feedback.feedback.button.color.text.info.on-secondary',
-  'theme.theme.color.text.info.high',
-  'theme.theme.color.text.neutral.invert',
-  'feedback.feedback.button.color.text.negative.on-primary',
-  'theme.theme.color.text.negative.low',
-  'theme.theme.color.text.negative.medium',
-  'feedback.feedback.button.color.text.negative.on-secondary',
-  'theme.theme.color.text.negative.high',
-  'feedback.feedback.button.color.text.neutral.on-primary',
-  'feedback.feedback.button.color.text.neutral.on-secondary',
-  'feedback.feedback.button.color.text.positive.on-primary',
-  'theme.theme.color.text.positive.low',
-  'theme.theme.color.text.positive.medium',
-  'feedback.feedback.button.color.text.positive.on-secondary',
-  'theme.theme.color.text.positive.high',
-  'feedback.feedback.button.color.text.premium.on-primary',
-  'theme.theme.color.text.premium.low',
-  'theme.theme.color.text.premium.medium',
-  'feedback.feedback.button.color.text.premium.on-secondary',
-  'theme.theme.color.text.premium.high',
-  'feedback.feedback.color.background.neutral.invert',
-  'theme.theme.color.background.neutral.high',
-  'feedback.feedback.color.background.neutral.regular',
-  'feedback.feedback.color.background.alert',
-  'theme.theme.color.background.alert.low',
-  'theme.theme.color.background.alert.medium',
-  'feedback.feedback.color.background.info',
-  'theme.theme.color.background.info.low',
-  'theme.theme.color.background.info.medium',
-  'feedback.feedback.color.background.negative',
-  'theme.theme.color.background.negative.low',
-  'theme.theme.color.background.negative.medium',
-  'feedback.feedback.color.background.positive',
-  'theme.theme.color.background.positive.low',
-  'theme.theme.color.background.positive.medium',
-  'feedback.feedback.color.background.premium',
-  'theme.theme.color.background.premium.low',
-  'theme.theme.color.background.premium.medium',
-  'feedback.feedback.color.icon.alert',
-  'theme.theme.color.icon.alert.high',
-  'theme.theme.color.icon.agnostic.black',
-  'feedback.feedback.color.icon.info',
-  'theme.theme.color.icon.info.high',
-  'theme.theme.color.icon.neutral.invert',
-  'feedback.feedback.color.icon.negative',
-  'theme.theme.color.icon.negative.high',
-  'feedback.feedback.color.icon.neutral',
-  'feedback.feedback.color.icon.positive',
-  'theme.theme.color.icon.positive.high',
-  'feedback.feedback.color.icon.premium',
-  'theme.theme.color.icon.premium.high',
-  'feedback.feedback.color.text.alert',
-  'feedback.feedback.color.text.info',
-  'feedback.feedback.color.text.negative',
-  'feedback.feedback.color.text.neutral',
-  'feedback.feedback.color.text.positive',
-  'feedback.feedback.color.text.premium',
-  'theme.theme.color.background.neutral.medium',
-  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.background.agnostic.white',
   'theme.theme.color.background.discount.high',
   'theme.theme.color.background.discount.low',
   'theme.theme.color.background.screen.alt',
   'theme.theme.color.background.screen.default',
-  'theme.theme.color.border.negative.medium',
-  'theme.theme.color.border.negative.low',
-  'theme.theme.color.border.neutral.medium',
-  'theme.theme.color.border.positive.low',
-  'theme.theme.color.border.positive.medium',
-  'theme.theme.color.border.premium.low',
-  'theme.theme.color.border.premium.medium',
+  'theme.theme.color.background.neutral.medium',
+  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.border.agnostic.white',
   'theme.theme.color.border.alert.low',
   'theme.theme.color.border.alert.medium',
@@ -206,24 +199,31 @@ export const colorPaths = /** @type {const} */ ([
   'theme.theme.color.border.brand.secondary',
   'theme.theme.color.border.info.low',
   'theme.theme.color.border.info.medium',
-  'theme.theme.color.icon.agnostic.white',
-  'theme.theme.color.icon.alert.low',
+  'theme.theme.color.border.negative.low',
+  'theme.theme.color.border.negative.medium',
+  'theme.theme.color.border.neutral.medium',
+  'theme.theme.color.border.positive.low',
+  'theme.theme.color.border.positive.medium',
+  'theme.theme.color.border.premium.low',
+  'theme.theme.color.border.premium.medium',
   'theme.theme.color.icon.alert.low-alt',
   'theme.theme.color.icon.alert.medium',
+  'theme.theme.color.icon.alert.low',
+  'theme.theme.color.icon.brand.primary',
+  'theme.theme.color.icon.brand.secondary',
+  'theme.theme.color.icon.discount.high',
+  'theme.theme.color.icon.discount.low',
+  'theme.theme.color.icon.discount.medium',
+  'theme.theme.color.icon.info.low',
   'theme.theme.color.icon.negative.low',
   'theme.theme.color.icon.negative.medium',
+  'theme.theme.color.icon.agnostic.white',
   'theme.theme.color.icon.positive.low',
   'theme.theme.color.icon.positive.medium',
   'theme.theme.color.icon.premium.low',
   'theme.theme.color.icon.premium.medium',
   'theme.theme.color.icon.rating.filled',
-  'theme.theme.color.icon.brand.secondary',
   'theme.theme.color.icon.rating.unfilled',
-  'theme.theme.color.icon.brand.primary',
-  'theme.theme.color.icon.discount.high',
-  'theme.theme.color.icon.discount.low',
-  'theme.theme.color.icon.discount.medium',
-  'theme.theme.color.icon.info.low',
   'theme.theme.color.text.agnostic.white',
   'theme.theme.color.text.alert.medium',
   'theme.theme.color.text.brand.primary',
@@ -236,6 +236,7 @@ export const colorPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').DimensionPaths}`
 */
 export const dimensionPaths = /** @type {const} */ ([
+  'action.button.size.border.weight',
   'action.button.size.border.radius.L',
   'theme.theme.size.border.radius.lg',
   'numbers.scale.zero',
@@ -246,9 +247,10 @@ export const dimensionPaths = /** @type {const} */ ([
   'action.button.size.border.radius.S',
   'theme.theme.size.border.radius.sm',
   'numbers.scale.100',
-  'action.button.size.border.weight',
   'theme.theme.font.letter-spacing.caption.regular',
   'theme.theme.font.letter-spacing.caption.high',
+  'theme.theme.font.letter-spacing.button',
+  'theme.theme.font.letter-spacing.h1',
   'theme.theme.font.letter-spacing.h2',
   'theme.theme.font.letter-spacing.h3',
   'theme.theme.font.letter-spacing.h4',
@@ -256,12 +258,12 @@ export const dimensionPaths = /** @type {const} */ ([
   'theme.theme.font.letter-spacing.h6',
   'theme.theme.font.letter-spacing.micro',
   'theme.theme.font.letter-spacing.overline',
-  'theme.theme.font.letter-spacing.h1',
-  'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.subtitle 1.high',
   'theme.theme.font.letter-spacing.subtitle 1.regular',
   'theme.theme.font.letter-spacing.subtitle 2.high',
   'theme.theme.font.letter-spacing.subtitle 2.regular',
+  'theme.theme.font.line-height.subtitle 1',
+  'theme.theme.font.line-height.subtitle 2',
   'theme.theme.font.line-height.button',
   'theme.theme.font.line-height.caption',
   'theme.theme.font.line-height.h1',
@@ -272,8 +274,6 @@ export const dimensionPaths = /** @type {const} */ ([
   'theme.theme.font.line-height.h6',
   'theme.theme.font.line-height.micro',
   'theme.theme.font.line-height.overline',
-  'theme.theme.font.line-height.subtitle 1',
-  'theme.theme.font.line-height.subtitle 2',
   'theme.theme.font.size.button',
   'theme.theme.font.size.caption',
   'theme.theme.font.size.h1',
@@ -369,10 +369,10 @@ export const actionPaths = /** @type {const} */ ([
   'action.button.color.text.on-secondary',
   'action.button.color.text.on-tertiary',
   'action.button.color.text.underlined',
+  'action.button.size.border.weight',
   'action.button.size.border.radius.L',
   'action.button.size.border.radius.M',
-  'action.button.size.border.radius.S',
-  'action.button.size.border.weight'
+  'action.button.size.border.radius.S'
 ]);
 /**
 * @typedef {typeof themePaths} ThemePaths - All the valid paths for the collection theme.
@@ -407,6 +407,40 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.size.border.radius.lg',
   'theme.theme.size.border.radius.md',
   'theme.theme.size.border.radius.sm',
+  'theme.theme.color.background.positive.low',
+  'theme.theme.color.background.positive.medium',
+  'theme.theme.color.background.premium.low',
+  'theme.theme.color.background.premium.medium',
+  'theme.theme.color.background.neutral.high',
+  'theme.theme.color.background.alert.low',
+  'theme.theme.color.background.alert.medium',
+  'theme.theme.color.background.info.low',
+  'theme.theme.color.background.info.medium',
+  'theme.theme.color.background.negative.low',
+  'theme.theme.color.background.negative.medium',
+  'theme.theme.color.icon.alert.high',
+  'theme.theme.color.icon.agnostic.black',
+  'theme.theme.color.icon.info.high',
+  'theme.theme.color.icon.neutral.invert',
+  'theme.theme.color.icon.negative.high',
+  'theme.theme.color.icon.positive.high',
+  'theme.theme.color.icon.premium.high',
+  'theme.theme.color.text.alert.high',
+  'theme.theme.color.text.agnostic.black',
+  'theme.theme.color.text.info.high',
+  'theme.theme.color.text.neutral.invert',
+  'theme.theme.color.text.negative.high',
+  'theme.theme.color.text.positive.high',
+  'theme.theme.color.text.premium.high',
+  'theme.theme.color.text.alert.low',
+  'theme.theme.color.text.alert.low-alt',
+  'theme.theme.color.text.info.low',
+  'theme.theme.color.text.negative.low',
+  'theme.theme.color.text.negative.medium',
+  'theme.theme.color.text.positive.low',
+  'theme.theme.color.text.positive.medium',
+  'theme.theme.color.text.premium.low',
+  'theme.theme.color.text.premium.medium',
   'theme.theme.color.background.alert.high',
   'theme.theme.color.background.agnostic.black',
   'theme.theme.color.background.info.high',
@@ -421,42 +455,10 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.border.negative.high',
   'theme.theme.color.border.positive.high',
   'theme.theme.color.border.premium.high',
-  'theme.theme.color.text.alert.high',
-  'theme.theme.color.text.agnostic.black',
-  'theme.theme.color.text.alert.low',
-  'theme.theme.color.text.alert.low-alt',
-  'theme.theme.color.text.info.low',
-  'theme.theme.color.text.info.high',
-  'theme.theme.color.text.neutral.invert',
-  'theme.theme.color.text.negative.low',
-  'theme.theme.color.text.negative.medium',
-  'theme.theme.color.text.negative.high',
-  'theme.theme.color.text.positive.low',
-  'theme.theme.color.text.positive.medium',
-  'theme.theme.color.text.positive.high',
-  'theme.theme.color.text.premium.low',
-  'theme.theme.color.text.premium.medium',
-  'theme.theme.color.text.premium.high',
-  'theme.theme.color.background.neutral.high',
-  'theme.theme.color.background.alert.low',
-  'theme.theme.color.background.alert.medium',
-  'theme.theme.color.background.info.low',
-  'theme.theme.color.background.info.medium',
-  'theme.theme.color.background.negative.low',
-  'theme.theme.color.background.negative.medium',
-  'theme.theme.color.background.positive.low',
-  'theme.theme.color.background.positive.medium',
-  'theme.theme.color.background.premium.low',
-  'theme.theme.color.background.premium.medium',
-  'theme.theme.color.icon.alert.high',
-  'theme.theme.color.icon.agnostic.black',
-  'theme.theme.color.icon.info.high',
-  'theme.theme.color.icon.neutral.invert',
-  'theme.theme.color.icon.negative.high',
-  'theme.theme.color.icon.positive.high',
-  'theme.theme.color.icon.premium.high',
   'theme.theme.font.letter-spacing.caption.regular',
   'theme.theme.font.letter-spacing.caption.high',
+  'theme.theme.font.letter-spacing.button',
+  'theme.theme.font.letter-spacing.h1',
   'theme.theme.font.letter-spacing.h2',
   'theme.theme.font.letter-spacing.h3',
   'theme.theme.font.letter-spacing.h4',
@@ -464,12 +466,12 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.font.letter-spacing.h6',
   'theme.theme.font.letter-spacing.micro',
   'theme.theme.font.letter-spacing.overline',
-  'theme.theme.font.letter-spacing.h1',
-  'theme.theme.font.letter-spacing.button',
   'theme.theme.font.letter-spacing.subtitle 1.high',
   'theme.theme.font.letter-spacing.subtitle 1.regular',
   'theme.theme.font.letter-spacing.subtitle 2.high',
   'theme.theme.font.letter-spacing.subtitle 2.regular',
+  'theme.theme.font.line-height.subtitle 1',
+  'theme.theme.font.line-height.subtitle 2',
   'theme.theme.font.line-height.button',
   'theme.theme.font.line-height.caption',
   'theme.theme.font.line-height.h1',
@@ -480,8 +482,6 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.font.line-height.h6',
   'theme.theme.font.line-height.micro',
   'theme.theme.font.line-height.overline',
-  'theme.theme.font.line-height.subtitle 1',
-  'theme.theme.font.line-height.subtitle 2',
   'theme.theme.font.size.button',
   'theme.theme.font.size.caption',
   'theme.theme.font.size.h1',
@@ -497,20 +497,13 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.font.weight.high',
   'theme.theme.font.weight.medium',
   'theme.theme.font.weight.regular',
-  'theme.theme.color.background.neutral.medium',
-  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.background.agnostic.white',
   'theme.theme.color.background.discount.high',
   'theme.theme.color.background.discount.low',
   'theme.theme.color.background.screen.alt',
   'theme.theme.color.background.screen.default',
-  'theme.theme.color.border.negative.medium',
-  'theme.theme.color.border.negative.low',
-  'theme.theme.color.border.neutral.medium',
-  'theme.theme.color.border.positive.low',
-  'theme.theme.color.border.positive.medium',
-  'theme.theme.color.border.premium.low',
-  'theme.theme.color.border.premium.medium',
+  'theme.theme.color.background.neutral.medium',
+  'theme.theme.color.background.neutral.medium-alt',
   'theme.theme.color.border.agnostic.white',
   'theme.theme.color.border.alert.low',
   'theme.theme.color.border.alert.medium',
@@ -518,24 +511,31 @@ export const themePaths = /** @type {const} */ ([
   'theme.theme.color.border.brand.secondary',
   'theme.theme.color.border.info.low',
   'theme.theme.color.border.info.medium',
-  'theme.theme.color.icon.agnostic.white',
-  'theme.theme.color.icon.alert.low',
+  'theme.theme.color.border.negative.low',
+  'theme.theme.color.border.negative.medium',
+  'theme.theme.color.border.neutral.medium',
+  'theme.theme.color.border.positive.low',
+  'theme.theme.color.border.positive.medium',
+  'theme.theme.color.border.premium.low',
+  'theme.theme.color.border.premium.medium',
   'theme.theme.color.icon.alert.low-alt',
   'theme.theme.color.icon.alert.medium',
+  'theme.theme.color.icon.alert.low',
+  'theme.theme.color.icon.brand.primary',
+  'theme.theme.color.icon.brand.secondary',
+  'theme.theme.color.icon.discount.high',
+  'theme.theme.color.icon.discount.low',
+  'theme.theme.color.icon.discount.medium',
+  'theme.theme.color.icon.info.low',
   'theme.theme.color.icon.negative.low',
   'theme.theme.color.icon.negative.medium',
+  'theme.theme.color.icon.agnostic.white',
   'theme.theme.color.icon.positive.low',
   'theme.theme.color.icon.positive.medium',
   'theme.theme.color.icon.premium.low',
   'theme.theme.color.icon.premium.medium',
   'theme.theme.color.icon.rating.filled',
-  'theme.theme.color.icon.brand.secondary',
   'theme.theme.color.icon.rating.unfilled',
-  'theme.theme.color.icon.brand.primary',
-  'theme.theme.color.icon.discount.high',
-  'theme.theme.color.icon.discount.low',
-  'theme.theme.color.icon.discount.medium',
-  'theme.theme.color.icon.info.low',
   'theme.theme.color.text.agnostic.white',
   'theme.theme.color.text.alert.medium',
   'theme.theme.color.text.brand.primary',
@@ -613,18 +613,25 @@ export const numbersPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').FeedbackPaths}`
 */
 export const feedbackPaths = /** @type {const} */ ([
-  'feedback.feedback.button.color.background.alert',
-  'feedback.feedback.button.color.background.info',
-  'feedback.feedback.button.color.background.negative',
-  'feedback.feedback.button.color.background.neutral',
-  'feedback.feedback.button.color.background.positive',
-  'feedback.feedback.button.color.background.premium',
-  'feedback.feedback.button.color.border.alert',
-  'feedback.feedback.button.color.border.info',
-  'feedback.feedback.button.color.border.negative',
-  'feedback.feedback.button.color.border.neutral',
-  'feedback.feedback.button.color.border.positive',
-  'feedback.feedback.button.color.border.premium',
+  'feedback.feedback.color.background.positive',
+  'feedback.feedback.color.background.premium',
+  'feedback.feedback.color.background.neutral.regular',
+  'feedback.feedback.color.background.neutral.invert',
+  'feedback.feedback.color.background.alert',
+  'feedback.feedback.color.background.info',
+  'feedback.feedback.color.background.negative',
+  'feedback.feedback.color.icon.alert',
+  'feedback.feedback.color.icon.info',
+  'feedback.feedback.color.icon.negative',
+  'feedback.feedback.color.icon.neutral',
+  'feedback.feedback.color.icon.positive',
+  'feedback.feedback.color.icon.premium',
+  'feedback.feedback.color.text.alert',
+  'feedback.feedback.color.text.info',
+  'feedback.feedback.color.text.negative',
+  'feedback.feedback.color.text.neutral',
+  'feedback.feedback.color.text.positive',
+  'feedback.feedback.color.text.premium',
   'feedback.feedback.button.color.text.alert.on-secondary',
   'feedback.feedback.button.color.text.alert.on-primary',
   'feedback.feedback.button.color.text.info.on-primary',
@@ -637,25 +644,18 @@ export const feedbackPaths = /** @type {const} */ ([
   'feedback.feedback.button.color.text.positive.on-secondary',
   'feedback.feedback.button.color.text.premium.on-primary',
   'feedback.feedback.button.color.text.premium.on-secondary',
-  'feedback.feedback.color.background.neutral.invert',
-  'feedback.feedback.color.background.neutral.regular',
-  'feedback.feedback.color.background.alert',
-  'feedback.feedback.color.background.info',
-  'feedback.feedback.color.background.negative',
-  'feedback.feedback.color.background.positive',
-  'feedback.feedback.color.background.premium',
-  'feedback.feedback.color.icon.alert',
-  'feedback.feedback.color.icon.info',
-  'feedback.feedback.color.icon.negative',
-  'feedback.feedback.color.icon.neutral',
-  'feedback.feedback.color.icon.positive',
-  'feedback.feedback.color.icon.premium',
-  'feedback.feedback.color.text.alert',
-  'feedback.feedback.color.text.info',
-  'feedback.feedback.color.text.negative',
-  'feedback.feedback.color.text.neutral',
-  'feedback.feedback.color.text.positive',
-  'feedback.feedback.color.text.premium'
+  'feedback.feedback.button.color.background.alert',
+  'feedback.feedback.button.color.background.info',
+  'feedback.feedback.button.color.background.negative',
+  'feedback.feedback.button.color.background.neutral',
+  'feedback.feedback.button.color.background.positive',
+  'feedback.feedback.button.color.background.premium',
+  'feedback.feedback.button.color.border.alert',
+  'feedback.feedback.button.color.border.info',
+  'feedback.feedback.button.color.border.negative',
+  'feedback.feedback.button.color.border.neutral',
+  'feedback.feedback.button.color.border.positive',
+  'feedback.feedback.button.color.border.premium'
 ]);
 /**
 * @typedef {typeof densityPaths} DensityPaths - All the valid paths for the collection density.
@@ -1042,6 +1042,207 @@ export const tokens = /** @type {const} */ ({
   'colours.teal.1': { dark: 'rgb(1, 50, 50)', light: 'rgb(225, 255, 255)' },
   'colours.teal.5': { dark: 'rgb(0, 169, 169)', light: 'rgb(0, 123, 123)' },
   'colours.teal.7': { dark: 'rgb(0, 199, 199)', light: 'rgb(0, 99, 99)' },
+  'feedback.feedback.color.background.positive': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
+  'theme.theme.color.background.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.color.background.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'feedback.feedback.color.background.premium': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
+  'theme.theme.color.background.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.color.background.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
+  },
+  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
+  'theme.theme.color.background.neutral.high': {
+    Danland: 'rgb(179, 179, 179)',
+    Prism: 'rgb(77, 77, 77)',
+    Traum: 'rgb(77, 77, 77)'
+  },
+  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
+  'feedback.feedback.color.background.alert': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
+  'theme.theme.color.background.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
+  },
+  'theme.theme.color.background.alert.medium': {
+    Danland: 'rgb(241, 170, 16)',
+    Prism: 'rgb(205, 179, 154)',
+    Traum: 'rgb(205, 179, 154)'
+  },
+  'feedback.feedback.color.background.info': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
+  'theme.theme.color.background.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
+  },
+  'theme.theme.color.background.info.medium': {
+    Danland: 'rgb(89, 155, 222)',
+    Prism: 'rgb(84, 114, 138)',
+    Traum: 'rgb(11, 117, 176)'
+  },
+  'feedback.feedback.color.background.negative': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
+  'theme.theme.color.background.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
+  },
+  'theme.theme.color.background.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'feedback.feedback.color.icon.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'theme.theme.color.icon.alert.high': {
+    Danland: 'rgb(214, 174, 86)',
+    Prism: 'rgb(118, 87, 51)',
+    Traum: 'rgb(118, 87, 51)'
+  },
+  'theme.theme.color.icon.agnostic.black': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'feedback.feedback.color.icon.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'theme.theme.color.icon.info.high': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(60, 92, 119)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'theme.theme.color.icon.neutral.invert': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'feedback.feedback.color.icon.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'theme.theme.color.icon.negative.high': {
+    Danland: 'rgb(213, 164, 172)',
+    Prism: 'rgb(141, 65, 78)',
+    Traum: 'rgb(141, 65, 78)'
+  },
+  'feedback.feedback.color.icon.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.color.icon.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'theme.theme.color.icon.positive.high': {
+    Danland: 'rgb(114, 194, 172)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(59, 96, 86)'
+  },
+  'feedback.feedback.color.icon.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.color.icon.premium.high': {
+    Danland: 'rgb(200, 163, 255)',
+    Prism: 'rgb(107, 68, 165)',
+    Traum: 'rgb(107, 68, 165)'
+  },
+  'feedback.feedback.color.text.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'theme.theme.color.text.alert.high': {
+    Danland: 'rgb(214, 174, 86)',
+    Prism: 'rgb(118, 87, 51)',
+    Traum: 'rgb(118, 87, 51)'
+  },
+  'theme.theme.color.text.agnostic.black': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'feedback.feedback.color.text.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'theme.theme.color.text.info.high': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(60, 92, 119)',
+    Traum: 'rgb(4, 92, 141)'
+  },
+  'theme.theme.color.text.neutral.invert': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'feedback.feedback.color.text.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'theme.theme.color.text.negative.high': {
+    Danland: 'rgb(213, 164, 172)',
+    Prism: 'rgb(141, 65, 78)',
+    Traum: 'rgb(141, 65, 78)'
+  },
+  'feedback.feedback.color.text.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.color.text.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'theme.theme.color.text.positive.high': {
+    Danland: 'rgb(114, 194, 172)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(59, 96, 86)'
+  },
+  'feedback.feedback.color.text.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
+  'theme.theme.color.text.premium.high': {
+    Danland: 'rgb(200, 163, 255)',
+    Prism: 'rgb(107, 68, 165)',
+    Traum: 'rgb(107, 68, 165)'
+  },
+  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
+  'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
+  'theme.theme.color.text.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
+  },
+  'theme.theme.color.text.alert.low-alt': {
+    Danland: 'rgb(241, 170, 16)',
+    Prism: 'rgb(205, 179, 154)',
+    Traum: 'rgb(205, 179, 154)'
+  },
+  'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
+  'theme.theme.color.text.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
+  },
+  'feedback.feedback.button.color.text.info.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
+  'feedback.feedback.button.color.text.negative.on-primary': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
+  'theme.theme.color.text.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
+  },
+  'theme.theme.color.text.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'feedback.feedback.button.color.text.negative.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
+  'feedback.feedback.button.color.text.neutral.on-primary': { high: 'rgb(255, 255, 255)', low: 'rgb(255, 255, 255)' },
+  'feedback.feedback.button.color.text.neutral.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
+  'feedback.feedback.button.color.text.positive.on-primary': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
+  'theme.theme.color.text.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.color.text.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'feedback.feedback.button.color.text.positive.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
+  'feedback.feedback.button.color.text.premium.on-primary': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
+  'theme.theme.color.text.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.color.text.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
+  },
+  'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
   'feedback.feedback.button.color.background.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
   'theme.theme.color.background.alert.high': {
     Danland: 'rgb(214, 174, 86)',
@@ -1124,217 +1325,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(107, 68, 165)',
     Traum: 'rgb(107, 68, 165)'
   },
-  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.color.text.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.color.text.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
-  'theme.theme.color.text.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.color.text.alert.low-alt': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
-  'theme.theme.color.text.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'feedback.feedback.button.color.text.info.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.color.text.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.color.text.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.button.color.text.negative.on-primary': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
-  'theme.theme.color.text.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.text.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'feedback.feedback.button.color.text.negative.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.color.text.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.button.color.text.neutral.on-primary': { high: 'rgb(255, 255, 255)', low: 'rgb(255, 255, 255)' },
-  'feedback.feedback.button.color.text.neutral.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.button.color.text.positive.on-primary': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
-  'theme.theme.color.text.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.text.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'feedback.feedback.button.color.text.positive.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.color.text.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.button.color.text.premium.on-primary': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
-  'theme.theme.color.text.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.text.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.text.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
-  'theme.theme.color.background.neutral.high': {
-    Danland: 'rgb(179, 179, 179)',
-    Prism: 'rgb(77, 77, 77)',
-    Traum: 'rgb(77, 77, 77)'
-  },
-  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
-  'feedback.feedback.color.background.alert': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
-  'theme.theme.color.background.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.color.background.alert.medium': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'feedback.feedback.color.background.info': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
-  'theme.theme.color.background.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'theme.theme.color.background.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'feedback.feedback.color.background.negative': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
-  'theme.theme.color.background.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.background.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'feedback.feedback.color.background.positive': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
-  'theme.theme.color.background.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.background.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'feedback.feedback.color.background.premium': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
-  'theme.theme.color.background.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.background.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'feedback.feedback.color.icon.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.color.icon.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.color.icon.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.color.icon.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.color.icon.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.color.icon.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.color.icon.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.color.icon.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.color.icon.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.color.icon.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.color.icon.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.color.icon.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.icon.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.color.text.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'feedback.feedback.color.text.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'feedback.feedback.color.text.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'feedback.feedback.color.text.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.color.text.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'feedback.feedback.color.text.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.color.background.neutral.medium': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'theme.theme.color.background.neutral.medium-alt': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
   'theme.theme.color.background.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
     Prism: 'rgb(255, 255, 255)',
@@ -1360,40 +1350,15 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(255, 255, 255)',
     Traum: 'rgb(255, 255, 255)'
   },
-  'theme.theme.color.border.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'theme.theme.color.border.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.color.border.neutral.medium': {
+  'theme.theme.color.background.neutral.medium': {
     Danland: 'rgb(82, 82, 82)',
     Prism: 'rgb(181, 181, 181)',
     Traum: 'rgb(181, 181, 181)'
   },
-  'theme.theme.color.border.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.color.border.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'theme.theme.color.border.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.color.border.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
+  'theme.theme.color.background.neutral.medium-alt': {
+    Danland: 'rgb(140, 140, 140)',
+    Prism: 'rgb(111, 111, 111)',
+    Traum: 'rgb(111, 111, 111)'
   },
   'theme.theme.color.border.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
@@ -1430,15 +1395,40 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(84, 114, 138)',
     Traum: 'rgb(11, 117, 176)'
   },
-  'theme.theme.color.icon.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
+  'theme.theme.color.border.negative.low': {
+    Danland: 'rgb(51, 41, 43)',
+    Prism: 'rgb(251, 246, 247)',
+    Traum: 'rgb(251, 246, 247)'
   },
-  'theme.theme.color.icon.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
+  'theme.theme.color.border.negative.medium': {
+    Danland: 'rgb(192, 142, 151)',
+    Prism: 'rgb(160, 90, 102)',
+    Traum: 'rgb(160, 90, 102)'
+  },
+  'theme.theme.color.border.neutral.medium': {
+    Danland: 'rgb(82, 82, 82)',
+    Prism: 'rgb(181, 181, 181)',
+    Traum: 'rgb(181, 181, 181)'
+  },
+  'theme.theme.color.border.positive.low': {
+    Danland: 'rgb(34, 40, 39)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(244, 250, 249)'
+  },
+  'theme.theme.color.border.positive.medium': {
+    Danland: 'rgb(113, 160, 148)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(79, 118, 108)'
+  },
+  'theme.theme.color.border.premium.low': {
+    Danland: 'rgb(49, 45, 56)',
+    Prism: 'rgb(249, 245, 255)',
+    Traum: 'rgb(249, 245, 255)'
+  },
+  'theme.theme.color.border.premium.medium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(128, 85, 195)',
+    Traum: 'rgb(128, 85, 195)'
   },
   'theme.theme.color.icon.alert.low-alt': {
     Danland: 'rgb(241, 170, 16)',
@@ -1450,6 +1440,41 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(148, 110, 63)',
     Traum: 'rgb(148, 110, 63)'
   },
+  'theme.theme.color.icon.alert.low': {
+    Danland: 'rgb(51, 48, 41)',
+    Prism: 'rgb(251, 249, 247)',
+    Traum: 'rgb(251, 249, 247)'
+  },
+  'theme.theme.color.icon.brand.primary': {
+    Danland: 'rgb(112, 184, 255)',
+    Prism: 'rgb(142, 103, 48)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.theme.color.icon.brand.secondary': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.theme.color.icon.discount.high': {
+    Danland: 'rgb(255, 221, 189)',
+    Prism: 'rgb(59, 96, 86)',
+    Traum: 'rgb(134, 73, 0)'
+  },
+  'theme.theme.color.icon.discount.low': {
+    Danland: 'rgb(31, 21, 13)',
+    Prism: 'rgb(244, 250, 249)',
+    Traum: 'rgb(255, 247, 236)'
+  },
+  'theme.theme.color.icon.discount.medium': {
+    Danland: 'rgb(254, 169, 95)',
+    Prism: 'rgb(79, 118, 108)',
+    Traum: 'rgb(176, 96, 0)'
+  },
+  'theme.theme.color.icon.info.low': {
+    Danland: 'rgb(45, 50, 56)',
+    Prism: 'rgb(242, 246, 250)',
+    Traum: 'rgb(238, 248, 254)'
+  },
   'theme.theme.color.icon.negative.low': {
     Danland: 'rgb(51, 41, 43)',
     Prism: 'rgb(251, 246, 247)',
@@ -1459,6 +1484,11 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(192, 142, 151)',
     Prism: 'rgb(160, 90, 102)',
     Traum: 'rgb(160, 90, 102)'
+  },
+  'theme.theme.color.icon.agnostic.white': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
   },
   'theme.theme.color.icon.positive.low': {
     Danland: 'rgb(34, 40, 39)',
@@ -1485,40 +1515,10 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(40, 40, 40)',
     Traum: 'rgb(4, 92, 141)'
   },
-  'theme.theme.color.icon.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
   'theme.theme.color.icon.rating.unfilled': {
     Danland: 'rgb(69, 69, 69)',
     Prism: 'rgb(211, 211, 211)',
     Traum: 'rgb(211, 211, 211)'
-  },
-  'theme.theme.color.icon.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(253, 196, 0)'
-  },
-  'theme.theme.color.icon.discount.high': {
-    Danland: 'rgb(255, 221, 189)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(134, 73, 0)'
-  },
-  'theme.theme.color.icon.discount.low': {
-    Danland: 'rgb(31, 21, 13)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(255, 247, 236)'
-  },
-  'theme.theme.color.icon.discount.medium': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
-  'theme.theme.color.icon.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
   },
   'theme.theme.color.text.agnostic.white': {
     Danland: 'rgb(255, 255, 255)',
@@ -1550,6 +1550,7 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(79, 118, 108)',
     Traum: 'rgb(176, 96, 0)'
   },
+  'action.button.size.border.weight': { disabled: '1px', hover: '2px', normal: '1px' },
   'action.button.size.border.radius.L': { disabled: '24px', hover: '16px', normal: '0px' },
   'theme.theme.size.border.radius.lg': { Danland: '24px', Prism: '0px', Traum: '16px' },
   'numbers.scale.zero': { desktop: '0px', mobile: '0px' },
@@ -1560,9 +1561,10 @@ export const tokens = /** @type {const} */ ({
   'action.button.size.border.radius.S': { disabled: '8px', hover: '8px', normal: '0px' },
   'theme.theme.size.border.radius.sm': { Danland: '8px', Prism: '0px', Traum: '8px' },
   'numbers.scale.100': { desktop: '8px', mobile: '8px' },
-  'action.button.size.border.weight': { disabled: '1px', hover: '2px', normal: '1px' },
   'theme.theme.font.letter-spacing.caption.regular': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
   'theme.theme.font.letter-spacing.caption.high': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
+  'theme.theme.font.letter-spacing.button': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
+  'theme.theme.font.letter-spacing.h1': { Danland: '-1.5px', Prism: '0px', Traum: '-1.5px' },
   'theme.theme.font.letter-spacing.h2': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
   'theme.theme.font.letter-spacing.h3': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
   'theme.theme.font.letter-spacing.h4': {
@@ -1582,8 +1584,6 @@ export const tokens = /** @type {const} */ ({
     Prism: '1px',
     Traum: '0.4000000059604645px'
   },
-  'theme.theme.font.letter-spacing.h1': { Danland: '-1.5px', Prism: '0px', Traum: '-1.5px' },
-  'theme.theme.font.letter-spacing.button': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
   'theme.theme.font.letter-spacing.subtitle 1.high': {
     Danland: '-0.30000001192092896px',
     Prism: '0.30000001192092896px',
@@ -1596,6 +1596,8 @@ export const tokens = /** @type {const} */ ({
     Traum: '-0.10000000149011612px'
   },
   'theme.theme.font.letter-spacing.subtitle 2.regular': { Danland: '0px', Prism: '0.30000001192092896px', Traum: '0px' },
+  'theme.theme.font.line-height.subtitle 1': { Danland: '24px', Prism: '24px', Traum: '24px' },
+  'theme.theme.font.line-height.subtitle 2': { Danland: '22px', Prism: '22px', Traum: '22px' },
   'theme.theme.font.line-height.button': { Danland: '24px', Prism: '24px', Traum: '24px' },
   'theme.theme.font.line-height.caption': { Danland: '16px', Prism: '16px', Traum: '16px' },
   'theme.theme.font.line-height.h1': { Danland: '72px', Prism: '86px', Traum: '72px' },
@@ -1606,8 +1608,6 @@ export const tokens = /** @type {const} */ ({
   'theme.theme.font.line-height.h6': { Danland: '28px', Prism: '28px', Traum: '28px' },
   'theme.theme.font.line-height.micro': { Danland: '12px', Prism: '12px', Traum: '12px' },
   'theme.theme.font.line-height.overline': { Danland: '16px', Prism: '16px', Traum: '16px' },
-  'theme.theme.font.line-height.subtitle 1': { Danland: '24px', Prism: '24px', Traum: '24px' },
-  'theme.theme.font.line-height.subtitle 2': { Danland: '22px', Prism: '22px', Traum: '22px' },
   'theme.theme.font.size.button': { Danland: '14px', Prism: '14px', Traum: '14px' },
   'theme.theme.font.size.caption': { Danland: '12px', Prism: '12px', Traum: '12px' },
   'theme.theme.font.size.h1': { Danland: '69px', Prism: '69px', Traum: '69px' },
@@ -1673,7 +1673,7 @@ export const tokens = /** @type {const} */ ({
   'theme.theme.size.border.radius.pill': { Danland: '144px', Prism: '128px', Traum: '128px' },
   'numbers.scale.1600': { desktop: '144px', mobile: '128px' },
   'numbers.scale.1400': { desktop: '128px', mobile: '112px' },
-  'numbers.scale.Number': { desktop: '0px', mobile: '98679px' }
+  'numbers.scale.Number': { desktop: '0px', mobile: '5678px' }
 });
 
 /**
