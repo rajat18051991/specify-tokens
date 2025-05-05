@@ -1,795 +1,791 @@
 /**
-* @typedef {typeof dimensionPaths} DimensionPaths - All the valid paths for the tokens of type dimension.
-* To use this type you can do: `@type {import('path/to/myTokensFile').DimensionPaths}`
-*/
-export const dimensionPaths = /** @type {const} */ ([
-  'action.button.size.border.radius.L',
-  'theme.theme.size.border.radius.lg',
-  'numbers.dimension.fixed.0',
-  'numbers.dimension.fixed.200',
-  'action.button.size.border.radius.M',
-  'theme.theme.size.border.radius.md',
-  'numbers.dimension.fixed.150',
-  'action.button.size.border.radius.S',
-  'theme.theme.size.border.radius.sm',
-  'numbers.dimension.fixed.100',
-  'action.button.size.border.weight',
-  'theme.theme.font.letter-spacing.h1',
-  'theme.theme.font.letter-spacing.button',
-  'theme.theme.font.letter-spacing.h2',
-  'theme.theme.font.letter-spacing.h3',
-  'theme.theme.font.letter-spacing.h4',
-  'theme.theme.font.letter-spacing.h5',
-  'theme.theme.font.letter-spacing.h6',
-  'theme.theme.font.letter-spacing.micro',
-  'theme.theme.font.letter-spacing.overline',
-  'theme.theme.font.letter-spacing.caption.high',
-  'theme.theme.font.letter-spacing.caption.regular',
-  'theme.theme.font.letter-spacing.subtitle 1.high',
-  'theme.theme.font.letter-spacing.subtitle 1.regular',
-  'theme.theme.font.letter-spacing.subtitle 2.high',
-  'theme.theme.font.letter-spacing.subtitle 2.regular',
-  'theme.theme.font.line-height.button',
-  'theme.theme.font.line-height.caption',
-  'theme.theme.font.line-height.h1',
-  'theme.theme.font.line-height.h2',
-  'theme.theme.font.line-height.h3',
-  'theme.theme.font.line-height.h4',
-  'theme.theme.font.line-height.h5',
-  'theme.theme.font.line-height.h6',
-  'theme.theme.font.line-height.micro',
-  'theme.theme.font.line-height.overline',
-  'theme.theme.font.line-height.subtitle 1',
-  'theme.theme.font.line-height.subtitle 2',
-  'theme.theme.font.size.button',
-  'theme.theme.font.size.caption',
-  'theme.theme.font.size.h1',
-  'theme.theme.font.size.h2',
-  'theme.theme.font.size.h3',
-  'theme.theme.font.size.h4',
-  'theme.theme.font.size.h5',
-  'theme.theme.font.size.h6',
-  'theme.theme.font.size.micro',
-  'theme.theme.font.size.overline',
-  'theme.theme.font.size.subtitle 1',
-  'theme.theme.font.size.subtitle 2',
-  'theme.theme.font.weight.high',
-  'theme.theme.font.weight.medium',
-  'theme.theme.font.weight.regular',
-  'theme.theme.size.border.radius.xl',
-  'numbers.dimension.fixed.300',
-  'theme.theme.size.border.radius.xs',
-  'numbers.dimension.fixed.50',
-  'theme.theme.size.border.radius.xxl',
-  'numbers.dimension.fixed.400',
-  'theme.theme.size.border.radius.pill',
-  'numbers.dimension.scale.1600',
-  'theme.theme.size.icon.lg',
-  'numbers.dimension.scale.400',
-  'theme.theme.size.icon.md',
-  'numbers.dimension.scale.300',
-  'theme.theme.size.icon.sm',
-  'numbers.dimension.scale.200',
-  'theme.theme.screen.space.default',
-  'density.space.md.1',
-  'density.space.sm.5',
-  'numbers.dimension.scale.150',
-  'theme.theme.screen.space.optical',
-  'density.space.sm.3',
-  'numbers.dimension.scale.50',
-  'numbers.dimension.fixed.25',
-  'theme.theme.space.fixed.md.1',
-  'theme.theme.space.fixed.md.2',
-  'theme.theme.space.fixed.md.3',
-  'numbers.dimension.fixed.500',
-  'theme.theme.space.fixed.md.4',
-  'numbers.dimension.fixed.600',
-  'theme.theme.space.fixed.sm.1',
-  'theme.theme.space.fixed.sm.2',
-  'theme.theme.space.fixed.sm.3',
-  'theme.theme.space.fixed.sm.4',
-  'theme.theme.space.fixed.sm.5',
-  'theme.theme.space.scale.lg.1',
-  'density.space.lg.1',
-  'numbers.dimension.scale.700',
-  'numbers.dimension.scale.600',
-  'numbers.dimension.scale.800',
-  'theme.theme.space.scale.lg.2',
-  'density.space.lg.2',
-  'numbers.dimension.scale.900',
-  'theme.theme.space.scale.lg.3',
-  'density.space.lg.3',
-  'numbers.dimension.scale.1000',
-  'theme.theme.space.scale.lg.4',
-  'density.space.lg.4',
-  'numbers.dimension.scale.1100',
-  'theme.theme.space.scale.lg.5',
-  'density.space.lg.5',
-  'numbers.dimension.scale.1200',
-  'theme.theme.space.scale.md.1',
-  'theme.theme.space.scale.md.2',
-  'density.space.md.2',
-  'theme.theme.space.scale.md.3',
-  'density.space.md.3',
-  'numbers.dimension.scale.500',
-  'theme.theme.space.scale.md.4',
-  'density.space.md.4',
-  'theme.theme.space.scale.md.5',
-  'density.space.md.5',
-  'theme.theme.space.scale.sm.1',
-  'density.space.sm.1',
-  'theme.theme.space.scale.sm.2',
-  'density.space.sm.2',
-  'theme.theme.space.scale.sm.3',
-  'theme.theme.space.scale.sm.4',
-  'density.space.sm.4',
-  'theme.theme.space.scale.sm.5',
-  'numbers.dimension.scale.100',
-  'numbers.dimension.scale.1400'
-]);
-/**
 * @typedef {typeof colorPaths} ColorPaths - All the valid paths for the tokens of type color.
 * To use this type you can do: `@type {import('path/to/myTokensFile').ColorPaths}`
 */
 export const colorPaths = /** @type {const} */ ([
-  'action.button.color.background.neutral',
-  'theme.theme.colour.background.neutral.low',
-  'theme.theme.colour.background.neutral.invert',
-  'colours.asphalt.1',
-  'colours.asphalt.invert',
-  'action.button.color.background.on-primary',
-  'theme.theme.colour.background.brand.on-primary',
-  'theme.theme.colour.background.neutral.low-alt',
-  'colours.agnostic.white',
-  'colours.asphalt.2',
-  'action.button.color.background.on-secondary',
-  'theme.theme.colour.background.brand.on-secondary',
-  'action.button.color.background.primary',
-  'theme.theme.colour.background.brand.primary',
-  'colours.violet.7',
-  'colours.aegean.7',
-  'action.button.color.background.secondary',
-  'theme.theme.colour.background.brand.secondary',
-  'colours.asphalt.18',
-  'action.button.color.background.tertiary',
-  'action.button.color.icon.with-underlined',
-  'theme.theme.colour.icon.neutral.high',
-  'theme.theme.colour.icon.neutral.low',
-  'colours.asphalt.3',
-  'action.button.color.icon.invert-on-primary',
-  'theme.theme.colour.text.brand.on-primary',
-  'theme.theme.colour.icon.brand.invert-on-primary',
-  'theme.theme.colour.text.neutral.medium',
-  'colours.agnostic.black',
-  'colours.asphalt.5',
-  'action.button.color.icon.invert-on-secondary',
-  'theme.theme.colour.text.brand.on-secondary',
-  'theme.theme.colour.icon.brand.invert-on-secondary',
-  'action.button.color.icon.on-neutral',
-  'action.button.color.icon.on-primary',
-  'theme.theme.colour.icon.brand.on-primary',
-  'theme.theme.colour.icon.neutral.medium',
-  'action.button.color.icon.on-secondary',
-  'theme.theme.colour.icon.brand.on-secondary',
-  'action.button.color.icon.on-tertiary',
-  'action.button.color.icon.with-hyperlink',
-  'theme.theme.colour.icon.info.medium',
-  'colours.sky.5',
-  'colours.aegean.5',
-  'action.button.color.text.hyperlink',
-  'theme.theme.colour.text.info.medium',
-  'theme.theme.colour.text.neutral.low',
-  'action.button.color.text.invert-on-primary',
-  'theme.theme.colour.text.brand.invert-on-primary',
-  'action.button.color.text.invert-on-secondary',
-  'theme.theme.colour.text.brand.invert-on-secondary',
-  'action.button.color.text.on-neutral',
-  'theme.theme.colour.text.neutral.high',
-  'action.button.color.text.on-primary',
-  'action.button.color.text.on-secondary',
-  'action.button.color.text.on-tertiary',
-  'action.button.color.text.underlined',
-  'action.button.color.border.tertiary',
-  'theme.theme.colour.border.neutral.high',
-  'theme.theme.colour.border.neutral.low',
-  'colours.asphalt.7',
-  'colours.berry.5',
-  'colours.crimson.1',
-  'colours.crimson.5',
-  'colours.crimson.7',
-  'colours.emerald.1',
-  'colours.emerald.5',
-  'colours.emerald.7',
-  'colours.firebrick.5',
-  'colours.gold.1',
-  'colours.violet.1',
-  'colours.violet.5',
-  'colours.aegean.1',
-  'colours.amber.1',
-  'colours.amber.2',
-  'colours.amber.5',
-  'colours.amber.7',
-  'colours.lavender.1',
-  'colours.lavender.5',
-  'colours.lavender.7',
-  'colours.lime.2',
-  'colours.rust.1',
-  'colours.rust.5',
-  'colours.rust.7',
-  'colours.screen.1',
-  'colours.screen.2',
-  'colours.sky.1',
-  'colours.sky.7',
-  'colours.teal.1',
-  'colours.teal.5',
-  'colours.teal.7',
-  'feedback.feedback.button.color.text.alert.on-secondary',
-  'theme.theme.colour.text.alert.high',
-  'theme.theme.colour.text.agnostic.black',
-  'feedback.feedback.button.color.text.alert.on-primary',
-  'theme.theme.colour.text.alert.low',
-  'theme.theme.colour.text.alert.low-alt',
-  'feedback.feedback.button.color.text.info.on-primary',
-  'theme.theme.colour.text.info.low',
-  'feedback.feedback.button.color.text.info.on-secondary',
-  'theme.theme.colour.text.info.high',
-  'theme.theme.colour.text.neutral.invert',
-  'feedback.feedback.button.color.text.negative.on-primary',
-  'theme.theme.colour.text.negative.low',
-  'theme.theme.colour.text.negative.medium',
-  'feedback.feedback.button.color.text.negative.on-secondary',
-  'theme.theme.colour.text.negative.high',
-  'feedback.feedback.button.color.text.premium.on-primary',
-  'theme.theme.colour.text.premium.low',
-  'theme.theme.colour.text.premium.medium',
-  'feedback.feedback.button.color.text.premium.on-secondary',
-  'theme.theme.colour.text.premium.high',
-  'feedback.feedback.button.color.text.neutral.on-primary',
-  'feedback.feedback.button.color.text.neutral.on-secondary',
-  'feedback.feedback.button.color.text.positive.on-primary',
-  'theme.theme.colour.text.positive.low',
-  'theme.theme.colour.text.positive.medium',
-  'feedback.feedback.button.color.text.positive.on-secondary',
-  'theme.theme.colour.text.positive.high',
-  'feedback.feedback.button.color.background.negative',
-  'theme.theme.colour.background.negative.high',
-  'feedback.feedback.button.color.background.neutral',
-  'theme.theme.colour.background.neutral.high-alt',
-  'feedback.feedback.button.color.background.positive',
-  'theme.theme.colour.background.positive.high',
-  'feedback.feedback.button.color.background.premium',
-  'theme.theme.colour.background.premium.high',
-  'feedback.feedback.button.color.background.alert',
-  'theme.theme.colour.background.alert.high',
-  'theme.theme.colour.background.agnostic.black',
-  'feedback.feedback.button.color.background.info',
-  'theme.theme.colour.background.info.high',
-  'feedback.feedback.button.color.border.alert',
-  'theme.theme.colour.border.alert.high',
-  'theme.theme.colour.border.agnostic.black',
-  'feedback.feedback.button.color.border.info',
-  'theme.theme.colour.border.info.high',
-  'theme.theme.colour.border.neutral.invert',
-  'feedback.feedback.button.color.border.negative',
-  'theme.theme.colour.border.negative.high',
-  'feedback.feedback.button.color.border.neutral',
-  'feedback.feedback.button.color.border.positive',
-  'theme.theme.colour.border.positive.high',
-  'feedback.feedback.button.color.border.premium',
-  'theme.theme.colour.border.premium.high',
-  'feedback.feedback.color.background.alert',
-  'theme.theme.colour.background.alert.low',
-  'theme.theme.colour.background.alert.medium',
-  'feedback.feedback.color.background.info',
-  'theme.theme.colour.background.info.low',
-  'theme.theme.colour.background.info.medium',
-  'feedback.feedback.color.background.negative',
-  'theme.theme.colour.background.negative.low',
-  'theme.theme.colour.background.negative.medium',
-  'feedback.feedback.color.background.positive',
-  'theme.theme.colour.background.positive.low',
-  'theme.theme.colour.background.positive.medium',
-  'feedback.feedback.color.background.premium',
-  'theme.theme.colour.background.premium.low',
-  'theme.theme.colour.background.premium.medium',
-  'feedback.feedback.color.background.neutral.invert',
-  'theme.theme.colour.background.neutral.high',
-  'feedback.feedback.color.background.neutral.regular',
-  'feedback.feedback.color.icon.alert',
-  'theme.theme.colour.icon.alert.high',
-  'theme.theme.colour.icon.agnostic.black',
-  'feedback.feedback.color.icon.info',
-  'theme.theme.colour.icon.info.high',
-  'theme.theme.colour.icon.neutral.invert',
-  'feedback.feedback.color.icon.negative',
-  'theme.theme.colour.icon.negative.high',
-  'feedback.feedback.color.icon.neutral',
-  'feedback.feedback.color.icon.positive',
-  'theme.theme.colour.icon.positive.high',
-  'feedback.feedback.color.icon.premium',
-  'theme.theme.colour.icon.premium.high',
-  'feedback.feedback.color.text.alert',
-  'feedback.feedback.color.text.info',
-  'feedback.feedback.color.text.negative',
-  'feedback.feedback.color.text.neutral',
-  'feedback.feedback.color.text.positive',
-  'feedback.feedback.color.text.premium',
-  'theme.theme.colour.text.alert.medium',
-  'theme.theme.colour.text.brand.primary',
-  'theme.theme.colour.text.brand.secondary',
-  'theme.theme.colour.text.offer.on-high',
-  'theme.theme.colour.text.offer.on-low',
-  'theme.theme.colour.text.agnostic.white',
-  'theme.theme.colour.background.agnostic.white',
-  'theme.theme.colour.background.neutral.medium',
-  'theme.theme.colour.background.neutral.medium-alt',
-  'theme.theme.colour.background.offer.high',
-  'theme.theme.colour.background.offer.low',
-  'theme.theme.colour.border.agnostic.white',
-  'theme.theme.colour.border.alert.low',
-  'theme.theme.colour.border.alert.medium',
-  'theme.theme.colour.border.brand.primary',
-  'theme.theme.colour.border.brand.secondary',
-  'theme.theme.colour.border.info.low',
-  'theme.theme.colour.border.info.medium',
-  'theme.theme.colour.border.negative.low',
-  'theme.theme.colour.border.negative.medium',
-  'theme.theme.colour.border.neutral.medium',
-  'theme.theme.colour.border.positive.low',
-  'theme.theme.colour.border.positive.medium',
-  'theme.theme.colour.border.premium.low',
-  'theme.theme.colour.border.premium.medium',
-  'theme.theme.colour.icon.brand.primary',
-  'theme.theme.colour.icon.brand.secondary',
-  'theme.theme.colour.icon.info.low',
-  'theme.theme.colour.icon.negative.low',
-  'theme.theme.colour.icon.negative.medium',
-  'theme.theme.colour.icon.offer.high',
-  'theme.theme.colour.icon.offer.low',
-  'theme.theme.colour.icon.offer.medium',
-  'theme.theme.colour.icon.rating.filled',
-  'theme.theme.colour.icon.rating.unfilled',
-  'theme.theme.colour.icon.agnostic.white',
-  'theme.theme.colour.icon.alert.low',
-  'theme.theme.colour.icon.alert.low-alt',
-  'theme.theme.colour.icon.alert.medium',
-  'theme.theme.colour.icon.positive.low',
-  'theme.theme.colour.icon.positive.medium',
-  'theme.theme.colour.icon.premium.low',
-  'theme.theme.colour.icon.premium.medium',
-  'theme.theme.screen.colour.alt',
-  'theme.theme.screen.colour.default'
+  'colour.asphalt.50',
+  'colour.asphalt.100',
+  'colour.asphalt.200',
+  'colour.asphalt.300',
+  'colour.asphalt.400',
+  'colour.asphalt.500',
+  'colour.asphalt.600',
+  'colour.asphalt.700',
+  'colour.asphalt.800',
+  'colour.asphalt.900',
+  'colour.asphalt.950',
+  'colour.asphalt.00',
+  'colour.achromatic.black',
+  'colour.achromatic.white',
+  'colour.azure.50',
+  'colour.azure.100',
+  'colour.azure.200',
+  'colour.azure.300',
+  'colour.azure.400',
+  'colour.azure.500',
+  'colour.azure.600',
+  'colour.azure.700',
+  'colour.azure.800',
+  'colour.azure.900',
+  'colour.azure.950',
+  'colour.clay.50',
+  'colour.clay.100',
+  'colour.clay.200',
+  'colour.clay.300',
+  'colour.clay.400',
+  'colour.clay.500',
+  'colour.clay.600',
+  'colour.clay.700',
+  'colour.clay.800',
+  'colour.clay.900',
+  'colour.clay.950',
+  'colour.cocoa.50',
+  'colour.cocoa.100',
+  'colour.cocoa.200',
+  'colour.cocoa.300',
+  'colour.cocoa.400',
+  'colour.cocoa.500',
+  'colour.cocoa.600',
+  'colour.cocoa.700',
+  'colour.cocoa.800',
+  'colour.cocoa.900',
+  'colour.cocoa.950',
+  'colour.forest.50',
+  'colour.forest.100',
+  'colour.forest.200',
+  'colour.forest.300',
+  'colour.forest.400',
+  'colour.forest.500',
+  'colour.forest.600',
+  'colour.forest.700',
+  'colour.forest.800',
+  'colour.forest.900',
+  'colour.forest.950',
+  'colour.gold.50',
+  'colour.gold.100',
+  'colour.gold.200',
+  'colour.gold.300',
+  'colour.gold.400',
+  'colour.gold.500',
+  'colour.gold.600',
+  'colour.gold.700',
+  'colour.gold.800',
+  'colour.gold.900',
+  'colour.gold.950',
+  'colour.mauve.50',
+  'colour.mauve.100',
+  'colour.mauve.200',
+  'colour.mauve.300',
+  'colour.mauve.400',
+  'colour.mauve.500',
+  'colour.mauve.600',
+  'colour.mauve.700',
+  'colour.mauve.800',
+  'colour.mauve.900',
+  'colour.mauve.950',
+  'colour.mirabella.50',
+  'colour.mirabella.100',
+  'colour.mirabella.200',
+  'colour.mirabella.300',
+  'colour.mirabella.400',
+  'colour.mirabella.500',
+  'colour.mirabella.600',
+  'colour.mirabella.700',
+  'colour.mirabella.800',
+  'colour.mirabella.900',
+  'colour.mirabella.950',
+  'colour.rust.50',
+  'colour.rust.100',
+  'colour.rust.200',
+  'colour.rust.300',
+  'colour.rust.400',
+  'colour.rust.500',
+  'colour.rust.600',
+  'colour.rust.700',
+  'colour.rust.800',
+  'colour.rust.900',
+  'colour.rust.950',
+  'colour.sea.50',
+  'colour.sea.100',
+  'colour.sea.200',
+  'colour.sea.300',
+  'colour.sea.400',
+  'colour.sea.500',
+  'colour.sea.600',
+  'colour.sea.700',
+  'colour.sea.800',
+  'colour.sea.900',
+  'colour.sea.950',
+  'theme.colour.agnostic.black',
+  'theme.colour.agnostic.white',
+  'theme.colour.background.subtle.neutral.1',
+  'theme.colour.background.subtle.neutral.2',
+  'theme.colour.background.subtle.neutral.3',
+  'theme.colour.background.subtle.alert',
+  'theme.colour.background.subtle.info',
+  'theme.colour.background.subtle.negative',
+  'theme.colour.background.subtle.offer',
+  'theme.colour.background.subtle.positive',
+  'theme.colour.background.subtle.premium',
+  'theme.colour.background.subtle.brand.primary',
+  'theme.colour.background.subtle.brand.secondary',
+  'theme.colour.background.intense.alert',
+  'theme.colour.background.intense.info',
+  'theme.colour.background.intense.negative',
+  'theme.colour.background.intense.offer',
+  'theme.colour.background.intense.positive',
+  'theme.colour.background.intense.premium',
+  'theme.colour.background.intense.brand.primary',
+  'theme.colour.background.intense.brand.secondary',
+  'theme.colour.background.intense.brand.invert.primary',
+  'theme.colour.background.intense.brand.invert.secondary',
+  'theme.colour.background.intense.neutral.1',
+  'theme.colour.background.intense.neutral.2',
+  'theme.colour.background.intense.neutral.3',
+  'theme.colour.background.moderate.neutral.1',
+  'theme.colour.background.moderate.neutral.2',
+  'theme.colour.background.moderate.neutral.3',
+  'theme.colour.border.intense.brand.primary',
+  'theme.colour.border.intense.brand.secondary',
+  'theme.colour.border.intense.alert',
+  'theme.colour.border.intense.info',
+  'theme.colour.border.intense.negative',
+  'theme.colour.border.intense.neutral',
+  'theme.colour.border.intense.positive',
+  'theme.colour.border.intense.premium',
+  'theme.colour.border.intense.on.intense.offer',
+  'theme.colour.border.intense.on.intense.brand.primary',
+  'theme.colour.border.intense.on.intense.brand.secondary',
+  'theme.colour.border.intense.on.intense.brand.invert.primary',
+  'theme.colour.border.intense.on.intense.brand.invert.secondary',
+  'theme.colour.border.moderate.neutral',
+  'theme.colour.border.subtle.alert',
+  'theme.colour.border.subtle.info',
+  'theme.colour.border.subtle.negative',
+  'theme.colour.border.subtle.neutral',
+  'theme.colour.border.subtle.positive',
+  'theme.colour.border.subtle.premium',
+  'theme.colour.text.intense.brand.primary',
+  'theme.colour.text.intense.brand.secondary',
+  'theme.colour.text.intense.alert',
+  'theme.colour.text.intense.info',
+  'theme.colour.text.intense.negative',
+  'theme.colour.text.intense.neutral',
+  'theme.colour.text.intense.offer',
+  'theme.colour.text.intense.positive',
+  'theme.colour.text.intense.premium',
+  'theme.colour.text.intense.on.intense.offer',
+  'theme.colour.text.intense.on.intense.brand.primary',
+  'theme.colour.text.intense.on.intense.brand.secondary',
+  'theme.colour.text.intense.on.intense.brand.invert.primary',
+  'theme.colour.text.intense.on.intense.brand.invert.secondary',
+  'theme.colour.text.moderate.neutral',
+  'theme.colour.text.subtle.neutral',
+  'theme.colour.interaction.background.intense.alert.hover',
+  'theme.colour.interaction.background.intense.alert.pressed',
+  'theme.colour.interaction.background.intense.info.hover',
+  'theme.colour.interaction.background.intense.info.pressed',
+  'theme.colour.interaction.background.intense.negative.hover',
+  'theme.colour.interaction.background.intense.negative.pressed',
+  'theme.colour.interaction.background.intense.offer.hover',
+  'theme.colour.interaction.background.intense.offer.pressed',
+  'theme.colour.interaction.background.intense.positive.hover',
+  'theme.colour.interaction.background.intense.positive.pressed',
+  'theme.colour.interaction.background.intense.premium.hover',
+  'theme.colour.interaction.background.intense.premium.pressed',
+  'theme.colour.interaction.background.intense.neutral.1.hover',
+  'theme.colour.interaction.background.intense.neutral.2.hover',
+  'theme.colour.interaction.background.intense.neutral.3.hover',
+  'theme.colour.interaction.background.intense.brand.primary.hover',
+  'theme.colour.interaction.background.intense.brand.primary.pressed',
+  'theme.colour.interaction.background.intense.brand.secondary.hover',
+  'theme.colour.interaction.background.intense.brand.secondary.pressed',
+  'theme.colour.interaction.background.intense.invert.brand.primary.hover',
+  'theme.colour.interaction.background.intense.invert.brand.primary.pressed',
+  'theme.colour.interaction.background.intense.invert.brand.secondary.hover',
+  'theme.colour.interaction.background.intense.invert.brand.secondary.pressed',
+  'theme.colour.interaction.background.subtle.brand.primary.hover',
+  'theme.colour.interaction.background.subtle.brand.secondary.hover',
+  'theme.colour.interaction.background.subtle.neutral.1.hover',
+  'theme.colour.interaction.background.subtle.neutral.2.hover',
+  'theme.colour.interaction.background.subtle.neutral.3.hover',
+  'theme.icon.colour.intense.brand.primary',
+  'theme.icon.colour.intense.brand.secondary',
+  'theme.icon.colour.intense.alert',
+  'theme.icon.colour.intense.info',
+  'theme.icon.colour.intense.negative',
+  'theme.icon.colour.intense.neutral',
+  'theme.icon.colour.intense.offer',
+  'theme.icon.colour.intense.positive',
+  'theme.icon.colour.intense.premium',
+  'theme.icon.colour.intense.rating.filled',
+  'theme.icon.colour.intense.rating.outlined',
+  'theme.icon.colour.intense.rating.unfilled',
+  'theme.icon.colour.intense.on.intense.offer',
+  'theme.icon.colour.intense.on.intense.brand.primary',
+  'theme.icon.colour.intense.on.intense.brand.secondary',
+  'theme.icon.colour.intense.on.intense.brand.invert.secondary',
+  'theme.icon.colour.intense.on.intense.brand.invert.primary',
+  'theme.icon.colour.moderate.neutral',
+  'theme.icon.colour.subtle.neutral',
+  'theme.hyperlink.colour.active',
+  'theme.hyperlink.colour.interaction.disabled',
+  'theme.hyperlink.colour.interaction.hover',
+  'theme.hyperlink.colour.interaction.visited',
+  'theme.screen.colour.alt',
+  'theme.screen.colour.default',
+  'theme.chip.colour.interaction.background.hover',
+  'theme.chip.colour.interaction.background.pressed'
 ]);
 /**
-* @typedef {typeof actionPaths} ActionPaths - All the valid paths for the collection action.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ActionPaths}`
+* @typedef {typeof dimensionPaths} DimensionPaths - All the valid paths for the tokens of type dimension.
+* To use this type you can do: `@type {import('path/to/myTokensFile').DimensionPaths}`
 */
-export const actionPaths = /** @type {const} */ ([
-  'action.button.size.border.radius.L',
-  'action.button.size.border.radius.M',
-  'action.button.size.border.radius.S',
-  'action.button.size.border.weight',
-  'action.button.color.background.neutral',
-  'action.button.color.background.on-primary',
-  'action.button.color.background.on-secondary',
-  'action.button.color.background.primary',
-  'action.button.color.background.secondary',
-  'action.button.color.background.tertiary',
-  'action.button.color.icon.with-underlined',
-  'action.button.color.icon.invert-on-primary',
-  'action.button.color.icon.invert-on-secondary',
-  'action.button.color.icon.on-neutral',
-  'action.button.color.icon.on-primary',
-  'action.button.color.icon.on-secondary',
-  'action.button.color.icon.on-tertiary',
-  'action.button.color.icon.with-hyperlink',
-  'action.button.color.text.hyperlink',
-  'action.button.color.text.invert-on-primary',
-  'action.button.color.text.invert-on-secondary',
-  'action.button.color.text.on-neutral',
-  'action.button.color.text.on-primary',
-  'action.button.color.text.on-secondary',
-  'action.button.color.text.on-tertiary',
-  'action.button.color.text.underlined',
-  'action.button.color.border.tertiary'
+export const dimensionPaths = /** @type {const} */ ([
+  'density.fixed.md.1',
+  'dimension.fixed.200',
+  'dimension.fixed.100',
+  'dimension.fixed.300',
+  'density.fixed.md.2',
+  'dimension.fixed.400',
+  'density.fixed.md.3',
+  'dimension.fixed.500',
+  'density.fixed.md.4',
+  'dimension.fixed.600',
+  'density.fixed.sm.1',
+  'dimension.fixed.0',
+  'dimension.fixed.25',
+  'density.fixed.sm.2',
+  'dimension.fixed.50',
+  'density.fixed.sm.3',
+  'density.fixed.sm.4',
+  'dimension.fixed.150',
+  'density.fixed.sm.5',
+  'density.scale.lg.1',
+  'dimension.scale.700',
+  'dimension.scale.600',
+  'dimension.scale.800',
+  'density.scale.lg.2',
+  'dimension.scale.900',
+  'density.scale.lg.3',
+  'dimension.scale.1000',
+  'density.scale.lg.4',
+  'dimension.scale.1100',
+  'density.scale.lg.5',
+  'dimension.scale.1200',
+  'density.scale.md.1',
+  'dimension.scale.200',
+  'dimension.scale.300',
+  'density.scale.md.2',
+  'dimension.scale.400',
+  'density.scale.md.3',
+  'dimension.scale.500',
+  'density.scale.md.4',
+  'density.scale.md.5',
+  'density.scale.sm.3',
+  'dimension.scale.100',
+  'density.scale.sm.4',
+  'dimension.scale.150',
+  'density.scale.sm.5',
+  'dimension.scale.1400',
+  'dimension.scale.1600',
+  'theme.font.letter-spacing.button',
+  'theme.font.letter-spacing.h1',
+  'theme.font.letter-spacing.h2',
+  'theme.font.letter-spacing.h3',
+  'theme.font.letter-spacing.h4',
+  'theme.font.letter-spacing.h5',
+  'theme.font.letter-spacing.h6',
+  'theme.font.letter-spacing.micro',
+  'theme.font.letter-spacing.overline',
+  'theme.font.letter-spacing.caption.high',
+  'theme.font.letter-spacing.caption.regular',
+  'theme.font.letter-spacing.subtitle 1.high',
+  'theme.font.letter-spacing.subtitle 1.regular',
+  'theme.font.letter-spacing.subtitle 2.high',
+  'theme.font.letter-spacing.subtitle 2.regular',
+  'theme.font.line-height.button',
+  'theme.font.line-height.caption',
+  'theme.font.line-height.h1',
+  'theme.font.line-height.h2',
+  'theme.font.line-height.h3',
+  'theme.font.line-height.h4',
+  'theme.font.line-height.h5',
+  'theme.font.line-height.h6',
+  'theme.font.line-height.micro',
+  'theme.font.line-height.overline',
+  'theme.font.line-height.subtitle 1',
+  'theme.font.line-height.subtitle 2',
+  'theme.font.size.button',
+  'theme.font.size.caption',
+  'theme.font.size.h1',
+  'theme.font.size.h2',
+  'theme.font.size.h3',
+  'theme.font.size.h4',
+  'theme.font.size.h5',
+  'theme.font.size.h6',
+  'theme.font.size.micro',
+  'theme.font.size.overline',
+  'theme.font.size.subtitle 1',
+  'theme.font.size.subtitle 2',
+  'theme.font.weight.high',
+  'theme.font.weight.medium',
+  'theme.font.weight.regular',
+  'theme.icon.size.lg',
+  'theme.icon.size.md',
+  'theme.icon.size.sm',
+  'theme.screen.space.default',
+  'theme.screen.space.optical',
+  'theme.chip.size.border.width',
+  'theme.chip.size.border.radius.lg',
+  'theme.chip.size.border.radius.md',
+  'theme.chip.size.border.radius.sm',
+  'theme.chip.size.interaction.border.width.hover',
+  'theme.chip.size.interaction.border.width.pressed',
+  'theme.size.border.radius.lg',
+  'theme.size.border.radius.md',
+  'theme.size.border.radius.pill',
+  'theme.size.border.radius.sm',
+  'theme.size.border.radius.xl',
+  'theme.size.border.radius.xs',
+  'theme.size.border.radius.xxl',
+  'theme.space.fixed.md.1',
+  'theme.space.fixed.md.2',
+  'theme.space.fixed.md.3',
+  'theme.space.fixed.md.4',
+  'theme.space.fixed.sm.1',
+  'theme.space.fixed.sm.2',
+  'theme.space.fixed.sm.3',
+  'theme.space.fixed.sm.4',
+  'theme.space.fixed.sm.5',
+  'theme.space.scale.lg.1',
+  'theme.space.scale.lg.2',
+  'theme.space.scale.lg.3',
+  'theme.space.scale.lg.4',
+  'theme.space.scale.lg.5',
+  'theme.space.scale.md.1',
+  'theme.space.scale.md.2',
+  'theme.space.scale.md.3',
+  'theme.space.scale.md.4',
+  'theme.space.scale.md.5',
+  'theme.space.scale.sm.3',
+  'theme.space.scale.sm.4',
+  'theme.space.scale.sm.5',
+  'theme.button.size.border.radius.lg',
+  'theme.button.size.border.radius.md',
+  'theme.button.size.border.radius.sm',
+  'theme.button.size.border.radius.xs',
+  'theme.button.size.border.width.active',
+  'theme.button.size.interaction.border.width.hover',
+  'theme.button.size.interaction.border.width.pressed'
 ]);
 /**
-* @typedef {typeof themePaths} ThemePaths - All the valid paths for the collection theme.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ThemePaths}`
+* @typedef {typeof colourPaths} ColourPaths - All the valid paths for the collection colour.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ColourPaths}`
 */
-export const themePaths = /** @type {const} */ ([
-  'theme.theme.size.border.radius.lg',
-  'theme.theme.size.border.radius.md',
-  'theme.theme.size.border.radius.sm',
-  'theme.theme.colour.background.neutral.low',
-  'theme.theme.colour.background.neutral.invert',
-  'theme.theme.colour.background.brand.on-primary',
-  'theme.theme.colour.background.neutral.low-alt',
-  'theme.theme.colour.background.brand.on-secondary',
-  'theme.theme.colour.background.brand.primary',
-  'theme.theme.colour.background.brand.secondary',
-  'theme.theme.colour.icon.neutral.high',
-  'theme.theme.colour.icon.neutral.low',
-  'theme.theme.colour.text.brand.on-primary',
-  'theme.theme.colour.icon.brand.invert-on-primary',
-  'theme.theme.colour.text.neutral.medium',
-  'theme.theme.colour.text.brand.on-secondary',
-  'theme.theme.colour.icon.brand.invert-on-secondary',
-  'theme.theme.colour.icon.brand.on-primary',
-  'theme.theme.colour.icon.neutral.medium',
-  'theme.theme.colour.icon.brand.on-secondary',
-  'theme.theme.colour.icon.info.medium',
-  'theme.theme.colour.text.info.medium',
-  'theme.theme.colour.text.neutral.low',
-  'theme.theme.colour.text.brand.invert-on-primary',
-  'theme.theme.colour.text.brand.invert-on-secondary',
-  'theme.theme.colour.text.neutral.high',
-  'theme.theme.colour.border.neutral.high',
-  'theme.theme.colour.border.neutral.low',
-  'theme.theme.colour.text.alert.high',
-  'theme.theme.colour.text.agnostic.black',
-  'theme.theme.colour.text.alert.low',
-  'theme.theme.colour.text.alert.low-alt',
-  'theme.theme.colour.text.info.low',
-  'theme.theme.colour.text.info.high',
-  'theme.theme.colour.text.neutral.invert',
-  'theme.theme.colour.text.negative.low',
-  'theme.theme.colour.text.negative.medium',
-  'theme.theme.colour.text.negative.high',
-  'theme.theme.colour.text.premium.low',
-  'theme.theme.colour.text.premium.medium',
-  'theme.theme.colour.text.premium.high',
-  'theme.theme.colour.text.positive.low',
-  'theme.theme.colour.text.positive.medium',
-  'theme.theme.colour.text.positive.high',
-  'theme.theme.colour.background.negative.high',
-  'theme.theme.colour.background.neutral.high-alt',
-  'theme.theme.colour.background.positive.high',
-  'theme.theme.colour.background.premium.high',
-  'theme.theme.colour.background.alert.high',
-  'theme.theme.colour.background.agnostic.black',
-  'theme.theme.colour.background.info.high',
-  'theme.theme.colour.border.alert.high',
-  'theme.theme.colour.border.agnostic.black',
-  'theme.theme.colour.border.info.high',
-  'theme.theme.colour.border.neutral.invert',
-  'theme.theme.colour.border.negative.high',
-  'theme.theme.colour.border.positive.high',
-  'theme.theme.colour.border.premium.high',
-  'theme.theme.colour.background.alert.low',
-  'theme.theme.colour.background.alert.medium',
-  'theme.theme.colour.background.info.low',
-  'theme.theme.colour.background.info.medium',
-  'theme.theme.colour.background.negative.low',
-  'theme.theme.colour.background.negative.medium',
-  'theme.theme.colour.background.positive.low',
-  'theme.theme.colour.background.positive.medium',
-  'theme.theme.colour.background.premium.low',
-  'theme.theme.colour.background.premium.medium',
-  'theme.theme.colour.background.neutral.high',
-  'theme.theme.colour.icon.alert.high',
-  'theme.theme.colour.icon.agnostic.black',
-  'theme.theme.colour.icon.info.high',
-  'theme.theme.colour.icon.neutral.invert',
-  'theme.theme.colour.icon.negative.high',
-  'theme.theme.colour.icon.positive.high',
-  'theme.theme.colour.icon.premium.high',
-  'theme.theme.colour.text.alert.medium',
-  'theme.theme.colour.text.brand.primary',
-  'theme.theme.colour.text.brand.secondary',
-  'theme.theme.colour.text.offer.on-high',
-  'theme.theme.colour.text.offer.on-low',
-  'theme.theme.colour.text.agnostic.white',
-  'theme.theme.colour.background.agnostic.white',
-  'theme.theme.colour.background.neutral.medium',
-  'theme.theme.colour.background.neutral.medium-alt',
-  'theme.theme.colour.background.offer.high',
-  'theme.theme.colour.background.offer.low',
-  'theme.theme.colour.border.agnostic.white',
-  'theme.theme.colour.border.alert.low',
-  'theme.theme.colour.border.alert.medium',
-  'theme.theme.colour.border.brand.primary',
-  'theme.theme.colour.border.brand.secondary',
-  'theme.theme.colour.border.info.low',
-  'theme.theme.colour.border.info.medium',
-  'theme.theme.colour.border.negative.low',
-  'theme.theme.colour.border.negative.medium',
-  'theme.theme.colour.border.neutral.medium',
-  'theme.theme.colour.border.positive.low',
-  'theme.theme.colour.border.positive.medium',
-  'theme.theme.colour.border.premium.low',
-  'theme.theme.colour.border.premium.medium',
-  'theme.theme.colour.icon.brand.primary',
-  'theme.theme.colour.icon.brand.secondary',
-  'theme.theme.colour.icon.info.low',
-  'theme.theme.colour.icon.negative.low',
-  'theme.theme.colour.icon.negative.medium',
-  'theme.theme.colour.icon.offer.high',
-  'theme.theme.colour.icon.offer.low',
-  'theme.theme.colour.icon.offer.medium',
-  'theme.theme.colour.icon.rating.filled',
-  'theme.theme.colour.icon.rating.unfilled',
-  'theme.theme.colour.icon.agnostic.white',
-  'theme.theme.colour.icon.alert.low',
-  'theme.theme.colour.icon.alert.low-alt',
-  'theme.theme.colour.icon.alert.medium',
-  'theme.theme.colour.icon.positive.low',
-  'theme.theme.colour.icon.positive.medium',
-  'theme.theme.colour.icon.premium.low',
-  'theme.theme.colour.icon.premium.medium',
-  'theme.theme.font.letter-spacing.h1',
-  'theme.theme.font.letter-spacing.button',
-  'theme.theme.font.letter-spacing.h2',
-  'theme.theme.font.letter-spacing.h3',
-  'theme.theme.font.letter-spacing.h4',
-  'theme.theme.font.letter-spacing.h5',
-  'theme.theme.font.letter-spacing.h6',
-  'theme.theme.font.letter-spacing.micro',
-  'theme.theme.font.letter-spacing.overline',
-  'theme.theme.font.letter-spacing.caption.high',
-  'theme.theme.font.letter-spacing.caption.regular',
-  'theme.theme.font.letter-spacing.subtitle 1.high',
-  'theme.theme.font.letter-spacing.subtitle 1.regular',
-  'theme.theme.font.letter-spacing.subtitle 2.high',
-  'theme.theme.font.letter-spacing.subtitle 2.regular',
-  'theme.theme.font.line-height.button',
-  'theme.theme.font.line-height.caption',
-  'theme.theme.font.line-height.h1',
-  'theme.theme.font.line-height.h2',
-  'theme.theme.font.line-height.h3',
-  'theme.theme.font.line-height.h4',
-  'theme.theme.font.line-height.h5',
-  'theme.theme.font.line-height.h6',
-  'theme.theme.font.line-height.micro',
-  'theme.theme.font.line-height.overline',
-  'theme.theme.font.line-height.subtitle 1',
-  'theme.theme.font.line-height.subtitle 2',
-  'theme.theme.font.size.button',
-  'theme.theme.font.size.caption',
-  'theme.theme.font.size.h1',
-  'theme.theme.font.size.h2',
-  'theme.theme.font.size.h3',
-  'theme.theme.font.size.h4',
-  'theme.theme.font.size.h5',
-  'theme.theme.font.size.h6',
-  'theme.theme.font.size.micro',
-  'theme.theme.font.size.overline',
-  'theme.theme.font.size.subtitle 1',
-  'theme.theme.font.size.subtitle 2',
-  'theme.theme.font.weight.high',
-  'theme.theme.font.weight.medium',
-  'theme.theme.font.weight.regular',
-  'theme.theme.size.border.radius.xl',
-  'theme.theme.size.border.radius.xs',
-  'theme.theme.size.border.radius.xxl',
-  'theme.theme.size.border.radius.pill',
-  'theme.theme.size.icon.lg',
-  'theme.theme.size.icon.md',
-  'theme.theme.size.icon.sm',
-  'theme.theme.screen.colour.alt',
-  'theme.theme.screen.colour.default',
-  'theme.theme.screen.space.default',
-  'theme.theme.screen.space.optical',
-  'theme.theme.space.fixed.md.1',
-  'theme.theme.space.fixed.md.2',
-  'theme.theme.space.fixed.md.3',
-  'theme.theme.space.fixed.md.4',
-  'theme.theme.space.fixed.sm.1',
-  'theme.theme.space.fixed.sm.2',
-  'theme.theme.space.fixed.sm.3',
-  'theme.theme.space.fixed.sm.4',
-  'theme.theme.space.fixed.sm.5',
-  'theme.theme.space.scale.lg.1',
-  'theme.theme.space.scale.lg.2',
-  'theme.theme.space.scale.lg.3',
-  'theme.theme.space.scale.lg.4',
-  'theme.theme.space.scale.lg.5',
-  'theme.theme.space.scale.md.1',
-  'theme.theme.space.scale.md.2',
-  'theme.theme.space.scale.md.3',
-  'theme.theme.space.scale.md.4',
-  'theme.theme.space.scale.md.5',
-  'theme.theme.space.scale.sm.1',
-  'theme.theme.space.scale.sm.2',
-  'theme.theme.space.scale.sm.3',
-  'theme.theme.space.scale.sm.4',
-  'theme.theme.space.scale.sm.5'
-]);
-/**
-* @typedef {typeof numbersPaths} NumbersPaths - All the valid paths for the collection numbers.
-* To use this type you can do: `@type {import('path/to/myTokensFile').NumbersPaths}`
-*/
-export const numbersPaths = /** @type {const} */ ([
-  'numbers.dimension.fixed.0',
-  'numbers.dimension.fixed.200',
-  'numbers.dimension.fixed.150',
-  'numbers.dimension.fixed.100',
-  'numbers.dimension.fixed.300',
-  'numbers.dimension.fixed.50',
-  'numbers.dimension.fixed.400',
-  'numbers.dimension.scale.1600',
-  'numbers.dimension.scale.400',
-  'numbers.dimension.scale.300',
-  'numbers.dimension.scale.200',
-  'numbers.dimension.scale.150',
-  'numbers.dimension.scale.50',
-  'numbers.dimension.fixed.25',
-  'numbers.dimension.fixed.500',
-  'numbers.dimension.fixed.600',
-  'numbers.dimension.scale.700',
-  'numbers.dimension.scale.600',
-  'numbers.dimension.scale.800',
-  'numbers.dimension.scale.900',
-  'numbers.dimension.scale.1000',
-  'numbers.dimension.scale.1100',
-  'numbers.dimension.scale.1200',
-  'numbers.dimension.scale.500',
-  'numbers.dimension.scale.100',
-  'numbers.dimension.scale.1400'
-]);
-/**
-* @typedef {typeof coloursPaths} ColoursPaths - All the valid paths for the collection colours.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ColoursPaths}`
-*/
-export const coloursPaths = /** @type {const} */ ([
-  'colours.asphalt.1',      'colours.asphalt.invert',
-  'colours.agnostic.white', 'colours.asphalt.2',
-  'colours.violet.7',       'colours.aegean.7',
-  'colours.asphalt.18',     'colours.asphalt.3',
-  'colours.agnostic.black', 'colours.asphalt.5',
-  'colours.sky.5',          'colours.aegean.5',
-  'colours.asphalt.7',      'colours.berry.5',
-  'colours.crimson.1',      'colours.crimson.5',
-  'colours.crimson.7',      'colours.emerald.1',
-  'colours.emerald.5',      'colours.emerald.7',
-  'colours.firebrick.5',    'colours.gold.1',
-  'colours.violet.1',       'colours.violet.5',
-  'colours.aegean.1',       'colours.amber.1',
-  'colours.amber.2',        'colours.amber.5',
-  'colours.amber.7',        'colours.lavender.1',
-  'colours.lavender.5',     'colours.lavender.7',
-  'colours.lime.2',         'colours.rust.1',
-  'colours.rust.5',         'colours.rust.7',
-  'colours.screen.1',       'colours.screen.2',
-  'colours.sky.1',          'colours.sky.7',
-  'colours.teal.1',         'colours.teal.5',
-  'colours.teal.7'
-]);
-/**
-* @typedef {typeof feedbackPaths} FeedbackPaths - All the valid paths for the collection feedback.
-* To use this type you can do: `@type {import('path/to/myTokensFile').FeedbackPaths}`
-*/
-export const feedbackPaths = /** @type {const} */ ([
-  'feedback.feedback.button.color.text.alert.on-secondary',
-  'feedback.feedback.button.color.text.alert.on-primary',
-  'feedback.feedback.button.color.text.info.on-primary',
-  'feedback.feedback.button.color.text.info.on-secondary',
-  'feedback.feedback.button.color.text.negative.on-primary',
-  'feedback.feedback.button.color.text.negative.on-secondary',
-  'feedback.feedback.button.color.text.premium.on-primary',
-  'feedback.feedback.button.color.text.premium.on-secondary',
-  'feedback.feedback.button.color.text.neutral.on-primary',
-  'feedback.feedback.button.color.text.neutral.on-secondary',
-  'feedback.feedback.button.color.text.positive.on-primary',
-  'feedback.feedback.button.color.text.positive.on-secondary',
-  'feedback.feedback.button.color.background.negative',
-  'feedback.feedback.button.color.background.neutral',
-  'feedback.feedback.button.color.background.positive',
-  'feedback.feedback.button.color.background.premium',
-  'feedback.feedback.button.color.background.alert',
-  'feedback.feedback.button.color.background.info',
-  'feedback.feedback.button.color.border.alert',
-  'feedback.feedback.button.color.border.info',
-  'feedback.feedback.button.color.border.negative',
-  'feedback.feedback.button.color.border.neutral',
-  'feedback.feedback.button.color.border.positive',
-  'feedback.feedback.button.color.border.premium',
-  'feedback.feedback.color.background.alert',
-  'feedback.feedback.color.background.info',
-  'feedback.feedback.color.background.negative',
-  'feedback.feedback.color.background.positive',
-  'feedback.feedback.color.background.premium',
-  'feedback.feedback.color.background.neutral.invert',
-  'feedback.feedback.color.background.neutral.regular',
-  'feedback.feedback.color.icon.alert',
-  'feedback.feedback.color.icon.info',
-  'feedback.feedback.color.icon.negative',
-  'feedback.feedback.color.icon.neutral',
-  'feedback.feedback.color.icon.positive',
-  'feedback.feedback.color.icon.premium',
-  'feedback.feedback.color.text.alert',
-  'feedback.feedback.color.text.info',
-  'feedback.feedback.color.text.negative',
-  'feedback.feedback.color.text.neutral',
-  'feedback.feedback.color.text.positive',
-  'feedback.feedback.color.text.premium'
+export const colourPaths = /** @type {const} */ ([
+  'colour.asphalt.50',
+  'colour.asphalt.100',
+  'colour.asphalt.200',
+  'colour.asphalt.300',
+  'colour.asphalt.400',
+  'colour.asphalt.500',
+  'colour.asphalt.600',
+  'colour.asphalt.700',
+  'colour.asphalt.800',
+  'colour.asphalt.900',
+  'colour.asphalt.950',
+  'colour.asphalt.00',
+  'colour.achromatic.black',
+  'colour.achromatic.white',
+  'colour.azure.50',
+  'colour.azure.100',
+  'colour.azure.200',
+  'colour.azure.300',
+  'colour.azure.400',
+  'colour.azure.500',
+  'colour.azure.600',
+  'colour.azure.700',
+  'colour.azure.800',
+  'colour.azure.900',
+  'colour.azure.950',
+  'colour.clay.50',
+  'colour.clay.100',
+  'colour.clay.200',
+  'colour.clay.300',
+  'colour.clay.400',
+  'colour.clay.500',
+  'colour.clay.600',
+  'colour.clay.700',
+  'colour.clay.800',
+  'colour.clay.900',
+  'colour.clay.950',
+  'colour.cocoa.50',
+  'colour.cocoa.100',
+  'colour.cocoa.200',
+  'colour.cocoa.300',
+  'colour.cocoa.400',
+  'colour.cocoa.500',
+  'colour.cocoa.600',
+  'colour.cocoa.700',
+  'colour.cocoa.800',
+  'colour.cocoa.900',
+  'colour.cocoa.950',
+  'colour.forest.50',
+  'colour.forest.100',
+  'colour.forest.200',
+  'colour.forest.300',
+  'colour.forest.400',
+  'colour.forest.500',
+  'colour.forest.600',
+  'colour.forest.700',
+  'colour.forest.800',
+  'colour.forest.900',
+  'colour.forest.950',
+  'colour.gold.50',
+  'colour.gold.100',
+  'colour.gold.200',
+  'colour.gold.300',
+  'colour.gold.400',
+  'colour.gold.500',
+  'colour.gold.600',
+  'colour.gold.700',
+  'colour.gold.800',
+  'colour.gold.900',
+  'colour.gold.950',
+  'colour.mauve.50',
+  'colour.mauve.100',
+  'colour.mauve.200',
+  'colour.mauve.300',
+  'colour.mauve.400',
+  'colour.mauve.500',
+  'colour.mauve.600',
+  'colour.mauve.700',
+  'colour.mauve.800',
+  'colour.mauve.900',
+  'colour.mauve.950',
+  'colour.mirabella.50',
+  'colour.mirabella.100',
+  'colour.mirabella.200',
+  'colour.mirabella.300',
+  'colour.mirabella.400',
+  'colour.mirabella.500',
+  'colour.mirabella.600',
+  'colour.mirabella.700',
+  'colour.mirabella.800',
+  'colour.mirabella.900',
+  'colour.mirabella.950',
+  'colour.rust.50',
+  'colour.rust.100',
+  'colour.rust.200',
+  'colour.rust.300',
+  'colour.rust.400',
+  'colour.rust.500',
+  'colour.rust.600',
+  'colour.rust.700',
+  'colour.rust.800',
+  'colour.rust.900',
+  'colour.rust.950',
+  'colour.sea.50',
+  'colour.sea.100',
+  'colour.sea.200',
+  'colour.sea.300',
+  'colour.sea.400',
+  'colour.sea.500',
+  'colour.sea.600',
+  'colour.sea.700',
+  'colour.sea.800',
+  'colour.sea.900',
+  'colour.sea.950'
 ]);
 /**
 * @typedef {typeof densityPaths} DensityPaths - All the valid paths for the collection density.
 * To use this type you can do: `@type {import('path/to/myTokensFile').DensityPaths}`
 */
 export const densityPaths = /** @type {const} */ ([
-  'density.space.md.1',
-  'density.space.sm.5',
-  'density.space.sm.3',
-  'density.space.lg.1',
-  'density.space.lg.2',
-  'density.space.lg.3',
-  'density.space.lg.4',
-  'density.space.lg.5',
-  'density.space.md.2',
-  'density.space.md.3',
-  'density.space.md.4',
-  'density.space.md.5',
-  'density.space.sm.1',
-  'density.space.sm.2',
-  'density.space.sm.4'
+  'density.fixed.md.1', 'density.fixed.md.2',
+  'density.fixed.md.3', 'density.fixed.md.4',
+  'density.fixed.sm.1', 'density.fixed.sm.2',
+  'density.fixed.sm.3', 'density.fixed.sm.4',
+  'density.fixed.sm.5', 'density.scale.lg.1',
+  'density.scale.lg.2', 'density.scale.lg.3',
+  'density.scale.lg.4', 'density.scale.lg.5',
+  'density.scale.md.1', 'density.scale.md.2',
+  'density.scale.md.3', 'density.scale.md.4',
+  'density.scale.md.5', 'density.scale.sm.3',
+  'density.scale.sm.4', 'density.scale.sm.5'
 ]);
 /**
-* @typedef {DimensionPaths | ColorPaths | ActionPaths | ThemePaths | NumbersPaths | ColoursPaths | FeedbackPaths | DensityPaths} AllPath - All possible paths
+* @typedef {typeof dimension_Paths} Dimension_Paths - All the valid paths for the collection dimension.
+* To use this type you can do: `@type {import('path/to/myTokensFile').Dimension_Paths}`
+*/
+export const dimension_Paths = /** @type {const} */ ([
+  'dimension.fixed.200',  'dimension.fixed.100',
+  'dimension.fixed.300',  'dimension.fixed.400',
+  'dimension.fixed.500',  'dimension.fixed.600',
+  'dimension.fixed.0',    'dimension.fixed.25',
+  'dimension.fixed.50',   'dimension.fixed.150',
+  'dimension.scale.700',  'dimension.scale.600',
+  'dimension.scale.800',  'dimension.scale.900',
+  'dimension.scale.1000', 'dimension.scale.1100',
+  'dimension.scale.1200', 'dimension.scale.200',
+  'dimension.scale.300',  'dimension.scale.400',
+  'dimension.scale.500',  'dimension.scale.100',
+  'dimension.scale.150',  'dimension.scale.1400',
+  'dimension.scale.1600'
+]);
+/**
+* @typedef {typeof themePaths} ThemePaths - All the valid paths for the collection theme.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ThemePaths}`
+*/
+export const themePaths = /** @type {const} */ ([
+  'theme.colour.agnostic.black',
+  'theme.colour.agnostic.white',
+  'theme.colour.background.subtle.neutral.1',
+  'theme.colour.background.subtle.neutral.2',
+  'theme.colour.background.subtle.neutral.3',
+  'theme.colour.background.subtle.alert',
+  'theme.colour.background.subtle.info',
+  'theme.colour.background.subtle.negative',
+  'theme.colour.background.subtle.offer',
+  'theme.colour.background.subtle.positive',
+  'theme.colour.background.subtle.premium',
+  'theme.colour.background.subtle.brand.primary',
+  'theme.colour.background.subtle.brand.secondary',
+  'theme.colour.background.intense.alert',
+  'theme.colour.background.intense.info',
+  'theme.colour.background.intense.negative',
+  'theme.colour.background.intense.offer',
+  'theme.colour.background.intense.positive',
+  'theme.colour.background.intense.premium',
+  'theme.colour.background.intense.brand.primary',
+  'theme.colour.background.intense.brand.secondary',
+  'theme.colour.background.intense.brand.invert.primary',
+  'theme.colour.background.intense.brand.invert.secondary',
+  'theme.colour.background.intense.neutral.1',
+  'theme.colour.background.intense.neutral.2',
+  'theme.colour.background.intense.neutral.3',
+  'theme.colour.background.moderate.neutral.1',
+  'theme.colour.background.moderate.neutral.2',
+  'theme.colour.background.moderate.neutral.3',
+  'theme.colour.border.intense.brand.primary',
+  'theme.colour.border.intense.brand.secondary',
+  'theme.colour.border.intense.alert',
+  'theme.colour.border.intense.info',
+  'theme.colour.border.intense.negative',
+  'theme.colour.border.intense.neutral',
+  'theme.colour.border.intense.positive',
+  'theme.colour.border.intense.premium',
+  'theme.colour.border.intense.on.intense.offer',
+  'theme.colour.border.intense.on.intense.brand.primary',
+  'theme.colour.border.intense.on.intense.brand.secondary',
+  'theme.colour.border.intense.on.intense.brand.invert.primary',
+  'theme.colour.border.intense.on.intense.brand.invert.secondary',
+  'theme.colour.border.moderate.neutral',
+  'theme.colour.border.subtle.alert',
+  'theme.colour.border.subtle.info',
+  'theme.colour.border.subtle.negative',
+  'theme.colour.border.subtle.neutral',
+  'theme.colour.border.subtle.positive',
+  'theme.colour.border.subtle.premium',
+  'theme.colour.text.intense.brand.primary',
+  'theme.colour.text.intense.brand.secondary',
+  'theme.colour.text.intense.alert',
+  'theme.colour.text.intense.info',
+  'theme.colour.text.intense.negative',
+  'theme.colour.text.intense.neutral',
+  'theme.colour.text.intense.offer',
+  'theme.colour.text.intense.positive',
+  'theme.colour.text.intense.premium',
+  'theme.colour.text.intense.on.intense.offer',
+  'theme.colour.text.intense.on.intense.brand.primary',
+  'theme.colour.text.intense.on.intense.brand.secondary',
+  'theme.colour.text.intense.on.intense.brand.invert.primary',
+  'theme.colour.text.intense.on.intense.brand.invert.secondary',
+  'theme.colour.text.moderate.neutral',
+  'theme.colour.text.subtle.neutral',
+  'theme.colour.interaction.background.intense.alert.hover',
+  'theme.colour.interaction.background.intense.alert.pressed',
+  'theme.colour.interaction.background.intense.info.hover',
+  'theme.colour.interaction.background.intense.info.pressed',
+  'theme.colour.interaction.background.intense.negative.hover',
+  'theme.colour.interaction.background.intense.negative.pressed',
+  'theme.colour.interaction.background.intense.offer.hover',
+  'theme.colour.interaction.background.intense.offer.pressed',
+  'theme.colour.interaction.background.intense.positive.hover',
+  'theme.colour.interaction.background.intense.positive.pressed',
+  'theme.colour.interaction.background.intense.premium.hover',
+  'theme.colour.interaction.background.intense.premium.pressed',
+  'theme.colour.interaction.background.intense.neutral.1.hover',
+  'theme.colour.interaction.background.intense.neutral.2.hover',
+  'theme.colour.interaction.background.intense.neutral.3.hover',
+  'theme.colour.interaction.background.intense.brand.primary.hover',
+  'theme.colour.interaction.background.intense.brand.primary.pressed',
+  'theme.colour.interaction.background.intense.brand.secondary.hover',
+  'theme.colour.interaction.background.intense.brand.secondary.pressed',
+  'theme.colour.interaction.background.intense.invert.brand.primary.hover',
+  'theme.colour.interaction.background.intense.invert.brand.primary.pressed',
+  'theme.colour.interaction.background.intense.invert.brand.secondary.hover',
+  'theme.colour.interaction.background.intense.invert.brand.secondary.pressed',
+  'theme.colour.interaction.background.subtle.brand.primary.hover',
+  'theme.colour.interaction.background.subtle.brand.secondary.hover',
+  'theme.colour.interaction.background.subtle.neutral.1.hover',
+  'theme.colour.interaction.background.subtle.neutral.2.hover',
+  'theme.colour.interaction.background.subtle.neutral.3.hover',
+  'theme.font.letter-spacing.button',
+  'theme.font.letter-spacing.h1',
+  'theme.font.letter-spacing.h2',
+  'theme.font.letter-spacing.h3',
+  'theme.font.letter-spacing.h4',
+  'theme.font.letter-spacing.h5',
+  'theme.font.letter-spacing.h6',
+  'theme.font.letter-spacing.micro',
+  'theme.font.letter-spacing.overline',
+  'theme.font.letter-spacing.caption.high',
+  'theme.font.letter-spacing.caption.regular',
+  'theme.font.letter-spacing.subtitle 1.high',
+  'theme.font.letter-spacing.subtitle 1.regular',
+  'theme.font.letter-spacing.subtitle 2.high',
+  'theme.font.letter-spacing.subtitle 2.regular',
+  'theme.font.line-height.button',
+  'theme.font.line-height.caption',
+  'theme.font.line-height.h1',
+  'theme.font.line-height.h2',
+  'theme.font.line-height.h3',
+  'theme.font.line-height.h4',
+  'theme.font.line-height.h5',
+  'theme.font.line-height.h6',
+  'theme.font.line-height.micro',
+  'theme.font.line-height.overline',
+  'theme.font.line-height.subtitle 1',
+  'theme.font.line-height.subtitle 2',
+  'theme.font.size.button',
+  'theme.font.size.caption',
+  'theme.font.size.h1',
+  'theme.font.size.h2',
+  'theme.font.size.h3',
+  'theme.font.size.h4',
+  'theme.font.size.h5',
+  'theme.font.size.h6',
+  'theme.font.size.micro',
+  'theme.font.size.overline',
+  'theme.font.size.subtitle 1',
+  'theme.font.size.subtitle 2',
+  'theme.font.weight.high',
+  'theme.font.weight.medium',
+  'theme.font.weight.regular',
+  'theme.icon.colour.intense.brand.primary',
+  'theme.icon.colour.intense.brand.secondary',
+  'theme.icon.colour.intense.alert',
+  'theme.icon.colour.intense.info',
+  'theme.icon.colour.intense.negative',
+  'theme.icon.colour.intense.neutral',
+  'theme.icon.colour.intense.offer',
+  'theme.icon.colour.intense.positive',
+  'theme.icon.colour.intense.premium',
+  'theme.icon.colour.intense.rating.filled',
+  'theme.icon.colour.intense.rating.outlined',
+  'theme.icon.colour.intense.rating.unfilled',
+  'theme.icon.colour.intense.on.intense.offer',
+  'theme.icon.colour.intense.on.intense.brand.primary',
+  'theme.icon.colour.intense.on.intense.brand.secondary',
+  'theme.icon.colour.intense.on.intense.brand.invert.secondary',
+  'theme.icon.colour.intense.on.intense.brand.invert.primary',
+  'theme.icon.colour.moderate.neutral',
+  'theme.icon.colour.subtle.neutral',
+  'theme.icon.size.lg',
+  'theme.icon.size.md',
+  'theme.icon.size.sm',
+  'theme.hyperlink.colour.active',
+  'theme.hyperlink.colour.interaction.disabled',
+  'theme.hyperlink.colour.interaction.hover',
+  'theme.hyperlink.colour.interaction.visited',
+  'theme.screen.colour.alt',
+  'theme.screen.colour.default',
+  'theme.screen.space.default',
+  'theme.screen.space.optical',
+  'theme.chip.size.border.width',
+  'theme.chip.size.border.radius.lg',
+  'theme.chip.size.border.radius.md',
+  'theme.chip.size.border.radius.sm',
+  'theme.chip.size.interaction.border.width.hover',
+  'theme.chip.size.interaction.border.width.pressed',
+  'theme.chip.colour.interaction.background.hover',
+  'theme.chip.colour.interaction.background.pressed',
+  'theme.size.border.radius.lg',
+  'theme.size.border.radius.md',
+  'theme.size.border.radius.pill',
+  'theme.size.border.radius.sm',
+  'theme.size.border.radius.xl',
+  'theme.size.border.radius.xs',
+  'theme.size.border.radius.xxl',
+  'theme.space.fixed.md.1',
+  'theme.space.fixed.md.2',
+  'theme.space.fixed.md.3',
+  'theme.space.fixed.md.4',
+  'theme.space.fixed.sm.1',
+  'theme.space.fixed.sm.2',
+  'theme.space.fixed.sm.3',
+  'theme.space.fixed.sm.4',
+  'theme.space.fixed.sm.5',
+  'theme.space.scale.lg.1',
+  'theme.space.scale.lg.2',
+  'theme.space.scale.lg.3',
+  'theme.space.scale.lg.4',
+  'theme.space.scale.lg.5',
+  'theme.space.scale.md.1',
+  'theme.space.scale.md.2',
+  'theme.space.scale.md.3',
+  'theme.space.scale.md.4',
+  'theme.space.scale.md.5',
+  'theme.space.scale.sm.3',
+  'theme.space.scale.sm.4',
+  'theme.space.scale.sm.5',
+  'theme.button.size.border.radius.lg',
+  'theme.button.size.border.radius.md',
+  'theme.button.size.border.radius.sm',
+  'theme.button.size.border.radius.xs',
+  'theme.button.size.border.width.active',
+  'theme.button.size.interaction.border.width.hover',
+  'theme.button.size.interaction.border.width.pressed'
+]);
+/**
+* @typedef {ColorPaths | DimensionPaths | ColourPaths | DensityPaths | Dimension_Paths | ThemePaths} AllPath - All possible paths
 */
 /**
 * @typedef {typeof pathsByType} PathsByType - All the paths for a given token type. Needed for `getTokensByType`
 */
 const pathsByType = /** @type {const} */ ({
-  dimension: dimensionPaths,
   color: colorPaths,
+  dimension: dimensionPaths,
 });
+
+/**
+* @typedef {typeof colorModes[number]} ColorModes - All the valid modes of color.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ColorModes}`
+*/
+export const colorModes = /** @type {const} */ ([ 'dark', 'light', 'Danland', 'Prism', 'Traum' ]);
 
 /**
 * @typedef {typeof dimensionModes[number]} DimensionModes - All the valid modes of dimension.
 * To use this type you can do: `@type {import('path/to/myTokensFile').DimensionModes}`
 */
 export const dimensionModes = /** @type {const} */ ([
-  'disabled',    'hover',
-  'normal',      'Danland',
-  'Prism',       'Traum',
-  'desktop',     'mobile',
-  'comfortable', 'dense',
-  'tight'
+  'comfortable',
+  'dense',
+  'tight',
+  'desktop',
+  'mobile',
+  'Danland',
+  'Prism',
+  'Traum'
 ]);
 
 /**
-* @typedef {typeof colorModes[number]} ColorModes - All the valid modes of color.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ColorModes}`
+* @typedef {typeof colourModes[number]} ColourModes - All the valid modes of colour.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ColourModes}`
 */
-export const colorModes = /** @type {const} */ ([
-  'disabled', 'hover',
-  'normal',   'Danland',
-  'Prism',    'Traum',
-  'dark',     'light',
-  'high',     'low'
-]);
-
-/**
-* @typedef {typeof actionModes[number]} ActionModes - All the valid modes of action.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ActionModes}`
-*/
-export const actionModes = /** @type {const} */ ([ 'normal', 'disabled', 'hover' ]);
-
-/**
-* @typedef {typeof themeModes[number]} ThemeModes - All the valid modes of theme.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ThemeModes}`
-*/
-export const themeModes = /** @type {const} */ ([ 'Prism', 'Danland', 'Traum' ]);
-
-/**
-* @typedef {typeof numbersModes[number]} NumbersModes - All the valid modes of numbers.
-* To use this type you can do: `@type {import('path/to/myTokensFile').NumbersModes}`
-*/
-export const numbersModes = /** @type {const} */ ([ 'mobile', 'desktop' ]);
-
-/**
-* @typedef {typeof coloursModes[number]} ColoursModes - All the valid modes of colours.
-* To use this type you can do: `@type {import('path/to/myTokensFile').ColoursModes}`
-*/
-export const coloursModes = /** @type {const} */ ([ 'light', 'dark' ]);
-
-/**
-* @typedef {typeof feedbackModes[number]} FeedbackModes - All the valid modes of feedback.
-* To use this type you can do: `@type {import('path/to/myTokensFile').FeedbackModes}`
-*/
-export const feedbackModes = /** @type {const} */ ([ 'low', 'high' ]);
+export const colourModes = /** @type {const} */ ([ 'light', 'dark' ]);
 
 /**
 * @typedef {typeof densityModes[number]} DensityModes - All the valid modes of density.
@@ -798,7 +794,19 @@ export const feedbackModes = /** @type {const} */ ([ 'low', 'high' ]);
 export const densityModes = /** @type {const} */ ([ 'comfortable', 'dense', 'tight' ]);
 
 /**
-* @typedef {DimensionModes | ColorModes | ActionModes | ThemeModes | NumbersModes | ColoursModes | FeedbackModes | DensityModes} AllMode - All the available modes
+* @typedef {typeof dimension_Modes[number]} Dimension_Modes - All the valid modes of dimension_.
+* To use this type you can do: `@type {import('path/to/myTokensFile').Dimension_Modes}`
+*/
+export const dimension_Modes = /** @type {const} */ ([ 'mobile', 'desktop' ]);
+
+/**
+* @typedef {typeof themeModes[number]} ThemeModes - All the valid modes of theme.
+* To use this type you can do: `@type {import('path/to/myTokensFile').ThemeModes}`
+*/
+export const themeModes = /** @type {const} */ ([ 'Prism', 'Danland', 'Traum' ]);
+
+/**
+* @typedef {ColorModes | DimensionModes | ColourModes | DensityModes | Dimension_Modes | ThemeModes} AllMode - All the available modes
 */
 
 /**
@@ -806,940 +814,875 @@ export const densityModes = /** @type {const} */ ([ 'comfortable', 'dense', 'tig
 * Use `getTokenByMode` to retrieve one.
 */
 export const tokens = /** @type {const} */ ({
-  'action.button.size.border.radius.L': { disabled: '16px', hover: '16px', normal: '0px' },
-  'theme.theme.size.border.radius.lg': { Danland: '16px', Prism: '0px', Traum: '16px' },
-  'numbers.dimension.fixed.0': { desktop: '0px', mobile: '0px' },
-  'numbers.dimension.fixed.200': { desktop: '16px', mobile: '16px' },
-  'action.button.size.border.radius.M': { disabled: '12px', hover: '12px', normal: '0px' },
-  'theme.theme.size.border.radius.md': { Danland: '12px', Prism: '0px', Traum: '12px' },
-  'numbers.dimension.fixed.150': { desktop: '12px', mobile: '12px' },
-  'action.button.size.border.radius.S': { disabled: '8px', hover: '8px', normal: '0px' },
-  'theme.theme.size.border.radius.sm': { Danland: '8px', Prism: '0px', Traum: '8px' },
-  'numbers.dimension.fixed.100': { desktop: '8px', mobile: '8px' },
-  'action.button.size.border.weight': { disabled: '1px', hover: '2px', normal: '1px' },
-  'theme.theme.font.letter-spacing.h1': { Danland: '-1.5px', Prism: '0px', Traum: '-1.5px' },
-  'theme.theme.font.letter-spacing.button': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
-  'theme.theme.font.letter-spacing.h2': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
-  'theme.theme.font.letter-spacing.h3': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
-  'theme.theme.font.letter-spacing.h4': {
+  'colour.asphalt.50': { dark: 'rgb(29, 29, 29)', light: 'rgb(246, 246, 246)' },
+  'colour.asphalt.100': { dark: 'rgb(40, 40, 40)', light: 'rgb(238, 238, 238)' },
+  'colour.asphalt.200': { dark: 'rgb(76, 76, 76)', light: 'rgb(213, 213, 213)' },
+  'colour.asphalt.300': { dark: 'rgb(95, 95, 95)', light: 'rgb(176, 176, 176)' },
+  'colour.asphalt.400': { dark: 'rgb(113, 113, 113)', light: 'rgb(165, 165, 165)' },
+  'colour.asphalt.500': { dark: 'rgb(139, 139, 139)', light: 'rgb(139, 139, 139)' },
+  'colour.asphalt.600': { dark: 'rgb(165, 165, 165)', light: 'rgb(113, 113, 113)' },
+  'colour.asphalt.700': { dark: 'rgb(176, 176, 176)', light: 'rgb(95, 95, 95)' },
+  'colour.asphalt.800': { dark: 'rgb(213, 213, 213)', light: 'rgb(76, 76, 76)' },
+  'colour.asphalt.900': { dark: 'rgb(238, 238, 238)', light: 'rgb(40, 40, 40)' },
+  'colour.asphalt.950': { dark: 'rgb(246, 246, 246)', light: 'rgb(29, 29, 29)' },
+  'colour.asphalt.00': { dark: 'rgb(29, 29, 29)', light: 'rgb(255, 255, 255)' },
+  'colour.achromatic.black': { dark: 'rgb(33, 33, 33)', light: 'rgb(33, 33, 33)' },
+  'colour.achromatic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
+  'colour.azure.50': { dark: 'rgb(14, 30, 41)', light: 'rgb(241, 247, 250)' },
+  'colour.azure.100': { dark: 'rgb(18, 41, 55)', light: 'rgb(234, 242, 248)' },
+  'colour.azure.200': { dark: 'rgb(27, 60, 80)', light: 'rgb(202, 224, 237)' },
+  'colour.azure.300': { dark: 'rgb(14, 30, 41)', light: 'rgb(166, 202, 225)' },
+  'colour.azure.400': { dark: 'rgb(14, 30, 41)', light: 'rgb(122, 176, 210)' },
+  'colour.azure.500': { dark: 'rgb(14, 30, 41)', light: 'rgb(64, 141, 190)' },
+  'colour.azure.600': { dark: 'rgb(14, 30, 41)', light: 'rgb(51, 114, 153)' },
+  'colour.azure.700': { dark: 'rgb(14, 30, 41)', light: 'rgb(38, 84, 113)' },
+  'colour.azure.800': { dark: 'rgb(14, 30, 41)', light: 'rgb(27, 60, 80)' },
+  'colour.azure.900': { dark: 'rgb(14, 30, 41)', light: 'rgb(18, 41, 55)' },
+  'colour.azure.950': { dark: 'rgb(14, 30, 41)', light: 'rgb(14, 30, 41)' },
+  'colour.clay.50': { dark: 'rgb(37, 27, 12)', light: 'rgb(250, 245, 239)' },
+  'colour.clay.100': { dark: 'rgb(50, 36, 17)', light: 'rgb(247, 240, 231)' },
+  'colour.clay.200': { dark: 'rgb(70, 55, 0)', light: 'rgb(235, 218, 195)' },
+  'colour.clay.300': { dark: 'rgb(99, 77, 0)', light: 'rgb(221, 193, 154)' },
+  'colour.clay.400': { dark: 'rgb(139, 101, 47)', light: 'rgb(205, 163, 104)' },
+  'colour.clay.500': { dark: 'rgb(178, 130, 72)', light: 'rgb(178, 130, 72)' },
+  'colour.clay.600': { dark: 'rgb(205, 163, 104)', light: 'rgb(139, 101, 47)' },
+  'colour.clay.700': { dark: 'rgb(221, 193, 154)', light: 'rgb(99, 77, 0)' },
+  'colour.clay.800': { dark: 'rgb(235, 218, 195)', light: 'rgb(70, 55, 0)' },
+  'colour.clay.900': { dark: 'rgb(247, 240, 231)', light: 'rgb(50, 36, 17)' },
+  'colour.clay.950': { dark: 'rgb(250, 245, 239)', light: 'rgb(37, 27, 12)' },
+  'colour.cocoa.50': { dark: 'rgb(51, 48, 41)', light: 'rgb(249, 245, 241)' },
+  'colour.cocoa.100': { dark: 'rgb(236, 230, 224)', light: 'rgb(246, 240, 234)' },
+  'colour.cocoa.200': { dark: 'rgb(225, 217, 207)', light: 'rgb(234, 218, 204)' },
+  'colour.cocoa.300': { dark: 'rgb(213, 202, 189)', light: 'rgb(219, 193, 169)' },
+  'colour.cocoa.400': { dark: 'rgb(241, 170, 16)', light: 'rgb(202, 162, 127)' },
+  'colour.cocoa.500': { dark: 'rgb(150, 121, 89)', light: 'rgb(177, 123, 74)' },
+  'colour.cocoa.600': { dark: 'rgb(192, 156, 77)', light: 'rgb(142, 99, 59)' },
+  'colour.cocoa.700': { dark: 'rgb(214, 174, 86)', light: 'rgb(105, 73, 44)' },
+  'colour.cocoa.800': { dark: 'rgb(47, 37, 25)', light: 'rgb(74, 52, 31)' },
+  'colour.cocoa.900': { dark: 'rgb(31, 24, 17)', light: 'rgb(51, 36, 21)' },
+  'colour.cocoa.950': { dark: 'rgb(31, 24, 17)', light: 'rgb(34, 23, 14)' },
+  'colour.forest.50': { dark: 'rgb(18, 31, 28)', light: 'rgb(241, 247, 246)' },
+  'colour.forest.100': { dark: 'rgb(25, 42, 38)', light: 'rgb(234, 243, 241)' },
+  'colour.forest.200': { dark: 'rgb(36, 61, 55)', light: 'rgb(203, 225, 220)' },
+  'colour.forest.300': { dark: 'rgb(51, 87, 78)', light: 'rgb(168, 205, 196)' },
+  'colour.forest.400': { dark: 'rgb(67, 117, 106)', light: 'rgb(125, 180, 168)' },
+  'colour.forest.500': { dark: 'rgb(84, 146, 131)', light: 'rgb(84, 146, 131)' },
+  'colour.forest.600': { dark: 'rgb(125, 180, 168)', light: 'rgb(67, 117, 106)' },
+  'colour.forest.700': { dark: 'rgb(168, 205, 196)', light: 'rgb(51, 87, 78)' },
+  'colour.forest.800': { dark: 'rgb(203, 225, 220)', light: 'rgb(36, 61, 55)' },
+  'colour.forest.900': { dark: 'rgb(234, 243, 241)', light: 'rgb(25, 42, 38)' },
+  'colour.forest.950': { dark: 'rgb(241, 247, 246)', light: 'rgb(18, 31, 28)' },
+  'colour.gold.50': { dark: 'rgb(36, 28, 0)', light: 'rgb(255, 246, 214)' },
+  'colour.gold.100': { dark: 'rgb(48, 38, 0)', light: 'rgb(255, 241, 192)' },
+  'colour.gold.200': { dark: 'rgb(70, 55, 0)', light: 'rgb(255, 218, 88)' },
+  'colour.gold.300': { dark: 'rgb(99, 77, 0)', light: 'rgb(253, 196, 0)' },
+  'colour.gold.400': { dark: 'rgb(134, 104, 0)', light: 'rgb(210, 163, 0)' },
+  'colour.gold.500': { dark: 'rgb(167, 129, 0)', light: 'rgb(167, 129, 0)' },
+  'colour.gold.600': { dark: 'rgb(210, 163, 0)', light: 'rgb(134, 104, 0)' },
+  'colour.gold.700': { dark: 'rgb(253, 196, 0)', light: 'rgb(99, 77, 0)' },
+  'colour.gold.800': { dark: 'rgb(255, 218, 88)', light: 'rgb(70, 55, 0)' },
+  'colour.gold.900': { dark: 'rgb(255, 241, 192)', light: 'rgb(48, 38, 0)' },
+  'colour.gold.950': { dark: 'rgb(255, 246, 214)', light: 'rgb(36, 28, 0)' },
+  'colour.mauve.50': { dark: 'rgb(38, 21, 24)', light: 'rgb(250, 245, 246)' },
+  'colour.mauve.100': { dark: 'rgb(57, 32, 36)', light: 'rgb(246, 239, 241)' },
+  'colour.mauve.200': { dark: 'rgb(82, 46, 52)', light: 'rgb(234, 217, 220)' },
+  'colour.mauve.300': { dark: 'rgb(117, 65, 74)', light: 'rgb(219, 190, 195)' },
+  'colour.mauve.400': { dark: 'rgb(157, 87, 100)', light: 'rgb(202, 159, 166)' },
+  'colour.mauve.500': { dark: 'rgb(179, 118, 129)', light: 'rgb(179, 118, 129)' },
+  'colour.mauve.600': { dark: 'rgb(202, 159, 166)', light: 'rgb(157, 87, 100)' },
+  'colour.mauve.700': { dark: 'rgb(219, 190, 195)', light: 'rgb(117, 65, 74)' },
+  'colour.mauve.800': { dark: 'rgb(234, 217, 220)', light: 'rgb(82, 46, 52)' },
+  'colour.mauve.900': { dark: 'rgb(246, 239, 241)', light: 'rgb(57, 32, 36)' },
+  'colour.mauve.950': { dark: 'rgb(250, 245, 246)', light: 'rgb(38, 21, 24)' },
+  'colour.mirabella.50': { dark: 'rgb(49, 45, 56)', light: 'rgb(247, 245, 248)' },
+  'colour.mirabella.100': { dark: 'rgb(233, 230, 237)', light: 'rgb(242, 240, 245)' },
+  'colour.mirabella.200': { dark: 'rgb(221, 216, 227)', light: 'rgb(224, 219, 230)' },
+  'colour.mirabella.300': { dark: 'rgb(208, 201, 216)', light: 'rgb(202, 194, 212)' },
+  'colour.mirabella.400': { dark: 'rgb(167, 155, 182)', light: 'rgb(177, 165, 192)' },
+  'colour.mirabella.500': { dark: 'rgb(136, 120, 156)', light: 'rgb(144, 127, 166)' },
+  'colour.mirabella.600': { dark: 'rgb(175, 125, 255)', light: 'rgb(119, 100, 143)' },
+  'colour.mirabella.700': { dark: 'rgb(200, 163, 255)', light: 'rgb(88, 74, 106)' },
+  'colour.mirabella.800': { dark: 'rgb(43, 36, 51)', light: 'rgb(62, 52, 75)' },
+  'colour.mirabella.900': { dark: 'rgb(28, 24, 34)', light: 'rgb(43, 36, 51)' },
+  'colour.mirabella.950': { dark: 'rgb(28, 24, 34)', light: 'rgb(32, 26, 38)' },
+  'colour.rust.50': { dark: 'rgb(41, 25, 7)', light: 'rgb(252, 245, 237)' },
+  'colour.rust.100': { dark: 'rgb(55, 34, 10)', light: 'rgb(250, 240, 227)' },
+  'colour.rust.200': { dark: 'rgb(80, 50, 14)', light: 'rgb(243, 217, 186)' },
+  'colour.rust.300': { dark: 'rgb(113, 70, 20)', light: 'rgb(234, 190, 137)' },
+  'colour.rust.400': { dark: 'rgb(153, 95, 27)', light: 'rgb(224, 156, 76)' },
+  'colour.rust.500': { dark: 'rgb(190, 118, 33)', light: 'rgb(190, 118, 33)' },
+  'colour.rust.600': { dark: 'rgb(224, 156, 76)', light: 'rgb(153, 95, 27)' },
+  'colour.rust.700': { dark: 'rgb(234, 190, 137)', light: 'rgb(113, 70, 20)' },
+  'colour.rust.800': { dark: 'rgb(243, 217, 186)', light: 'rgb(80, 50, 14)' },
+  'colour.rust.900': { dark: 'rgb(250, 240, 227)', light: 'rgb(55, 34, 10)' },
+  'colour.rust.950': { dark: 'rgb(252, 245, 237)', light: 'rgb(41, 25, 7)' },
+  'colour.sea.50': { dark: 'rgb(3, 31, 47)', light: 'rgb(237, 248, 254)' },
+  'colour.sea.100': { dark: 'rgb(4, 41, 63)', light: 'rgb(227, 244, 253)' },
+  'colour.sea.200': { dark: 'rgb(6, 60, 91)', light: 'rgb(185, 227, 251)' },
+  'colour.sea.300': { dark: 'rgb(8, 84, 129)', light: 'rgb(135, 206, 247)' },
+  'colour.sea.400': { dark: 'rgb(11, 113, 173)', light: 'rgb(69, 179, 243)' },
+  'colour.sea.500': { dark: 'rgb(13, 141, 215)', light: 'rgb(13, 141, 215)' },
+  'colour.sea.600': { dark: 'rgb(69, 179, 243)', light: 'rgb(11, 113, 173)' },
+  'colour.sea.700': { dark: 'rgb(135, 206, 247)', light: 'rgb(8, 84, 129)' },
+  'colour.sea.800': { dark: 'rgb(185, 227, 251)', light: 'rgb(6, 60, 91)' },
+  'colour.sea.900': { dark: 'rgb(227, 244, 253)', light: 'rgb(4, 41, 63)' },
+  'colour.sea.950': { dark: 'rgb(237, 248, 254)', light: 'rgb(3, 31, 47)' },
+  'theme.colour.agnostic.black': {
+    Danland: 'rgb(33, 33, 33)',
+    Prism: 'rgb(33, 33, 33)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'theme.colour.agnostic.white': {
+    Danland: 'rgb(255, 255, 255)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.background.subtle.neutral.1': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.background.subtle.neutral.2': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.colour.background.subtle.neutral.3': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.colour.background.subtle.alert': {
+    Danland: 'rgb(236, 230, 224)',
+    Prism: 'rgb(246, 240, 234)',
+    Traum: 'rgb(246, 240, 234)'
+  },
+  'theme.colour.background.subtle.info': {
+    Danland: 'rgb(4, 41, 63)',
+    Prism: 'rgb(234, 242, 248)',
+    Traum: 'rgb(234, 242, 248)'
+  },
+  'theme.colour.background.subtle.negative': {
+    Danland: 'rgb(57, 32, 36)',
+    Prism: 'rgb(246, 239, 241)',
+    Traum: 'rgb(246, 239, 241)'
+  },
+  'theme.colour.background.subtle.offer': {
+    Danland: 'rgb(55, 34, 10)',
+    Prism: 'rgb(234, 243, 241)',
+    Traum: 'rgb(234, 243, 241)'
+  },
+  'theme.colour.background.subtle.positive': {
+    Danland: 'rgb(25, 42, 38)',
+    Prism: 'rgb(234, 243, 241)',
+    Traum: 'rgb(234, 243, 241)'
+  },
+  'theme.colour.background.subtle.premium': {
+    Danland: 'rgb(233, 230, 237)',
+    Prism: 'rgb(242, 240, 245)',
+    Traum: 'rgb(242, 240, 245)'
+  },
+  'theme.colour.background.subtle.brand.primary': {
+    Danland: 'rgb(4, 41, 63)',
+    Prism: 'rgb(247, 240, 231)',
+    Traum: 'rgb(255, 241, 192)'
+  },
+  'theme.colour.background.subtle.brand.secondary': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(238, 238, 238)'
+  },
+  'theme.colour.background.intense.alert': {
+    Danland: 'rgb(192, 156, 77)',
+    Prism: 'rgb(142, 99, 59)',
+    Traum: 'rgb(142, 99, 59)'
+  },
+  'theme.colour.background.intense.info': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(51, 114, 153)',
+    Traum: 'rgb(51, 114, 153)'
+  },
+  'theme.colour.background.intense.negative': {
+    Danland: 'rgb(202, 159, 166)',
+    Prism: 'rgb(157, 87, 100)',
+    Traum: 'rgb(157, 87, 100)'
+  },
+  'theme.colour.background.intense.offer': {
+    Danland: 'rgb(224, 156, 76)',
+    Prism: 'rgb(67, 117, 106)',
+    Traum: 'rgb(67, 117, 106)'
+  },
+  'theme.colour.background.intense.positive': {
+    Danland: 'rgb(125, 180, 168)',
+    Prism: 'rgb(67, 117, 106)',
+    Traum: 'rgb(67, 117, 106)'
+  },
+  'theme.colour.background.intense.premium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(119, 100, 143)',
+    Traum: 'rgb(119, 100, 143)'
+  },
+  'theme.colour.background.intense.brand.primary': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(139, 101, 47)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.colour.background.intense.brand.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.background.intense.brand.invert.primary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'theme.colour.background.intense.brand.invert.secondary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.background.intense.neutral.1': {
+    Danland: 'rgb(165, 165, 165)',
+    Prism: 'rgb(113, 113, 113)',
+    Traum: 'rgb(113, 113, 113)'
+  },
+  'theme.colour.background.intense.neutral.2': {
+    Danland: 'rgb(176, 176, 176)',
+    Prism: 'rgb(95, 95, 95)',
+    Traum: 'rgb(95, 95, 95)'
+  },
+  'theme.colour.background.intense.neutral.3': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.background.moderate.neutral.1': {
+    Danland: 'rgb(76, 76, 76)',
+    Prism: 'rgb(213, 213, 213)',
+    Traum: 'rgb(213, 213, 213)'
+  },
+  'theme.colour.background.moderate.neutral.2': {
+    Danland: 'rgb(95, 95, 95)',
+    Prism: 'rgb(176, 176, 176)',
+    Traum: 'rgb(176, 176, 176)'
+  },
+  'theme.colour.background.moderate.neutral.3': {
+    Danland: 'rgb(113, 113, 113)',
+    Prism: 'rgb(165, 165, 165)',
+    Traum: 'rgb(176, 176, 176)'
+  },
+  'theme.colour.border.intense.brand.primary': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(139, 101, 47)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.colour.border.intense.brand.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.border.intense.alert': {
+    Danland: 'rgb(192, 156, 77)',
+    Prism: 'rgb(142, 99, 59)',
+    Traum: 'rgb(142, 99, 59)'
+  },
+  'theme.colour.border.intense.info': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(51, 114, 153)',
+    Traum: 'rgb(11, 113, 173)'
+  },
+  'theme.colour.border.intense.negative': {
+    Danland: 'rgb(202, 159, 166)',
+    Prism: 'rgb(157, 87, 100)',
+    Traum: 'rgb(157, 87, 100)'
+  },
+  'theme.colour.border.intense.neutral': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.border.intense.positive': {
+    Danland: 'rgb(125, 180, 168)',
+    Prism: 'rgb(67, 117, 106)',
+    Traum: 'rgb(67, 117, 106)'
+  },
+  'theme.colour.border.intense.premium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(119, 100, 143)',
+    Traum: 'rgb(119, 100, 143)'
+  },
+  'theme.colour.border.intense.on.intense.offer': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.border.intense.on.intense.brand.primary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'theme.colour.border.intense.on.intense.brand.secondary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.border.intense.on.intense.brand.invert.primary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.border.intense.on.intense.brand.invert.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.border.moderate.neutral': {
+    Danland: 'rgb(113, 113, 113)',
+    Prism: 'rgb(165, 165, 165)',
+    Traum: 'rgb(165, 165, 165)'
+  },
+  'theme.colour.border.subtle.alert': {
+    Danland: 'rgb(225, 217, 207)',
+    Prism: 'rgb(234, 218, 204)',
+    Traum: 'rgb(234, 218, 204)'
+  },
+  'theme.colour.border.subtle.info': {
+    Danland: 'rgb(27, 60, 80)',
+    Prism: 'rgb(202, 224, 237)',
+    Traum: 'rgb(202, 224, 237)'
+  },
+  'theme.colour.border.subtle.negative': {
+    Danland: 'rgb(82, 46, 52)',
+    Prism: 'rgb(234, 217, 220)',
+    Traum: 'rgb(234, 217, 220)'
+  },
+  'theme.colour.border.subtle.neutral': {
+    Danland: 'rgb(76, 76, 76)',
+    Prism: 'rgb(213, 213, 213)',
+    Traum: 'rgb(213, 213, 213)'
+  },
+  'theme.colour.border.subtle.positive': {
+    Danland: 'rgb(36, 61, 55)',
+    Prism: 'rgb(203, 225, 220)',
+    Traum: 'rgb(203, 225, 220)'
+  },
+  'theme.colour.border.subtle.premium': {
+    Danland: 'rgb(221, 216, 227)',
+    Prism: 'rgb(224, 219, 230)',
+    Traum: 'rgb(224, 219, 230)'
+  },
+  'theme.colour.text.intense.brand.primary': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(139, 101, 47)',
+    Traum: 'rgb(134, 104, 0)'
+  },
+  'theme.colour.text.intense.brand.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.text.intense.alert': {
+    Danland: 'rgb(192, 156, 77)',
+    Prism: 'rgb(142, 99, 59)',
+    Traum: 'rgb(142, 99, 59)'
+  },
+  'theme.colour.text.intense.info': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(51, 114, 153)',
+    Traum: 'rgb(11, 113, 173)'
+  },
+  'theme.colour.text.intense.negative': {
+    Danland: 'rgb(202, 159, 166)',
+    Prism: 'rgb(157, 87, 100)',
+    Traum: 'rgb(157, 87, 100)'
+  },
+  'theme.colour.text.intense.neutral': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.text.intense.offer': {
+    Danland: 'rgb(224, 156, 76)',
+    Prism: 'rgb(67, 117, 106)',
+    Traum: 'rgb(67, 117, 106)'
+  },
+  'theme.colour.text.intense.positive': {
+    Danland: 'rgb(125, 180, 168)',
+    Prism: 'rgb(67, 117, 106)',
+    Traum: 'rgb(67, 117, 106)'
+  },
+  'theme.colour.text.intense.premium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(119, 100, 143)',
+    Traum: 'rgb(119, 100, 143)'
+  },
+  'theme.colour.text.intense.on.intense.offer': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.text.intense.on.intense.brand.primary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.text.intense.on.intense.brand.secondary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.text.intense.on.intense.brand.invert.primary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.text.intense.on.intense.brand.invert.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.colour.text.moderate.neutral': {
+    Danland: 'rgb(176, 176, 176)',
+    Prism: 'rgb(113, 113, 113)',
+    Traum: 'rgb(95, 95, 95)'
+  },
+  'theme.colour.text.subtle.neutral': {
+    Danland: 'rgb(113, 113, 113)',
+    Prism: 'rgb(165, 165, 165)',
+    Traum: 'rgb(165, 165, 165)'
+  },
+  'theme.colour.interaction.background.intense.alert.hover': {
+    Danland: 'rgb(150, 121, 89)',
+    Prism: 'rgb(177, 123, 74)',
+    Traum: 'rgb(177, 123, 74)'
+  },
+  'theme.colour.interaction.background.intense.alert.pressed': {
+    Danland: 'rgb(214, 174, 86)',
+    Prism: 'rgb(105, 73, 44)',
+    Traum: 'rgb(105, 73, 44)'
+  },
+  'theme.colour.interaction.background.intense.info.hover': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(64, 141, 190)',
+    Traum: 'rgb(51, 114, 153)'
+  },
+  'theme.colour.interaction.background.intense.info.pressed': {
+    Danland: 'rgb(135, 206, 247)',
+    Prism: 'rgb(38, 84, 113)',
+    Traum: 'rgb(38, 84, 113)'
+  },
+  'theme.colour.interaction.background.intense.negative.hover': {
+    Danland: 'rgb(179, 118, 129)',
+    Prism: 'rgb(179, 118, 129)',
+    Traum: 'rgb(179, 118, 129)'
+  },
+  'theme.colour.interaction.background.intense.negative.pressed': {
+    Danland: 'rgb(219, 190, 195)',
+    Prism: 'rgb(117, 65, 74)',
+    Traum: 'rgb(117, 65, 74)'
+  },
+  'theme.colour.interaction.background.intense.offer.hover': {
+    Danland: 'rgb(190, 118, 33)',
+    Prism: 'rgb(84, 146, 131)',
+    Traum: 'rgb(84, 146, 131)'
+  },
+  'theme.colour.interaction.background.intense.offer.pressed': {
+    Danland: 'rgb(190, 118, 33)',
+    Prism: 'rgb(51, 87, 78)',
+    Traum: 'rgb(84, 146, 131)'
+  },
+  'theme.colour.interaction.background.intense.positive.hover': {
+    Danland: 'rgb(84, 146, 131)',
+    Prism: 'rgb(84, 146, 131)',
+    Traum: 'rgb(84, 146, 131)'
+  },
+  'theme.colour.interaction.background.intense.positive.pressed': {
+    Danland: 'rgb(168, 205, 196)',
+    Prism: 'rgb(51, 87, 78)',
+    Traum: 'rgb(51, 87, 78)'
+  },
+  'theme.colour.interaction.background.intense.premium.hover': {
+    Danland: 'rgb(136, 120, 156)',
+    Prism: 'rgb(144, 127, 166)',
+    Traum: 'rgb(144, 127, 166)'
+  },
+  'theme.colour.interaction.background.intense.premium.pressed': {
+    Danland: 'rgb(136, 120, 156)',
+    Prism: 'rgb(88, 74, 106)',
+    Traum: 'rgb(144, 127, 166)'
+  },
+  'theme.colour.interaction.background.intense.neutral.1.hover': {
+    Danland: 'rgb(139, 139, 139)',
+    Prism: 'rgb(139, 139, 139)',
+    Traum: 'rgb(139, 139, 139)'
+  },
+  'theme.colour.interaction.background.intense.neutral.2.hover': {
+    Danland: 'rgb(165, 165, 165)',
+    Prism: 'rgb(113, 113, 113)',
+    Traum: 'rgb(113, 113, 113)'
+  },
+  'theme.colour.interaction.background.intense.neutral.3.hover': {
+    Danland: 'rgb(213, 213, 213)',
+    Prism: 'rgb(76, 76, 76)',
+    Traum: 'rgb(76, 76, 76)'
+  },
+  'theme.colour.interaction.background.intense.brand.primary.hover': {
+    Danland: 'rgb(13, 141, 215)',
+    Prism: 'rgb(178, 130, 72)',
+    Traum: 'rgb(255, 241, 192)'
+  },
+  'theme.colour.interaction.background.intense.brand.primary.pressed': {
+    Danland: 'rgb(13, 141, 215)',
+    Prism: 'rgb(99, 77, 0)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.colour.interaction.background.intense.brand.secondary.hover': {
+    Danland: 'rgb(213, 213, 213)',
+    Prism: 'rgb(76, 76, 76)',
+    Traum: 'rgb(76, 76, 76)'
+  },
+  'theme.colour.interaction.background.intense.brand.secondary.pressed': {
+    Danland: 'rgb(246, 246, 246)',
+    Prism: 'rgb(29, 29, 29)',
+    Traum: 'rgb(29, 29, 29)'
+  },
+  'theme.colour.interaction.background.intense.invert.brand.primary.hover': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(76, 76, 76)'
+  },
+  'theme.colour.interaction.background.intense.invert.brand.primary.pressed': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(29, 29, 29)'
+  },
+  'theme.colour.interaction.background.intense.invert.brand.secondary.hover': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.colour.interaction.background.intense.invert.brand.secondary.pressed': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(238, 238, 238)'
+  },
+  'theme.colour.interaction.background.subtle.brand.primary.hover': {
+    Danland: 'rgb(3, 31, 47)',
+    Prism: 'rgb(250, 245, 239)',
+    Traum: 'rgb(255, 246, 214)'
+  },
+  'theme.colour.interaction.background.subtle.brand.secondary.hover': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.colour.interaction.background.subtle.neutral.1.hover': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.colour.interaction.background.subtle.neutral.2.hover': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(238, 238, 238)'
+  },
+  'theme.colour.interaction.background.subtle.neutral.3.hover': {
+    Danland: 'rgb(76, 76, 76)',
+    Prism: 'rgb(213, 213, 213)',
+    Traum: 'rgb(213, 213, 213)'
+  },
+  'theme.icon.colour.intense.brand.primary': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(139, 101, 47)',
+    Traum: 'rgb(134, 104, 0)'
+  },
+  'theme.icon.colour.intense.brand.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.icon.colour.intense.alert': {
+    Danland: 'rgb(192, 156, 77)',
+    Prism: 'rgb(142, 99, 59)',
+    Traum: 'rgb(142, 99, 59)'
+  },
+  'theme.icon.colour.intense.info': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(51, 114, 153)',
+    Traum: 'rgb(11, 113, 173)'
+  },
+  'theme.icon.colour.intense.negative': {
+    Danland: 'rgb(202, 159, 166)',
+    Prism: 'rgb(157, 87, 100)',
+    Traum: 'rgb(157, 87, 100)'
+  },
+  'theme.icon.colour.intense.neutral': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.icon.colour.intense.offer': {
+    Danland: 'rgb(224, 156, 76)',
+    Prism: 'rgb(67, 117, 106)',
+    Traum: 'rgb(67, 117, 106)'
+  },
+  'theme.icon.colour.intense.positive': {
+    Danland: 'rgb(125, 180, 168)',
+    Prism: 'rgb(67, 117, 106)',
+    Traum: 'rgb(67, 117, 106)'
+  },
+  'theme.icon.colour.intense.premium': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(119, 100, 143)',
+    Traum: 'rgb(119, 100, 143)'
+  },
+  'theme.icon.colour.intense.rating.filled': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.icon.colour.intense.rating.outlined': {
+    Danland: 'rgb(95, 95, 95)',
+    Prism: 'rgb(176, 176, 176)',
+    Traum: 'rgb(176, 176, 176)'
+  },
+  'theme.icon.colour.intense.rating.unfilled': {
+    Danland: 'rgb(76, 76, 76)',
+    Prism: 'rgb(213, 213, 213)',
+    Traum: 'rgb(213, 213, 213)'
+  },
+  'theme.icon.colour.intense.on.intense.offer': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.icon.colour.intense.on.intense.brand.primary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(33, 33, 33)'
+  },
+  'theme.icon.colour.intense.on.intense.brand.secondary': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.icon.colour.intense.on.intense.brand.invert.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
+  'theme.icon.colour.intense.on.intense.brand.invert.primary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.icon.colour.moderate.neutral': {
+    Danland: 'rgb(165, 165, 165)',
+    Prism: 'rgb(113, 113, 113)',
+    Traum: 'rgb(113, 113, 113)'
+  },
+  'theme.icon.colour.subtle.neutral': {
+    Danland: 'rgb(113, 113, 113)',
+    Prism: 'rgb(165, 165, 165)',
+    Traum: 'rgb(165, 165, 165)'
+  },
+  'theme.hyperlink.colour.active': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(51, 114, 153)',
+    Traum: 'rgb(11, 113, 173)'
+  },
+  'theme.hyperlink.colour.interaction.disabled': {
+    Danland: 'rgb(113, 113, 113)',
+    Prism: 'rgb(165, 165, 165)',
+    Traum: 'rgb(165, 165, 165)'
+  },
+  'theme.hyperlink.colour.interaction.hover': {
+    Danland: 'rgb(13, 141, 215)',
+    Prism: 'rgb(64, 141, 190)',
+    Traum: 'rgb(13, 141, 215)'
+  },
+  'theme.hyperlink.colour.interaction.visited': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(119, 100, 143)',
+    Traum: 'rgb(119, 100, 143)'
+  },
+  'theme.screen.colour.alt': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.screen.colour.default': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.chip.colour.interaction.background.hover': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.chip.colour.interaction.background.pressed': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(238, 238, 238)'
+  },
+  'density.fixed.md.1': { comfortable: '24px', dense: '16px', tight: '8px' },
+  'dimension.fixed.200': { desktop: '16px', mobile: '16px' },
+  'dimension.fixed.100': { desktop: '8px', mobile: '8px' },
+  'dimension.fixed.300': { desktop: '24px', mobile: '24px' },
+  'density.fixed.md.2': { comfortable: '32px', dense: '24px', tight: '16px' },
+  'dimension.fixed.400': { desktop: '32px', mobile: '32px' },
+  'density.fixed.md.3': { comfortable: '40px', dense: '32px', tight: '24px' },
+  'dimension.fixed.500': { desktop: '40px', mobile: '40px' },
+  'density.fixed.md.4': { comfortable: '48px', dense: '40px', tight: '32px' },
+  'dimension.fixed.600': { desktop: '48px', mobile: '48px' },
+  'density.fixed.sm.1': { comfortable: '2px', dense: '0px', tight: '0px' },
+  'dimension.fixed.0': { desktop: '0px', mobile: '0px' },
+  'dimension.fixed.25': { desktop: '2px', mobile: '2px' },
+  'density.fixed.sm.2': { comfortable: '4px', dense: '2px', tight: '0px' },
+  'dimension.fixed.50': { desktop: '4px', mobile: '4px' },
+  'density.fixed.sm.3': { comfortable: '8px', dense: '4px', tight: '2px' },
+  'density.fixed.sm.4': { comfortable: '12px', dense: '8px', tight: '4px' },
+  'dimension.fixed.150': { desktop: '12px', mobile: '12px' },
+  'density.fixed.sm.5': { comfortable: '16px', dense: '12px', tight: '8px' },
+  'density.scale.lg.1': { comfortable: '64px', dense: '64px', tight: '48px' },
+  'dimension.scale.700': { desktop: '64px', mobile: '56px' },
+  'dimension.scale.600': { desktop: '56px', mobile: '48px' },
+  'dimension.scale.800': { desktop: '72px', mobile: '64px' },
+  'density.scale.lg.2': { comfortable: '72px', dense: '72px', tight: '56px' },
+  'dimension.scale.900': { desktop: '80px', mobile: '72px' },
+  'density.scale.lg.3': { comfortable: '80px', dense: '80px', tight: '64px' },
+  'dimension.scale.1000': { desktop: '88px', mobile: '80px' },
+  'density.scale.lg.4': { comfortable: '88px', dense: '88px', tight: '72px' },
+  'dimension.scale.1100': { desktop: '96px', mobile: '88px' },
+  'density.scale.lg.5': { comfortable: '96px', dense: '96px', tight: '80px' },
+  'dimension.scale.1200': { desktop: '112px', mobile: '96px' },
+  'density.scale.md.1': { comfortable: '24px', dense: '24px', tight: '8px' },
+  'dimension.scale.200': { desktop: '24px', mobile: '16px' },
+  'dimension.scale.300': { desktop: '32px', mobile: '24px' },
+  'density.scale.md.2': { comfortable: '32px', dense: '32px', tight: '16px' },
+  'dimension.scale.400': { desktop: '40px', mobile: '32px' },
+  'density.scale.md.3': { comfortable: '40px', dense: '40px', tight: '24px' },
+  'dimension.scale.500': { desktop: '48px', mobile: '40px' },
+  'density.scale.md.4': { comfortable: '48px', dense: '48px', tight: '32px' },
+  'density.scale.md.5': { comfortable: '56px', dense: '56px', tight: '40px' },
+  'density.scale.sm.3': { comfortable: '8px', dense: '4px', tight: '2px' },
+  'dimension.scale.100': { desktop: '12px', mobile: '8px' },
+  'density.scale.sm.4': { comfortable: '12px', dense: '12px', tight: '4px' },
+  'dimension.scale.150': { desktop: '16px', mobile: '12px' },
+  'density.scale.sm.5': { comfortable: '16px', dense: '16px', tight: '8px' },
+  'dimension.scale.1400': { desktop: '128px', mobile: '112px' },
+  'dimension.scale.1600': { desktop: '144px', mobile: '128px' },
+  'theme.font.letter-spacing.button': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
+  'theme.font.letter-spacing.h1': { Danland: '-1.5px', Prism: '0px', Traum: '-1.5px' },
+  'theme.font.letter-spacing.h2': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
+  'theme.font.letter-spacing.h3': { Danland: '-1px', Prism: '0px', Traum: '-1px' },
+  'theme.font.letter-spacing.h4': {
     Danland: '-0.6000000238418579px',
     Prism: '0px',
     Traum: '-0.6000000238418579px'
   },
-  'theme.theme.font.letter-spacing.h5': { Danland: '-0.5px', Prism: '0px', Traum: '-0.5px' },
-  'theme.theme.font.letter-spacing.h6': {
+  'theme.font.letter-spacing.h5': { Danland: '-0.5px', Prism: '0px', Traum: '-0.5px' },
+  'theme.font.letter-spacing.h6': {
     Danland: '-0.3499999940395355px',
     Prism: '0.20000000298023224px',
     Traum: '-0.3499999940395355px'
   },
-  'theme.theme.font.letter-spacing.micro': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
-  'theme.theme.font.letter-spacing.overline': {
+  'theme.font.letter-spacing.micro': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
+  'theme.font.letter-spacing.overline': {
     Danland: '0.4000000059604645px',
     Prism: '1px',
     Traum: '0.4000000059604645px'
   },
-  'theme.theme.font.letter-spacing.caption.high': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
-  'theme.theme.font.letter-spacing.caption.regular': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
-  'theme.theme.font.letter-spacing.subtitle 1.high': {
+  'theme.font.letter-spacing.caption.high': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
+  'theme.font.letter-spacing.caption.regular': { Danland: '0px', Prism: '0.4000000059604645px', Traum: '0px' },
+  'theme.font.letter-spacing.subtitle 1.high': {
     Danland: '-0.30000001192092896px',
     Prism: '0.30000001192092896px',
     Traum: '-0.30000001192092896px'
   },
-  'theme.theme.font.letter-spacing.subtitle 1.regular': { Danland: '0px', Prism: '0.30000001192092896px', Traum: '0px' },
-  'theme.theme.font.letter-spacing.subtitle 2.high': {
+  'theme.font.letter-spacing.subtitle 1.regular': { Danland: '0px', Prism: '0.30000001192092896px', Traum: '0px' },
+  'theme.font.letter-spacing.subtitle 2.high': {
     Danland: '-0.10000000149011612px',
     Prism: '0.30000001192092896px',
     Traum: '-0.10000000149011612px'
   },
-  'theme.theme.font.letter-spacing.subtitle 2.regular': { Danland: '0px', Prism: '0.30000001192092896px', Traum: '0px' },
-  'theme.theme.font.line-height.button': { Danland: '24px', Prism: '24px', Traum: '24px' },
-  'theme.theme.font.line-height.caption': { Danland: '16px', Prism: '16px', Traum: '16px' },
-  'theme.theme.font.line-height.h1': { Danland: '72px', Prism: '86px', Traum: '72px' },
-  'theme.theme.font.line-height.h2': { Danland: '60px', Prism: '69px', Traum: '60px' },
-  'theme.theme.font.line-height.h3': { Danland: '48px', Prism: '55px', Traum: '48px' },
-  'theme.theme.font.line-height.h4': { Danland: '40px', Prism: '44px', Traum: '40px' },
-  'theme.theme.font.line-height.h5': { Danland: '30px', Prism: '35px', Traum: '30px' },
-  'theme.theme.font.line-height.h6': { Danland: '28px', Prism: '28px', Traum: '28px' },
-  'theme.theme.font.line-height.micro': { Danland: '12px', Prism: '12px', Traum: '12px' },
-  'theme.theme.font.line-height.overline': { Danland: '16px', Prism: '16px', Traum: '16px' },
-  'theme.theme.font.line-height.subtitle 1': { Danland: '24px', Prism: '24px', Traum: '24px' },
-  'theme.theme.font.line-height.subtitle 2': { Danland: '22px', Prism: '22px', Traum: '22px' },
-  'theme.theme.font.size.button': { Danland: '14px', Prism: '14px', Traum: '14px' },
-  'theme.theme.font.size.caption': { Danland: '12px', Prism: '12px', Traum: '12px' },
-  'theme.theme.font.size.h1': { Danland: '69px', Prism: '69px', Traum: '69px' },
-  'theme.theme.font.size.h2': { Danland: '50px', Prism: '55px', Traum: '50px' },
-  'theme.theme.font.size.h3': { Danland: '40px', Prism: '44px', Traum: '40px' },
-  'theme.theme.font.size.h4': { Danland: '32px', Prism: '35px', Traum: '32px' },
-  'theme.theme.font.size.h5': { Danland: '25px', Prism: '28px', Traum: '25px' },
-  'theme.theme.font.size.h6': { Danland: '20px', Prism: '22px', Traum: '20px' },
-  'theme.theme.font.size.micro': { Danland: '10px', Prism: '10px', Traum: '10px' },
-  'theme.theme.font.size.overline': { Danland: '11px', Prism: '11px', Traum: '11px' },
-  'theme.theme.font.size.subtitle 1': { Danland: '16px', Prism: '16px', Traum: '16px' },
-  'theme.theme.font.size.subtitle 2': { Danland: '14px', Prism: '14px', Traum: '14px' },
-  'theme.theme.font.weight.high': { Danland: '700px', Prism: '600px', Traum: '400px' },
-  'theme.theme.font.weight.medium': { Danland: '500px', Prism: '500px', Traum: '600px' },
-  'theme.theme.font.weight.regular': { Danland: '400px', Prism: '400px', Traum: '400px' },
-  'theme.theme.size.border.radius.xl': { Danland: '24px', Prism: '0px', Traum: '24px' },
-  'numbers.dimension.fixed.300': { desktop: '24px', mobile: '24px' },
-  'theme.theme.size.border.radius.xs': { Danland: '4px', Prism: '0px', Traum: '4px' },
-  'numbers.dimension.fixed.50': { desktop: '4px', mobile: '4px' },
-  'theme.theme.size.border.radius.xxl': { Danland: '32px', Prism: '0px', Traum: '32px' },
-  'numbers.dimension.fixed.400': { desktop: '32px', mobile: '32px' },
-  'theme.theme.size.border.radius.pill': { Danland: '144px', Prism: '128px', Traum: '128px' },
-  'numbers.dimension.scale.1600': { desktop: '144px', mobile: '128px' },
-  'theme.theme.size.icon.lg': { Danland: '40px', Prism: '32px', Traum: '32px' },
-  'numbers.dimension.scale.400': { desktop: '40px', mobile: '32px' },
-  'theme.theme.size.icon.md': { Danland: '32px', Prism: '24px', Traum: '24px' },
-  'numbers.dimension.scale.300': { desktop: '32px', mobile: '24px' },
-  'theme.theme.size.icon.sm': { Danland: '24px', Prism: '16px', Traum: '16px' },
-  'numbers.dimension.scale.200': { desktop: '24px', mobile: '16px' },
-  'theme.theme.screen.space.default': { Danland: '16px', Prism: '24px', Traum: '8px' },
-  'density.space.md.1': { comfortable: '24px', dense: '24px', tight: '8px' },
-  'density.space.sm.5': { comfortable: '16px', dense: '16px', tight: '8px' },
-  'numbers.dimension.scale.150': { desktop: '16px', mobile: '12px' },
-  'theme.theme.screen.space.optical': { Danland: '8px', Prism: '16px', Traum: '2px' },
-  'density.space.sm.3': { comfortable: '8px', dense: '8px', tight: '2px' },
-  'numbers.dimension.scale.50': { desktop: '8px', mobile: '4px' },
-  'numbers.dimension.fixed.25': { desktop: '2px', mobile: '2px' },
-  'theme.theme.space.fixed.md.1': { Danland: '24px', Prism: '24px', Traum: '24px' },
-  'theme.theme.space.fixed.md.2': { Danland: '32px', Prism: '32px', Traum: '32px' },
-  'theme.theme.space.fixed.md.3': { Danland: '40px', Prism: '40px', Traum: '40px' },
-  'numbers.dimension.fixed.500': { desktop: '40px', mobile: '40px' },
-  'theme.theme.space.fixed.md.4': { Danland: '48px', Prism: '48px', Traum: '48px' },
-  'numbers.dimension.fixed.600': { desktop: '48px', mobile: '48px' },
-  'theme.theme.space.fixed.sm.1': { Danland: '2px', Prism: '2px', Traum: '2px' },
-  'theme.theme.space.fixed.sm.2': { Danland: '4px', Prism: '4px', Traum: '4px' },
-  'theme.theme.space.fixed.sm.3': { Danland: '8px', Prism: '8px', Traum: '8px' },
-  'theme.theme.space.fixed.sm.4': { Danland: '12px', Prism: '12px', Traum: '12px' },
-  'theme.theme.space.fixed.sm.5': { Danland: '16px', Prism: '16px', Traum: '16px' },
-  'theme.theme.space.scale.lg.1': { Danland: '64px', Prism: '64px', Traum: '48px' },
-  'density.space.lg.1': { comfortable: '64px', dense: '64px', tight: '48px' },
-  'numbers.dimension.scale.700': { desktop: '64px', mobile: '56px' },
-  'numbers.dimension.scale.600': { desktop: '56px', mobile: '48px' },
-  'numbers.dimension.scale.800': { desktop: '72px', mobile: '64px' },
-  'theme.theme.space.scale.lg.2': { Danland: '72px', Prism: '72px', Traum: '56px' },
-  'density.space.lg.2': { comfortable: '72px', dense: '72px', tight: '56px' },
-  'numbers.dimension.scale.900': { desktop: '80px', mobile: '72px' },
-  'theme.theme.space.scale.lg.3': { Danland: '80px', Prism: '80px', Traum: '64px' },
-  'density.space.lg.3': { comfortable: '80px', dense: '80px', tight: '64px' },
-  'numbers.dimension.scale.1000': { desktop: '88px', mobile: '80px' },
-  'theme.theme.space.scale.lg.4': { Danland: '88px', Prism: '88px', Traum: '72px' },
-  'density.space.lg.4': { comfortable: '88px', dense: '88px', tight: '72px' },
-  'numbers.dimension.scale.1100': { desktop: '96px', mobile: '88px' },
-  'theme.theme.space.scale.lg.5': { Danland: '96px', Prism: '96px', Traum: '80px' },
-  'density.space.lg.5': { comfortable: '96px', dense: '96px', tight: '80px' },
-  'numbers.dimension.scale.1200': { desktop: '112px', mobile: '96px' },
-  'theme.theme.space.scale.md.1': { Danland: '24px', Prism: '24px', Traum: '8px' },
-  'theme.theme.space.scale.md.2': { Danland: '32px', Prism: '32px', Traum: '16px' },
-  'density.space.md.2': { comfortable: '32px', dense: '32px', tight: '16px' },
-  'theme.theme.space.scale.md.3': { Danland: '40px', Prism: '40px', Traum: '24px' },
-  'density.space.md.3': { comfortable: '40px', dense: '40px', tight: '24px' },
-  'numbers.dimension.scale.500': { desktop: '48px', mobile: '40px' },
-  'theme.theme.space.scale.md.4': { Danland: '48px', Prism: '48px', Traum: '32px' },
-  'density.space.md.4': { comfortable: '48px', dense: '48px', tight: '32px' },
-  'theme.theme.space.scale.md.5': { Danland: '56px', Prism: '56px', Traum: '40px' },
-  'density.space.md.5': { comfortable: '56px', dense: '56px', tight: '40px' },
-  'theme.theme.space.scale.sm.1': { Danland: '0px', Prism: '2px', Traum: '0px' },
-  'density.space.sm.1': { comfortable: '2px', dense: '0px', tight: '0px' },
-  'theme.theme.space.scale.sm.2': { Danland: '2px', Prism: '4px', Traum: '0px' },
-  'density.space.sm.2': { comfortable: '4px', dense: '2px', tight: '0px' },
-  'theme.theme.space.scale.sm.3': { Danland: '8px', Prism: '8px', Traum: '2px' },
-  'theme.theme.space.scale.sm.4': { Danland: '8px', Prism: '12px', Traum: '4px' },
-  'density.space.sm.4': { comfortable: '12px', dense: '8px', tight: '4px' },
-  'theme.theme.space.scale.sm.5': { Danland: '16px', Prism: '16px', Traum: '8px' },
-  'numbers.dimension.scale.100': { desktop: '12px', mobile: '8px' },
-  'numbers.dimension.scale.1400': { desktop: '128px', mobile: '112px' },
-  'action.button.color.background.neutral': {
-    disabled: 'rgb(51, 51, 51)',
-    hover: 'rgb(245, 245, 245)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.background.neutral.low': {
-    Danland: 'rgb(51, 51, 51)',
-    Prism: 'rgb(245, 245, 245)',
-    Traum: 'rgb(245, 245, 245)'
-  },
-  'theme.theme.colour.background.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'colours.asphalt.1': { dark: 'rgb(51, 51, 51)', light: 'rgb(245, 245, 245)' },
-  'colours.asphalt.invert': { dark: 'rgb(40, 40, 40)', light: 'rgb(255, 255, 255)' },
-  'action.button.color.background.on-primary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.background.brand.on-primary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.background.neutral.low-alt': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
-  'colours.agnostic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
-  'colours.asphalt.2': { dark: 'rgb(69, 69, 69)', light: 'rgb(211, 211, 211)' },
-  'action.button.color.background.on-secondary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.background.brand.on-secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.background.primary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(4, 92, 141)',
-    normal: 'rgb(142, 103, 48)'
-  },
-  'theme.theme.colour.background.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'colours.violet.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(142, 103, 48)' },
-  'colours.aegean.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(4, 92, 141)' },
-  'action.button.color.background.secondary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.background.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'colours.asphalt.18': { dark: 'rgb(255, 255, 255)', light: 'rgb(40, 40, 40)' },
-  'action.button.color.background.tertiary': {
-    disabled: 'rgb(51, 51, 51)',
-    hover: 'rgb(245, 245, 245)',
-    normal: 'rgb(245, 245, 245)'
-  },
-  'action.button.color.icon.with-underlined': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.icon.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.icon.neutral.low': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'colours.asphalt.3': { dark: 'rgb(82, 82, 82)', light: 'rgb(181, 181, 181)' },
-  'action.button.color.icon.invert-on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(33, 33, 33)'
-  },
-  'theme.theme.colour.text.brand.on-primary': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'theme.theme.colour.icon.brand.invert-on-primary': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'theme.theme.colour.text.neutral.medium': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
-  'colours.agnostic.black': { dark: 'rgb(33, 33, 33)', light: 'rgb(33, 33, 33)' },
-  'colours.asphalt.5': { dark: 'rgb(140, 140, 140)', light: 'rgb(111, 111, 111)' },
-  'action.button.color.icon.invert-on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.text.brand.on-secondary': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.icon.brand.invert-on-secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.icon.on-neutral': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.icon.on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.icon.brand.on-primary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.icon.neutral.medium': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
-  'action.button.color.icon.on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.icon.brand.on-secondary': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.icon.on-tertiary': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.icon.with-hyperlink': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(11, 117, 176)',
-    normal: 'rgb(84, 114, 138)'
-  },
-  'theme.theme.colour.icon.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'colours.sky.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(84, 114, 138)' },
-  'colours.aegean.5': { dark: 'rgb(89, 155, 222)', light: 'rgb(11, 117, 176)' },
-  'action.button.color.text.hyperlink': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(11, 117, 176)',
-    normal: 'rgb(84, 114, 138)'
-  },
-  'theme.theme.colour.text.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'theme.theme.colour.text.neutral.low': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'action.button.color.text.invert-on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.text.brand.invert-on-primary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.text.invert-on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(255, 255, 255)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.text.brand.invert-on-secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.text.on-neutral': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.text.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.text.on-primary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.text.on-secondary': {
-    disabled: 'rgb(140, 140, 140)',
-    hover: 'rgb(33, 33, 33)',
-    normal: 'rgb(255, 255, 255)'
-  },
-  'action.button.color.text.on-tertiary': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.text.underlined': {
-    disabled: 'rgb(82, 82, 82)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'action.button.color.border.tertiary': {
-    disabled: 'rgb(69, 69, 69)',
-    hover: 'rgb(40, 40, 40)',
-    normal: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.border.neutral.high': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.border.neutral.low': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
-  'colours.asphalt.7': { dark: 'rgb(179, 179, 179)', light: 'rgb(77, 77, 77)' },
-  'colours.berry.5': { dark: 'rgb(232, 23, 58)', light: 'rgb(203, 16, 47)' },
-  'colours.crimson.1': { dark: 'rgb(51, 41, 43)', light: 'rgb(251, 246, 247)' },
-  'colours.crimson.5': { dark: 'rgb(192, 142, 151)', light: 'rgb(160, 90, 102)' },
-  'colours.crimson.7': { dark: 'rgb(213, 164, 172)', light: 'rgb(141, 65, 78)' },
-  'colours.emerald.1': { dark: 'rgb(34, 40, 39)', light: 'rgb(244, 250, 249)' },
-  'colours.emerald.5': { dark: 'rgb(113, 160, 148)', light: 'rgb(79, 118, 108)' },
-  'colours.emerald.7': { dark: 'rgb(114, 194, 172)', light: 'rgb(59, 96, 86)' },
-  'colours.firebrick.5': { dark: 'rgb(204, 51, 51)', light: 'rgb(204, 51, 51)' },
-  'colours.gold.1': { dark: 'rgb(255, 209, 0)', light: 'rgb(253, 196, 0)' },
-  'colours.violet.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(251, 249, 253)' },
-  'colours.violet.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(142, 103, 48)' },
-  'colours.aegean.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(238, 248, 254)' },
-  'colours.amber.1': { dark: 'rgb(51, 48, 41)', light: 'rgb(251, 249, 247)' },
-  'colours.amber.2': { dark: 'rgb(241, 170, 16)', light: 'rgb(205, 179, 154)' },
-  'colours.amber.5': { dark: 'rgb(192, 156, 77)', light: 'rgb(148, 110, 63)' },
-  'colours.amber.7': { dark: 'rgb(214, 174, 86)', light: 'rgb(118, 87, 51)' },
-  'colours.lavender.1': { dark: 'rgb(49, 45, 56)', light: 'rgb(249, 245, 255)' },
-  'colours.lavender.5': { dark: 'rgb(175, 125, 255)', light: 'rgb(128, 85, 195)' },
-  'colours.lavender.7': { dark: 'rgb(200, 163, 255)', light: 'rgb(107, 68, 165)' },
-  'colours.lime.2': { dark: 'rgb(23, 210, 134)', light: 'rgb(23, 210, 134)' },
-  'colours.rust.1': { dark: 'rgb(31, 21, 13)', light: 'rgb(255, 247, 236)' },
-  'colours.rust.5': { dark: 'rgb(254, 169, 95)', light: 'rgb(176, 96, 0)' },
-  'colours.rust.7': { dark: 'rgb(255, 221, 189)', light: 'rgb(134, 73, 0)' },
-  'colours.screen.1': { dark: 'rgb(29, 29, 29)', light: 'rgb(255, 255, 255)' },
-  'colours.screen.2': { dark: 'rgb(29, 29, 29)', light: 'rgb(245, 245, 245)' },
-  'colours.sky.1': { dark: 'rgb(45, 50, 56)', light: 'rgb(242, 246, 250)' },
-  'colours.sky.7': { dark: 'rgb(112, 184, 255)', light: 'rgb(60, 92, 119)' },
-  'colours.teal.1': { dark: 'rgb(1, 50, 50)', light: 'rgb(225, 255, 255)' },
-  'colours.teal.5': { dark: 'rgb(0, 169, 169)', light: 'rgb(0, 123, 123)' },
-  'colours.teal.7': { dark: 'rgb(0, 199, 199)', light: 'rgb(0, 99, 99)' },
-  'feedback.feedback.button.color.text.alert.on-secondary': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.colour.text.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.colour.text.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.button.color.text.alert.on-primary': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
-  'theme.theme.colour.text.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.colour.text.alert.low-alt': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'feedback.feedback.button.color.text.info.on-primary': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
-  'theme.theme.colour.text.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'feedback.feedback.button.color.text.info.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.colour.text.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.colour.text.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.button.color.text.negative.on-primary': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
-  'theme.theme.colour.text.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.colour.text.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'feedback.feedback.button.color.text.negative.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.colour.text.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.button.color.text.premium.on-primary': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
-  'theme.theme.colour.text.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.colour.text.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'feedback.feedback.button.color.text.premium.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.colour.text.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.button.color.text.neutral.on-primary': { high: 'rgb(255, 255, 255)', low: 'rgb(255, 255, 255)' },
-  'feedback.feedback.button.color.text.neutral.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.button.color.text.positive.on-primary': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
-  'theme.theme.colour.text.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.colour.text.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'feedback.feedback.button.color.text.positive.on-secondary': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.colour.text.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.button.color.background.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.colour.background.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.button.color.background.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'theme.theme.colour.background.neutral.high-alt': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'feedback.feedback.button.color.background.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.colour.background.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.button.color.background.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.colour.background.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.button.color.background.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.colour.background.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.colour.background.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.button.color.background.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.colour.background.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'feedback.feedback.button.color.border.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.colour.border.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.colour.border.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.button.color.border.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.colour.border.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.colour.border.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.button.color.border.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.colour.border.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.button.color.border.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.button.color.border.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.colour.border.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.button.color.border.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.colour.border.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.color.background.alert': { high: 'rgb(241, 170, 16)', low: 'rgb(251, 249, 247)' },
-  'theme.theme.colour.background.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.colour.background.alert.medium': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'feedback.feedback.color.background.info': { high: 'rgb(89, 155, 222)', low: 'rgb(242, 246, 250)' },
-  'theme.theme.colour.background.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'theme.theme.colour.background.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'feedback.feedback.color.background.negative': { high: 'rgb(192, 142, 151)', low: 'rgb(251, 246, 247)' },
-  'theme.theme.colour.background.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.colour.background.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'feedback.feedback.color.background.positive': { high: 'rgb(113, 160, 148)', low: 'rgb(244, 250, 249)' },
-  'theme.theme.colour.background.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.colour.background.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'feedback.feedback.color.background.premium': { high: 'rgb(175, 125, 255)', low: 'rgb(249, 245, 255)' },
-  'theme.theme.colour.background.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.colour.background.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'feedback.feedback.color.background.neutral.invert': { high: 'rgb(179, 179, 179)', low: 'rgb(255, 255, 255)' },
-  'theme.theme.colour.background.neutral.high': {
-    Danland: 'rgb(179, 179, 179)',
-    Prism: 'rgb(77, 77, 77)',
-    Traum: 'rgb(77, 77, 77)'
-  },
-  'feedback.feedback.color.background.neutral.regular': { high: 'rgb(179, 179, 179)', low: 'rgb(245, 245, 245)' },
-  'feedback.feedback.color.icon.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'theme.theme.colour.icon.alert.high': {
-    Danland: 'rgb(214, 174, 86)',
-    Prism: 'rgb(118, 87, 51)',
-    Traum: 'rgb(118, 87, 51)'
-  },
-  'theme.theme.colour.icon.agnostic.black': {
-    Danland: 'rgb(33, 33, 33)',
-    Prism: 'rgb(33, 33, 33)',
-    Traum: 'rgb(33, 33, 33)'
-  },
-  'feedback.feedback.color.icon.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'theme.theme.colour.icon.info.high': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(60, 92, 119)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.colour.icon.neutral.invert': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'feedback.feedback.color.icon.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'theme.theme.colour.icon.negative.high': {
-    Danland: 'rgb(213, 164, 172)',
-    Prism: 'rgb(141, 65, 78)',
-    Traum: 'rgb(141, 65, 78)'
-  },
-  'feedback.feedback.color.icon.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.color.icon.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'theme.theme.colour.icon.positive.high': {
-    Danland: 'rgb(114, 194, 172)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(59, 96, 86)'
-  },
-  'feedback.feedback.color.icon.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.colour.icon.premium.high': {
-    Danland: 'rgb(200, 163, 255)',
-    Prism: 'rgb(107, 68, 165)',
-    Traum: 'rgb(107, 68, 165)'
-  },
-  'feedback.feedback.color.text.alert': { high: 'rgb(33, 33, 33)', low: 'rgb(118, 87, 51)' },
-  'feedback.feedback.color.text.info': { high: 'rgb(40, 40, 40)', low: 'rgb(60, 92, 119)' },
-  'feedback.feedback.color.text.negative': { high: 'rgb(40, 40, 40)', low: 'rgb(141, 65, 78)' },
-  'feedback.feedback.color.text.neutral': { high: 'rgb(40, 40, 40)', low: 'rgb(40, 40, 40)' },
-  'feedback.feedback.color.text.positive': { high: 'rgb(40, 40, 40)', low: 'rgb(59, 96, 86)' },
-  'feedback.feedback.color.text.premium': { high: 'rgb(40, 40, 40)', low: 'rgb(107, 68, 165)' },
-  'theme.theme.colour.text.alert.medium': {
-    Danland: 'rgb(192, 156, 77)',
-    Prism: 'rgb(148, 110, 63)',
-    Traum: 'rgb(148, 110, 63)'
-  },
-  'theme.theme.colour.text.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(253, 196, 0)'
-  },
-  'theme.theme.colour.text.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.text.offer.on-high': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.text.offer.on-low': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
-  'theme.theme.colour.text.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.background.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.background.neutral.medium': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'theme.theme.colour.background.neutral.medium-alt': {
-    Danland: 'rgb(140, 140, 140)',
-    Prism: 'rgb(111, 111, 111)',
-    Traum: 'rgb(111, 111, 111)'
-  },
-  'theme.theme.colour.background.offer.high': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
-  'theme.theme.colour.background.offer.low': {
-    Danland: 'rgb(31, 21, 13)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(255, 247, 236)'
-  },
-  'theme.theme.colour.border.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.border.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.colour.border.alert.medium': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'theme.theme.colour.border.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.colour.border.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.border.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'theme.theme.colour.border.info.medium': {
-    Danland: 'rgb(89, 155, 222)',
-    Prism: 'rgb(84, 114, 138)',
-    Traum: 'rgb(11, 117, 176)'
-  },
-  'theme.theme.colour.border.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.colour.border.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'theme.theme.colour.border.neutral.medium': {
-    Danland: 'rgb(82, 82, 82)',
-    Prism: 'rgb(181, 181, 181)',
-    Traum: 'rgb(181, 181, 181)'
-  },
-  'theme.theme.colour.border.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.colour.border.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'theme.theme.colour.border.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.colour.border.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'theme.theme.colour.icon.brand.primary': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(142, 103, 48)',
-    Traum: 'rgb(253, 196, 0)'
-  },
-  'theme.theme.colour.icon.brand.secondary': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
-  'theme.theme.colour.icon.info.low': {
-    Danland: 'rgb(45, 50, 56)',
-    Prism: 'rgb(242, 246, 250)',
-    Traum: 'rgb(238, 248, 254)'
-  },
-  'theme.theme.colour.icon.negative.low': {
-    Danland: 'rgb(51, 41, 43)',
-    Prism: 'rgb(251, 246, 247)',
-    Traum: 'rgb(251, 246, 247)'
-  },
-  'theme.theme.colour.icon.negative.medium': {
-    Danland: 'rgb(192, 142, 151)',
-    Prism: 'rgb(160, 90, 102)',
-    Traum: 'rgb(160, 90, 102)'
-  },
-  'theme.theme.colour.icon.offer.high': {
-    Danland: 'rgb(255, 221, 189)',
-    Prism: 'rgb(59, 96, 86)',
-    Traum: 'rgb(134, 73, 0)'
-  },
-  'theme.theme.colour.icon.offer.low': {
-    Danland: 'rgb(31, 21, 13)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(255, 247, 236)'
-  },
-  'theme.theme.colour.icon.offer.medium': {
-    Danland: 'rgb(254, 169, 95)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(176, 96, 0)'
-  },
-  'theme.theme.colour.icon.rating.filled': {
-    Danland: 'rgb(112, 184, 255)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(4, 92, 141)'
-  },
-  'theme.theme.colour.icon.rating.unfilled': {
-    Danland: 'rgb(69, 69, 69)',
-    Prism: 'rgb(211, 211, 211)',
-    Traum: 'rgb(211, 211, 211)'
-  },
-  'theme.theme.colour.icon.agnostic.white': {
-    Danland: 'rgb(255, 255, 255)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.theme.colour.icon.alert.low': {
-    Danland: 'rgb(51, 48, 41)',
-    Prism: 'rgb(251, 249, 247)',
-    Traum: 'rgb(251, 249, 247)'
-  },
-  'theme.theme.colour.icon.alert.low-alt': {
-    Danland: 'rgb(241, 170, 16)',
-    Prism: 'rgb(205, 179, 154)',
-    Traum: 'rgb(205, 179, 154)'
-  },
-  'theme.theme.colour.icon.alert.medium': {
-    Danland: 'rgb(192, 156, 77)',
-    Prism: 'rgb(148, 110, 63)',
-    Traum: 'rgb(148, 110, 63)'
-  },
-  'theme.theme.colour.icon.positive.low': {
-    Danland: 'rgb(34, 40, 39)',
-    Prism: 'rgb(244, 250, 249)',
-    Traum: 'rgb(244, 250, 249)'
-  },
-  'theme.theme.colour.icon.positive.medium': {
-    Danland: 'rgb(113, 160, 148)',
-    Prism: 'rgb(79, 118, 108)',
-    Traum: 'rgb(79, 118, 108)'
-  },
-  'theme.theme.colour.icon.premium.low': {
-    Danland: 'rgb(49, 45, 56)',
-    Prism: 'rgb(249, 245, 255)',
-    Traum: 'rgb(249, 245, 255)'
-  },
-  'theme.theme.colour.icon.premium.medium': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(128, 85, 195)',
-    Traum: 'rgb(128, 85, 195)'
-  },
-  'theme.theme.screen.colour.alt': {
-    Danland: 'rgb(29, 29, 29)',
-    Prism: 'rgb(245, 245, 245)',
-    Traum: 'rgb(245, 245, 245)'
-  },
-  'theme.theme.screen.colour.default': {
-    Danland: 'rgb(29, 29, 29)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  }
+  'theme.font.letter-spacing.subtitle 2.regular': { Danland: '0px', Prism: '0.30000001192092896px', Traum: '0px' },
+  'theme.font.line-height.button': { Danland: '24px', Prism: '24px', Traum: '24px' },
+  'theme.font.line-height.caption': { Danland: '16px', Prism: '16px', Traum: '16px' },
+  'theme.font.line-height.h1': { Danland: '72px', Prism: '86px', Traum: '72px' },
+  'theme.font.line-height.h2': { Danland: '60px', Prism: '69px', Traum: '60px' },
+  'theme.font.line-height.h3': { Danland: '48px', Prism: '55px', Traum: '48px' },
+  'theme.font.line-height.h4': { Danland: '40px', Prism: '44px', Traum: '40px' },
+  'theme.font.line-height.h5': { Danland: '30px', Prism: '35px', Traum: '30px' },
+  'theme.font.line-height.h6': { Danland: '28px', Prism: '28px', Traum: '28px' },
+  'theme.font.line-height.micro': { Danland: '12px', Prism: '12px', Traum: '12px' },
+  'theme.font.line-height.overline': { Danland: '16px', Prism: '16px', Traum: '16px' },
+  'theme.font.line-height.subtitle 1': { Danland: '24px', Prism: '24px', Traum: '24px' },
+  'theme.font.line-height.subtitle 2': { Danland: '22px', Prism: '22px', Traum: '22px' },
+  'theme.font.size.button': { Danland: '14px', Prism: '14px', Traum: '14px' },
+  'theme.font.size.caption': { Danland: '12px', Prism: '12px', Traum: '12px' },
+  'theme.font.size.h1': { Danland: '69px', Prism: '69px', Traum: '69px' },
+  'theme.font.size.h2': { Danland: '50px', Prism: '55px', Traum: '50px' },
+  'theme.font.size.h3': { Danland: '40px', Prism: '44px', Traum: '40px' },
+  'theme.font.size.h4': { Danland: '32px', Prism: '35px', Traum: '32px' },
+  'theme.font.size.h5': { Danland: '25px', Prism: '28px', Traum: '25px' },
+  'theme.font.size.h6': { Danland: '20px', Prism: '22px', Traum: '20px' },
+  'theme.font.size.micro': { Danland: '10px', Prism: '10px', Traum: '10px' },
+  'theme.font.size.overline': { Danland: '11px', Prism: '11px', Traum: '11px' },
+  'theme.font.size.subtitle 1': { Danland: '16px', Prism: '16px', Traum: '16px' },
+  'theme.font.size.subtitle 2': { Danland: '14px', Prism: '14px', Traum: '14px' },
+  'theme.font.weight.high': { Danland: '700px', Prism: '600px', Traum: '600px' },
+  'theme.font.weight.medium': { Danland: '500px', Prism: '500px', Traum: '600px' },
+  'theme.font.weight.regular': { Danland: '400px', Prism: '400px', Traum: '400px' },
+  'theme.icon.size.lg': { Danland: '24px', Prism: '32px', Traum: '16px' },
+  'theme.icon.size.md': { Danland: '16px', Prism: '24px', Traum: '8px' },
+  'theme.icon.size.sm': { Danland: '12px', Prism: '16px', Traum: '8px' },
+  'theme.screen.space.default': { Danland: '24px', Prism: '24px', Traum: '16px' },
+  'theme.screen.space.optical': { Danland: '12px', Prism: '16px', Traum: '8px' },
+  'theme.chip.size.border.width': { Danland: '1px', Prism: '1px', Traum: '1px' },
+  'theme.chip.size.border.radius.lg': { Danland: '144px', Prism: '0px', Traum: '128px' },
+  'theme.chip.size.border.radius.md': { Danland: '144px', Prism: '0px', Traum: '128px' },
+  'theme.chip.size.border.radius.sm': { Danland: '144px', Prism: '0px', Traum: '128px' },
+  'theme.chip.size.interaction.border.width.hover': { Danland: '1px', Prism: '1px', Traum: '1px' },
+  'theme.chip.size.interaction.border.width.pressed': { Danland: '2px', Prism: '2px', Traum: '2px' },
+  'theme.size.border.radius.lg': { Danland: '16px', Prism: '0px', Traum: '12px' },
+  'theme.size.border.radius.md': { Danland: '12px', Prism: '0px', Traum: '8px' },
+  'theme.size.border.radius.pill': { Danland: '144px', Prism: '128px', Traum: '128px' },
+  'theme.size.border.radius.sm': { Danland: '8px', Prism: '0px', Traum: '4px' },
+  'theme.size.border.radius.xl': { Danland: '24px', Prism: '0px', Traum: '16px' },
+  'theme.size.border.radius.xs': { Danland: '4px', Prism: '0px', Traum: '2px' },
+  'theme.size.border.radius.xxl': { Danland: '32px', Prism: '0px', Traum: '24px' },
+  'theme.space.fixed.md.1': { Danland: '16px', Prism: '24px', Traum: '8px' },
+  'theme.space.fixed.md.2': { Danland: '24px', Prism: '32px', Traum: '16px' },
+  'theme.space.fixed.md.3': { Danland: '32px', Prism: '40px', Traum: '24px' },
+  'theme.space.fixed.md.4': { Danland: '40px', Prism: '48px', Traum: '32px' },
+  'theme.space.fixed.sm.1': { Danland: '0px', Prism: '2px', Traum: '0px' },
+  'theme.space.fixed.sm.2': { Danland: '2px', Prism: '4px', Traum: '0px' },
+  'theme.space.fixed.sm.3': { Danland: '4px', Prism: '8px', Traum: '2px' },
+  'theme.space.fixed.sm.4': { Danland: '8px', Prism: '12px', Traum: '4px' },
+  'theme.space.fixed.sm.5': { Danland: '12px', Prism: '16px', Traum: '8px' },
+  'theme.space.scale.lg.1': { Danland: '64px', Prism: '64px', Traum: '48px' },
+  'theme.space.scale.lg.2': { Danland: '72px', Prism: '72px', Traum: '56px' },
+  'theme.space.scale.lg.3': { Danland: '80px', Prism: '80px', Traum: '64px' },
+  'theme.space.scale.lg.4': { Danland: '88px', Prism: '88px', Traum: '72px' },
+  'theme.space.scale.lg.5': { Danland: '96px', Prism: '96px', Traum: '80px' },
+  'theme.space.scale.md.1': { Danland: '24px', Prism: '24px', Traum: '8px' },
+  'theme.space.scale.md.2': { Danland: '32px', Prism: '32px', Traum: '16px' },
+  'theme.space.scale.md.3': { Danland: '40px', Prism: '40px', Traum: '24px' },
+  'theme.space.scale.md.4': { Danland: '48px', Prism: '48px', Traum: '32px' },
+  'theme.space.scale.md.5': { Danland: '56px', Prism: '56px', Traum: '40px' },
+  'theme.space.scale.sm.3': { Danland: '4px', Prism: '8px', Traum: '2px' },
+  'theme.space.scale.sm.4': { Danland: '12px', Prism: '12px', Traum: '4px' },
+  'theme.space.scale.sm.5': { Danland: '16px', Prism: '16px', Traum: '8px' },
+  'theme.button.size.border.radius.lg': { Danland: '24px', Prism: '0px', Traum: '16px' },
+  'theme.button.size.border.radius.md': { Danland: '16px', Prism: '0px', Traum: '12px' },
+  'theme.button.size.border.radius.sm': { Danland: '12px', Prism: '0px', Traum: '8px' },
+  'theme.button.size.border.radius.xs': { Danland: '8px', Prism: '0px', Traum: '4px' },
+  'theme.button.size.border.width.active': { Danland: '1px', Prism: '1px', Traum: '1px' },
+  'theme.button.size.interaction.border.width.hover': { Danland: '2px', Prism: '2px', Traum: '2px' },
+  'theme.button.size.interaction.border.width.pressed': { Danland: '1px', Prism: '1px', Traum: '1px' }
 });
 
 /**
