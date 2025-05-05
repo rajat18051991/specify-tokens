@@ -3,6 +3,8 @@
 * To use this type you can do: `@type {import('path/to/myTokensFile').ColorPaths}`
 */
 export const colorPaths = /** @type {const} */ ([
+  'colour.achromatic.black',
+  'colour.achromatic.white',
   'colour.asphalt.50',
   'colour.asphalt.100',
   'colour.asphalt.200',
@@ -15,8 +17,6 @@ export const colorPaths = /** @type {const} */ ([
   'colour.asphalt.900',
   'colour.asphalt.950',
   'colour.asphalt.00',
-  'colour.achromatic.black',
-  'colour.achromatic.white',
   'colour.azure.50',
   'colour.azure.100',
   'colour.azure.200',
@@ -118,17 +118,6 @@ export const colorPaths = /** @type {const} */ ([
   'colour.sea.950',
   'theme.colour.agnostic.black',
   'theme.colour.agnostic.white',
-  'theme.colour.background.subtle.neutral.1',
-  'theme.colour.background.subtle.neutral.2',
-  'theme.colour.background.subtle.neutral.3',
-  'theme.colour.background.subtle.alert',
-  'theme.colour.background.subtle.info',
-  'theme.colour.background.subtle.negative',
-  'theme.colour.background.subtle.offer',
-  'theme.colour.background.subtle.positive',
-  'theme.colour.background.subtle.premium',
-  'theme.colour.background.subtle.brand.primary',
-  'theme.colour.background.subtle.brand.secondary',
   'theme.colour.background.intense.alert',
   'theme.colour.background.intense.info',
   'theme.colour.background.intense.negative',
@@ -142,17 +131,28 @@ export const colorPaths = /** @type {const} */ ([
   'theme.colour.background.intense.neutral.1',
   'theme.colour.background.intense.neutral.2',
   'theme.colour.background.intense.neutral.3',
+  'theme.colour.background.subtle.alert',
+  'theme.colour.background.subtle.info',
+  'theme.colour.background.subtle.negative',
+  'theme.colour.background.subtle.offer',
+  'theme.colour.background.subtle.positive',
+  'theme.colour.background.subtle.premium',
+  'theme.colour.background.subtle.brand.primary',
+  'theme.colour.background.subtle.brand.secondary',
+  'theme.colour.background.subtle.neutral.1',
+  'theme.colour.background.subtle.neutral.2',
+  'theme.colour.background.subtle.neutral.3',
   'theme.colour.background.moderate.neutral.1',
   'theme.colour.background.moderate.neutral.2',
   'theme.colour.background.moderate.neutral.3',
-  'theme.colour.border.intense.brand.primary',
-  'theme.colour.border.intense.brand.secondary',
   'theme.colour.border.intense.alert',
   'theme.colour.border.intense.info',
   'theme.colour.border.intense.negative',
   'theme.colour.border.intense.neutral',
   'theme.colour.border.intense.positive',
   'theme.colour.border.intense.premium',
+  'theme.colour.border.intense.brand.primary',
+  'theme.colour.border.intense.brand.secondary',
   'theme.colour.border.intense.on.intense.offer',
   'theme.colour.border.intense.on.intense.brand.primary',
   'theme.colour.border.intense.on.intense.brand.secondary',
@@ -165,8 +165,6 @@ export const colorPaths = /** @type {const} */ ([
   'theme.colour.border.subtle.neutral',
   'theme.colour.border.subtle.positive',
   'theme.colour.border.subtle.premium',
-  'theme.colour.text.intense.brand.primary',
-  'theme.colour.text.intense.brand.secondary',
   'theme.colour.text.intense.alert',
   'theme.colour.text.intense.info',
   'theme.colour.text.intense.negative',
@@ -174,6 +172,8 @@ export const colorPaths = /** @type {const} */ ([
   'theme.colour.text.intense.offer',
   'theme.colour.text.intense.positive',
   'theme.colour.text.intense.premium',
+  'theme.colour.text.intense.brand.primary',
+  'theme.colour.text.intense.brand.secondary',
   'theme.colour.text.intense.on.intense.offer',
   'theme.colour.text.intense.on.intense.brand.primary',
   'theme.colour.text.intense.on.intense.brand.secondary',
@@ -193,13 +193,13 @@ export const colorPaths = /** @type {const} */ ([
   'theme.colour.interaction.background.intense.positive.pressed',
   'theme.colour.interaction.background.intense.premium.hover',
   'theme.colour.interaction.background.intense.premium.pressed',
-  'theme.colour.interaction.background.intense.neutral.1.hover',
-  'theme.colour.interaction.background.intense.neutral.2.hover',
-  'theme.colour.interaction.background.intense.neutral.3.hover',
   'theme.colour.interaction.background.intense.brand.primary.hover',
   'theme.colour.interaction.background.intense.brand.primary.pressed',
   'theme.colour.interaction.background.intense.brand.secondary.hover',
   'theme.colour.interaction.background.intense.brand.secondary.pressed',
+  'theme.colour.interaction.background.intense.neutral.1.hover',
+  'theme.colour.interaction.background.intense.neutral.2.hover',
+  'theme.colour.interaction.background.intense.neutral.3.hover',
   'theme.colour.interaction.background.intense.invert.brand.primary.hover',
   'theme.colour.interaction.background.intense.invert.brand.primary.pressed',
   'theme.colour.interaction.background.intense.invert.brand.secondary.hover',
@@ -209,8 +209,10 @@ export const colorPaths = /** @type {const} */ ([
   'theme.colour.interaction.background.subtle.neutral.1.hover',
   'theme.colour.interaction.background.subtle.neutral.2.hover',
   'theme.colour.interaction.background.subtle.neutral.3.hover',
-  'theme.icon.colour.intense.brand.primary',
-  'theme.icon.colour.intense.brand.secondary',
+  'theme.hyperlink.colour.active',
+  'theme.hyperlink.colour.interaction.disabled',
+  'theme.hyperlink.colour.interaction.hover',
+  'theme.hyperlink.colour.interaction.visited',
   'theme.icon.colour.intense.alert',
   'theme.icon.colour.intense.info',
   'theme.icon.colour.intense.negative',
@@ -218,20 +220,18 @@ export const colorPaths = /** @type {const} */ ([
   'theme.icon.colour.intense.offer',
   'theme.icon.colour.intense.positive',
   'theme.icon.colour.intense.premium',
+  'theme.icon.colour.intense.brand.primary',
+  'theme.icon.colour.intense.brand.secondary',
   'theme.icon.colour.intense.rating.filled',
   'theme.icon.colour.intense.rating.outlined',
   'theme.icon.colour.intense.rating.unfilled',
   'theme.icon.colour.intense.on.intense.offer',
   'theme.icon.colour.intense.on.intense.brand.primary',
   'theme.icon.colour.intense.on.intense.brand.secondary',
-  'theme.icon.colour.intense.on.intense.brand.invert.secondary',
   'theme.icon.colour.intense.on.intense.brand.invert.primary',
+  'theme.icon.colour.intense.on.intense.brand.invert.secondary',
   'theme.icon.colour.moderate.neutral',
   'theme.icon.colour.subtle.neutral',
-  'theme.hyperlink.colour.active',
-  'theme.hyperlink.colour.interaction.disabled',
-  'theme.hyperlink.colour.interaction.hover',
-  'theme.hyperlink.colour.interaction.visited',
   'theme.screen.colour.alt',
   'theme.screen.colour.default',
   'theme.chip.colour.interaction.background.hover',
@@ -242,9 +242,18 @@ export const colorPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').DimensionPaths}`
 */
 export const dimensionPaths = /** @type {const} */ ([
-  'density.fixed.md.1',
-  'dimension.fixed.200',
+  'density.fixed.sm.1',
+  'dimension.fixed.0',
+  'dimension.fixed.25',
+  'density.fixed.sm.2',
+  'dimension.fixed.50',
+  'density.fixed.sm.3',
   'dimension.fixed.100',
+  'density.fixed.sm.4',
+  'dimension.fixed.150',
+  'density.fixed.sm.5',
+  'dimension.fixed.200',
+  'density.fixed.md.1',
   'dimension.fixed.300',
   'density.fixed.md.2',
   'dimension.fixed.400',
@@ -252,15 +261,6 @@ export const dimensionPaths = /** @type {const} */ ([
   'dimension.fixed.500',
   'density.fixed.md.4',
   'dimension.fixed.600',
-  'density.fixed.sm.1',
-  'dimension.fixed.0',
-  'dimension.fixed.25',
-  'density.fixed.sm.2',
-  'dimension.fixed.50',
-  'density.fixed.sm.3',
-  'density.fixed.sm.4',
-  'dimension.fixed.150',
-  'density.fixed.sm.5',
   'density.scale.lg.1',
   'dimension.scale.700',
   'dimension.scale.600',
@@ -384,6 +384,8 @@ export const dimensionPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').ColourPaths}`
 */
 export const colourPaths = /** @type {const} */ ([
+  'colour.achromatic.black',
+  'colour.achromatic.white',
   'colour.asphalt.50',
   'colour.asphalt.100',
   'colour.asphalt.200',
@@ -396,8 +398,6 @@ export const colourPaths = /** @type {const} */ ([
   'colour.asphalt.900',
   'colour.asphalt.950',
   'colour.asphalt.00',
-  'colour.achromatic.black',
-  'colour.achromatic.white',
   'colour.azure.50',
   'colour.azure.100',
   'colour.azure.200',
@@ -503,11 +503,11 @@ export const colourPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').DensityPaths}`
 */
 export const densityPaths = /** @type {const} */ ([
-  'density.fixed.md.1', 'density.fixed.md.2',
-  'density.fixed.md.3', 'density.fixed.md.4',
   'density.fixed.sm.1', 'density.fixed.sm.2',
   'density.fixed.sm.3', 'density.fixed.sm.4',
-  'density.fixed.sm.5', 'density.scale.lg.1',
+  'density.fixed.sm.5', 'density.fixed.md.1',
+  'density.fixed.md.2', 'density.fixed.md.3',
+  'density.fixed.md.4', 'density.scale.lg.1',
   'density.scale.lg.2', 'density.scale.lg.3',
   'density.scale.lg.4', 'density.scale.lg.5',
   'density.scale.md.1', 'density.scale.md.2',
@@ -520,11 +520,11 @@ export const densityPaths = /** @type {const} */ ([
 * To use this type you can do: `@type {import('path/to/myTokensFile').Dimension_Paths}`
 */
 export const dimension_Paths = /** @type {const} */ ([
-  'dimension.fixed.200',  'dimension.fixed.100',
+  'dimension.fixed.0',    'dimension.fixed.25',
+  'dimension.fixed.50',   'dimension.fixed.100',
+  'dimension.fixed.150',  'dimension.fixed.200',
   'dimension.fixed.300',  'dimension.fixed.400',
   'dimension.fixed.500',  'dimension.fixed.600',
-  'dimension.fixed.0',    'dimension.fixed.25',
-  'dimension.fixed.50',   'dimension.fixed.150',
   'dimension.scale.700',  'dimension.scale.600',
   'dimension.scale.800',  'dimension.scale.900',
   'dimension.scale.1000', 'dimension.scale.1100',
@@ -541,17 +541,6 @@ export const dimension_Paths = /** @type {const} */ ([
 export const themePaths = /** @type {const} */ ([
   'theme.colour.agnostic.black',
   'theme.colour.agnostic.white',
-  'theme.colour.background.subtle.neutral.1',
-  'theme.colour.background.subtle.neutral.2',
-  'theme.colour.background.subtle.neutral.3',
-  'theme.colour.background.subtle.alert',
-  'theme.colour.background.subtle.info',
-  'theme.colour.background.subtle.negative',
-  'theme.colour.background.subtle.offer',
-  'theme.colour.background.subtle.positive',
-  'theme.colour.background.subtle.premium',
-  'theme.colour.background.subtle.brand.primary',
-  'theme.colour.background.subtle.brand.secondary',
   'theme.colour.background.intense.alert',
   'theme.colour.background.intense.info',
   'theme.colour.background.intense.negative',
@@ -565,17 +554,28 @@ export const themePaths = /** @type {const} */ ([
   'theme.colour.background.intense.neutral.1',
   'theme.colour.background.intense.neutral.2',
   'theme.colour.background.intense.neutral.3',
+  'theme.colour.background.subtle.alert',
+  'theme.colour.background.subtle.info',
+  'theme.colour.background.subtle.negative',
+  'theme.colour.background.subtle.offer',
+  'theme.colour.background.subtle.positive',
+  'theme.colour.background.subtle.premium',
+  'theme.colour.background.subtle.brand.primary',
+  'theme.colour.background.subtle.brand.secondary',
+  'theme.colour.background.subtle.neutral.1',
+  'theme.colour.background.subtle.neutral.2',
+  'theme.colour.background.subtle.neutral.3',
   'theme.colour.background.moderate.neutral.1',
   'theme.colour.background.moderate.neutral.2',
   'theme.colour.background.moderate.neutral.3',
-  'theme.colour.border.intense.brand.primary',
-  'theme.colour.border.intense.brand.secondary',
   'theme.colour.border.intense.alert',
   'theme.colour.border.intense.info',
   'theme.colour.border.intense.negative',
   'theme.colour.border.intense.neutral',
   'theme.colour.border.intense.positive',
   'theme.colour.border.intense.premium',
+  'theme.colour.border.intense.brand.primary',
+  'theme.colour.border.intense.brand.secondary',
   'theme.colour.border.intense.on.intense.offer',
   'theme.colour.border.intense.on.intense.brand.primary',
   'theme.colour.border.intense.on.intense.brand.secondary',
@@ -588,8 +588,6 @@ export const themePaths = /** @type {const} */ ([
   'theme.colour.border.subtle.neutral',
   'theme.colour.border.subtle.positive',
   'theme.colour.border.subtle.premium',
-  'theme.colour.text.intense.brand.primary',
-  'theme.colour.text.intense.brand.secondary',
   'theme.colour.text.intense.alert',
   'theme.colour.text.intense.info',
   'theme.colour.text.intense.negative',
@@ -597,6 +595,8 @@ export const themePaths = /** @type {const} */ ([
   'theme.colour.text.intense.offer',
   'theme.colour.text.intense.positive',
   'theme.colour.text.intense.premium',
+  'theme.colour.text.intense.brand.primary',
+  'theme.colour.text.intense.brand.secondary',
   'theme.colour.text.intense.on.intense.offer',
   'theme.colour.text.intense.on.intense.brand.primary',
   'theme.colour.text.intense.on.intense.brand.secondary',
@@ -616,13 +616,13 @@ export const themePaths = /** @type {const} */ ([
   'theme.colour.interaction.background.intense.positive.pressed',
   'theme.colour.interaction.background.intense.premium.hover',
   'theme.colour.interaction.background.intense.premium.pressed',
-  'theme.colour.interaction.background.intense.neutral.1.hover',
-  'theme.colour.interaction.background.intense.neutral.2.hover',
-  'theme.colour.interaction.background.intense.neutral.3.hover',
   'theme.colour.interaction.background.intense.brand.primary.hover',
   'theme.colour.interaction.background.intense.brand.primary.pressed',
   'theme.colour.interaction.background.intense.brand.secondary.hover',
   'theme.colour.interaction.background.intense.brand.secondary.pressed',
+  'theme.colour.interaction.background.intense.neutral.1.hover',
+  'theme.colour.interaction.background.intense.neutral.2.hover',
+  'theme.colour.interaction.background.intense.neutral.3.hover',
   'theme.colour.interaction.background.intense.invert.brand.primary.hover',
   'theme.colour.interaction.background.intense.invert.brand.primary.pressed',
   'theme.colour.interaction.background.intense.invert.brand.secondary.hover',
@@ -674,8 +674,13 @@ export const themePaths = /** @type {const} */ ([
   'theme.font.weight.high',
   'theme.font.weight.medium',
   'theme.font.weight.regular',
-  'theme.icon.colour.intense.brand.primary',
-  'theme.icon.colour.intense.brand.secondary',
+  'theme.hyperlink.colour.active',
+  'theme.hyperlink.colour.interaction.disabled',
+  'theme.hyperlink.colour.interaction.hover',
+  'theme.hyperlink.colour.interaction.visited',
+  'theme.icon.size.lg',
+  'theme.icon.size.md',
+  'theme.icon.size.sm',
   'theme.icon.colour.intense.alert',
   'theme.icon.colour.intense.info',
   'theme.icon.colour.intense.negative',
@@ -683,23 +688,18 @@ export const themePaths = /** @type {const} */ ([
   'theme.icon.colour.intense.offer',
   'theme.icon.colour.intense.positive',
   'theme.icon.colour.intense.premium',
+  'theme.icon.colour.intense.brand.primary',
+  'theme.icon.colour.intense.brand.secondary',
   'theme.icon.colour.intense.rating.filled',
   'theme.icon.colour.intense.rating.outlined',
   'theme.icon.colour.intense.rating.unfilled',
   'theme.icon.colour.intense.on.intense.offer',
   'theme.icon.colour.intense.on.intense.brand.primary',
   'theme.icon.colour.intense.on.intense.brand.secondary',
-  'theme.icon.colour.intense.on.intense.brand.invert.secondary',
   'theme.icon.colour.intense.on.intense.brand.invert.primary',
+  'theme.icon.colour.intense.on.intense.brand.invert.secondary',
   'theme.icon.colour.moderate.neutral',
   'theme.icon.colour.subtle.neutral',
-  'theme.icon.size.lg',
-  'theme.icon.size.md',
-  'theme.icon.size.sm',
-  'theme.hyperlink.colour.active',
-  'theme.hyperlink.colour.interaction.disabled',
-  'theme.hyperlink.colour.interaction.hover',
-  'theme.hyperlink.colour.interaction.visited',
   'theme.screen.colour.alt',
   'theme.screen.colour.default',
   'theme.screen.space.default',
@@ -814,6 +814,8 @@ export const themeModes = /** @type {const} */ ([ 'Prism', 'Danland', 'Traum' ])
 * Use `getTokenByMode` to retrieve one.
 */
 export const tokens = /** @type {const} */ ({
+  'colour.achromatic.black': { dark: 'rgb(33, 33, 33)', light: 'rgb(33, 33, 33)' },
+  'colour.achromatic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
   'colour.asphalt.50': { dark: 'rgb(29, 29, 29)', light: 'rgb(246, 246, 246)' },
   'colour.asphalt.100': { dark: 'rgb(40, 40, 40)', light: 'rgb(238, 238, 238)' },
   'colour.asphalt.200': { dark: 'rgb(76, 76, 76)', light: 'rgb(213, 213, 213)' },
@@ -826,8 +828,6 @@ export const tokens = /** @type {const} */ ({
   'colour.asphalt.900': { dark: 'rgb(238, 238, 238)', light: 'rgb(40, 40, 40)' },
   'colour.asphalt.950': { dark: 'rgb(246, 246, 246)', light: 'rgb(29, 29, 29)' },
   'colour.asphalt.00': { dark: 'rgb(29, 29, 29)', light: 'rgb(255, 255, 255)' },
-  'colour.achromatic.black': { dark: 'rgb(33, 33, 33)', light: 'rgb(33, 33, 33)' },
-  'colour.achromatic.white': { dark: 'rgb(255, 255, 255)', light: 'rgb(255, 255, 255)' },
   'colour.azure.50': { dark: 'rgb(14, 30, 41)', light: 'rgb(241, 247, 250)' },
   'colour.azure.100': { dark: 'rgb(18, 41, 55)', light: 'rgb(234, 242, 248)' },
   'colour.azure.200': { dark: 'rgb(27, 60, 80)', light: 'rgb(202, 224, 237)' },
@@ -937,61 +937,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(255, 255, 255)',
     Traum: 'rgb(255, 255, 255)'
   },
-  'theme.colour.background.subtle.neutral.1': {
-    Danland: 'rgb(29, 29, 29)',
-    Prism: 'rgb(255, 255, 255)',
-    Traum: 'rgb(255, 255, 255)'
-  },
-  'theme.colour.background.subtle.neutral.2': {
-    Danland: 'rgb(29, 29, 29)',
-    Prism: 'rgb(246, 246, 246)',
-    Traum: 'rgb(246, 246, 246)'
-  },
-  'theme.colour.background.subtle.neutral.3': {
-    Danland: 'rgb(29, 29, 29)',
-    Prism: 'rgb(238, 238, 238)',
-    Traum: 'rgb(246, 246, 246)'
-  },
-  'theme.colour.background.subtle.alert': {
-    Danland: 'rgb(236, 230, 224)',
-    Prism: 'rgb(246, 240, 234)',
-    Traum: 'rgb(246, 240, 234)'
-  },
-  'theme.colour.background.subtle.info': {
-    Danland: 'rgb(4, 41, 63)',
-    Prism: 'rgb(234, 242, 248)',
-    Traum: 'rgb(234, 242, 248)'
-  },
-  'theme.colour.background.subtle.negative': {
-    Danland: 'rgb(57, 32, 36)',
-    Prism: 'rgb(246, 239, 241)',
-    Traum: 'rgb(246, 239, 241)'
-  },
-  'theme.colour.background.subtle.offer': {
-    Danland: 'rgb(55, 34, 10)',
-    Prism: 'rgb(234, 243, 241)',
-    Traum: 'rgb(234, 243, 241)'
-  },
-  'theme.colour.background.subtle.positive': {
-    Danland: 'rgb(25, 42, 38)',
-    Prism: 'rgb(234, 243, 241)',
-    Traum: 'rgb(234, 243, 241)'
-  },
-  'theme.colour.background.subtle.premium': {
-    Danland: 'rgb(233, 230, 237)',
-    Prism: 'rgb(242, 240, 245)',
-    Traum: 'rgb(242, 240, 245)'
-  },
-  'theme.colour.background.subtle.brand.primary': {
-    Danland: 'rgb(4, 41, 63)',
-    Prism: 'rgb(247, 240, 231)',
-    Traum: 'rgb(255, 241, 192)'
-  },
-  'theme.colour.background.subtle.brand.secondary': {
-    Danland: 'rgb(40, 40, 40)',
-    Prism: 'rgb(238, 238, 238)',
-    Traum: 'rgb(238, 238, 238)'
-  },
   'theme.colour.background.intense.alert': {
     Danland: 'rgb(192, 156, 77)',
     Prism: 'rgb(142, 99, 59)',
@@ -1057,6 +1002,61 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(40, 40, 40)',
     Traum: 'rgb(40, 40, 40)'
   },
+  'theme.colour.background.subtle.alert': {
+    Danland: 'rgb(236, 230, 224)',
+    Prism: 'rgb(246, 240, 234)',
+    Traum: 'rgb(246, 240, 234)'
+  },
+  'theme.colour.background.subtle.info': {
+    Danland: 'rgb(4, 41, 63)',
+    Prism: 'rgb(234, 242, 248)',
+    Traum: 'rgb(234, 242, 248)'
+  },
+  'theme.colour.background.subtle.negative': {
+    Danland: 'rgb(57, 32, 36)',
+    Prism: 'rgb(246, 239, 241)',
+    Traum: 'rgb(246, 239, 241)'
+  },
+  'theme.colour.background.subtle.offer': {
+    Danland: 'rgb(55, 34, 10)',
+    Prism: 'rgb(234, 243, 241)',
+    Traum: 'rgb(234, 243, 241)'
+  },
+  'theme.colour.background.subtle.positive': {
+    Danland: 'rgb(25, 42, 38)',
+    Prism: 'rgb(234, 243, 241)',
+    Traum: 'rgb(234, 243, 241)'
+  },
+  'theme.colour.background.subtle.premium': {
+    Danland: 'rgb(233, 230, 237)',
+    Prism: 'rgb(242, 240, 245)',
+    Traum: 'rgb(242, 240, 245)'
+  },
+  'theme.colour.background.subtle.brand.primary': {
+    Danland: 'rgb(4, 41, 63)',
+    Prism: 'rgb(247, 240, 231)',
+    Traum: 'rgb(255, 241, 192)'
+  },
+  'theme.colour.background.subtle.brand.secondary': {
+    Danland: 'rgb(40, 40, 40)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(238, 238, 238)'
+  },
+  'theme.colour.background.subtle.neutral.1': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(255, 255, 255)',
+    Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.colour.background.subtle.neutral.2': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(246, 246, 246)',
+    Traum: 'rgb(246, 246, 246)'
+  },
+  'theme.colour.background.subtle.neutral.3': {
+    Danland: 'rgb(29, 29, 29)',
+    Prism: 'rgb(238, 238, 238)',
+    Traum: 'rgb(246, 246, 246)'
+  },
   'theme.colour.background.moderate.neutral.1': {
     Danland: 'rgb(76, 76, 76)',
     Prism: 'rgb(213, 213, 213)',
@@ -1071,16 +1071,6 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(113, 113, 113)',
     Prism: 'rgb(165, 165, 165)',
     Traum: 'rgb(176, 176, 176)'
-  },
-  'theme.colour.border.intense.brand.primary': {
-    Danland: 'rgb(69, 179, 243)',
-    Prism: 'rgb(139, 101, 47)',
-    Traum: 'rgb(253, 196, 0)'
-  },
-  'theme.colour.border.intense.brand.secondary': {
-    Danland: 'rgb(238, 238, 238)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
   },
   'theme.colour.border.intense.alert': {
     Danland: 'rgb(192, 156, 77)',
@@ -1111,6 +1101,16 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(175, 125, 255)',
     Prism: 'rgb(119, 100, 143)',
     Traum: 'rgb(119, 100, 143)'
+  },
+  'theme.colour.border.intense.brand.primary': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(139, 101, 47)',
+    Traum: 'rgb(253, 196, 0)'
+  },
+  'theme.colour.border.intense.brand.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
   },
   'theme.colour.border.intense.on.intense.offer': {
     Danland: 'rgb(29, 29, 29)',
@@ -1172,16 +1172,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(224, 219, 230)',
     Traum: 'rgb(224, 219, 230)'
   },
-  'theme.colour.text.intense.brand.primary': {
-    Danland: 'rgb(69, 179, 243)',
-    Prism: 'rgb(139, 101, 47)',
-    Traum: 'rgb(134, 104, 0)'
-  },
-  'theme.colour.text.intense.brand.secondary': {
-    Danland: 'rgb(238, 238, 238)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
   'theme.colour.text.intense.alert': {
     Danland: 'rgb(192, 156, 77)',
     Prism: 'rgb(142, 99, 59)',
@@ -1216,6 +1206,16 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(175, 125, 255)',
     Prism: 'rgb(119, 100, 143)',
     Traum: 'rgb(119, 100, 143)'
+  },
+  'theme.colour.text.intense.brand.primary': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(139, 101, 47)',
+    Traum: 'rgb(134, 104, 0)'
+  },
+  'theme.colour.text.intense.brand.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
   },
   'theme.colour.text.intense.on.intense.offer': {
     Danland: 'rgb(29, 29, 29)',
@@ -1312,21 +1312,6 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(88, 74, 106)',
     Traum: 'rgb(144, 127, 166)'
   },
-  'theme.colour.interaction.background.intense.neutral.1.hover': {
-    Danland: 'rgb(139, 139, 139)',
-    Prism: 'rgb(139, 139, 139)',
-    Traum: 'rgb(139, 139, 139)'
-  },
-  'theme.colour.interaction.background.intense.neutral.2.hover': {
-    Danland: 'rgb(165, 165, 165)',
-    Prism: 'rgb(113, 113, 113)',
-    Traum: 'rgb(113, 113, 113)'
-  },
-  'theme.colour.interaction.background.intense.neutral.3.hover': {
-    Danland: 'rgb(213, 213, 213)',
-    Prism: 'rgb(76, 76, 76)',
-    Traum: 'rgb(76, 76, 76)'
-  },
   'theme.colour.interaction.background.intense.brand.primary.hover': {
     Danland: 'rgb(13, 141, 215)',
     Prism: 'rgb(178, 130, 72)',
@@ -1346,6 +1331,21 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(246, 246, 246)',
     Prism: 'rgb(29, 29, 29)',
     Traum: 'rgb(29, 29, 29)'
+  },
+  'theme.colour.interaction.background.intense.neutral.1.hover': {
+    Danland: 'rgb(139, 139, 139)',
+    Prism: 'rgb(139, 139, 139)',
+    Traum: 'rgb(139, 139, 139)'
+  },
+  'theme.colour.interaction.background.intense.neutral.2.hover': {
+    Danland: 'rgb(165, 165, 165)',
+    Prism: 'rgb(113, 113, 113)',
+    Traum: 'rgb(113, 113, 113)'
+  },
+  'theme.colour.interaction.background.intense.neutral.3.hover': {
+    Danland: 'rgb(213, 213, 213)',
+    Prism: 'rgb(76, 76, 76)',
+    Traum: 'rgb(76, 76, 76)'
   },
   'theme.colour.interaction.background.intense.invert.brand.primary.hover': {
     Danland: 'rgb(29, 29, 29)',
@@ -1392,15 +1392,25 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(213, 213, 213)',
     Traum: 'rgb(213, 213, 213)'
   },
-  'theme.icon.colour.intense.brand.primary': {
+  'theme.hyperlink.colour.active': {
     Danland: 'rgb(69, 179, 243)',
-    Prism: 'rgb(139, 101, 47)',
-    Traum: 'rgb(134, 104, 0)'
+    Prism: 'rgb(51, 114, 153)',
+    Traum: 'rgb(11, 113, 173)'
   },
-  'theme.icon.colour.intense.brand.secondary': {
-    Danland: 'rgb(238, 238, 238)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
+  'theme.hyperlink.colour.interaction.disabled': {
+    Danland: 'rgb(113, 113, 113)',
+    Prism: 'rgb(165, 165, 165)',
+    Traum: 'rgb(165, 165, 165)'
+  },
+  'theme.hyperlink.colour.interaction.hover': {
+    Danland: 'rgb(13, 141, 215)',
+    Prism: 'rgb(64, 141, 190)',
+    Traum: 'rgb(13, 141, 215)'
+  },
+  'theme.hyperlink.colour.interaction.visited': {
+    Danland: 'rgb(175, 125, 255)',
+    Prism: 'rgb(119, 100, 143)',
+    Traum: 'rgb(119, 100, 143)'
   },
   'theme.icon.colour.intense.alert': {
     Danland: 'rgb(192, 156, 77)',
@@ -1437,6 +1447,16 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(119, 100, 143)',
     Traum: 'rgb(119, 100, 143)'
   },
+  'theme.icon.colour.intense.brand.primary': {
+    Danland: 'rgb(69, 179, 243)',
+    Prism: 'rgb(139, 101, 47)',
+    Traum: 'rgb(134, 104, 0)'
+  },
+  'theme.icon.colour.intense.brand.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
+  },
   'theme.icon.colour.intense.rating.filled': {
     Danland: 'rgb(69, 179, 243)',
     Prism: 'rgb(40, 40, 40)',
@@ -1467,15 +1487,15 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(255, 255, 255)',
     Traum: 'rgb(255, 255, 255)'
   },
-  'theme.icon.colour.intense.on.intense.brand.invert.secondary': {
-    Danland: 'rgb(238, 238, 238)',
-    Prism: 'rgb(40, 40, 40)',
-    Traum: 'rgb(40, 40, 40)'
-  },
   'theme.icon.colour.intense.on.intense.brand.invert.primary': {
     Danland: 'rgb(238, 238, 238)',
     Prism: 'rgb(40, 40, 40)',
     Traum: 'rgb(255, 255, 255)'
+  },
+  'theme.icon.colour.intense.on.intense.brand.invert.secondary': {
+    Danland: 'rgb(238, 238, 238)',
+    Prism: 'rgb(40, 40, 40)',
+    Traum: 'rgb(40, 40, 40)'
   },
   'theme.icon.colour.moderate.neutral': {
     Danland: 'rgb(165, 165, 165)',
@@ -1486,26 +1506,6 @@ export const tokens = /** @type {const} */ ({
     Danland: 'rgb(113, 113, 113)',
     Prism: 'rgb(165, 165, 165)',
     Traum: 'rgb(165, 165, 165)'
-  },
-  'theme.hyperlink.colour.active': {
-    Danland: 'rgb(69, 179, 243)',
-    Prism: 'rgb(51, 114, 153)',
-    Traum: 'rgb(11, 113, 173)'
-  },
-  'theme.hyperlink.colour.interaction.disabled': {
-    Danland: 'rgb(113, 113, 113)',
-    Prism: 'rgb(165, 165, 165)',
-    Traum: 'rgb(165, 165, 165)'
-  },
-  'theme.hyperlink.colour.interaction.hover': {
-    Danland: 'rgb(13, 141, 215)',
-    Prism: 'rgb(64, 141, 190)',
-    Traum: 'rgb(13, 141, 215)'
-  },
-  'theme.hyperlink.colour.interaction.visited': {
-    Danland: 'rgb(175, 125, 255)',
-    Prism: 'rgb(119, 100, 143)',
-    Traum: 'rgb(119, 100, 143)'
   },
   'theme.screen.colour.alt': {
     Danland: 'rgb(29, 29, 29)',
@@ -1527,9 +1527,18 @@ export const tokens = /** @type {const} */ ({
     Prism: 'rgb(238, 238, 238)',
     Traum: 'rgb(238, 238, 238)'
   },
-  'density.fixed.md.1': { comfortable: '24px', dense: '16px', tight: '8px' },
-  'dimension.fixed.200': { desktop: '16px', mobile: '16px' },
+  'density.fixed.sm.1': { comfortable: '2px', dense: '0px', tight: '0px' },
+  'dimension.fixed.0': { desktop: '0px', mobile: '0px' },
+  'dimension.fixed.25': { desktop: '2px', mobile: '2px' },
+  'density.fixed.sm.2': { comfortable: '4px', dense: '2px', tight: '0px' },
+  'dimension.fixed.50': { desktop: '4px', mobile: '4px' },
+  'density.fixed.sm.3': { comfortable: '8px', dense: '4px', tight: '2px' },
   'dimension.fixed.100': { desktop: '8px', mobile: '8px' },
+  'density.fixed.sm.4': { comfortable: '12px', dense: '8px', tight: '4px' },
+  'dimension.fixed.150': { desktop: '12px', mobile: '12px' },
+  'density.fixed.sm.5': { comfortable: '16px', dense: '12px', tight: '8px' },
+  'dimension.fixed.200': { desktop: '16px', mobile: '16px' },
+  'density.fixed.md.1': { comfortable: '24px', dense: '16px', tight: '8px' },
   'dimension.fixed.300': { desktop: '24px', mobile: '24px' },
   'density.fixed.md.2': { comfortable: '32px', dense: '24px', tight: '16px' },
   'dimension.fixed.400': { desktop: '32px', mobile: '32px' },
@@ -1537,15 +1546,6 @@ export const tokens = /** @type {const} */ ({
   'dimension.fixed.500': { desktop: '40px', mobile: '40px' },
   'density.fixed.md.4': { comfortable: '48px', dense: '40px', tight: '32px' },
   'dimension.fixed.600': { desktop: '48px', mobile: '48px' },
-  'density.fixed.sm.1': { comfortable: '2px', dense: '0px', tight: '0px' },
-  'dimension.fixed.0': { desktop: '0px', mobile: '0px' },
-  'dimension.fixed.25': { desktop: '2px', mobile: '2px' },
-  'density.fixed.sm.2': { comfortable: '4px', dense: '2px', tight: '0px' },
-  'dimension.fixed.50': { desktop: '4px', mobile: '4px' },
-  'density.fixed.sm.3': { comfortable: '8px', dense: '4px', tight: '2px' },
-  'density.fixed.sm.4': { comfortable: '12px', dense: '8px', tight: '4px' },
-  'dimension.fixed.150': { desktop: '12px', mobile: '12px' },
-  'density.fixed.sm.5': { comfortable: '16px', dense: '12px', tight: '8px' },
   'density.scale.lg.1': { comfortable: '64px', dense: '64px', tight: '48px' },
   'dimension.scale.700': { desktop: '64px', mobile: '56px' },
   'dimension.scale.600': { desktop: '56px', mobile: '48px' },
